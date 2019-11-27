@@ -1,0 +1,33 @@
+<%= simple_form_for([:admin, @job]) do |f| %>
+  <%= f.input :title %>
+  <%= f.association :country %>
+  <%= f.input :location %>
+  <%= f.input :job_type %>
+  <p>Text Field One</p>
+  <input id="x" type="hidden" name="text1" value= "<%= @job.text1 ? @job.text1 : '' %>">
+  <trix-editor input="x"></trix-editor>
+  <p>Text Field Two</p>
+  <input id="y" type="hidden" name="text2" value= "<%= @job.text1 ? @job.text1 : '' %>">
+  <trix-editor input="y"></trix-editor>
+  <%= f.input :expectation1 %>
+  <%= f.input :expectation2 %>
+  <%= f.input :expectation3 %>
+  <%= f.input :expectation4 %>
+  <%= f.input :expectation5 %>
+  <%= f.input :expectation6 %>
+  <%= f.input :expectation7 %>
+  <%= f.input :expectation8 %>
+  <%= f.input :expectation9 %>
+  <%= f.input :expectation10 %>
+  <%= f.input :responsibility1 %>
+  <%= f.input :responsibility2 %>
+  <%= f.input :responsibility3 %>
+  <%= f.input :responsibility4 %>
+  <%= f.input :responsibility5 %>
+  <%= f.input :responsibility6 %>
+  <%= f.input :responsibility7 %>
+  <%= f.input :responsibility8 %>
+  <%= f.input :responsibility9 %>
+  <%= f.input :responsibility10 %>
+  <%= f.submit %>
+<% end %>
