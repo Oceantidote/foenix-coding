@@ -1,2 +1,3 @@
-<h1>Usability Links</h1>
-<%= link_to "New Country", new_country_path %>
+<% if current_user %>
+  <%= link_to "Countries", admin_countries_path %>
+<% end %>
