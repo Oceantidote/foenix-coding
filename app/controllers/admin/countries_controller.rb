@@ -44,6 +44,6 @@ class Admin::CountriesController < ApplicationController
   end
 
   def country_params
-    params.require(:country).permit(:name, :flag)
+    params.require(:country).permit(:name, :photo)
   end
 end

@@ -1,3 +1,7 @@
-<% if current_user %>
-  <%= link_to "Countries", admin_countries_path %>
-<% end %>
+<div class="container">
+  <% if current_user %>
+  <p><%= link_to "Countries", admin_countries_path %></p>
+  <p><%= link_to "Posts", posts_path %></p>
+  <p><%= link_to "Jobs", jobs_path %></p>
+  <% end %>
+</div>

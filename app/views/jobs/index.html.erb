@@ -1,0 +1,33 @@
+<div class="container">
+  <h1>Job Search</h1>
+  <%= simple_form_for :search, url: jobs_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+    <div class="d-flex">
+      <%= f.input :name, input_html: {value: ""} %>
+      <%= f.input :country, :collection => @countries %>
+      <%= f.input :job_type, :collection => @types %>
+    </div>
+    <%= f.submit "Search", class: "btn btn-primary" %>
+  <% end %>
+
+  <% if @results %>
+    <% @results.each do |result| %>
+      <div class="d-flex">
+        <%= result.title %>
+        <%= result.job_type %>
+        <%= result.country.name %>
+      </div>
+    <% end %>
+  <% else %>
+    <% @jobs.each do |job| %>
+      <%= link_to job_path(job) do  %>
+        <div class="d-flex">
+          <%= job.title %>
+          <%= job.job_type %>
+          <%= job.country.name %>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <%= link_to "New Job", new_admin_job_path %>
+</div>
