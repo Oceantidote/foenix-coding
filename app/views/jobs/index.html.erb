@@ -1,33 +1,60 @@
 <div class="container">
-  <h1>Job Search</h1>
-  <%= simple_form_for :search, url: jobs_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-    <div class="d-flex">
-      <%= f.input :name, input_html: {value: ""} %>
-      <%= f.input :country, :collection => @countries %>
-      <%= f.input :job_type, :collection => @types %>
+  <h1 class="text-center mt-5">FOENIX CODING is growing</h1>
+  <h5 class="text-center mt-4 mb-5 grey">We are always looking for talented new friends that share our <br>vision to push industry forward</h5>
+  <%= simple_form_for :search, url: jobs_path, method: "GET" do |f| %>
+    <div class="search-bar">
+      <div class="input-holder">
+        <%= f.input :name, label: false, placeholder: "Search" %>
+        <i class="fas fa-search search-icon grey"></i>
+      </div>
+      <div class="input-holder">
+        <%= f.input :team, collection: ["I", "don't", "know", "what", "goes", "here", "yet"], label: false, prompt: "Teams" %>
+        <i class="fas fa-user-friends search-icon grey"></i>
+      </div>
+      <div class="input-holder">
+        <%= f.input :country, collection: @countries, label: false, prompt: "Location" %>
+        <i class="fas fa-map-marker-alt search-icon grey"></i>
+      </div>
+      <div class="input-holder">
+        <%= f.input :job_type, collection: @types, label: false, prompt: "Type" %>
+        <i class="fas fa-list-ul search-icon grey"></i>
+      </div>
     </div>
-    <%= f.submit "Search", class: "btn btn-primary" %>
+    <%= f.submit "Search", class: "btn btn-primary temp-button" %>
   <% end %>
+  <p class="text-center grey">
+    <% if params[:search] %>
+      <%= @results ? @results.length : @jobs.length %> roles
+      across <strong><%= params[:search][:country] != '' ? Country.find(params[:search][:country]).name : "all locations" %></strong>
+      and <strong><%= params[:search][:team] != '' ? params[:search][:team] : "all teams" %></strong>
+    <% else %>
+    <%= @jobs.length %> roles across <strong>all locations</strong> and <strong>all teams</strong>
+    <% end %>
+  </p>
 
   <% if @results %>
     <% @results.each do |result| %>
-      <div class="d-flex">
-        <%= result.title %>
-        <%= result.job_type %>
-        <%= result.country.name %>
-      </div>
+      <%= link_to job_path(result), class: "text-decoration-none" do  %>
+        <div class="job-card">
+        <p class="m-0"><%= result.title %></p>
+        <p class="m-0"><%= result.job_type %></p>
+        <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %><span class="m-0 ml-3 grey"><%= result.location %></span></div>
+        </div>
+      <% end %>
     <% end %>
   <% else %>
     <% @jobs.each do |job| %>
-      <%= link_to job_path(job) do  %>
-        <div class="d-flex">
-          <%= job.title %>
-          <%= job.job_type %>
-          <%= job.country.name %>
+      <%= link_to job_path(job), class: "text-decoration-none" do  %>
+        <div class="job-card">
+        <p class="m-0"><%= job.title %></p>
+        <p class="m-0"><%= job.job_type %></p>
+        <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %><span class="m-0 ml-3 grey"><%= result.location %></span></div>
+        </div>
         </div>
       <% end %>
     <% end %>
   <% end %>
-
-  <%= link_to "New Job", new_admin_job_path %>
+  <% if current_user %>
+    <%= link_to "New Job", new_admin_job_path %>
+  <% end %>
 </div>

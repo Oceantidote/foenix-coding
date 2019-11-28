@@ -5,7 +5,7 @@
     <p>
       <%= country.name %>
       <% if country.photo.attachment %>
-        <%= cl_image_tag country.photo.key, height: 50, width: 50, crop: :fill %>
+        <%= image_tag url_for(country.photo) %>
       <% end %>
       <%= link_to "Edit", edit_admin_country_path(country) %>
       <%= link_to "Delete", admin_country_path(country), method: :delete %>
