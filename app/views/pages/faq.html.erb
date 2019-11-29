@@ -1,0 +1,48 @@
+<div class="container">
+  <h1 class="text-center"><%= t('faq.title') %></h1>
+  <p class="text-center w-50 mx-auto mb-5"><%= t('faq.tagline') %></p>
+  <div class="faq-card">
+    <div class="faq-card-head" id="faqTrigger-1">
+      <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <i class="fas fa-chevron-down small-chevron m-0"></i>
+    </div>
+    <div class="faq-card-body" id="faqBody1">
+      <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est commodi ut perspiciatis nam optio aut veniam pariatur tempore consequatur repudiandae sunt molestiae omnis eveniet repellendus sequi, cumque voluptatem aspernatur tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sequi quas excepturi assumenda sed minus dolor nobis aut laborum molestiae voluptas eius, provident possimus iusto dolorum suscipit culpa.</p>
+    </div>
+  </div>
+  <div class="faq-card">
+    <div class="faq-card-head" id="faqTrigger-2">
+      <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <i class="fas fa-chevron-down small-chevron m-0"></i>
+    </div>
+    <div class="faq-card-body" id="faqBody2">
+      <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est commodi ut perspiciatis nam optio aut veniam pariatur tempore consequatur repudiandae sunt molestiae omnis eveniet repellendus sequi, cumque voluptatem aspernatur tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sequi quas excepturi assumenda sed minus dolor nobis aut laborum molestiae voluptas eius, provident possimus iusto dolorum suscipit culpa.</p>
+    </div>
+  </div>
+  <div class="faq-card">
+    <div class="faq-card-head" id="faqTrigger-3">
+      <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <i class="fas fa-chevron-down small-chevron m-0"></i>
+    </div>
+    <div class="faq-card-body" id="faqBody3">
+      <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est commodi ut perspiciatis nam optio aut veniam pariatur tempore consequatur repudiandae sunt molestiae omnis eveniet repellendus sequi, cumque voluptatem aspernatur tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sequi quas excepturi assumenda sed minus dolor nobis aut laborum molestiae voluptas eius, provident possimus iusto dolorum suscipit culpa.</p>
+    </div>
+  </div>
+  <div class="faq-card">
+    <div class="faq-card-head" id="faqTrigger-4">
+      <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <i class="fas fa-chevron-down small-chevron m-0"></i>
+    </div>
+    <div class="faq-card-body" id="faqBody4">
+      <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est commodi ut perspiciatis nam optio aut veniam pariatur tempore consequatur repudiandae sunt molestiae omnis eveniet repellendus sequi, cumque voluptatem aspernatur tempora. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sequi quas excepturi assumenda sed minus dolor nobis aut laborum molestiae voluptas eius, provident possimus iusto dolorum suscipit culpa.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.faq-card-head').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      document.getElementById(`faqBody${trigger.id.split('-')[1]}`).classList.toggle('faq-card-open')
+    })
+  })
+</script>

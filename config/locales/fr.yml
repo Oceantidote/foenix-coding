@@ -1,0 +1,33 @@
+fr:
+  jobs:
+    title: FOENIX CODING croît
+    tagline: Nous sommes toujours à la recherche de nouveaux amis talentueux qui partagent notre vision de faire progresser l'industrie.
+
+  simple_form:
+    hints:
+    placeholders:
+      search:
+        name: Chercher
+    prompts:
+      search:
+        team: Équipe
+        country: Emplacement
+        job_type: Type
+
+  navbar:
+    home: Accueil
+    products: Des Produits
+    services: Service et Support
+    company: Entreprise
+    login: S'identifier
+    logout: Connectez - Out
+    contact: Contactez Nous
+    printers: Imprimantes
+    software: Logiciel
+    inks: Encres et Consommables
+    distributors: Distributeurs Mondiaux
+    cost: Coût de propriété
+    FAQ: FAQ
+    about: À propos de nous
+    careers: Carrières
+    news: Nouvelles et événements

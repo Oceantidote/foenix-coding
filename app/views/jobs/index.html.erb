@@ -1,22 +1,22 @@
 <div class="container">
-  <h1 class="text-center mt-5">FOENIX CODING is growing</h1>
-  <h5 class="text-center mt-4 mb-5 grey">We are always looking for talented new friends that share our <br>vision to push industry forward</h5>
+  <h1 class="text-center mt-5"><%= t("jobs.title") %></h1>
+  <h5 class="text-center mt-4 mb-5 grey w-50 mx-auto"><%= t("jobs.tagline") %></h5>
   <%= simple_form_for :search, url: jobs_path, method: "GET" do |f| %>
     <div class="search-bar">
       <div class="input-holder">
-        <%= f.input :name, label: false, placeholder: "Search" %>
+        <%= f.input :name, label: false %>
         <i class="fas fa-search search-icon grey"></i>
       </div>
       <div class="input-holder">
-        <%= f.input :team, collection: ["I", "don't", "know", "what", "goes", "here", "yet"], label: false, prompt: "Teams" %>
+        <%= f.input :team, collection: ["I", "don't", "know", "what", "goes", "here", "yet"], label: false,  prompt: :translate %>
         <i class="fas fa-user-friends search-icon grey"></i>
       </div>
       <div class="input-holder">
-        <%= f.input :country, collection: @countries, label: false, prompt: "Location" %>
+        <%= f.input :country, collection: @countries, label: false,  prompt: :translate %>
         <i class="fas fa-map-marker-alt search-icon grey"></i>
       </div>
       <div class="input-holder">
-        <%= f.input :job_type, collection: @types, label: false, prompt: "Type" %>
+        <%= f.input :job_type, collection: @types, label: false,  prompt: :translate %>
         <i class="fas fa-list-ul search-icon grey"></i>
       </div>
     </div>
@@ -36,9 +36,11 @@
     <% @results.each do |result| %>
       <%= link_to job_path(result), class: "text-decoration-none" do  %>
         <div class="job-card">
-        <p class="m-0"><%= result.title %></p>
-        <p class="m-0"><%= result.job_type %></p>
-        <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %><span class="m-0 ml-3 grey"><%= result.location %></span></div>
+          <p class="m-0"><%= result.title %></p>
+          <p class="m-0"><%= result.job_type %></p>
+          <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %>
+            <span class="m-0 ml-3 grey"><%= result.location %></span>
+          </div>
         </div>
       <% end %>
     <% end %>
@@ -46,15 +48,26 @@
     <% @jobs.each do |job| %>
       <%= link_to job_path(job), class: "text-decoration-none" do  %>
         <div class="job-card">
-        <p class="m-0"><%= job.title %></p>
-        <p class="m-0"><%= job.job_type %></p>
-        <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %><span class="m-0 ml-3 grey"><%= result.location %></span></div>
-        </div>
+          <p class="m-0"><%= job.title %></p>
+          <p class="m-0"><%= job.job_type %></p>
+          <div class="m-0"><%= image_tag url_for(job.country.photo), class: "job-card-flag" %>
+            <span class="m-0 ml-3 grey"><%= job.location %></span>
+          </div>
         </div>
       <% end %>
     <% end %>
   <% end %>
+
   <% if current_user %>
     <%= link_to "New Job", new_admin_job_path %>
   <% end %>
+
+  <div class="d-flex justify-content-between">
+    <div class="work-with-us-card">
+      <h4 class="m-0 ">Come work with us</h4>
+      <p class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    </div>
+    <div class="newsletter-signup"></div>
+  </div>
 </div>
+

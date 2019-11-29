@@ -1,0 +1,32 @@
+.footer-foenix {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.footer-left {
+  display: flex;
+  width: 70%;
+  .footer-section {
+    width: 28%;
+  }
+  .home-section {
+    width: 15%;
+  }
+}
+
+.footer-right {
+  display: flex;
+  width: 30%;
+  .footer-section {
+    width: 33%;
+  }
+}
+
+.footer-link {
+  display: block;
+  &:hover {
+    color: #676767;
+    text-decoration: none;
+  }
+}
