@@ -1,35 +1,58 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+<div class="navbar-foenix">
+  <div class="navbar-left">
+    <%= link_to root_path do %>
+      <%= image_tag "logo.png", alt: "Foenix Coding", class: "navbar-logo" %>
     <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <div class="navbar-item">
+      <a href="#" role="button" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= t("navbar.products") %> <i class="fas fa-chevron-down small-chevron"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="productsDropdown">
+        <%= link_to t("navbar.printers"), root_path, class: "dropdown-item"  %>
+        <%= link_to t("navbar.software"), root_path, class: "dropdown-item"  %>
+        <%= link_to t("navbar.inks"), root_path, class: "dropdown-item"  %>
+      </div>
+    </div>
+    <div class="navbar-item">
+      <a href="#" role="button" id="serviceDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= t("navbar.services") %> <i class="fas fa-chevron-down small-chevron"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="serviceDropdown">
+        <%= link_to t("navbar.distributors"), root_path, class: "dropdown-item"  %>
+        <%= link_to t("navbar.cost"), root_path, class: "dropdown-item"  %>
+        <%= link_to t("navbar.FAQ"), root_path, class: "dropdown-item"  %>
+      </div>
+    </div>
+    <div class="navbar-item">
+      <a href="#" role="button" id="companyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= t("navbar.company") %> <i class="fas fa-chevron-down small-chevron"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="companyDropdown">
+        <%= link_to t("navbar.about"), root_path, class: "dropdown-item"  %>
+        <%= link_to t("navbar.careers"), jobs_path, class: "dropdown-item"  %>
+        <%= link_to t("navbar.news"), root_path, class: "dropdown-item"  %>
+      </div>
+    </div>
+  </div>
+  <div class="navbar-right">
+    <div class="navbar-item">
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
+        <%= link_to( t('navbar.logout'), destroy_user_session_path, method: :delete) %>
       <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
+        <%= link_to t('navbar.login'), new_user_session_path %>
       <% end %>
-    </ul>
+    </div>
+    <div class="navbar-item">
+      <%= link_to t("navbar.contact"), root_path %>
+    </div>
+    <div class="navbar-item">
+      <a href="#" role="button" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= locale.capitalize %> <i class="fas fa-chevron-down small-chevron"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="productsDropdown">
+        <%= link_to "English", { :locale=>'en' }, class: "dropdown-item" %>
+        <%= link_to "Français", { :locale=>'fr' }, class: "dropdown-item" %>
+      </div>
+    </div>
   </div>
 </div>
