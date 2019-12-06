@@ -43,6 +43,7 @@
 }
 
 .navbar-item {
+
   a {
     color: #676767;
   }
@@ -67,7 +68,7 @@
   }
 }
 
-.mobile-navbar {
+#mobile-navbar {
   font-size: 28px;
 
   @include for-xxlarge-devices-down {
@@ -76,5 +77,89 @@
 
   @include for-medium-devices-down {
     display: block;
+  }
+}
+
+#mobile-menu {
+  visibility: hidden;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.0);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s;
+}
+
+#mobile-links {
+  border-radius: 5px;
+  height: 65vh;
+  width: 400px;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: absolute;
+    top: -150px;
+  transition: top 0.5s;
+  display: flex;
+  align-items: center;
+  padding: 30px 40px 10px 30px;
+
+
+  & ul {
+    list-style-type: none;
+    padding: 0;
+
+    & img {
+      padding-right: 20px;
+      width: 50px;
+      height: auto;
+      border-radius: 3px;
+
+      @include for-xsmall-phone-only {
+        width: 40px;
+      }
+    }
+  }
+
+  & li {
+    padding-bottom: 20px;
+
+    & a {
+      color: #7F8488;
+
+      &:hover, :active {
+        color: #474747;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @include for-small-devices-down {
+    width: 90vw;
+  }
+
+  @include for-xsmall-phone-only {
+    height: 80vh;
+    top: -200px;
+  }
+}
+
+#mobile-links .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 26px;
+  margin-left: 50px;
+  color: #474747;
+  &:hover {
+    text-decoration: none;
+    color: #EF9761;
+  }
+
+  &:active {
+    outline: none;
+    border: 0;
   }
 }

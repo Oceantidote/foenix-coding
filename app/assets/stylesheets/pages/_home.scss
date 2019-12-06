@@ -26,11 +26,15 @@
 
 .first-section-svg {
   position: absolute;
-    right: -300px;
+    right: -250px;
     top: -300px;
   z-index: 0;
   width: 1000px;
   height: auto;
+
+  @include for-large-devices-down {
+    right: -400px;
+  }
 
   @include for-medium-devices-down {
     width: 650px;
