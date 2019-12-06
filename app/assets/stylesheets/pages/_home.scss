@@ -80,6 +80,8 @@
   & p {
     padding-top: 20px;
     color: #747B8A;
+    font-weight: 300;
+    font-size: 21px;
   }
 
   @include for-phone-only {
@@ -87,6 +89,10 @@
 
     & h1 {
       padding-top: 80px;
+    }
+
+    & p {
+      font-size: 18px;
     }
   }
 }
@@ -106,5 +112,78 @@
     @include for-small-devices-down {
       width: 60vw;
     }
+  }
+}
+
+.second-section {
+  height: 100vh;
+  background: linear-gradient(#FAFBFC, white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-section-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65vw;
+
+  & img {
+    width: 100px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  & h2 {
+    color: #0D1B26;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  & p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #747B89;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  @include for-phone-only {
+    width: 90vw;
+  }
+}
+
+.first-section-svg-2 {
+  position: absolute;
+  opacity: 0.3;
+    bottom: -750px;
+    left: -700px;
+  z-index: 0;
+  width: 1000px;
+  height: auto;
+
+  // @include for-large-devices-down {
+  // }
+
+  @include for-medium-devices-down {
+    width: 800px;
+    left: -500px;
+  }
+
+  @include for-small-devices-down {
+    width: 800px;
+    left: -650px;
+    bottom: -600px;
+  }
+
+  @include for-phone-only {
+    left: -700px;
+    bottom: -600px;
+  }
+
+  @include for-xsmall-phone-only {
   }
 }
