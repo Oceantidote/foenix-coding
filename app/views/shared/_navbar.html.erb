@@ -55,7 +55,39 @@
       </div>
     </div>
   </div>
-  <div class="mobile-navbar">
-    <i class="fas fa-bars"></i>
+  <div id="mobile-navbar">
+    <i class="fas fa-bars" onclick="openNav()"></i>
   </div>
 </div>
+<div id="mobile-menu" onclick="closeNav()">
+  <div id="mobile-links">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <ul>
+      <li><%= image_tag 'icon-1.png' %><a href="/">Printers</a></li>
+      <li><%= image_tag 'icon-2.png' %><a href="/">Software</a></li>
+      <li><%= image_tag 'icon-3.png' %><a href="/">Inks & Consumables</a></li>
+      <li><%= image_tag 'icon-4.png' %><a href="/">Worldwide Distributors</a></li>
+      <li><%= image_tag 'icon-5.png' %><a href="/">Cost of ownership?</a></li>
+      <li><%= image_tag 'icon-6.png' %><a href="/">FAQ</a></li>
+      <li><%= image_tag 'icon-7.png' %><a href="/">About</a></li>
+      <li><%= image_tag 'icon-8.png' %><a href="/">Career</a></li>
+      <li><%= image_tag 'icon-9.png' %><a href="/">News/Event</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+  function openNav() {
+    document.getElementById("mobile-links").style.top = "100px"
+    document.getElementById("mobile-menu").style.visibility = "visible";
+    document.getElementById("mobile-menu").style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+    document.getElementById("mobile-menu").style.visibility = "hidden";
+    document.getElementById("mobile-menu").style.backgroundColor = "rgba(0,0,0,0.0)";
+    document.getElementById("mobile-links").style.top = "-800px"
+    document.getElementById("mobile-menu").style.transition = "0.6s";
+    document.getElementById("mobile-links").style.transition = "top 0.4s";
+    // document.getElementById("mobile-links").style.transition = "opacity 1s";
+  }
+</script>
