@@ -140,6 +140,10 @@
     width: 90vw;
   }
 
+  @include for-small-devices-down {
+    height: 80vh;
+  }
+
   @include for-xsmall-phone-only {
     height: 80vh;
     top: -200px;
