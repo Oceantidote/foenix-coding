@@ -13,3 +13,10 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+// h1 {
+//   @include for-phone-only {
+//     font-size: 32px;
+//   }
+// }
