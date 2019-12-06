@@ -1,10 +1,23 @@
 .navbar-foenix {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding: 0 100px 0 50px;
   height: 80px;
   align-items: center;
   background-color: transparent;
+  //added this to account for gradient background in home-page
+  position: absolute;
+  z-index: 1;
+  //end of c
+
+  @include for-medium-devices-down {
+    padding: 20px 40px 0 20px;
+  }
+
+  @include for-phone-only {
+    padding: 20px 30px 0 20px;
+  }
 }
 
 .navbar-left {
@@ -48,3 +61,20 @@
 }
 
 
+.hidden {
+  @include for-medium-devices-down {
+    display: none;
+  }
+}
+
+.mobile-navbar {
+  font-size: 28px;
+
+  @include for-xxlarge-devices-down {
+    display: none;
+  }
+
+  @include for-medium-devices-down {
+    display: block;
+  }
+}

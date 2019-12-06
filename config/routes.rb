@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope "/:locale" do
+  # scope "/:locale" do
     root to: 'pages#home'
     get '/faq', to: 'pages#faq'
     devise_for :users
@@ -10,5 +10,5 @@ Rails.application.routes.draw do
     end
     resources :posts, only: [:index, :show]
     resources :jobs, only: [:index, :show]
-  end
+  # end
 end

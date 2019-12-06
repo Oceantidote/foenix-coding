@@ -3,7 +3,7 @@
     <%= link_to root_path do %>
       <%= image_tag "logo.png", alt: "Foenix Coding", class: "navbar-logo" %>
     <% end %>
-    <div class="navbar-item">
+    <div class="navbar-item hidden">
       <a href="#" role="button" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= t("navbar.products") %> <i class="fas fa-chevron-down small-chevron"></i>
       </a>
@@ -13,7 +13,7 @@
         <%= link_to t("navbar.inks"), root_path, class: "dropdown-item"  %>
       </div>
     </div>
-    <div class="navbar-item">
+    <div class="navbar-item hidden">
       <a href="#" role="button" id="serviceDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= t("navbar.services") %> <i class="fas fa-chevron-down small-chevron"></i>
       </a>
@@ -23,7 +23,7 @@
         <%= link_to t("navbar.FAQ"), root_path, class: "dropdown-item"  %>
       </div>
     </div>
-    <div class="navbar-item">
+    <div class="navbar-item hidden">
       <a href="#" role="button" id="companyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= t("navbar.company") %> <i class="fas fa-chevron-down small-chevron"></i>
       </a>
@@ -34,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div class="navbar-right">
+  <div class="navbar-right hidden">
     <div class="navbar-item">
       <% if user_signed_in? %>
         <%= link_to( t('navbar.logout'), destroy_user_session_path, method: :delete) %>
@@ -54,5 +54,8 @@
         <%= link_to "Français", { :locale=>'fr' }, class: "dropdown-item" %>
       </div>
     </div>
+  </div>
+  <div class="mobile-navbar">
+    <i class="fas fa-bars"></i>
   </div>
 </div>
