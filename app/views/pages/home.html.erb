@@ -69,5 +69,86 @@
         </div>
       </div>
     </div>
+    <div class="second-section-three">
+      <%= cl_image_tag("foenix-dots_alc8g7.png", :quality=>"auto", class: "second-section-three_svg") %>
+      <%= cl_image_tag("foenix-milk_zg6rhu.png", :quality=>"auto", class: "second-section-three_image") %>
+      <%= cl_image_tag("foenix-tube_zlcerz.png", :quality=>"auto", class: "second-section-three_image") %>
+    </div>
+    <div class="third-section">
+      <%= cl_image_tag("foenix-home-background_wziieq.png", :quality=>"auto", class: "third-section_svg") %>
+      <div class="third-section-features">
+        <%= image_tag 'foenix-home-icon-math.png', class: "third-section-features_icon" %>
+        <%#= cl_image_tag("about-little-pill_rup3cj.png", :quality=>"auto", class: "third-section-features_pill") %>
+        <h2>One software with tons of features</h2>
+       <div class="tab">
+         <button class="" onclick="openCity('London')">London</button>
+         <button class="" onclick="openCity('Paris')">Paris</button>
+         <button class="" onclick="openCity('Tokyo')">Tokyo</button>
+         <button class="" onclick="openCity('Bogota')">Bogota</button>
+         <button class="" onclick="openCity('Lexico')">Lexico</button>
+         <button class="" onclick="openCity('Brussels')">Brussels</button>
+       </div>
+       <div class="features-dropdown" >
+          <button class="" onclick="openCity('London')">London</button><i class="fas fa-chevron-down"></i>
+        <div class="features-dropdown-options">
+          <button class="" onclick="openCity('London')">London</button>
+          <button class="" onclick="openCity('Paris')">Paris</button>
+          <button class="" onclick="openCity('Tokyo')">Tokyo</button>
+          <button class="" onclick="openCity('Bogota')">Bogota</button>
+          <button class="" onclick="openCity('Lexico')">Lexico</button>
+          <button class="" onclick="openCity('Brussels')">Brussels</button>
+        </div>
+       </div>
+
+        <div id="London" class="city">
+          <div class="tab-text">
+            <h4>Zero Downtime, No Maintenance</h4>
+            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <span></span>
+            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <br>
+            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <br><br><br><br><br><br><br><br><br>
+          </div>
+          <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
+        </div>
+
+        <div id="Paris" class="city" style="display:none">
+          <h2>Paris</h2>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="Tokyo" class="city" style="display:none">
+          <h2>Tokyo</h2>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div id="Bogota" class="city" style="display:none">
+          <h2>Bogota</h2>
+          <p>London is the capital of England.</p>
+        </div>
+
+        <div id="Lexico" class="city"style="display:none">
+          <h2>Lexico</h2>
+          <p>London is the capital of England.</p>
+        </div>
+
+        <div id="Brussels" class="city" style="display:none">
+          <h2>Brussels</h2>
+          <p>London is the capital of England.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
+<script>
+  function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "flex";
+  }
+</script>
