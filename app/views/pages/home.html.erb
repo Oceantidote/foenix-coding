@@ -74,22 +74,21 @@
       <%= cl_image_tag("foenix-milk_zg6rhu.png", :quality=>"auto", class: "second-section-three_image") %>
       <%= cl_image_tag("foenix-tube_zlcerz.png", :quality=>"auto", class: "second-section-three_image") %>
     </div>
-    <div class="third-section">
-      <%= cl_image_tag("foenix-home-background_wziieq.png", :quality=>"auto", class: "third-section_svg") %>
-      <div class="third-section-features">
-        <%= image_tag 'foenix-home-icon-math.png', class: "third-section-features_icon" %>
-        <%#= cl_image_tag("about-little-pill_rup3cj.png", :quality=>"auto", class: "third-section-features_pill") %>
-        <h2>One software with tons of features</h2>
-       <div class="tab">
-         <button class="" onclick="openCity('London')">London</button>
-         <button class="" onclick="openCity('Paris')">Paris</button>
-         <button class="" onclick="openCity('Tokyo')">Tokyo</button>
-         <button class="" onclick="openCity('Bogota')">Bogota</button>
-         <button class="" onclick="openCity('Lexico')">Lexico</button>
-         <button class="" onclick="openCity('Brussels')">Brussels</button>
-       </div>
-       <div class="features-dropdown" >
-          <button class="" onclick="openCity('London')">London</button><i class="fas fa-chevron-down"></i>
+  <div class="third-section">
+    <%= cl_image_tag("foenix-home-background_wziieq.png", :quality=>"auto", class: "third-section_svg") %>
+    <div class="third-section-features">
+      <%= image_tag 'foenix-home-icon-math.png', class: "third-section-features_icon" %>
+      <h2>One software with tons of features</h2>
+      <div class="tab">
+       <button class="" onclick="openCity('London')">London</button>
+       <button class="" onclick="openCity('Paris')">Paris</button>
+       <button class="" onclick="openCity('Tokyo')">Tokyo</button>
+       <button class="" onclick="openCity('Bogota')">Bogota</button>
+       <button class="" onclick="openCity('Lexico')">Lexico</button>
+       <button class="" onclick="openCity('Brussels')">Brussels</button>
+      </div>
+      <div class="features-dropdown" >
+        <button class="" onclick="openCity('London')">London</button><i class="fas fa-chevron-down"></i>
         <div class="features-dropdown-options">
           <button class="" onclick="openCity('London')">London</button>
           <button class="" onclick="openCity('Paris')">Paris</button>
@@ -98,8 +97,9 @@
           <button class="" onclick="openCity('Lexico')">Lexico</button>
           <button class="" onclick="openCity('Brussels')">Brussels</button>
         </div>
-       </div>
-
+      </div>
+      <div class="tabs-area">
+        <%= cl_image_tag("long-pill_xrmujn.png", :quality=>"auto") %>
         <div id="London" class="city">
           <div class="tab-text">
             <h4>Zero Downtime, No Maintenance</h4>
@@ -114,32 +114,110 @@
         </div>
 
         <div id="Paris" class="city" style="display:none">
-          <h2>Paris</h2>
-          <p>Paris is the capital of France.</p>
+          <div class="tab-text">
+            <h4>The Second Title of the Tabs</h4>
+            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <span></span>
+            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <br>
+            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <br><br><br><br><br><br><br><br><br>
+          </div>
+          <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
         <div id="Tokyo" class="city" style="display:none">
-          <h2>Tokyo</h2>
-          <p>Tokyo is the capital of Japan.</p>
+          <div class="tab-text">
+            <h4>The Third Title of the Tabs</h4>
+            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <span></span>
+            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <br>
+            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <br><br><br><br><br><br><br><br><br>
+          </div>
+          <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
         <div id="Bogota" class="city" style="display:none">
-          <h2>Bogota</h2>
-          <p>London is the capital of England.</p>
+          <div class="tab-text">
+            <h4>The Fourth Title of the Tabs</h4>
+            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <span></span>
+            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <br>
+            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <br><br><br><br><br><br><br><br><br>
+          </div>
+          <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
         <div id="Lexico" class="city"style="display:none">
-          <h2>Lexico</h2>
-          <p>London is the capital of England.</p>
+          <div class="tab-text">
+            <h4>The Fifth Title of the Tabs</h4>
+            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <span></span>
+            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <br>
+            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <br><br><br><br><br><br><br><br><br>
+          </div>
+          <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
         <div id="Brussels" class="city" style="display:none">
-          <h2>Brussels</h2>
-          <p>London is the capital of England.</p>
+          <div class="tab-text">
+            <h4>The Sixth Title of the Tabs</h4>
+            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <span></span>
+            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <br>
+            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <br><br><br><br><br><br><br><br><br>
+          </div>
+          <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
+        </div>
+      </div>
+      <div class="third-section-video">
+        <%= cl_image_tag("blues-pill_lf4fan.png", :quality=>"auto") %>
+        <%= cl_image_tag("slice-pill_bfxclr.png", :quality=>"auto") %>
+        <%= cl_image_tag("dots-dots_mwj7rq.png", :quality=>"auto") %>
+        <div class="third-section-media">
+        </div>
+        <div class="third-video-text">
+          <h3><span>FX ONE</span> Printer</h3>
+          <p>Helping businesses improve efficiency and lower production costs</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="fourth-section">
+    <%= cl_image_tag("fourth-background_nn77ew.png", :quality=>"auto", class: "fourth-section_svg") %>
+    <div class="fourth-section-features">
+      <div class="fourth-section-text">
+        <%= image_tag 'hand-icon.png' %>
+        <h2>Trusted by businesses from every industies</h2>
+        <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime, automate manual processes and improve product quality with high resolution coding. </p>
+        <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="fourth-section-grid">
+          <%= image_tag 'food-icon.png' %>
+          <%= image_tag 'cosmetics-icon.png' %>
+          <%= image_tag 'extrusion-icon.png' %>
+          <%= image_tag 'automotive-icon.png' %>
+          <%= image_tag 'beverage-icon.png' %>
+          <%= image_tag 'pharma-icon.png' %>
+          <%= image_tag 'elec-icon.png' %>
+          <%= image_tag 'const-icon.png' %>
+          <%= image_tag 'package-icon.png' %>
+          <%= image_tag 'industry-icon.png' %>
+          <%= image_tag 'chem-icon.png' %>
+          <%= image_tag 'many-icon.png' %>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script>
