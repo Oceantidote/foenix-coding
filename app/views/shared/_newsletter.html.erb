@@ -3,21 +3,19 @@
     <div class="about-sixth-section">
       <div class="about-sixth-section-left">
         <div class="about-button-card" style="background-image: url('<%= cl_image_path("Button_nqsfuo.png") %>')">
-          <p class="m-0">Come work with us</p>
-          <p class="m-0 paragraph-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing.
-          </p>
+          <p class="m-0"><%= t("newsletter.card_title") %></p>
+          <p class="m-0 paragraph-text"><%= t("newsletter.card_text") %></p>
         </div>
       </div>
       <div class="about-sixth-section-right">
-        <p>Get the latest newsletter</p>
-        <p class="paragraph-text">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.</p>
+        <p><%= t("newsletter.title") %></p>
+        <p class="paragraph-text"><%= t("newsletter.text") %></p>
         <%= form_tag root_path, method: :get, class: 'about-form' do %>
-          <%= text_field_tag :query, params[:query], class: "form-control about-form-input", placeholder: "laurenmayberry@example.com"
+          <%= text_field_tag :query, params[:query], class: "form-control about-form-input", placeholder: "#{ t('newsletter.placeholder') }"
           %>
-          <%= submit_tag "Subscribe", class: "about-form-button" %>
+          <%= submit_tag "#{ t('newsletter.button') }", class: "about-form-button" %>
         <% end %>
-        <p class="paragraph-text" style="font-size: 10px !important;">You can unsubscribe at any time. <span style="color: #F3A300">Read our privacy policy</span></p>
+        <p class="paragraph-text" style="font-size: 10px !important;"><%= t("newsletter.unsubscribe") %> <span style="color: #F3A300"><%= t("newsletter.privacy") %></span></p>
       </div>
     </div>
   </div>

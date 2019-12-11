@@ -36,7 +36,35 @@ en:
     title: Frequently Asked Questions
     tagline: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi quod laudantium asperiores a consectetur, repudiandae at, debitis dicta, exercitationem reprehenderit aliquam quis iusto laborum nostrum libero suscipit magni! Vero.
 
+  newsletter:
+    card_title: Come work with us
+    card_text: Lorem ipsum dolor sit amet, consectetur adipiscing.
+    title: Get the latest newsletter
+    text: Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
+    button: Subscribe
+    placeholder: laurenmayberry@example.com
+    unsubscribe: You can unsubscribe at any time.
+    privacy: Privacy Policy
 
+  about:
+    first_section_text: Your Complex coding and marking challenges don't require complex and expensive solution
+    second_section_title: Our Mission
+    second_section_text: To increase the efficiency of your production line and help you with you product traceability challenges
+    third_section_title: We focus on the importance of cost of ownership in industrial printing.
+    third_section_text: Whether you are looking for an inkjet printer for case coding or product marking, the investment in printing is no longer just about the printer price. Consumables and maintenance have become the main factors to determine your cost of ownership.
+    fourth_section_text_left: Thanks to the clever design, the Xaar piezo inkjet printers have a remarkably low ink usage and therefore offer a very low cost per print. These printers also allow you to code directly onto your carton or product eliminating the need for expensive label printers, labellers and labels.
+    fourth_section_text_right: Foenix Coding offers a range of printers which are keeping down cost of ownership. We are driven by a zero maintenance philosophy for small character printing. We are also working hard to offer the most user friendly industrial printer. Foenix printers work with a simple Windows PC software with pictorial keys and/or a very evolved and intuitive Touch controller.
+    fifth_section_title: All our products, printers, inks, consumables are MADE IN UK.
+    fifth_section_text_one: The software and hardware systems have been developed in collaboration with manufacturing and packaging professionals to help them with their daily challenges to print best before dates, batch codes, 2D barcodes, graphic logos and other requirements.
+    fifth_section_text_two: Our range of industrial Xaar based inkjet printers are maintenance free. These are specifically designed for industrial use in sectors such as food, beverage, automotive, construction, converting, medical devices, pharmaceutical, electronics and chemical...
+
+  inks_and_consumables:
+    first_section_text: Large Ink Cartridge Up to 15 million characters
+    first_card_title: Production friendly inks
+    first_card_text: For applications in the food, beverage, cosmetics, household goods, industrial and extrusion markets, we have high quality controlled inks that are virtually odourless and are not M.E.K based. We also offer coloured inks.
+    second_card_title: Sealed ink cartridge
+    second_card_text: An integral and replaceable ink cartridge maintains a clean ink system free of contamination. Our inks have a excellent adhesion and contrast on a wide range of porous and non-porous materials such as carton, metal, glass, paper, wood, and many plastics. Our inks offers outstanding performance under most common application conditions.
+    third_section_text: We now offer a High Adhesion Ink specially designed for PVC extrusion application. Get unprecedented print quality on PVC pipes!
 
 
 
