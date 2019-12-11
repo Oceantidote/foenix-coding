@@ -24,7 +24,7 @@
         <div class="about-second-section-right">
           <%= image_tag 'about-icon-1.png', class: 'about-icon' %>
           <h3>Our Mission</h3>
-          <p class="paragraph-text about-second-section-text">To increase the efficiency of your production line and help you with you product traceability challenges</p>
+          <p class="paragraph-text about-second-section-text inks-card-text">To increase the efficiency of your production line and help you with you product traceability challenges</p>
         </div>
       </div>
     </div>
@@ -70,29 +70,5 @@
       </div>
     </div>
   </div>
-  <div class="about-sixth-section-wrapper">
-    <div class="container">
-      <div class="about-sixth-section">
-        <div class="about-sixth-section-left">
-          <div class="about-button-card" style="background-image: url('<%= cl_image_path("Button_nqsfuo.png") %>')">
-            <p class="m-0">Come work with us</p>
-            <p class="m-0 paragraph-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing.
-            </p>
-          </div>
-        </div>
-        <div class="about-sixth-section-right">
-          <p>Get the latest newsletter</p>
-          <p class="paragraph-text">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.</p>
-          <%= form_tag root_path, method: :get, class: 'about-form' do %>
-            <%= text_field_tag :query, params[:query], class: "form-control about-form-input", placeholder: "laurenmayberry@example.com"
-            %>
-            <%= submit_tag "Subscribe", class: "about-form-button" %>
-          <% end %>
-          <p class="paragraph-text" style="font-size: 10px !important;">You can unsubscribe at any time. <span style="color: #F3A300">Read our privacy policy</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <%= render 'shared/newsletter' %>
 </div>
