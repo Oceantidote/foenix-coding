@@ -35,10 +35,6 @@
   }
 }
 
-.about-fifth-section-wrapper {
-  background: #FFF;
-}
-
 .about-sixth-section-wrapper {
   background-color: #F4F9FC;
   padding: 100px 0;
@@ -79,6 +75,8 @@
 
 .about-first-section-text {
   width: 75%;
+  position: relative;
+  z-index: 3;
   @include for-medium-devices-down {
     width: 80%;
     font-size: 28px;
