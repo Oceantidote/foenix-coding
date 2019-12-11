@@ -7,6 +7,15 @@ class PagesController < ApplicationController
   def about
   end
 
+  def inks_and_consumables
+  end
+
+  def distributor
+  end
+
   def faq
+  end
+
+  def send_email
   end
 end

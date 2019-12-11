@@ -1,0 +1,181 @@
+.distributor-first-section-wrapper {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 150px;
+  background: linear-gradient(#EBEFF6, #F6F7FA);
+}
+
+.distributor-second-section-wrapper {
+  background: linear-gradient(#F6F7FA, #FFFFFF);
+}
+
+.distributor-third-section-wrapper {
+  background-color: #FFFFFF;
+  position: relative;
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.distributor-section {
+  display: flex;
+}
+
+.distributor-first-section-left, .distributor-first-section-right {
+  width: 50%;
+}
+
+.distributor-first-section-left {
+  display: flex;
+  justify-content: center;
+}
+
+.distributor-graphic {
+  width: 100%;
+  @include for-large-devices-down {
+    height: 80%;
+  }
+  @include for-medium-devices-down {
+    height: 50%;
+  }
+  @include for-small-devices-down {
+    height: 30%;
+  }
+  @include for-phone-only {
+
+  }
+}
+
+.distributor-countries-container {
+  display: flex;
+}
+
+.distributor-left-section-text {
+  width: 60%;
+}
+
+.distributor-dots {
+  width: 50px;
+  margin-left: 400px;
+  @include for-large-devices-down {
+    margin-left: 350px;
+  }
+  @include for-medium-devices-down {
+    margin-left: 250px;
+  }
+  @include for-small-devices-down {
+    margin-left: 160px;
+  }
+  @include for-phone-only {
+  }
+}
+
+.distributor-dots-two {
+  width: 50px;
+  position: absolute;
+  top: 80px;
+  left: 40%;
+}
+
+.country-card {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  img {
+    width: 30px;
+    border-radius: 50%;
+  }
+  p {
+    margin: 0 0 0 8px;
+    font-size: 12px;
+  }
+}
+
+.distributor-second-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.distributor-slant {
+  width: 100%;
+  position: absolute;
+  top: -350px;
+  @include for-xxlarge-devices-up {
+    top: -500px;
+  }
+  @include for-xxxlarge-devices-up {
+    top: -700px;
+  }
+  // @include for-medium-devices-down {
+  //   top: -130px;
+  // }
+}
+
+.distributor-pill {
+  position: absolute;
+  width: 120px;
+  top: 0;
+  left: 0;
+}
+
+.countries-column {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.distributor-contact-us-form {
+  background: #FFF;
+  position: relative;
+  z-index: 3;
+  padding: 24px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 50%;
+  margin: 16px;
+}
+
+.send_email {
+  input, textarea {
+    background-color: #F5F6F7;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+  }
+  textarea {
+    height: 150px;
+  }
+  input::placeholder, textarea::placeholder {
+    font-size: 14px;
+    color: #717B8D;
+  }
+}
+
+.contact-form-button {
+  background: #FFAD00;
+  color: #FFF;
+  font-size: 14px;
+  padding: 10px 20px;
+  &:hover {
+    color: #FFF;
+  }
+}
+
+.distributor-interested {
+  padding: 16px;
+  width: 50%;
+  position: relative;
+  z-index: 3;
+  h3 {
+    color: #FFF;
+  }
+}
+
+.double-section-container {
+  background-size: contain;
+}
+
+

@@ -1,0 +1,58 @@
+<div class="distributor-wrapper">
+  <div class="distributor-first-section-wrapper">
+    <div class="container">
+      <div class="distributor-section">
+        <div class="distributor-first-section-left">
+          <div class="distributor-left-section-text">
+            <h1 class=""><%= t("distributor.first_section_title") %></h1>
+            <p class="paragraph-text"><%= t("distributor.first_section_text") %></p>
+            <%= image_tag 'about-dots.png', class: 'distributor-dots' %>
+          </div>
+        </div>
+        <div class="distributor-first-section-right d-flex justify-content-center">
+          <%= cl_image_tag("distributor-continents_l9lnki.png", :quality=>"auto", class: "distributor-graphic") %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="distributor-second-section-wrapper">
+    <div class="container">
+      <div class="distributor-second-section">
+        <h3 class=""><%= t("distributor.second_section_title") %>:</h3>
+        <div class="distributor-countries-container">
+          <%= render 'shared/distributor_countries' %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="distributor-third-section-wrapper">
+    <%#= cl_image_tag("about-little-pill-sliced_z6varw.png", :quality=>"auto", class: "distributor-pill") %>
+    <%= cl_image_tag("distributor-slant_hgpm00.png", :quality=>"auto", class: "distributor-slant") %>
+    <div class="container">
+      <%= image_tag 'about-dots.png', class: 'distributor-dots-two' %>
+      <div class="distributor-section">
+        <div class="distributor-contact-us-form">
+          <%= simple_form_for :send_email, url: send_email_path, method: :get do |f| %>
+            <div class="contact-form-name">
+              <div class="row">
+                <div class="col-12">
+                  <%= f.input :first_name, label: false, placeholder:'first name', input_html: { class: "contact-first-name" } %>
+                </div>
+              </div>
+            </div>
+              <%= f.input :email, label: false, placeholder:'email' %>
+            <%= f.input :message, as: :text, label: false, placeholder:'type your message here', input_html: { class: "contact-message" } %>
+            <%= f.button :button, 'Submit', type: :submit,  class: "contact-form-button" %>
+          <% end %>
+        </div>
+        <div class="distributor-interested">
+          <%= image_tag 'distributor-icon.png', class: 'about-icon' %>
+          <h3><%= t("distributor.third_section_title") %></h3>
+          <p class="paragraph-text"><%= t("distributor.third_section_text") %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/newsletter' %>

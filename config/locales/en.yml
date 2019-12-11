@@ -132,6 +132,60 @@ en:
     second_card_text: An integral and replaceable ink cartridge maintains a clean ink system free of contamination. Our inks have a excellent adhesion and contrast on a wide range of porous and non-porous materials such as carton, metal, glass, paper, wood, and many plastics. Our inks offers outstanding performance under most common application conditions.
     third_section_text: We now offer a High Adhesion Ink specially designed for PVC extrusion application. Get unprecedented print quality on PVC pipes!
 
+  distributor:
+    first_section_title: Global Reach
+    first_section_text: Wherever you are in the world, one of our distributors are close by. We are present on every continent and offer support in your language and time zone.
+    second_section_title: Foenix has distributors in
+    third_section_title: Interested in joining the Foenix Coding Family?
+    third_section_text:  We are excited to have a growing network of distribution partners marketing Foenix products around the world. We are currently inviting companies to join our international distributor network to promote our new range of printers to new markets.  Fill up this form and we’ll be in touch shortly to discuss this opportunity
+
+  distributor_countries:
+    uk: UK
+    indonesia: Indonesia
+    south_africa: South Africa
+    france: France
+    austria: Austria
+    peru: Peru
+    turkey: Turkey
+    venezuela: Venezuela
+    malaysia: Malaysia
+    vietnam: Vietnam
+    saudi_arabia: Saudi Arabia
+    egypt: Egypt
+    greece: Greece
+    spain: Spain
+    latvia: Latvia
+    netherlands: Netherlands
+    sri_lanka: Sri Lanka
+    italy: Italy
+    croatia: Croatia
+    brazil: Brazil
+    hungary: Hungary
+    portugal: Portugal
+    lithuania: Lithuania
+    ivory_coast: Ivory Coast
+    poland: Poland
+    malta: Malta
+    philippines: Philippines
+    uae: UAE
+    chile: Chile
+    australia: Australia
+    usa: USA
+    argentina: Argentina
+    india: India
+    bulgaria: Bulgaria
+    israel: israel
+    singapore: Singapore
+    germany: Germany
+    guatemala: Guatemala
+    china: China
+    ireland: Ireland
+    morocco: Morocco
+    nigeria: Nigeria
+    sweden: Sweden
+    be_the_next: Be the next one
+    
   components:
     yellow_button: Learn More
+
 

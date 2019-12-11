@@ -36,6 +36,8 @@
 }
 
 .about-sixth-section-wrapper {
+  position: relative;
+  z-index: 3;
   background-color: #F4F9FC;
   padding: 100px 0;
   @include for-small-devices-down {
