@@ -12,5 +12,7 @@ Rails.application.routes.draw do
     resources :jobs, only: [:index, :show]
     get '/about', to: 'pages#about'
     get '/inks_and_consumables', to: 'pages#inks_and_consumables'
+    get '/distributor', to: 'pages#distributor'
+    get '/send_email', to: 'pages#send_email'
   # end
 end
