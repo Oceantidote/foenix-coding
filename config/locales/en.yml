@@ -36,6 +36,72 @@ en:
     title: Frequently Asked Questions
     tagline: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi quod laudantium asperiores a consectetur, repudiandae at, debitis dicta, exercitationem reprehenderit aliquam quis iusto laborum nostrum libero suscipit magni! Vero.
 
+  home:
+    # FIRST SECTION
+    title: Coding and Marking Made
+    title_span: Easy
+    title_description: Plug-and-play Industrial inkjet Printer for all types of production lines.
+    #SECOND SECTION
+    title_second: Stress-free product traceability
+    title_second_description: Take your product traceability to all new level by printing in any languages, any fonts and in high resolution on any product
+    second_column_title: Code Everything
+    second_column_title_description: Lorem ipsum dolor sit amet, consectetur.
+    second_column_one: Text
+    second_column_two: Use by date
+    second_column_three: Time
+    second_column_four: Lot number
+    second_column_five: Logo
+    second_column_six: Barcodes
+    second_column_one_one: QR Codes
+    second_column_two_two: Counter
+    second_column_three_three: Shift
+    second_column_four_four: Variable Data
+    second_column_five_five: External Data
+    second_column_title_two: Print on Anything
+    second_column_two_one: Glass
+    second_column_two_two: Plastic
+    second_column_two_three: Metal
+    second_column_two_four: Carton
+    second_column_two_five: PVC
+    second_column_two_six: Rubber
+    second_column_two_seven: Egg
+    second_column_two_one_one: Wood
+    second_column_two_two_two: Timber
+    second_column_two_three_three: Plastiboard
+    second_column_two_four_four: Carpet
+    second_column_two_five_five: Films/foils
+    second_column_two_six_six: Paper
+    second_column_two_seven_seven: Pipes
+    #THIRD SECTION
+    tabs_title: One software with tons of features
+    tabs_one: Lorem ipsum
+    tabs_one_title: Zero Downtime, No Maintenance
+    tabs_one_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_one_bottom: From emerging businesses with 1 small production line to
+    tabs_two: Dolor sit
+    tabs_two_title: Zero Downtime, No Maintenance
+    tabs_two_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_two_bottom: From emerging businesses with 1 small production line to
+    tabs_three: Amet bolor
+    tabs_three_title: Zero Downtime, No Maintenance
+    tabs_three_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_three_bottom: From emerging businesses with 1 small production line to
+    tabs_four: Sianisi
+    tabs_four_title: Zero Downtime, No Maintenance
+    tabs_four_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_four_bottom: From emerging businesses with 1 small production line to
+    tabs_five: Lorempsi
+    tabs_five_title: Zero Downtime, No Maintenance
+    tabs_five_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_five_bottom: From emerging businesses with 1 small production line to
+    tabs_six: Superfot
+    tabs_six_title: Zero Downtime, No Maintenance
+    tabs_six_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_six_bottom: From emerging businesses with 1 small production line to
+    #FOURTH SECTION
+    fourth_title: Trusted by businesses from every industies
+    fourth_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime, automate manual processes and improve product quality with high resolution coding.
+
   newsletter:
     card_title: Come work with us
     card_text: Lorem ipsum dolor sit amet, consectetur adipiscing.
@@ -45,7 +111,7 @@ en:
     placeholder: laurenmayberry@example.com
     unsubscribe: You can unsubscribe at any time.
     privacy: Privacy Policy
-
+    
   about:
     first_section_text: Your Complex coding and marking challenges don't require complex and expensive solution
     second_section_title: Our Mission
@@ -66,6 +132,6 @@ en:
     second_card_text: An integral and replaceable ink cartridge maintains a clean ink system free of contamination. Our inks have a excellent adhesion and contrast on a wide range of porous and non-porous materials such as carton, metal, glass, paper, wood, and many plastics. Our inks offers outstanding performance under most common application conditions.
     third_section_text: We now offer a High Adhesion Ink specially designed for PVC extrusion application. Get unprecedented print quality on PVC pipes!
 
-
-
+  components:
+    yellow_button: Learn More
 
