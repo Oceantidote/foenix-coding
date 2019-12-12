@@ -1,0 +1,67 @@
+.ownership-wrapper {
+  overflow: hidden;
+}
+
+.ownership-first-section-wrapper {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.ownership-second-section-wrapper {
+  background: linear-gradient(#F6F7FA, #FFFFFF);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.ownership-third-section-wrapper {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.ownership-slider {
+  width: 60%;
+  @include for-medium-devices-down {
+    width: 70%;
+  }
+  @include for-small-devices-down {
+    width: 80%;
+  }
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
+.ownership-big-pill {
+  position: absolute;
+  width: 300px;
+  top: 290px;
+  right: -20px;
+  // @include for-large-devices-down {
+  //   right: -395px;
+  // }
+}
+
+.ownership-little-pill {
+  position: absolute;
+  width: 120px;
+  top: 430px;
+  left: -50px;
+  // @include for-large-devices-down {
+  //   left: -430px;
+  // }
+}
+
+.ownership-second-section-text {
+  width: 32%;
+  @include for-medium-devices-down {
+    width: 50%;
+  }
+  @include for-phone-only {
+    width: 90%;
+  }
+}
