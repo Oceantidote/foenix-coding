@@ -111,7 +111,7 @@ en:
     placeholder: laurenmayberry@example.com
     unsubscribe: You can unsubscribe at any time.
     privacy: Privacy Policy
-    
+
   about:
     first_section_text: Your Complex coding and marking challenges don't require complex and expensive solution
     second_section_title: Our Mission
@@ -184,8 +184,15 @@ en:
     nigeria: Nigeria
     sweden: Sweden
     be_the_next: Be the next one
-    
+
   components:
     yellow_button: Learn More
+
+  contact:
+    contact_title: Contact Us
+    contact_title_description: Get in touch and let us know how we can help.
+    icon_text: Our team is happy to answer all your questions. Fill out the form and we'll be in touch as soon as possible.
+    icon_text_two: Free test print, send us a sample of your product and we'll do a test print.
+
 
 
