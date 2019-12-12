@@ -1,8 +1,18 @@
+.distributor-wrapper {
+  overflow: hidden;
+}
+
 .distributor-first-section-wrapper {
   position: relative;
   padding-top: 200px;
   padding-bottom: 150px;
   background: linear-gradient(#EBEFF6, #F6F7FA);
+  @include for-small-devices-down {
+    padding-bottom: 50px;
+  }
+  @include for-phone-only {
+    padding-top: 150px;
+  }
 }
 
 .distributor-second-section-wrapper {
@@ -16,14 +26,42 @@
   display: flex;
   align-items: center;
   padding-bottom: 200px;
+  @include for-phone-only {
+    padding-bottom: 0;
+    display: none;
+  }
+}
+
+.distributor-third-section-mobile {
+  background-color: #FFFFFF;
+  position: relative;
+  @include for-small-devices-up {
+    display: none;
+  }
+}
+
+.distributor-third-section-mobile-two {
+  background-color: #23232C;
+  padding: 16px;
+  padding-bottom: 50px;
+  @include for-small-devices-up {
+    display: none;
+  }
 }
 
 .distributor-section {
   display: flex;
+  @include for-small-devices-down {
+    flex-direction: column;
+  }
 }
 
 .distributor-first-section-left, .distributor-first-section-right {
   width: 50%;
+  @include for-small-devices-down {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .distributor-first-section-left {
@@ -43,16 +81,15 @@
     height: 30%;
   }
   @include for-phone-only {
-
+    margin: 50px 0;
   }
-}
-
-.distributor-countries-container {
-  display: flex;
 }
 
 .distributor-left-section-text {
   width: 60%;
+  @include for-small-devices-down {
+    width: 100%;
+  }
 }
 
 .distributor-dots {
@@ -68,6 +105,7 @@
     margin-left: 160px;
   }
   @include for-phone-only {
+    display: none;
   }
 }
 
@@ -76,6 +114,9 @@
   position: absolute;
   top: 80px;
   left: 40%;
+  @include for-phone-only {
+    display: none;
+  }
 }
 
 .country-card {
@@ -85,10 +126,24 @@
   img {
     width: 30px;
     border-radius: 50%;
+    @include for-small-devices-down {
+      width: 25px;
+    }
   }
   p {
     margin: 0 0 0 8px;
     font-size: 12px;
+    @include for-phone-only {
+      margin: 0;
+    }
+  }
+  @include for-small-devices-down {
+    margin: 5px 0;
+  }
+  @include for-phone-only {
+    flex-direction: column;
+    margin: 10px 0;
+
   }
 }
 
@@ -97,6 +152,14 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  h3 {
+    @include for-phone-only {
+      text-align: center;
+    }
+  }
+  @include for-small-devices-down {
+    width: 90%;
+  }
 }
 
 .distributor-slant {
@@ -109,9 +172,20 @@
   @include for-xxxlarge-devices-up {
     top: -700px;
   }
-  // @include for-medium-devices-down {
-  //   top: -130px;
-  // }
+  @include for-medium-devices-down {
+    top: -200px;
+  }
+  @include for-small-devices-down {
+    top: -100px;
+  }
+  @include for-phone-only {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+.distributor-slant-mobile {
+  width: 100%;
 }
 
 .distributor-pill {
@@ -136,6 +210,10 @@
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   width: 50%;
   margin: 16px;
+  @include for-small-devices-down {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .send_email {
@@ -171,11 +249,94 @@
   z-index: 3;
   h3 {
     color: #FFF;
+    @include for-phone-only {
+      text-align: center;
+    }
+  }
+  p {
+    @include for-phone-only {
+      text-align: center;
+    }
+  }
+  @include for-small-devices-down {
+    width: 100%;
   }
 }
 
 .double-section-container {
   background-size: contain;
 }
+
+.distributor-contact {
+  margin-top: 200px;
+}
+
+.container-countries {
+  margin: 0 auto;
+  @include for-small-devices-down {
+    margin: 0 10px;
+  }
+  @include for-medium-devices-up {
+    max-width: 720px;
+  }
+  @include for-large-devices-up {
+    max-width: 960px;
+  }
+  @include for-xlarge-devices-up {
+    max-width: 1140px;
+  }
+}
+
+.distributor-countries-web {
+  display: flex;
+  @include for-phone-only {
+    display: none;
+  }
+}
+
+.distributor-countries-mobile {
+  max-height: 380px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  @include for-small-devices-up {
+    display: none;
+  }
+}
+
+.distributor-icon-mobile {
+  width: 90px;
+  position: absolute;
+  bottom: 5px;
+  right: calc(50% - 35px);
+}
+
+.distributor-see-more {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.see-more-button {
+  background-color: #FFEFD7;
+  padding: 15px 20px;
+  width: 140px;
+  border-radius: 5px;
+  cursor: pointer;
+  p {
+    color: #FFAD12;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+  }
+  @include for-small-devices-up {
+    display: none;
+  }
+}
+
+.change-height {
+  max-height: 4000px !important;
+}
+
 
 
