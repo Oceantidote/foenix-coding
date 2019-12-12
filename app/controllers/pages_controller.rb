@@ -16,6 +16,9 @@ class PagesController < ApplicationController
   def cost_of_ownership
   end
 
+  def fxone_remote
+  end
+
   def faq
   end
 

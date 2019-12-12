@@ -174,7 +174,7 @@ en:
     argentina: Argentina
     india: India
     bulgaria: Bulgaria
-    israel: israel
+    israel: Israel
     singapore: Singapore
     germany: Germany
     guatemala: Guatemala
@@ -190,6 +190,37 @@ en:
     first_section_text: "Helping businesses improve efficiency: Avoid getting locked into an expensive inkjet printer that will drain your budget over time. Learn warranty details, service terms, maintenance/repairs costs, ink & consumables costs. Gain the confidence to choose the most cost-effective solution for your business. Calculate the total cost of ownership of your printer before taking a decision"
     second_section_title: Savings/ROI Calculator
     second_section_text: Easily control your cost per print and the number of print per cartridge. It has never been easier to keep your cost down! Save up to 75% of ink  with our Ink saver mode
+
+  fxone_remote:
+    first_section_title: BLANK REMOTE
+    first_section_text: Printer for all your product coding application
+    second_section_title: Overview
+    first_card_title: High Resolution Coding & Marking
+    first_card_text: 1 to 8 lines of print, with 2-18mm print height.
+    second_card_title: Pc Connectivity
+    second_card_text: Via USB cable or Ethernet for direct message creation or factory network system.
+    third_card_title: Graphics, Logos & Barcodes
+    third_card_text: Easily import JPEG & BMP graphics using Sauven Pro software.
+    fourth_card_title: Simple Screen & Keyboard
+    fourth_card_text: For local control of printer speed and direction, and message delay.
+    fifth_card_title: Out of the Box Installation
+    fifth_card_text: With minimal components for maximum reliability.
+    sixth_card_title: 1D & 2D Barcodes
+    sixth_card_text: High resolution printing of multiple barcode variants.
+    seventh_card_title: 2 Years Warranty
+    seventh_card_text: You already have the peace of mind of a two years warranty. Now, you can extend it for one, two or three more years
+    eigth_card_title: Touch Controller
+    eigth_card_text: Simple interactive windows programming with Foenix App
+    ninth_card_title: Stand Alone Printer
+    ninth_card_text: Use a USB stick to transfer print messages from Foenix App
+    tenth_card_title: True Type Font & Unicode
+    tenth_card_text: Enables message creation in any font and in any language
+    eleventh_card_title: Large Solvent Based Ink Catridge
+    eleventh_card_text: Low cost coding and clean inking system, ideal for printing on to porous and non-porous surfaces.
+    twelfth_card_title: Multi Port Connection
+    twelfth_card_text: For encoders, external alarms and alternative product detection devices.
+    thirteenth_card_title: Ink Saver Mode
+    thirteenth_card_text: Reduce ink consumption by up to 50%
 
   components:
     yellow_button: Learn More

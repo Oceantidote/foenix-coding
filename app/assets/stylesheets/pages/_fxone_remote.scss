@@ -1,0 +1,74 @@
+.fxone-wrapper {
+}
+
+.fxone-first-section-wrapper {
+  padding-top: 100px;
+  padding-bottom: 0;
+  background: linear-gradient(#EBEFF6, #F6F7FA);
+}
+
+.fxone-second-section-wrapper {
+  position: relative;
+}
+
+.fxone-third-section-wrapper {
+  background-color: #FFF;
+}
+
+.fxone-section {
+  padding-top: 0;
+}
+
+.fxone-dots {
+  position: absolute;
+  width: 60px;
+  top: 0;
+  left: 20%;
+}
+
+.fxone-big-pill {
+  position: absolute;
+  width: 300px;
+  top: 340px;
+  right: -120px;
+  z-index: 4;
+  // @include for-large-devices-down {
+  //   right: -395px;
+  // }
+}
+
+.fxone-little-pill {
+  position: absolute;
+  width: 230px;
+  top: 540px;
+  left: -100px;
+  z-index: 2;
+  // @include for-large-devices-down {
+  //   left: -430px;
+  // }
+}
+
+.fxone-cards {
+  margin: 0 auto;
+  @include for-large-devices-up {
+    width: 80%;
+  }
+  @include for-xlarge-devices-up {
+    width: 75%;
+  }
+}
+
+.fxone-card {
+  background: #FFF;
+  border: 1px solid #000;
+  border-radius: 10px;
+  // padding: 0 16px 16px 0;
+  position: relative;
+  z-index: 4;
+  margin: 15px 0;
+  height: 250px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  p {
+    padding: 0 16px;
+  }
+}
