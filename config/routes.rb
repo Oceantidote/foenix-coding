@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get '/about', to: 'pages#about'
     get '/inks_and_consumables', to: 'pages#inks_and_consumables'
     get '/distributor', to: 'pages#distributor'
+    get '/cost_of_ownership', to: 'pages#cost_of_ownership'
     get '/send_email', to: 'pages#send_email'
   # end
 end

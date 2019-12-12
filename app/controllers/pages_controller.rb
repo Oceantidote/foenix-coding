@@ -13,6 +13,9 @@ class PagesController < ApplicationController
   def distributor
   end
 
+  def cost_of_ownership
+  end
+
   def faq
   end
 
