@@ -5,12 +5,12 @@
   <div class="contact_details">
     <div class="contact-form">
       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
-          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-          <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
-          <input type="email" name="_replyto" id="email-address" placeholder="Phone" required="">
-          <input type="email" name="_replyto" id="email-address" placeholder="Company" required="">
-          <input type="email" name="_replyto" id="email-address" placeholder="Country" required="">
-          <textarea rows="5" name="message" id="message" placeholder="Your Message" required=""></textarea>
+          <input type="text" name="name" id="full-name" placeholder="<%= t('contact.form_name') %>" required="">
+          <input type="email" name="_replyto" id="email-address" placeholder="<%= t('contact.form_email') %>" required="">
+          <input type="text" name="phone" id="phone" placeholder="<%= t('contact.form_phone') %>" required="">
+          <input type="text" name="company" id="company" placeholder="<%= t('contact.form_company') %>" required="">
+          <input type="text" name="country" id="country" placeholder="<%= t('contact.form_country') %>" required="">
+          <textarea rows="5" name="message" id="message" placeholder="<%= t('contact.form_message') %>" required=""></textarea>
           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
         <input type="submit" value="Submit">
       </form>

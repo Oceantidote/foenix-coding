@@ -230,7 +230,15 @@ en:
     contact_title_description: Get in touch and let us know how we can help.
     icon_text: Our team is happy to answer all your questions. Fill out the form and we'll be in touch as soon as possible.
     icon_text_two: Free test print, send us a sample of your product and we'll do a test print.
+    form_name: First Name and Last Name
+    form_email: Email Address
+    form_company: Company
+    form_country: Country
+    form_message: Your Message
+    form_phone: Phone
 
+  error:
+    four_four_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula libero.
 
 
 
