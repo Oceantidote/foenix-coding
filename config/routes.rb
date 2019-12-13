@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     get '/distributor', to: 'pages#distributor'
     get '/cost_of_ownership', to: 'pages#cost_of_ownership'
     get '/fxone_remote', to: 'pages#fxone_remote'
+    get '/fxone_standard', to: 'pages#fxone_standard'
     get '/send_email', to: 'pages#send_email'
   # end
 end

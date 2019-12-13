@@ -19,6 +19,9 @@ class PagesController < ApplicationController
   def fxone_remote
   end
 
+  def fxone_standard
+  end
+
   def faq
   end
 
