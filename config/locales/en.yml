@@ -221,6 +221,56 @@ en:
     twelfth_card_text: For encoders, external alarms and alternative product detection devices.
     thirteenth_card_title: Ink Saver Mode
     thirteenth_card_text: Reduce ink consumption by up to 50%
+    fourth_section_title: Specification
+    fifth_section_left_title: Features
+    fifth_section_left_one: Prints in any orientation
+    fifth_section_left_two: 1 to 8 lines of print
+    fifth_section_left_three: 2mm- 18mm total print height
+    fifth_section_left_four: High resolution peizo print head
+    fifth_section_left_five: Prints text, graphics, logos and barcodes
+    fifth_section_left_six: Prints time and multiple date formats
+    fifth_section_left_seven: Continuous repeat print capability
+    fifth_section_left_eight: 100m/min print speed (50m/min for barcode and 2mm text)
+    fifth_section_left_nine: Single start/stop print button
+    fifth_section_left_ten: Visual alarm indicator including ink low
+    fifth_section_left_eleven: Message width, delay and print direction control
+    fifth_section_left_twelve: Product detection photocell
+    fifth_section_left_thirteen: Weight 1.7 Kg (excluding ink catridge and brackets)
+    fifth_section_left_fourteen: Size 242 x 178 x 90mm
+    fifth_section_right_title_one: Connectivity
+    fifth_section_right_one: RS232 and RS485 for Sauven Touch controller
+    fifth_section_right_two: USB-A memory stick included
+    fifth_section_right_three: USB-B for cable connection
+    fifth_section_right_four: Ethernet (optional)
+    fifth_section_right_five: Prints text, graphics, logos and barcodes
+    fifth_section_right_six: I/O port for encoder, alarm beacon and external photocells
+    fifth_section_right_title_two: Ink
+    fifth_section_right_seven: Sealed replaceable ink catridge (up to 15 million characters)
+    fifth_section_right_eight: Oil based inks for porous surfaces
+    fifth_section_right_nine: Solvent based inks for non-porous surfaces
+    fifth_section_right_ten: UV inks for instant LED curing
+    fifth_section_right_eleven: Various colours
+    fifth_section_right_title_three: Electrical
+    fifth_section_right_twelve: 90-260 VAC to 24VDC power supply included
+    sixth_section_title: Reliable, Powerful, Versatile PRODUCTION READY
+    sixth_section_left_sub_title_one: No costly maintenance contracts
+    sixth_section_left_sub_text_one: Foenix printers are manufactured with minimal components to give maximum reliability. No pumps, no valves, no compressed air, no droplet charging and no air filters means low maintenance.
+    sixth_section_left_sub_title_two: Lowest cost per print
+    sixth_section_left_sub_text_two: The piezo technology used in the Foenix printer only needs a single sealed ink cartridge and does not require additional make-up solvent. This substantially reduces operating costs.
+    sixth_section_left_sub_title_three: Consistent print performance
+    sixth_section_left_sub_text_three: Foenix printers are printing in High Resolution. You can print logo, 1D and 2D barcodes, variables...
+    sixth_section_left_sub_title_four: Operator confidence
+    sixth_section_left_sub_text_four: Easy installation, message editing and programming & easy maintenance.
+    sixth_section_right_sub_title_one: Proven technology
+    sixth_section_right_sub_text_one: Uses a Xaar high resolution print head whose technology has already been proven with many thousands of printers successfully sold worldwide. Xaar logo
+    sixth_section_right_sub_title_two: System integration
+    sixth_section_right_sub_text_two: Integrate to a factory network system or connect to industrial scanners, encoders, check weighers or other equipment as required.
+    sixth_section_right_sub_title_three: "100% uptime 0%downtime Print 24x7 – Certified to run 24x7"
+    sixth_section_right_sub_text_three: Never stop printing even when you’re changing cartridge!
+    sixth_section_right_sub_title_four: Innovation Automatic shutter
+    sixth_section_right_sub_text_four: "To protect the most critical part of your printer: the printhead engine"
+    seventh_section_title: Flawless prints, every time
+    seventh_section_text: We value simplicity and ease of use. Less is more. Simplest, most efficient way possible to code your product. Less components for maximum reliability.
 
   components:
     yellow_button: Learn More
