@@ -20,7 +20,21 @@
       <div class="distributor-second-section">
         <h3 class=""><%= t("distributor.second_section_title") %>:</h3>
         <div class="distributor-countries-container">
-          <%= render 'shared/distributor_countries' %>
+          <%#= render 'shared/distributor_countries' %>
+          <div class="distributor-countries-web">
+            <div class="row" style="margin: 0;">
+              <% @countries.each do |country| %>
+                <div class="country-card" style="width: 20%;">
+                  <%= image_tag url_for(country.photo) %>
+                  <p class="paragraph-text"><%= country.name %></p>
+                </div>
+              <% end %>
+              <div class="country-card" style="width: 20%;">
+                <%= image_tag 'distributor-plus-icon.png' %>
+                <p class="paragraph-text"><%= t("distributor_countries.be_the_next") %></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
