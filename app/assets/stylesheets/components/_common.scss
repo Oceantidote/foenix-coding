@@ -274,3 +274,53 @@
   .paginator-container {
     padding-bottom: 30px;
   }
+
+
+//space
+  .space-20 {
+    height: 20px;
+    width: 100%
+  }
+
+  .space-40 {
+    height: 40px;
+    width: 100%
+  }
+
+  .space-60 {
+    height: 60px;
+    width: 100%
+  }
+
+  .space-80 {
+    height: 80px;
+    width: 100%
+  }
+
+  .space-100 {
+    height: 100px;
+    width: 100%
+  }
+
+//line-heights
+
+  .lh-20 {
+    line-height: 20px;
+  }
+
+  .lh-25 {
+    line-height: 25px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+
+// responsive text
+  .w-50-m-80 {
+    width: 50%;
+
+    @include for-phone-only {
+      width: 80%;
+    }
+  }

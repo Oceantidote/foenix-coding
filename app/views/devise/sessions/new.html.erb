@@ -9,11 +9,13 @@
                     required: false,
                     autofocus: true,
                     label: false,
-                    input_html: { autocomplete: "email" } %>
+                    placeholder: "#{t('login.email')}",
+                    input_html: { autocomplete: "#{t('login.email')}" } %>
         <%= f.input :password,
                     required: false,
                     label: false,
-                    input_html: { autocomplete: "current-password" } %>
+                    placeholder: "#{t('login.password')}",
+                    input_html: { autocomplete: "#{t('login.password')}" } %>
       </div>
 
       <div class="form-actions">
@@ -22,9 +24,9 @@
     <% end %>
 
     <div class="login-other">
-      <%= link_to "Forgot your password?", new_password_path(resource_name), class: "forgot-password" %>
+      <%= link_to t('login.fpassword'), new_password_path(resource_name), class: "forgot-password" %>
       <hr>
-      <p>Dont have an account? <%= link_to 'Sign Up' %></p>
+      <p><%= t('login.dont_have_account') %> <%= link_to t('login.sign_up') %></p>
     </div>
   </div>
 </div>

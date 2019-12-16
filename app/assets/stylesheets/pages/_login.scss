@@ -60,7 +60,8 @@
   & input {
     width: 100%;
     height: 50px;
-    border: 0;
+    background-color: #F0F5FF;
+    border: 1px solid #fafafa;
     border-radius: 5px;
     padding: 10px;
     color: #7C828F;
@@ -70,22 +71,6 @@
     &:focus, :active {
       outline: none;
       border: 0;
-    }
-  }
-
-  & textarea {
-    margin: 20px 0 0 0;
-    border: 0;
-    width: 100%;
-    border-radius: 5px;
-    padding: 10px;
-    color: #7C828F;
-    font-weight: 300;
-
-    &:focus, :active {
-      outline: 0;
-      border: none;
-      border-radius: 5px;
     }
   }
 
