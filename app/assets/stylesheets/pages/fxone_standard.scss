@@ -1,12 +1,34 @@
 .fxone-standard-slant {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  top: -150px;
+}
+
+.fxone-standard-block {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 90%;
+  @include for-small-devices-up {
+    height: 80%;
+  }
+  @include for-medium-devices-up {
+    height: 65%;
+  }
+  @include for-large-devices-up {
+    height: 50%;
+  }
+  @include for-xlarge-devices-up {
+    display: none;
+  }
 }
 
 .fxone-standard {
-  // .fxone-third-section-wrapper {
-  //   background: linear-gradient(#FFFFFF 50%, #23222C 50%);
-  // }
+  .fxone-third-section-wrapper {
+    padding-bottom: 50px;
+  }
+  .fxone-fourth-section-wrapper {
+    position: relative;
+  }
 }
 
