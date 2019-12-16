@@ -326,5 +326,10 @@ en:
   error:
     four_four_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula libero.
 
-
+  login:
+    fpassword: Forgot your password?
+    dont_have_account: Don't have an account?
+    sign_up: Sign Up
+    email: Email
+    password: Password
 
