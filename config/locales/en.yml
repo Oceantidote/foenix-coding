@@ -303,6 +303,11 @@ en:
     thirteenth_card_title: Ink Saver Mode
     thirteenth_card_text: Reduce ink consumption by up to 50%
 
+  fxone_plus:
+    first_section_title: BLANK PLUS
+    first_section_text: Printer for all your case coding application
+    coming_soon: Coming Soon...
+
   components:
     yellow_button: Learn More
 

@@ -1,0 +1,41 @@
+<div class="fxone-wrapper fxone-plus">
+  <div class="about-second-section-wrapper fxone-first-section-wrapper fxone-plus-wrapper">
+    <%= image_tag 'about-dots.png', class: 'fxone-plus-dots' %>
+    <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "fxone-plus-little-pill") %>
+    <div class="container">
+      <div class="about-section fxone-section">
+        <div class="about-second-section-left">
+          <h1><%= t("fxone_plus.first_section_title") %></h1>
+          <p class="paragraph-text about-second-section-text inks-card-text"><%= t("fxone_plus.first_section_text") %></p>
+        </div>
+        <div class="about-second-section-right">
+          <%= cl_image_tag("fxone-plus_n6k9lj.png", :quality=>"auto", class: "about-graphic about-graphic-two fxone-plus-graphic") %>
+          <div class="coming-soon" style="background-image: url('<%= cl_image_path "coming-soon-background_wjcoct.png" %>')">
+            <p class="coming-soon-text"><%= t("fxone_plus.coming_soon") %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render 'shared/newsletter' %>
+
+<script>
+  comingSoon = document.querySelector('.coming-soon');
+  image = document.querySelector('.fxone-plus-graphic');
+
+  image.addEventListener('mouseover', () => {
+    comingSoon.style.opacity = 1
+  })
+  image.addEventListener('mouseleave', () => {
+    comingSoon.style.opacity = 0
+  })
+  comingSoon.addEventListener('mouseover', () => {
+    comingSoon.style.opacity = 1
+    image.style.filter = 'blur(10px)'
+  })
+  comingSoon.addEventListener('mouseleave', () => {
+    comingSoon.style.opacity = 0
+    image.style.filter = ''
+  })
+</script>
