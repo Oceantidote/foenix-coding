@@ -10,8 +10,8 @@
       <div class="dropdown-menu" aria-labelledby="productsDropdown">
         <ul class="dropdown-menu-ul">
           <li><%= image_tag 'icon-1.png' %><%= link_to t("navbar.printers"), root_path %></li>
-          <li><%= image_tag 'icon-2.png' %><%= link_to t("navbar.software"), root_path %></li>
-          <li><%= image_tag 'icon-3.png' %><%= link_to t("navbar.inks"), root_path %></li>
+          <li><%= image_tag 'icon-2.png' %><%= link_to t("navbar.software"), software_path %></li>
+          <li><%= image_tag 'icon-3.png' %><%= link_to t("navbar.inks"), inks_and_consumables_path %></li>
         </ul>
       </div>
     </div>
@@ -21,9 +21,9 @@
       </a>
       <div class="dropdown-menu" aria-labelledby="serviceDropdown">
         <ul class="dropdown-menu-ul">
-          <li><%= image_tag 'icon-4.png' %><%= link_to t("navbar.distributors"), root_path %></li>
-          <li><%= image_tag 'icon-5.png' %><%= link_to t("navbar.cost"), root_path %></li>
-          <li><%= image_tag 'icon-6.png' %><%= link_to t("navbar.FAQ"), root_path %></li>
+          <li><%= image_tag 'icon-4.png' %><%= link_to t("navbar.distributors"), distributor_path %></li>
+          <li><%= image_tag 'icon-5.png' %><%= link_to t("navbar.cost"), cost_of_ownership_path %></li>
+          <li><%= image_tag 'icon-6.png' %><%= link_to t("navbar.FAQ"), faq_path %></li>
         </ul>
       </div>
     </div>
@@ -33,7 +33,7 @@
       </a>
       <div class="dropdown-menu" aria-labelledby="companyDropdown">
         <ul class="dropdown-menu-ul">
-          <li><%= image_tag 'icon-7.png' %><%= link_to t("navbar.about"), root_path %></li>
+          <li><%= image_tag 'icon-7.png' %><%= link_to t("navbar.about"), about_path %></li>
           <li><%= image_tag 'icon-8.png' %><%= link_to t("navbar.careers"), jobs_path %></li>
           <li><%= image_tag 'icon-9.png' %><%= link_to t("navbar.news"), root_path %></li>
         </ul>

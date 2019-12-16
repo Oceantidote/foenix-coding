@@ -20,5 +20,6 @@ Rails.application.routes.draw do
     get '/fxone_plus', to: 'pages#fxone_plus'
     get '/send_email', to: 'pages#send_email'
     get '/faq', to: 'pages#faq'
+    get '/software', to: 'pages#software'
   end
 end
