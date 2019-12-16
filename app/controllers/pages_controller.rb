@@ -11,6 +11,7 @@ class PagesController < ApplicationController
   end
 
   def distributor
+    @countries = Country.all
   end
 
   def cost_of_ownership
@@ -20,6 +21,9 @@ class PagesController < ApplicationController
   end
 
   def fxone_standard
+  end
+
+  def fxone_plus
   end
 
   def faq
