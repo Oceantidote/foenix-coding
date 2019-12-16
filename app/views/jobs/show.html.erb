@@ -1,3 +1,59 @@
-<div class="container">
-  <%= @job.title %>
+<div class="jobs-wrapper jobs-show-wrapper">
+  <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "jobs-big-pill") %>
+  <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill") %>
+  <div class="jobs-section">
+    <div class="job-content">
+      <div class="job-content-left">
+        <p class="s-medium-text mb-2"><%= t("jobs_show.roles_at") %></p>
+        <p class="s-medium-text main-body-text mb-2"><%= @job.location %></p>
+        <p class="s-medium-text main-body-text mb-2">Full time*</p>
+        <p class="s-medium-text main-body-text mb-2">New Business*</p>
+        <div class="job-social-links">
+          <i class="fab fa-facebook-square main-body-text mb-2 mr-2"></i>
+          <i class="fab fa-twitter main-body-text mb-2 mr-2"></i>
+          <i class="fab fa-linkedin main-body-text mb-2 mr-2"></i>
+        </div>
+        <%= link_to "#{ t("jobs_show.apply_now" ) }", '#', class: 'btn apply-now-button' %>
+      </div>
+      <div class="job-content-right">
+        <h3 style="letter-spacing: 1px;"><%= @job.title %></h3>
+        <div class="trix-text">
+          <%= raw @job.text1 %>
+          <%= raw @job.text2 %>
+        </div>
+        <p class="s-medium-text"><%= t("jobs_show.you_will") %>:</p>
+        <ul style="padding-left: 16px;">
+          <li class="main-body-text small-text"><%= @job.expectation1 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation2 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation3 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation4 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation5 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation6 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation7 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation8 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation9 %></li>
+          <li class="main-body-text small-text"><%= @job.expectation10 %></li>
+        </ul>
+        <p class="s-medium-text"><%= t("jobs_show.we_are_looking") %>:</p>
+        <ul style="padding-left: 16px;">
+          <li class="main-body-text small-text"><%= @job.responsibility1 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility2 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility3 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility4 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility5 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility6 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility7 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility8 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility9 %></li>
+          <li class="main-body-text small-text"><%= @job.responsibility10 %></li>
+        </ul>
+        <div class="apply-now-section">
+          <p class="main-body-text m-0"><%= t("jobs_show.we_look_forward") %></p>
+          <%= link_to "#{ t("jobs_show.apply_now" ) }", '#', class: 'btn apply-now-button' %>
+        </div>
+        <p class="main-body-text" style="font-style: italic;">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut m</p>
+      </div>
+    </div>
+  </div>
 </div>
+<%= render 'shared/newsletter' %>
