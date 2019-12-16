@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # scope "/:locale" do
+  scope "(:locale)", locale: /en|fr/ do
     root to: 'pages#home'
     get '/faq', to: 'pages#faq'
     devise_for :users
@@ -20,5 +20,5 @@ Rails.application.routes.draw do
     get '/fxone_plus', to: 'pages#fxone_plus'
     get '/send_email', to: 'pages#send_email'
     get '/faq', to: 'pages#faq'
-  # end
+  end
 end
