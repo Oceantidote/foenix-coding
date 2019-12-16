@@ -5,6 +5,9 @@
 .ownership-first-section-wrapper {
   position: relative;
   padding-bottom: 50px;
+  .ownership-big-pill {
+    z-index: 1;
+  }
 }
 
 .ownership-second-section-wrapper {
@@ -21,10 +24,18 @@
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  position: relative;
+  .coming-soon {
+    top: calc(50% - 60px);
+  }
 }
 
 .ownership-slider {
   width: 60%;
+  transition: all 0.3s ease;
+  &:hover {
+    filter: blur(10px);
+  }
   @include for-medium-devices-down {
     width: 70%;
   }
