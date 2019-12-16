@@ -23,7 +23,29 @@
   </div>
   <div class="ownership-third-section-wrapper">
     <%= cl_image_tag("ownership-slider_vuhnwc.png", :quality=>"auto", class: "ownership-slider") %>
+    <div class="coming-soon" style="background-image: url('<%= cl_image_path "coming-soon-background_wjcoct.png" %>')">
+      <p class="coming-soon-text"><%= t("fxone_plus.coming_soon") %></p>
+    </div>
   </div>
 </div>
-
 <%= render 'shared/newsletter' %>
+
+<script>
+  comingSoon = document.querySelector('.coming-soon');
+  image = document.querySelector('.ownership-slider');
+
+  image.addEventListener('mouseover', () => {
+    comingSoon.style.opacity = 1
+  })
+  image.addEventListener('mouseleave', () => {
+    comingSoon.style.opacity = 0
+  })
+  comingSoon.addEventListener('mouseover', () => {
+    comingSoon.style.opacity = 1
+    image.style.filter = 'blur(10px)'
+  })
+  comingSoon.addEventListener('mouseleave', () => {
+    comingSoon.style.opacity = 0
+    image.style.filter = ''
+  })
+</script>
