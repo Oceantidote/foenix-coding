@@ -32,6 +32,13 @@ en:
     title: FOENIX CODING is growing
     tagline: We are always looking for talented new friends that share our vision to push industry forward
 
+  jobs_show:
+    roles_at: Roles at
+    apply_now: Apply Now
+    you_will: You will
+    we_are_looking: We are looking for someone who has
+    we_look_forward: We look forward to hearing from you
+
   faq:
     title: Frequently Asked Questions
     tagline: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi quod laudantium asperiores a consectetur, repudiandae at, debitis dicta, exercitationem reprehenderit aliquam quis iusto laborum nostrum libero suscipit magni! Vero.
