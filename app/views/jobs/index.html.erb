@@ -1,73 +1,73 @@
-<div class="container">
-  <h1 class="text-center mt-5"><%= t("jobs.title") %></h1>
-  <h5 class="text-center mt-4 mb-5 grey w-50 mx-auto"><%= t("jobs.tagline") %></h5>
-  <%= simple_form_for :search, url: jobs_path, method: "GET" do |f| %>
-    <div class="search-bar">
-      <div class="input-holder">
-        <%= f.input :name, label: false %>
-        <i class="fas fa-search search-icon grey"></i>
-      </div>
-      <div class="input-holder">
-        <%= f.input :team, collection: ["I", "don't", "know", "what", "goes", "here", "yet"], label: false,  prompt: :translate %>
-        <i class="fas fa-user-friends search-icon grey"></i>
-      </div>
-      <div class="input-holder">
-        <%= f.input :country, collection: @countries, label: false,  prompt: :translate %>
-        <i class="fas fa-map-marker-alt search-icon grey"></i>
-      </div>
-      <div class="input-holder">
-        <%= f.input :job_type, collection: @types, label: false,  prompt: :translate %>
-        <i class="fas fa-list-ul search-icon grey"></i>
-      </div>
-    </div>
-    <%= f.submit "Search", class: "btn btn-primary temp-button" %>
-  <% end %>
-  <p class="text-center grey">
-    <% if params[:search] %>
-      <%= @results ? @results.length : @jobs.length %> roles
-      across <strong><%= params[:search][:country] != '' ? Country.find(params[:search][:country]).name : "all locations" %></strong>
-      and <strong><%= params[:search][:team] != '' ? params[:search][:team] : "all teams" %></strong>
-    <% else %>
-    <%= @jobs.length %> roles across <strong>all locations</strong> and <strong>all teams</strong>
-    <% end %>
-  </p>
-
-  <% if @results %>
-    <% @results.each do |result| %>
-      <%= link_to job_path(result), class: "text-decoration-none" do  %>
-        <div class="job-card">
-          <p class="m-0"><%= result.title %></p>
-          <p class="m-0"><%= result.job_type %></p>
-          <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %>
-            <span class="m-0 ml-3 grey"><%= result.location %></span>
+<div class="jobs-wrapper">
+  <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "jobs-big-pill") %>
+  <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill") %>
+  <div class="jobs-section">
+    <div class="container">
+      <h1 class="text-center mt-5" style="letter-spacing: 1px;"><%= t("jobs.title") %></h1>
+      <h5 class="text-center mt-4 mb-5 grey w-50 mx-auto main-body-text"><%= t("jobs.tagline") %></h5>
+      <%= simple_form_for :search, url: jobs_path, method: "GET" do |f| %>
+        <div class="search-bar">
+          <div class="input-holder">
+            <%= f.input :name, label: false %>
+            <i class="fas fa-search search-icon grey"></i>
+          </div>
+          <div class="input-holder">
+            <%= f.input :team, collection: ["I", "don't", "know", "what", "goes", "here", "yet"], label: false,  prompt: :translate %>
+            <i class="fas fa-user-friends search-icon grey"></i>
+          </div>
+          <div class="input-holder">
+            <%= f.input :country, collection: @countries, label: false,  prompt: :translate %>
+            <i class="fas fa-map-marker-alt search-icon grey"></i>
+          </div>
+          <div class="input-holder">
+            <%= f.input :job_type, collection: @types, label: false,  prompt: :translate %>
+            <i class="fas fa-list-ul search-icon grey"></i>
           </div>
         </div>
+        <%= f.submit "Search", class: "btn temp-button" %>
       <% end %>
-    <% end %>
-  <% else %>
-    <% @jobs.each do |job| %>
-      <%= link_to job_path(job), class: "text-decoration-none" do  %>
-        <div class="job-card">
-          <p class="m-0"><%= job.title %></p>
-          <p class="m-0"><%= job.job_type %></p>
-          <div class="m-0"><%= image_tag url_for(job.country.photo), class: "job-card-flag" %>
-            <span class="m-0 ml-3 grey"><%= job.location %></span>
-          </div>
-        </div>
+      <p class="text-center grey main-body-text s-medium-text">
+        <% if params[:search] %>
+          <%= @results ? @results.length : @jobs.length %> roles
+          across <span style="font-weight: bold !important;"><%= params[:search][:country] != '' ? Country.find(params[:search][:country]).name : "all locations" %></span>
+          and <span style="font-weight: bold !important;"><%= params[:search][:team] != '' ? params[:search][:team] : "all teams" %></span>
+        <% else %>
+        <%= @jobs.length %> roles across <span style="font-weight: bold !important;">all locations</span> and <span style="font-weight: bold !important;">all teams</span>
+        <% end %>
+      </p>
+
+      <% if @results %>
+        <% @results.each do |result| %>
+          <%= link_to job_path(result), class: "text-decoration-none" do  %>
+            <div class="job-card">
+              <p class="m-0"><%= result.title %></p>
+              <p class="m-0"><%= result.job_type %></p>
+              <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %>
+                <span class="m-0 ml-3 grey"><%= result.location %></span>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      <% else %>
+        <% @jobs.each do |job| %>
+          <%= link_to job_path(job), class: "text-decoration-none" do  %>
+            <div class="job-card">
+              <p class="m-0"><%= job.title %></p>
+              <p class="m-0"><%= job.job_type %></p>
+              <div class="m-0"><%= image_tag url_for(job.country.photo), class: "job-card-flag" %>
+                <span class="m-0 ml-3 grey"><%= job.location %></span>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
       <% end %>
-    <% end %>
-  <% end %>
 
-  <% if current_user %>
-    <%= link_to "New Job", new_admin_job_path %>
-  <% end %>
-
-  <div class="d-flex justify-content-between">
-    <div class="work-with-us-card">
-      <h4 class="m-0 ">Come work with us</h4>
-      <p class="m-0 grey">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+      <% if current_user %>
+        <%= link_to "New Job", new_admin_job_path, class: "btn new-job-button" %>
+      <% end %>
     </div>
-    <div class="newsletter-signup"></div>
   </div>
+
 </div>
+<%= render 'shared/newsletter' %>
 
