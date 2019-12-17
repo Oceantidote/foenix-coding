@@ -15,7 +15,7 @@
   <div class="all-news">
     <h1>News/Events</h1>
     <div class="news-grid">
-      <% @posts.first(6).each do |post| %>
+      <% @posts.last(6).each do |post| %>
           <div class="post-card">
             <%= link_to post_path(post) do %>
             <div class="post-card-text">

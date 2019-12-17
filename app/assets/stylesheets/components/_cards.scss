@@ -1,10 +1,11 @@
 .post-card {
   width: 100%;
   background: transparent;
+  height: 100%;
 
   & a {
     display: flex;
-    // height: 150px;
+    height: 100%;
 
     &:hover {
       text-decoration: none;
