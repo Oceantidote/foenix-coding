@@ -8,7 +8,7 @@ Rails.application.routes.draw do
       resources :posts, only: [:new, :create, :edit, :update, :destroy]
       resources :jobs, only: [:new, :create, :edit, :update, :destroy]
     end
-    resources :posts, only: [:index, :show]
+    resources :posts
     resources :jobs, only: [:index, :show]
     get '/about', to: 'pages#about'
     get '/contact', to: 'pages#contact'
