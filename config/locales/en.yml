@@ -315,6 +315,66 @@ en:
     first_section_text: Printer for all your case coding application
     coming_soon: Coming Soon...
 
+  software:
+    first_section_title_one: FX APP
+    first_section_text_one: Programming without trainir
+    first_section_title_two: FX TOUCH Controller
+    first_section_text_two: Control your printer with just a touch
+    second_section_title: FX APP
+    second_section_text: The ultimate tool to always have your production in control and reduce your costs. Foenix FX APP enables you to design messages in record time through it user friendly interface.
+    second_section_check_one: Simple interactive windows programming
+    second_section_check_two: Unlimited message storage
+    second_section_check_three: Ink saver print mode
+    second_section_check_four: Uses True Type font & Unicode
+    second_section_check_five: Imports JPEG & BMP logos
+    second_section_check_six: Multi language support
+    second_section_card_one: "Fx App: Click & Print"
+    second_section_card_two: Optimize Your Printing Processes with FX APP
+    second_section_card_three: Reliable printing in one click
+    second_section_card_four: Software integration to fit your workflow
+    third_section_left_title: FX APP
+    third_section_left_sub_title: Features
+    third_section_left_text_one: Compatible with Windows XP and above
+    third_section_left_text_two: Intuitive icon led message creation
+    third_section_left_text_three: True Type Font and Unicode supported
+    third_section_left_text_four: Graphics, logos & barcodes directly imported in JPEG and BMP format
+    third_section_left_text_five: Time and multiple date formats
+    third_section_left_text_six: Ink saver print mode
+    third_section_left_text_seven: Unlimited message storage
+    third_section_left_text_eight: Multi language support
+    third_section_left_text_nine: Sauven Marking Ltd continously Improves products and software. Specifications are subject to change.
+    third_section_right_title: FX ONE REMOTE
+    third_section_right_sub_title_one: Features
+    third_section_right_text_one: 7” Touch Screen
+    third_section_right_text_two: Simple interactive windows programming
+    third_section_right_text_three: Uses FX App
+    third_section_right_sub_title_two: Connectivity
+    third_section_right_text_four: USB-A, USB-B, RS232, RS485 Multi port, Ethernet (Optional)
+    third_section_right_text_five: 24 v DC input
+    third_section_right_text_six: Support external alarms, beacons, encoders
+    third_section_right_text_seven: Auto programming with barcode reader
+    third_section_final_text: Touchscreen interface that simplifies every action with the FX APP. Easy setup, navigation, remove the need for training and deliver a hassle-free, intuitive printing experience.
+    fourth_section_title_one: Multilanguage support
+    fourth_section_text_one: Software translated in 19 languages and you print in any languanges
+    fourth_section_title_two: Keep your costs down
+    fourth_section_text_two: Easily control your cost per print and the number of print per cartridge. It has never been easier to keep your cost down! Ink saver mode Option (Picture / live calculation)
+    fourth_section_title_three: Networking
+    fourth_section_text_three: Maximize uptime by managing all your printers from one place.
+    fourth_section_title_four: FX APP
+    fourth_section_text_four: Advanced printer management. Maximize uptime by managing production across multiple Foenix printers from one place. Monitor progress, track fault and gain insights with print analytics.
+    fourth_section_title_five: Preventing user errors in print settings
+    fourth_section_text_five: Automatic configuration of print settings just by using a handheld reader!
+    button: Live software to test
+    fourth_section_title_six: Foenix firmware
+    fourth_section_text_six: Printers that get even better over time. Make your FX ONE printer even more capable with performance enhancements and added functionality in every firmware update.
+    fifth_section_title_one: Full Integration With Our DLL
+    fifth_section_sub_title: What is a DLL?
+    fifth_section_text_one: A DLL (Dynamic Link Library) is a set of software functions that can be used by a third party developer to incorporate into their own applications. The Foenix DLL described here provides a set of functions that allows a FX ONE printer to be controlled via the FXPro application or Foenix Touch Controller. The library makes the communication process to the printer much simpler for the developer as it takes care of the actual protocol used. The developer then uses a relatively simple mechanism to montior printers, load messages and transmit data.
+    fifth_section_title_two: How Does a DLL Work?
+    fifth_section_text_two: The DLL is used by the customer’s to communicate with the printer. The diagram below gives a basic overview showing how the DLL sits between the application and printer.
+
+
+
   components:
     yellow_button: Learn More
 
