@@ -1,0 +1,158 @@
+.software-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.software-first-section-left {
+  display: block;
+  margin-top: 20px;
+}
+
+.software-section {
+  align-items: flex-start;
+}
+
+.software-big-pill {
+  position: absolute;
+  right: -80px;
+  top: 0;
+  width: 250px;
+  z-index: 2;
+}
+
+.software-little-pill {
+  position: absolute;
+  left: -120px;
+  top: 310px;
+  width: 250px;
+  z-index: 2;
+}
+
+.software-second-section-wrapper {
+  position: relative;
+  padding-top: 200px;
+  background: linear-gradient(#F6F7FA, #FFFFFF);
+}
+
+.software-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background: #FFF;
+  height: 150px;
+  width: 140px;
+  margin: 20px 0;
+  padding: 10px;
+  p {
+    color: #717B8D;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.software-card-text-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.software-section-third-wrapper {
+  background-color: #FFF;
+  position: relative;
+}
+
+.software-graphic-2 {
+  width: 80%;
+  // margin: 0 auto;
+  margin: 0 calc(50% - 40%);
+  position: relative;
+}
+
+.software-fifth-section-content {
+  margin: 30px auto;
+}
+
+.software-fifth-section-right {
+  border-left: 1px solid rgba(0,0,0,0.06);
+}
+
+.software-third-section-bottom {
+  padding: 40px 0;
+}
+
+.software-fourth-section-graphics-container {
+  display: flex;
+  position: relative;
+  @include for-phone-only {
+    display: block;
+  }
+}
+
+.software-fourth-section-text {
+  padding: 50px 0;
+}
+
+.software-fourth-section-wrapper {
+  position: relative;
+}
+
+.software-fourth-section-graphics {
+  width: 50%;
+  padding: 16px;
+  position: relative;
+}
+
+.software-dots {
+  width: 60px;
+  position: absolute;
+  right: 80px;
+  top: 160px;
+}
+
+.software-grey-dots {
+  width: 60px;
+  position: absolute;
+  bottom: -60px;
+  left: 170px;
+}
+
+.software-button {
+  margin-left: 16px;
+  display: inline-block;
+  background-color: #FFEFD4;
+  border-color: #FFEFD4;
+  color: #FFAD00;
+  padding: 12px 25px;
+  font-size: 12px;
+  p {
+    margin: 0 10px 0 0;
+  }
+  &:hover {
+    background-color: #FFAD00;
+    color: #FFEFD4;
+  }
+}
+
+.software-fifth-section-wrapper {
+  background: #FFF;
+}
+
+.software-middle-graphic {
+  width: 60%;
+  margin: 0 calc(50% - 25%);
+}
+
+.software-slant {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.software-slant-two {
+  position: absolute;
+}
+
+

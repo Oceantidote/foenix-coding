@@ -26,6 +26,9 @@ class PagesController < ApplicationController
   def fxone_plus
   end
 
+  def software
+  end
+
   def faq
   end
 
