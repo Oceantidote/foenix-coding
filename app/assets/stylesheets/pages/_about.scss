@@ -5,6 +5,9 @@
 .about-first-section-wrapper {
   background: linear-gradient(#EBEFF6, #F6F7FA);
   padding-bottom: 200px;
+  @include for-phone-only {
+    padding-bottom: 100px;
+  }
 }
 
 .about-second-section-wrapper {
@@ -52,14 +55,10 @@
   align-items: center;
   position: relative;
   @include for-phone-only {
-    flex-direction: column;
-    padding-top: 100px;
+    flex-direction: column-reverse;
+    padding-top: 60px;
   }
 }
-
-// .about-first-section {
-//   padding-top: 50px;
-// }
 
 .about-first-section-left, .about-first-section-right, .about-second-section-left, .about-second-section-right {
   width: 50%;
@@ -83,10 +82,8 @@
     width: 80%;
     font-size: 28px;
   }
-  @include for-small-devices-down {
-    font-size: 22px;
-  }
   @include for-phone-only {
+    margin-top: 80px;
     width: 100%;
   }
 }
@@ -166,6 +163,11 @@
   width: 300px;
   top: 0;
   right: 0;
+  @include for-phone-only {
+  width: 300px;
+  top: 30px;
+  right: -190px;
+  }
   // @include for-large-devices-down {
   //   right: -395px;
   // }
@@ -176,6 +178,9 @@
   width: 120px;
   top: 0;
   left: 0;
+  @include for-phone-only {
+    left: -50px;
+  }
   // @include for-large-devices-down {
   //   left: -430px;
   // }
@@ -301,6 +306,18 @@
   top: 8px;
   &:focus {
     outline: none;
+  }
+}
+
+.no-padding-mobile {
+  @include for-phone-only {
+    padding: 0;
+  }
+}
+
+.mobile-column {
+  @include for-phone-only {
+    flex-direction: column;
   }
 }
 
