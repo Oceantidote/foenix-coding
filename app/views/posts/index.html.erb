@@ -3,14 +3,16 @@
   <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "news-pill-bottom") %>
 
   <div class="featured-post">
-    <h1>Featured</h1>
-    <div class="featured-post-div">
-      <div class="featured-post-div-text">
-        <h2>Title Here</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula libero. Nulla et eros commodo, ultrices libero at, ullamcorper dui.</p>
+    <a href="/">
+      <h1>Featured</h1>
+      <div class="featured-post-div">
+        <div class="featured-post-div-text">
+          <h2>Title Here</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula libero. Nulla et eros commodo, ultrices libero at, ullamcorper dui.</p>
+        </div>
+        <%= image_tag 'https://images.pexels.com/photos/417023/pexels-photo-417023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "featured-post-image" %>
       </div>
-      <%= image_tag 'https://images.pexels.com/photos/417023/pexels-photo-417023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "featured-post-image" %>
-    </div>
+    </a>
   </div>
   <div class="all-news">
     <h1>News/Events</h1>
@@ -27,13 +29,13 @@
                 <p class="font-12"><%= post.created_at.strftime("%B %d, %Y") %></p>
               </div>
             </div>
-              <%= image_tag post.image %>
+              <%= cl_image_tag post.image %>
             <% end %>
           </div>
       <% end %>
     </div>
     <div class="news-grid-button">
-      <span class="yellow-button">More News</span>
+     <!--  <span class="yellow-button">More News</span> -->
     </div>
   </div>
 </div>

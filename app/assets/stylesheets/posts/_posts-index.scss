@@ -42,13 +42,21 @@
 
 .featured-post {
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
 
-  @include for-medium-devices-down {
-    width: 90%;
+  & a {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.85;
+    }
+
+    @include for-medium-devices-down {
+      width: 90%;
+    }
   }
 }
 
@@ -56,6 +64,7 @@
   width: 100%;
   text-align: left;
   color: $black-blue;
+  margin-bottom: 20px;
 }
 
 .featured-post-div {

@@ -15,6 +15,7 @@ gem 'cloudinary', '~> 1.12.0'
 gem 'pg_search', '~> 2.3.0'
 gem 'faker'
 gem 'aws-sdk-s3'
+gem 'carrierwave', '~> 1.2'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
