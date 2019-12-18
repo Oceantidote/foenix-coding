@@ -5,7 +5,7 @@ gem 'bootsnap', require: false
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
-gem 'puma'
+gem "puma", ">= 4.3.1"
 gem 'rails', '5.2.3'
 gem 'redis'
 gem 'pundit'
@@ -16,7 +16,7 @@ gem 'pg_search', '~> 2.3.0'
 gem 'faker'
 gem 'aws-sdk-s3'
 gem 'carrierwave', '~> 1.2'
-
+gem 'sib-api-v3-sdk'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'sassc-rails'
@@ -35,3 +35,6 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
 end
+
+
+

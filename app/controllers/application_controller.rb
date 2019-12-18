@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
 
   before_action :authenticate_user!
+  before_action :not_seen_cookie_message, unless: -> { cookies[:seen_cookie_message] }
   include Pundit
 
   after_action :verify_authorized, except: :index, unless: :skip_pundit?
@@ -15,6 +16,10 @@ class ApplicationController < ActionController::Base
 
   def default_url_options
     { locale: I18n.locale }
+  end
+
+  def not_seen_cookie_message
+    @not_seen_cookie = true
   end
 
   private

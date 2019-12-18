@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     end
     resources :posts
     resources :jobs, only: [:index, :show]
+    post '/send_email', to: 'pages#send_email'
+    post '/subscribe', to: 'pages#subscribe'
+    post '/create_contact', to: 'pages#create_contact'
     get '/about', to: 'pages#about'
     get '/contact', to: 'pages#contact'
     get '/inks_and_consumables', to: 'pages#inks_and_consumables'
@@ -18,8 +21,10 @@ Rails.application.routes.draw do
     get '/fxone_remote', to: 'pages#fxone_remote'
     get '/fxone_standard', to: 'pages#fxone_standard'
     get '/fxone_plus', to: 'pages#fxone_plus'
-    get '/send_email', to: 'pages#send_email'
     get '/faq', to: 'pages#faq'
     get '/software', to: 'pages#software'
+
+    # COOKIES
+    get '/seen_cookie', to: 'pages#seen_cookie_message'
   end
 end

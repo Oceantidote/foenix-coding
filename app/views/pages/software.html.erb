@@ -5,13 +5,13 @@
     <div class="container">
       <div class="inks-section">
         <div class="inks-first-section-left software-first-section-left">
-          <h1 class="about-first-section-text"><%= t("software.first_section_title_one") %></h1>
+          <h3><%= t("software.first_section_title_one") %></h3>
           <p class="paragraph-text"><%= t("software.first_section_text_one") %></p>
-          <h1 class="about-first-section-text"><%= t("software.first_section_title_two") %></h1>
+          <h3><%= t("software.first_section_title_two") %></h3>
           <p class="paragraph-text"><%= t("software.first_section_text_two") %></p>
         </div>
         <div class="inks-first-section-right d-flex justify-content-center">
-          <%= cl_image_tag("software-graphic-1_m6jjgm.png", :quality=>"auto", class: "inks-graphic about-graphic-two") %>
+          <%= cl_image_tag("software-graphic-1_m6jjgm.png", class: "w-100 about-graphic-two") %>
         </div>
       </div>
     </div>
@@ -81,6 +81,7 @@
     </div>
   </div>
   <div class="software-section-third-wrapper">
+    <%= cl_image_tag("software-slant_p9xw4z.png", :quality=>"auto", class: "software-slant") %>
     <div class="container">
       <%= cl_image_tag("software-graphic-2_tqdjup.png", :quality=>"auto", class: "software-graphic-2") %>
       <div class="fxone-fifth-section-content software-fifth-section-content">
@@ -128,9 +129,13 @@
       </div>
     </div>
   </div>
+    <!-- <div class="about-third-section-wrapper software-fourth-section-wrapper" style="background-image: url('<%= cl_image_path "software-slant-2_cay6k1.png" %>')"> -->
   <div class="about-third-section-wrapper software-fourth-section-wrapper">
+    <%= cl_image_tag("software-slant-2_vbxnyd.png", class: "software-slant-two") %>
+    <%= cl_image_tag("software-slant-2-big_cdry4n.png", class: "software-slant-two-big") %>
+    <%= cl_image_tag("software-slant-2-loop_lzixx9.png", class: "software-slant-two-loop") %>
     <%= image_tag 'about-dots.png', class: 'software-dots' %>
-    <div class="container">
+    <div class="container" style="position: relative;">
       <div class="software-fourth-section-text">
         <div class="w-100 d-flex justify-content-center">
           <%= image_tag 'software-icon-5.png', class: 'about-icon m-auto' %>

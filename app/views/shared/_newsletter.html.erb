@@ -10,8 +10,8 @@
       <div class="about-sixth-section-right">
         <p><%= t("newsletter.title") %></p>
         <p class="paragraph-text"><%= t("newsletter.text") %></p>
-        <%= form_tag root_path, method: :get, class: 'about-form' do %>
-          <%= text_field_tag :query, params[:query], class: "form-control about-form-input", placeholder: "#{ t('newsletter.placeholder') }"
+        <%= form_tag subscribe_path, method: :post, class: 'about-form' do %>
+          <%= text_field_tag :email, params[:email], class: "form-control about-form-input", placeholder: "#{ t('newsletter.placeholder') }"
           %>
           <%= submit_tag "#{ t('newsletter.button') }", class: "about-form-button" %>
         <% end %>
