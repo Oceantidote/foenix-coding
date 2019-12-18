@@ -1,5 +1,8 @@
 .fxone-plus-graphic {
   transition: all 0.3s ease;
+  @include for-phone-only {
+    padding: 50px 0;
+  }
   &:hover {
     filter: blur(10px);
   }
