@@ -21,21 +21,21 @@
           <%= cl_image_tag("about-graphic-2_gcrekd.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
           <%= image_tag 'about-dots.png', class: 'about-dots-section-two' %>
         </div>
-        <div class="about-second-section-right">
+        <div class="about-second-section-right mobile-center">
           <%= image_tag 'about-icon-1.png', class: 'about-icon' %>
           <h3><%= t("about.second_section_title") %></h3>
-          <p class="paragraph-text about-second-section-text inks-card-text"><%= t("about.second_section_text") %></p>
+          <p class="paragraph-text about-second-section-text"><%= t("about.second_section_text") %></p>
         </div>
       </div>
     </div>
   </div>
   <div class="about-third-section-wrapper">
     <div class="container">
-      <div class="w-100 d-flex justify-content-center">
+      <div class="about-third-section-text">
         <%= image_tag 'about-icon-2.png', class: 'about-icon m-auto' %>
+        <h3 class="text-center"><%= t("about.third_section_title") %></h3>
+        <p class="paragraph-text text-center"><%= t("about.third_section_text") %></p>
       </div>
-      <h3 class="text-center"><%= t("about.third_section_title") %></h3>
-      <p class="paragraph-text text-center"><%= t("about.third_section_text") %></p>
     </div>
   </div>
   <div class="about-fourth-section-wrapper" style="background-image: url('<%= cl_image_path("about-slanted-background_towjgo.png", :quality=>"auto") %>')">
@@ -55,14 +55,15 @@
     </div>
     <div class="about-fifth-section-wrapper">
       <div class="container">
-        <div class="about-section about-fifth-section">
+        <div class="about-section about-fifth-section no-padding-mobile">
           <div class="about-fifth-section-left">
-            <%= cl_image_tag("about-graphic-4-with-dots_w2k2fb.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
+            <%= cl_image_tag("about-graphic-4-with-dots_w2k2fb.png", :quality=>"auto", class: "about-graphic about-graphic-two hide-mobile") %>
             <%#= image_tag 'about-dots.png', class: 'about-dots-fifth' %>
           </div>
-          <div class="about-fifth-section-right">
+          <div class="about-fifth-section-right mobile-center">
             <%= image_tag 'about-icon-3.png', class: 'about-icon' %>
             <h3 class="about-fifth-section-text"><%= t("about.fifth_section_title") %></h3>
+            <%= cl_image_tag("about-graphic-4_r5ic34.png", :quality=>"auto", class: "about-graphic about-graphic-two show-mobile") %>
             <p class="paragraph-text about-fifth-section-text"><%= t("about.fifth_section_text_one") %></p>
             <p class="paragraph-text about-fifth-section-text"><%= t("about.fifth_section_text_two") %></p>
           </div>
