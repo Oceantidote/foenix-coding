@@ -110,7 +110,11 @@
 
   & img {
     height: auto;
-    width: 600px;
+    width: 1000px;
+
+    @include for-xlarge-devices-down {
+      width: 700px;
+    }
 
     @include for-large-devices-down {
       width: 500px;
@@ -250,7 +254,7 @@
   grid-column-gap: 30px;
 
   @include for-small-devices-down {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 0px;
   }
 }
