@@ -13,7 +13,9 @@
   <body>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-    <%= yield %>
+    <div class="min-height">
+      <%= yield %>
+    </div>
     <% if @not_seen_cookie %>
       <div class="cookie-bar">
         <div class="cookie-bar-content d-flex justify-content-center align-items-center">

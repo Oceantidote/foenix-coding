@@ -18,3 +18,12 @@
     background-color: #FFE9C6;
   }
 }
+
+.privacy-link {
+  &:focus {
+    text-decoration: none !important;
+  }
+  &:hover {
+    text-decoration: none !important;
+  }
+}
