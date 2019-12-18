@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     end
     resources :posts
     resources :jobs, only: [:index, :show]
+    post '/contact', to: 'pages#contact'
+    post '/subscribe', to: 'pages#subscribe'
     get '/about', to: 'pages#about'
     get '/contact', to: 'pages#contact'
     get '/inks_and_consumables', to: 'pages#inks_and_consumables'

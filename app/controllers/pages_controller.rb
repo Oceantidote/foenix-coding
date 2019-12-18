@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!
+  include ApplicationHelper
 
   def home
   end
@@ -32,6 +33,18 @@ class PagesController < ApplicationController
   def faq
   end
 
+  def subscribe
+    session[:return_to] ||= request.referer
+    new_subscribe(params[:email])
+    flash[:notice] = "Thanks for signing up to our emailing list."
+    redirect_to session.delete(:return_to)
+  end
+
+  def contact
+    raise
+  end
+
   def send_email
   end
+
 end
