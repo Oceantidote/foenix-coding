@@ -46,7 +46,7 @@
       <%= image_tag 'about-dots.png', class: 'distributor-dots-two' %>
       <div class="distributor-section distributor-contact">
         <div class="distributor-contact-us-form">
-          <%= simple_form_for :send_email, url: send_email_path, method: :get do |f| %>
+          <%= simple_form_for :send_email, url: send_email_path, method: :post do |f| %>
             <div class="contact-form-name">
               <div class="row">
                 <div class="col-12">

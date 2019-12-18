@@ -4,10 +4,11 @@
   <p><%= t("contact.contact_title_description")%></p>
   <div class="contact_details">
     <div class="contact-form">
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/leonardpercival@gmail.com" method="post">
+      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="/create_contact" method="post">
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
           <input type="text" name="name" id="full-name" placeholder="<%= t('contact.form_name') %>" required="">
-          <input type="email" name="_replyto" id="email-address" placeholder="<%= t('contact.form_email') %>" required="">
-          <input type="text" name="phone" id="phone" placeholder="<%= t('contact.form_phone') %>" required="">
+          <input type="email" name="email" id="email-address" placeholder="<%= t('contact.form_email') %>" required="">
+          <input type="integer" name="phone" id="phone" placeholder="<%= t('contact.form_phone') %>" required="">
           <input type="text" name="company" id="company" placeholder="<%= t('contact.form_company') %>" required="">
           <input type="text" name="country" id="country" placeholder="<%= t('contact.form_country') %>" required="">
           <textarea rows="5" name="message" id="message" placeholder="<%= t('contact.form_message') %>" required=""></textarea>
