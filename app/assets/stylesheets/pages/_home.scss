@@ -22,7 +22,14 @@
     justify-content: flex-start;
   }
 }
-
+.ul {
+  margin-bottom: 0px !important;
+}
+.print-on-everything {
+  @include for-medium-devices-down {
+    padding-top: 30px;
+  }
+}
 
 .first-section-svg {
   position: absolute;
