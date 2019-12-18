@@ -6,6 +6,9 @@
   padding-top: 100px;
   padding-bottom: 0;
   background: linear-gradient(#EBEFF6, #F6F7FA);
+  @include for-phone-only {
+    padding-top: 140px;
+  }
 }
 
 .fxone-second-section-wrapper {
@@ -32,6 +35,9 @@
   background: linear-gradient(#F5F6F9, #F8F9FB);
   padding-top: 100px;
   position: relative;
+  @include for-phone-only {
+    // background: #FFF;
+  }
 }
 
 .fxone-seventh-section-wrapper {
@@ -42,6 +48,8 @@
 
 .fxone-section {
   padding-top: 0;
+  position: relative;
+  z-index: 5;
 }
 
 .fxone-dots {
@@ -57,6 +65,11 @@
   top: 340px;
   right: -120px;
   z-index: 4;
+  @include for-phone-only {
+    width: 190px;
+    top: 40px;
+    right: -120px;
+  }
   // @include for-large-devices-down {
   //   right: -395px;
   // }
@@ -68,6 +81,10 @@
   top: 540px;
   left: -100px;
   z-index: 2;
+  @include for-phone-only {
+    width: 180px;
+    top: 400px;
+  }
   // @include for-large-devices-down {
   //   left: -430px;
   // }
@@ -110,6 +127,10 @@
   position: absolute;
   height: 100%;
   width: 100%;
+  @include for-phone-only {
+    height: auto;
+    top: -70px;
+  }
 }
 
 .fxone-fifth-section-content {
@@ -206,5 +227,11 @@
   height: 500px;
   position: relative;
   z-index: 3;
+}
+
+.responsive-header {
+  @include for-small-devices-down {
+    font-size: 28px;
+  }
 }
 
