@@ -33,7 +33,6 @@ module ApplicationHelper
     request["api-key"] = ENV['SENDBLUE_API_KEY']
     request.body = "{\"email\":\"#{email ? email : ""}\",\"COMPANY\":\"#{company ? company : ""}\",\"SMS\":\"#{sms ? sms : ""}\",\"MESSAGE\":\"#{message ? message : ""}\",\"COUNTRY\":\"#{country ? country : ""}\",\"FIRSTNAME\":\"#{fname ? fname : ""}\",\"LASTNAME\":\"#{lname ? lname : ""}\",\"listIds\":[13],\"updateEnabled\":false}"
     p request.body
-    binding.pry
     response = http.request(request)
     puts response.read_body
   end
