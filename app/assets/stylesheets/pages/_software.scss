@@ -31,6 +31,7 @@
 .software-second-section-wrapper {
   position: relative;
   padding-top: 200px;
+  padding-bottom: 150px;
   background: linear-gradient(#F6F7FA, #FFFFFF);
 }
 
@@ -69,6 +70,10 @@
   // margin: 0 auto;
   margin: 0 calc(50% - 40%);
   position: relative;
+  @include for-medium-devices-down {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .software-fifth-section-content {
@@ -99,6 +104,7 @@
 
 .software-fourth-section-wrapper {
   position: relative;
+  padding-bottom: 100px;
 }
 
 .software-fourth-section-graphics {
@@ -145,12 +151,25 @@
 .software-middle-graphic {
   width: 60%;
   margin: 0 calc(50% - 25%);
+  padding-top: 50px;
 }
 
 .software-slant {
   position: absolute;
   width: 100%;
-  top: 0;
+  bottom: 0;
+  @include for-medium-devices-up {
+    height: 1548px;
+  }
+  @include for-large-devices-up {
+    height: 1750px;
+  }
+  @include for-xlarge-devices-up {
+    height: 1950px;
+  }
+  @include for-xxlarge-devices-up {
+    height: 2050px;
+  }
 }
 
 .software-slant-two {
