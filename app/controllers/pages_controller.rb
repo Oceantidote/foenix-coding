@@ -60,6 +60,7 @@ class PagesController < ApplicationController
     end
   end
 
+
   def create_contact
     session[:return_to] ||= request.referer
     if params[:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
@@ -70,6 +71,11 @@ class PagesController < ApplicationController
       flash[:alert] = "Please enter a valid email address"
       redirect_to session.delete(:return_to)
     end
+  end
+
+
+  def seen_cookie_message
+    cookies.permanent[:seen_cookie_message] = true
   end
 
 end
