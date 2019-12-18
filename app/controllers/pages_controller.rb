@@ -34,4 +34,8 @@ class PagesController < ApplicationController
 
   def send_email
   end
+
+  def seen_cookie_message
+    cookies.permanent[:seen_cookie_message] = true
+  end
 end

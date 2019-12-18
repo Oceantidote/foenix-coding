@@ -17,6 +17,10 @@ en:
     careers: Careers
     news: News & Events
 
+  cookie_bar:
+    content: By using this website, you agree to our
+    cookie_policy: cookie policy
+
   simple_form:
     hints:
     placeholders:
