@@ -14,6 +14,17 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
+    <% if @not_seen_cookie %>
+      <div class="cookie-bar">
+        <div class="cookie-bar-content d-flex justify-content-center align-items-center">
+          <div class="corner"></div>
+          <p class="m-0 text-center"><%= t("cookie_bar.content") %> <span style="color: #FFB03A;"><%= t("cookie_bar.cookie_policy") %></span></p>
+          <%= link_to seen_cookie_path, remote: true, class: 'cookie-close close-cookie-bar' do %>
+            <%= image_tag "cookie-close.png" %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
     <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>

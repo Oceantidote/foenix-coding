@@ -21,5 +21,8 @@ Rails.application.routes.draw do
     get '/send_email', to: 'pages#send_email'
     get '/faq', to: 'pages#faq'
     get '/software', to: 'pages#software'
+
+    # COOKIES
+    get '/seen_cookie', to: 'pages#seen_cookie_message'
   end
 end
