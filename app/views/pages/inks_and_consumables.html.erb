@@ -1,0 +1,52 @@
+<div class="inks-wrapper">
+  <div class="inks-first-section-wrapper">
+    <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "inks-big-pill") %>
+    <div class="container">
+      <div class="inks-section">
+        <div class="inks-first-section-left">
+          <h1 class="about-first-section-text"><%= t("inks_and_consumables.first_section_text") %></h1>
+        </div>
+        <div class="inks-first-section-right d-flex justify-content-center">
+          <%= cl_image_tag("inks_and_cons_tyoqgi.png", :quality=>"auto", class: "inks-graphic about-graphic-two") %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inks-second-section-wrapper">
+    <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "inks-little-pill") %>
+    <div class="container">
+      <div class="inks-section">
+        <div class="inks-first-section-left">
+          <div class="inks-card" style="margin: 0 0 0 auto">
+            <%= image_tag 'inks-icon-1.png', class: 'about-icon' %>
+            <p class="inks-card-header"><%= t("inks_and_consumables.first_card_title") %></p>
+            <p class="paragraph-text inks-card-text"><%= t("inks_and_consumables.first_card_text") %></p>
+          </div>
+        </div>
+        <div class="inks-first-section-right">
+          <%= image_tag 'about-dots.png', class: 'inks-dots' %>
+          <div class="inks-card" style="margin: 0 auto 0 0">
+            <%= image_tag 'inks-icon-2.png', class: 'about-icon' %>
+            <p class="inks-card-header"><%= t("inks_and_consumables.second_card_title") %></p>
+            <p class="paragraph-text inks-card-text"><%= t("inks_and_consumables.second_card_text") %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inks-third-section-wrapper">
+    <%= cl_image_tag("slant-background_xuvpqk.png", :quality=>"auto", class: "inks-slant") %>
+    <div class="container">
+      <div class="inks-section">
+        <div class="inks-first-section-left">
+          <%= cl_image_tag("inks_pipe_mmpdgo.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
+        </div>
+        <div class="inks-first-section-right">
+          <%= image_tag 'inks-icon-3.png', class: 'about-icon' %>
+          <h3 class="inks-fifth-section-text"><%= t("inks_and_consumables.third_section_text") %></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%= render 'shared/newsletter' %>

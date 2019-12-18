@@ -10,8 +10,8 @@
   <div class="first-section">
     <%= cl_image_tag("Foenix-first-section-svg_ykndwi.png", :quality=>"auto", class: "first-section-svg") %>
     <div class="first-section-text">
-      <h1>Coding and Marking Made <span>Easy</span></h1>
-      <p>Plug-and-play Industrial inkjet Printer for all types of production lines</p>
+      <h1><%= t("home.title") %>  <span><%= t("home.title_span") %></span></h1>
+      <p><%= t("home.title_description") %></p>
     </div>
     <div class="first-section-image">
       <%= cl_image_tag("Foenix-machine_iqmh2t.png", :quality=>"auto") %>
@@ -21,50 +21,53 @@
     <%= cl_image_tag("Foenix-first-section-svg_ykndwi.png", :quality=>"auto", class: "first-section-svg-2") %>
     <div class="second-section-one">
       <%= image_tag 'section-two-icon.png' %>
-      <h2>Stress-free product traceability</h2>
-      <p>Take your product traceability to all new level by printing in any languages, any fonts and in high resolution on any product</p>
-      <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+      <h2><%= t("home.title_second") %></h2>
+      <p><%= t("home.title_second_description") %></p>
+      <a href="/" class="yellow-button"><%= t("components.yellow_button") %> <i class="fas fa-arrow-right"></i></a>
     </div>
     <div class="second-section-two">
       <div class="code-everything">
-        <h3>Code Everything</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        <h3><%= t("home.second_column_title") %></h3>
+        <p><%= t("home.second_column_title_description") %></p>
         <div class="second-section-two-columns">
           <ul class="second-section-two-columns-one">
-            <li><%= image_tag 'foenix-check.png' %>Text</li>
-            <li><%= image_tag 'foenix-check.png' %>Use by date</li>
-            <li><%= image_tag 'foenix-check.png' %>Time</li>
-            <li><%= image_tag 'foenix-check.png' %>Lot number</li>
-            <li><%= image_tag 'foenix-check.png' %>Logo</li>
-            <li><%= image_tag 'foenix-check.png' %>Barcodes</li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_one") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_three") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_four") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_five") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_six") %></li>
           </ul>
           <ul class="second-section-two-columns-two">
-            <li><%= image_tag 'foenix-check.png' %>QR Codes</li>
-            <li><%= image_tag 'foenix-check.png' %>Counter</li>
-            <li><%= image_tag 'foenix-check.png' %>Shift</li>
-            <li><%= image_tag 'foenix-check.png' %>Variable Data</li>
-            <li><%= image_tag 'foenix-check.png' %>External Data</li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_one_one") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_three_three") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_four_four") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_five_five") %></li>
           </ul>
         </div>
       </div>
       <div class="print-on-everything">
-        <h3>Print on anything</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        <h3><%= t("home.second_column_title_two") %></h3>
+        <p><%= t("home.second_column_title_description") %></p>
         <div class="second-section-two-columns">
           <ul class="second-section-two-columns-one">
-            <li><%= image_tag 'foenix-check.png' %>Text</li>
-            <li><%= image_tag 'foenix-check.png' %>Use by date</li>
-            <li><%= image_tag 'foenix-check.png' %>Time</li>
-            <li><%= image_tag 'foenix-check.png' %>Lot number</li>
-            <li><%= image_tag 'foenix-check.png' %>Logo</li>
-            <li><%= image_tag 'foenix-check.png' %>Barcodes</li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_one") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_three") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_four") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_five") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_six") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_seven") %></li>
           </ul>
           <ul class="second-section-two-columns-two">
-            <li><%= image_tag 'foenix-check.png' %>QR Codes</li>
-            <li><%= image_tag 'foenix-check.png' %>Counter</li>
-            <li><%= image_tag 'foenix-check.png' %>Shift</li>
-            <li><%= image_tag 'foenix-check.png' %>Variable Data</li>
-            <li><%= image_tag 'foenix-check.png' %>External Data</li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_one_one") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two_two") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_three_three") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_four_four") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_five_five") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_six_six") %></li>
+            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_seven_seven") %></li>
           </ul>
         </div>
       </div>
@@ -78,36 +81,36 @@
     <%= cl_image_tag("foenix-home-background_wziieq.png", :quality=>"auto", class: "third-section_svg") %>
     <div class="third-section-features">
       <%= image_tag 'foenix-home-icon-math.png', class: "third-section-features_icon" %>
-      <h2>One software with tons of features</h2>
+      <h2><%= t("home.tabs_title") %></h2>
       <div class="tab">
-       <button class="" onclick="openCity('London')">London</button>
-       <button class="" onclick="openCity('Paris')">Paris</button>
-       <button class="" onclick="openCity('Tokyo')">Tokyo</button>
-       <button class="" onclick="openCity('Bogota')">Bogota</button>
-       <button class="" onclick="openCity('Lexico')">Lexico</button>
-       <button class="" onclick="openCity('Brussels')">Brussels</button>
+       <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %></button>
+       <button class="" onclick="openCity('Paris')"><%= t("home.tabs_two") %></button>
+       <button class="" onclick="openCity('Tokyo')"><%= t("home.tabs_three") %></button>
+       <button class="" onclick="openCity('Bogota')"><%= t("home.tabs_four") %></button>
+       <button class="" onclick="openCity('Lexico')"><%= t("home.tabs_five") %></button>
+       <button class="" onclick="openCity('Brussels')"><%= t("home.tabs_six") %></button>
       </div>
       <div class="features-dropdown" >
-        <button class="" onclick="openCity('London')">London</button><i class="fas fa-chevron-down"></i>
+        <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %>></button><i class="fas fa-chevron-down"></i>
         <div class="features-dropdown-options">
-          <button class="" onclick="openCity('London')">London</button>
-          <button class="" onclick="openCity('Paris')">Paris</button>
-          <button class="" onclick="openCity('Tokyo')">Tokyo</button>
-          <button class="" onclick="openCity('Bogota')">Bogota</button>
-          <button class="" onclick="openCity('Lexico')">Lexico</button>
-          <button class="" onclick="openCity('Brussels')">Brussels</button>
+          <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %></button>
+          <button class="" onclick="openCity('Paris')"><%= t("home.tabs_two") %></button>
+          <button class="" onclick="openCity('Tokyo')"><%= t("home.tabs_three") %></button>
+          <button class="" onclick="openCity('Bogota')"><%= t("home.tabs_four") %></button>
+          <button class="" onclick="openCity('Lexico')"><%= t("home.tabs_five") %>o</button>
+          <button class="" onclick="openCity('Brussels')"><%= t("home.tabs_six") %>s</button>
         </div>
       </div>
       <div class="tabs-area">
         <%= cl_image_tag("long-pill_xrmujn.png", :quality=>"auto") %>
         <div id="London" class="city">
           <div class="tab-text">
-            <h4>Zero Downtime, No Maintenance</h4>
-            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <h4><%= t("home.tabs_one_title") %></h4>
+            <p><%= t("home.tabs_one_description") %></p>
             <span></span>
-            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <p class="orange"><%= t("home.tabs_one_bottom") %></p>
             <br>
-            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
@@ -115,12 +118,12 @@
 
         <div id="Paris" class="city" style="display:none">
           <div class="tab-text">
-            <h4>The Second Title of the Tabs</h4>
-            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <h4><%= t("home.tabs_two_title") %></h4>
+            <p><%= t("home.tabs_two_description") %></p>
             <span></span>
-            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <p class="orange"><%= t("home.tabs_two_bottom") %></p>
             <br>
-            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
@@ -128,12 +131,12 @@
 
         <div id="Tokyo" class="city" style="display:none">
           <div class="tab-text">
-            <h4>The Third Title of the Tabs</h4>
-            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <h4><%= t("home.tabs_three_title") %></h4>
+            <p><%= t("home.tabs_three_description") %></p>
             <span></span>
-            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <p class="orange"><%= t("home.tabs_three_bottom") %></p>
             <br>
-            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
@@ -141,12 +144,12 @@
 
         <div id="Bogota" class="city" style="display:none">
           <div class="tab-text">
-            <h4>The Fourth Title of the Tabs</h4>
-            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <h4><%= t("home.tabs_four_title") %></h4>
+            <p><%= t("home.tabs_four_description") %></p>
             <span></span>
-            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <p class="orange"><%= t("home.tabs_four_bottom") %></p>
             <br>
-            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
@@ -154,12 +157,12 @@
 
         <div id="Lexico" class="city"style="display:none">
           <div class="tab-text">
-            <h4>The Fifth Title of the Tabs</h4>
-            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <h4><%= t("home.tabs_five_title") %></h4>
+            <p><%= t("home.tabs_five_description") %></p>
             <span></span>
-            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <p class="orange"><%= t("home.tabs_five_bottom") %></p>
             <br>
-            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
@@ -167,12 +170,12 @@
 
         <div id="Brussels" class="city" style="display:none">
           <div class="tab-text">
-            <h4>The Sixth Title of the Tabs</h4>
-            <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime.</p>
+            <h4><%= t("home.tabs_six_title") %></h4>
+            <p><%= t("home.tabs_six_description") %></p>
             <span></span>
-            <p class="orange">From emergin businessess with 1 small production line to.</p>
+            <p class="orange"><%= t("home.tabs_six_bottom") %></p>
             <br>
-            <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+            <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
@@ -192,13 +195,13 @@
     </div>
   </div>
   <div class="fourth-section">
-    <%= cl_image_tag("fourth-background_nn77ew.png", :quality=>"auto", class: "fourth-section_svg") %>
+    <%#= cl_image_tag("blue-background_d5gnu1.png", :quality=>"auto", class: "fourth-section_svg") %>
     <div class="fourth-section-features">
       <div class="fourth-section-text">
         <%= image_tag 'hand-icon.png' %>
-        <h2>Trusted by businesses from every industies</h2>
-        <p>From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime, automate manual processes and improve product quality with high resolution coding. </p>
-        <a href="/" class="yellow-button"> Learn More <i class="fas fa-arrow-right"></i></a>
+        <h2><%= t("home.fourth_title") %></h2>
+        <p><%= t("home.fourth_description") %></p>
+        <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="fourth-section-grid">
           <%= image_tag 'food-icon.png' %>

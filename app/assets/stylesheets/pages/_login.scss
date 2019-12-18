@@ -1,0 +1,141 @@
+.login-page {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 200px 20px;
+  position: relative;
+  overflow: hidden;
+
+  &_image {
+    padding-left: 40px;
+    width: 40vw;
+    height: auto;
+    object-fit: cover;
+  }
+
+  @include for-medium-devices-down {
+    padding: 50px 20px;
+    flex-direction: column;
+
+    &_image {
+      padding-left: 0;
+      width: 60vw;
+    }
+  }
+
+  @include for-medium-devices-down {
+    // height: 150vh;
+  }
+}
+
+.login-pill {
+  position: absolute;
+  right: -400px;
+  top: -400px;
+  width: 500px;
+
+  @include for-small-devices-down {
+    display: none;
+  }
+}
+
+.login-details {
+  // background-color: red;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h1 {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  & form {
+    width: 60%;
+  }
+
+  & input {
+    width: 100%;
+    height: 50px;
+    background-color: #F0F5FF;
+    border: 1px solid #fafafa;
+    border-radius: 5px;
+    padding: 10px;
+    color: #7C828F;
+    font-weight: 300;
+    margin: 30px 0 0 0;
+
+    &:focus, :active {
+      outline: none;
+      border: 0;
+    }
+  }
+
+  & input[type=submit] {
+    margin-top: 40px;
+    width: 100%;
+    height: 50px;
+    background-color: #FFB03A;
+    color: white;
+
+    &:hover {
+      background-color: #F4B253;
+    }
+  }
+
+  @include for-medium-devices-down {
+    padding-bottom: 100px;
+  }
+
+  @include for-small-devices-down {
+    & form {
+      width: 80%;
+    }
+  }
+
+  @include for-phone-only {
+    padding: 0 0;
+  }
+}
+
+.forgot-password {
+  color: #9299A9;
+  font-weight: 300;
+
+  &:hover {
+    color: #626874;
+  }
+}
+
+
+.login-other {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  & a {
+    // padding: 20px 0;
+    font-size: 12px;
+  }
+
+  & hr {
+    width: 60%;
+    height: 1px;
+  }
+
+  & p {
+    color: #9299A9;
+    font-weight: 300;
+    font-size: 12px;
+
+    a {
+      color: #FFB03A;
+      font-weight: 300;
+    }
+  }
+}

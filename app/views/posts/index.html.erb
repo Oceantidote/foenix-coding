@@ -1,14 +1,39 @@
-<div class="container">
-  <h1>Posts</h1>
-  <% @posts.each do |post| %>
-    <div class="border">
-      <p>Title: <%= post.title %></p>
-      <p>Text: <%= raw post.text %></p>
-      <p>Image: <%= cl_image_tag post.photo.key, height: 50, width: 50, crop: :fill %></p>
-      <p>Read Time: <%= post.time %></p>
-      <%= link_to "Edit post", edit_admin_post_path(post) %>
-      <%= link_to "Delete post", admin_post_path(post), method: :delete %>
+<div class="posts">
+  <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "news-pill") %>
+  <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "news-pill-bottom") %>
+
+  <div class="featured-post">
+    <h1>Featured</h1>
+    <div class="featured-post-div">
+      <div class="featured-post-div-text">
+        <h2>Title Here</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula libero. Nulla et eros commodo, ultrices libero at, ullamcorper dui.</p>
+      </div>
+      <%= image_tag 'https://images.pexels.com/photos/417023/pexels-photo-417023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "featured-post-image" %>
     </div>
-  <% end %>
-  <%= link_to "Add a new post", new_admin_post_path %>
+  </div>
+  <div class="all-news">
+    <h1>News/Events</h1>
+    <div class="news-grid">
+      <% @posts.last(6).each do |post| %>
+          <div class="post-card">
+            <%= link_to post_path(post) do %>
+            <div class="post-card-text">
+              <h6><%= post.title %></h6>
+              <p><%= truncate(post.text, length: 120) %></p>
+              <div class="post-card-text-details">
+                <p class="font-12">Reading Time: 14mins</p>
+                <pre> • </pre>
+                <p class="font-12"><%= post.created_at.strftime("%B %d, %Y") %></p>
+              </div>
+            </div>
+              <%= image_tag post.image %>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+    <div class="news-grid-button">
+      <span class="yellow-button">More News</span>
+    </div>
+  </div>
 </div>

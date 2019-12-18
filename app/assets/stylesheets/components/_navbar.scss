@@ -8,7 +8,7 @@
   background-color: transparent;
   //added this to account for gradient background in home-page
   position: absolute;
-  z-index: 1;
+  z-index: 10000;
   //end of c
 
   @include for-medium-devices-down {

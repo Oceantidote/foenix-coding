@@ -1,0 +1,51 @@
+<div class="ownership-wrapper">
+  <div class="about-first-section-wrapper ownership-first-section-wrapper">
+    <%= cl_image_tag("about-big-pill-sliced_mpxusz.png", :quality=>"auto", class: "ownership-big-pill") %>
+    <%= cl_image_tag("about-little-pill-sliced_z6varw.png", :quality=>"auto", class: "ownership-little-pill") %>
+    <div class="container">
+      <div class="nav-spacer"></div>
+      <div class="about-section about-first-section">
+        <div class="about-first-section-left">
+          <h1 class="about-first-section-text"><%= t("cost_of_ownership.first_section_title") %></h1>
+          <p class="paragraph-text"><%= t("cost_of_ownership.first_section_text") %></p>
+
+        </div>
+        <div class="about-first-section-right">
+          <%= cl_image_tag("ownership-graphic_fv4qk7.png", :quality=>"auto", class: "about-graphic") %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ownership-second-section-wrapper">
+    <%= image_tag 'ownership-icon.png', class: 'about-icon' %>
+    <h3 class="about-first-section-text ownership-second-section-text text-center"><%= t("cost_of_ownership.second_section_title") %></h3>
+    <p class="paragraph-text ownership-second-section-text text-center"><%= t("cost_of_ownership.second_section_text") %></p>
+  </div>
+  <div class="ownership-third-section-wrapper">
+    <%= cl_image_tag("ownership-slider_vuhnwc.png", :quality=>"auto", class: "ownership-slider") %>
+    <div class="coming-soon" style="background-image: url('<%= cl_image_path "coming-soon-background_wjcoct.png" %>')">
+      <p class="coming-soon-text"><%= t("fxone_plus.coming_soon") %></p>
+    </div>
+  </div>
+</div>
+<%= render 'shared/newsletter' %>
+
+<script>
+  comingSoon = document.querySelector('.coming-soon');
+  image = document.querySelector('.ownership-slider');
+
+  image.addEventListener('mouseover', () => {
+    comingSoon.style.opacity = 1
+  })
+  image.addEventListener('mouseleave', () => {
+    comingSoon.style.opacity = 0
+  })
+  comingSoon.addEventListener('mouseover', () => {
+    comingSoon.style.opacity = 1
+    image.style.filter = 'blur(10px)'
+  })
+  comingSoon.addEventListener('mouseleave', () => {
+    comingSoon.style.opacity = 0
+    image.style.filter = ''
+  })
+</script>

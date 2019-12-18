@@ -4,7 +4,7 @@
       <div class="nav-spacer"></div>
       <div class="about-section about-first-section">
         <div class="about-first-section-left">
-          <h1 class="about-first-section-text">Your Complex coding and marking challenges don't require complex and expensive solution</h1>
+          <h1 class="about-first-section-text"><%= t("about.first_section_text") %></h1>
         </div>
         <div class="about-first-section-right">
           <%= cl_image_tag("about-graphic_avvw6d.png", :quality=>"auto", class: "about-graphic") %>
@@ -23,8 +23,8 @@
         </div>
         <div class="about-second-section-right">
           <%= image_tag 'about-icon-1.png', class: 'about-icon' %>
-          <h3>Our Mission</h3>
-          <p class="paragraph-text about-second-section-text">To increase the efficiency of your production line and help you with you product traceability challenges</p>
+          <h3><%= t("about.second_section_title") %></h3>
+          <p class="paragraph-text about-second-section-text inks-card-text"><%= t("about.second_section_text") %></p>
         </div>
       </div>
     </div>
@@ -34,8 +34,8 @@
       <div class="w-100 d-flex justify-content-center">
         <%= image_tag 'about-icon-2.png', class: 'about-icon m-auto' %>
       </div>
-      <h3 class="text-center">We focus on the importance of cost of ownership in industrial printing.</h3>
-      <p class="paragraph-text text-center">Whether you are looking for an inkjet printer for case coding or product marking, the investment in printing is no longer just about the printer price. Consumables and maintenance have become the main factors to determine your cost of ownership.</p>
+      <h3 class="text-center"><%= t("about.third_section_title") %></h3>
+      <p class="paragraph-text text-center"><%= t("about.third_section_text") %></p>
     </div>
   </div>
   <div class="about-fourth-section-wrapper" style="background-image: url('<%= cl_image_path("about-slanted-background_towjgo.png", :quality=>"auto") %>')">
@@ -45,11 +45,11 @@
     <div class="container">
       <div class="about-fourth">
         <div class="about-fourth-text-left">
-          <p class="paragraph-text">Thanks to the clever design, the Xaar piezo inkjet printers have a remarkably low ink usage and therefore offer a very low cost per print. These printers also allow you to code directly onto your carton or product eliminating the need for expensive label printers, labellers and labels.</p>
+          <p class="paragraph-text"><%= t("about.fourth_section_text_left") %></p>
         </div>
         <div class="middle-break" style="height: 100%; border-left: 1px solid black;"></div>
         <div class="about-fourth-text-right">
-          <p class="paragraph-text">Foenix Coding offers a range of printers which are keeping down cost of ownership. We are driven by a zero maintenance philosophy for small character printing. We are also working hard to offer the most user friendly industrial printer. Foenix printers work with a simple Windows PC software with pictorial keys and/or a very evolved and intuitive Touch controller.</p>
+          <p class="paragraph-text"><%= t("about.fourth_section_text_right") %></p>
         </div>
       </div>
     </div>
@@ -62,37 +62,13 @@
           </div>
           <div class="about-fifth-section-right">
             <%= image_tag 'about-icon-3.png', class: 'about-icon' %>
-            <h3 class="about-fifth-section-text">All our products, printers, inks, consumables are MADE IN UK. </h3>
-            <p class="paragraph-text about-fifth-section-text">The software and hardware systems have been developed in collaboration with manufacturing and packaging professionals to help them with their daily challenges to print best before dates, batch codes, 2D barcodes, graphic logos and other requirements.</p>
-            <p class="paragraph-text about-fifth-section-text">Our range of industrial Xaar based inkjet printers are maintenance free. These are specifically designed for industrial use in sectors such as food, beverage, automotive, construction, converting, medical devices, pharmaceutical, electronics and chemical...</p>
+            <h3 class="about-fifth-section-text"><%= t("about.fifth_section_title") %></h3>
+            <p class="paragraph-text about-fifth-section-text"><%= t("about.fifth_section_text_one") %></p>
+            <p class="paragraph-text about-fifth-section-text"><%= t("about.fifth_section_text_two") %></p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="about-sixth-section-wrapper">
-    <div class="container">
-      <div class="about-sixth-section">
-        <div class="about-sixth-section-left">
-          <div class="about-button-card" style="background-image: url('<%= cl_image_path("Button_nqsfuo.png") %>')">
-            <p class="m-0">Come work with us</p>
-            <p class="m-0 paragraph-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing.
-            </p>
-          </div>
-        </div>
-        <div class="about-sixth-section-right">
-          <p>Get the latest newsletter</p>
-          <p class="paragraph-text">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.</p>
-          <%= form_tag root_path, method: :get, class: 'about-form' do %>
-            <%= text_field_tag :query, params[:query], class: "form-control about-form-input", placeholder: "laurenmayberry@example.com"
-            %>
-            <%= submit_tag "Subscribe", class: "about-form-button" %>
-          <% end %>
-          <p class="paragraph-text" style="font-size: 10px !important;">You can unsubscribe at any time. <span style="color: #F3A300">Read our privacy policy</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <%= render 'shared/newsletter' %>
 </div>

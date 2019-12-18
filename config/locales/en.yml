@@ -32,12 +32,371 @@ en:
     title: FOENIX CODING is growing
     tagline: We are always looking for talented new friends that share our vision to push industry forward
 
+  jobs_show:
+    roles_at: Roles at
+    apply_now: Apply Now
+    you_will: You will
+    we_are_looking: We are looking for someone who has
+    we_look_forward: We look forward to hearing from you
+
   faq:
     title: Frequently Asked Questions
     tagline: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi quod laudantium asperiores a consectetur, repudiandae at, debitis dicta, exercitationem reprehenderit aliquam quis iusto laborum nostrum libero suscipit magni! Vero.
 
+  home:
+    # FIRST SECTION
+    title: Coding and Marking Made
+    title_span: Easy
+    title_description: Plug-and-play Industrial inkjet Printer for all types of production lines.
+    #SECOND SECTION
+    title_second: Stress-free product traceability
+    title_second_description: Take your product traceability to all new level by printing in any languages, any fonts and in high resolution on any product
+    second_column_title: Code Everything
+    second_column_title_description: Lorem ipsum dolor sit amet, consectetur.
+    second_column_one: Text
+    second_column_two: Use by date
+    second_column_three: Time
+    second_column_four: Lot number
+    second_column_five: Logo
+    second_column_six: Barcodes
+    second_column_one_one: QR Codes
+    second_column_two_two: Counter
+    second_column_three_three: Shift
+    second_column_four_four: Variable Data
+    second_column_five_five: External Data
+    second_column_title_two: Print on Anything
+    second_column_two_one: Glass
+    second_column_two_two: Plastic
+    second_column_two_three: Metal
+    second_column_two_four: Carton
+    second_column_two_five: PVC
+    second_column_two_six: Rubber
+    second_column_two_seven: Egg
+    second_column_two_one_one: Wood
+    second_column_two_two_two: Timber
+    second_column_two_three_three: Plastiboard
+    second_column_two_four_four: Carpet
+    second_column_two_five_five: Films/foils
+    second_column_two_six_six: Paper
+    second_column_two_seven_seven: Pipes
+    #THIRD SECTION
+    tabs_title: One software with tons of features
+    tabs_one: Lorem ipsum
+    tabs_one_title: Zero Downtime, No Maintenance
+    tabs_one_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_one_bottom: From emerging businesses with 1 small production line to
+    tabs_two: Dolor sit
+    tabs_two_title: Zero Downtime, No Maintenance
+    tabs_two_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_two_bottom: From emerging businesses with 1 small production line to
+    tabs_three: Amet bolor
+    tabs_three_title: Zero Downtime, No Maintenance
+    tabs_three_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_three_bottom: From emerging businesses with 1 small production line to
+    tabs_four: Sianisi
+    tabs_four_title: Zero Downtime, No Maintenance
+    tabs_four_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_four_bottom: From emerging businesses with 1 small production line to
+    tabs_five: Lorempsi
+    tabs_five_title: Zero Downtime, No Maintenance
+    tabs_five_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_five_bottom: From emerging businesses with 1 small production line to
+    tabs_six: Superfot
+    tabs_six_title: Zero Downtime, No Maintenance
+    tabs_six_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_six_bottom: From emerging businesses with 1 small production line to
+    #FOURTH SECTION
+    fourth_title: Trusted by businesses from every industies
+    fourth_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime, automate manual processes and improve product quality with high resolution coding.
+
+  newsletter:
+    card_title: Come work with us
+    card_text: Lorem ipsum dolor sit amet, consectetur adipiscing.
+    title: Get the latest newsletter
+    text: Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
+    button: Subscribe
+    placeholder: laurenmayberry@example.com
+    unsubscribe: You can unsubscribe at any time.
+    privacy: Privacy Policy
+
+  about:
+    first_section_text: Your Complex coding and marking challenges don't require complex and expensive solution
+    second_section_title: Our Mission
+    second_section_text: To increase the efficiency of your production line and help you with you product traceability challenges
+    third_section_title: We focus on the importance of cost of ownership in industrial printing.
+    third_section_text: Whether you are looking for an inkjet printer for case coding or product marking, the investment in printing is no longer just about the printer price. Consumables and maintenance have become the main factors to determine your cost of ownership.
+    fourth_section_text_left: Thanks to the clever design, the Xaar piezo inkjet printers have a remarkably low ink usage and therefore offer a very low cost per print. These printers also allow you to code directly onto your carton or product eliminating the need for expensive label printers, labellers and labels.
+    fourth_section_text_right: Foenix Coding offers a range of printers which are keeping down cost of ownership. We are driven by a zero maintenance philosophy for small character printing. We are also working hard to offer the most user friendly industrial printer. Foenix printers work with a simple Windows PC software with pictorial keys and/or a very evolved and intuitive Touch controller.
+    fifth_section_title: All our products, printers, inks, consumables are MADE IN UK.
+    fifth_section_text_one: The software and hardware systems have been developed in collaboration with manufacturing and packaging professionals to help them with their daily challenges to print best before dates, batch codes, 2D barcodes, graphic logos and other requirements.
+    fifth_section_text_two: Our range of industrial Xaar based inkjet printers are maintenance free. These are specifically designed for industrial use in sectors such as food, beverage, automotive, construction, converting, medical devices, pharmaceutical, electronics and chemical...
+
+  inks_and_consumables:
+    first_section_text: Large Ink Cartridge Up to 15 million characters
+    first_card_title: Production friendly inks
+    first_card_text: For applications in the food, beverage, cosmetics, household goods, industrial and extrusion markets, we have high quality controlled inks that are virtually odourless and are not M.E.K based. We also offer coloured inks.
+    second_card_title: Sealed ink cartridge
+    second_card_text: An integral and replaceable ink cartridge maintains a clean ink system free of contamination. Our inks have a excellent adhesion and contrast on a wide range of porous and non-porous materials such as carton, metal, glass, paper, wood, and many plastics. Our inks offers outstanding performance under most common application conditions.
+    third_section_text: We now offer a High Adhesion Ink specially designed for PVC extrusion application. Get unprecedented print quality on PVC pipes!
+
+  distributor:
+    first_section_title: Global Reach
+    first_section_text: Wherever you are in the world, one of our distributors are close by. We are present on every continent and offer support in your language and time zone.
+    second_section_title: Foenix has distributors in
+    third_section_title: Interested in joining the Foenix Coding Family?
+    third_section_text:  We are excited to have a growing network of distribution partners marketing Foenix products around the world. We are currently inviting companies to join our international distributor network to promote our new range of printers to new markets.  Fill up this form and we’ll be in touch shortly to discuss this opportunity
+
+  distributor_countries:
+    uk: UK
+    indonesia: Indonesia
+    south_africa: South Africa
+    france: France
+    austria: Austria
+    peru: Peru
+    turkey: Turkey
+    venezuela: Venezuela
+    malaysia: Malaysia
+    vietnam: Vietnam
+    saudi_arabia: Saudi Arabia
+    egypt: Egypt
+    greece: Greece
+    spain: Spain
+    latvia: Latvia
+    netherlands: Netherlands
+    sri_lanka: Sri Lanka
+    italy: Italy
+    croatia: Croatia
+    brazil: Brazil
+    hungary: Hungary
+    portugal: Portugal
+    lithuania: Lithuania
+    ivory_coast: Ivory Coast
+    poland: Poland
+    malta: Malta
+    philippines: Philippines
+    uae: UAE
+    chile: Chile
+    australia: Australia
+    usa: USA
+    argentina: Argentina
+    india: India
+    bulgaria: Bulgaria
+    israel: Israel
+    singapore: Singapore
+    germany: Germany
+    guatemala: Guatemala
+    china: China
+    ireland: Ireland
+    morocco: Morocco
+    nigeria: Nigeria
+    sweden: Sweden
+    be_the_next: Be the next one
+
+  cost_of_ownership:
+    first_section_title: Save big with the BLANK
+    first_section_text: "Helping businesses improve efficiency: Avoid getting locked into an expensive inkjet printer that will drain your budget over time. Learn warranty details, service terms, maintenance/repairs costs, ink & consumables costs. Gain the confidence to choose the most cost-effective solution for your business. Calculate the total cost of ownership of your printer before taking a decision"
+    second_section_title: Savings/ROI Calculator
+    second_section_text: Easily control your cost per print and the number of print per cartridge. It has never been easier to keep your cost down! Save up to 75% of ink  with our Ink saver mode
+
+  fxone_remote:
+    first_section_title: BLANK REMOTE
+    first_section_text: Printer for all your product coding application
+    second_section_title: Overview
+    first_card_title: High Resolution Coding & Marking
+    first_card_text: 1 to 8 lines of print, with 2-18mm print height.
+    second_card_title: Pc Connectivity
+    second_card_text: Via USB cable or Ethernet for direct message creation or factory network system.
+    third_card_title: Graphics, Logos & Barcodes
+    third_card_text: Easily import JPEG & BMP graphics using Sauven Pro software.
+    fourth_card_title: Simple Screen & Keyboard
+    fourth_card_text: For local control of printer speed and direction, and message delay.
+    fifth_card_title: Out of the Box Installation
+    fifth_card_text: With minimal components for maximum reliability.
+    sixth_card_title: 1D & 2D Barcodes
+    sixth_card_text: High resolution printing of multiple barcode variants.
+    seventh_card_title: 2 Years Warranty
+    seventh_card_text: You already have the peace of mind of a two years warranty. Now, you can extend it for one, two or three more years
+    eigth_card_title: Touch Controller
+    eigth_card_text: Simple interactive windows programming with Foenix App
+    ninth_card_title: Stand Alone Printer
+    ninth_card_text: Use a USB stick to transfer print messages from Foenix App
+    tenth_card_title: True Type Font & Unicode
+    tenth_card_text: Enables message creation in any font and in any language
+    eleventh_card_title: Large Solvent Based Ink Catridge
+    eleventh_card_text: Low cost coding and clean inking system, ideal for printing on to porous and non-porous surfaces.
+    twelfth_card_title: Multi Port Connection
+    twelfth_card_text: For encoders, external alarms and alternative product detection devices.
+    thirteenth_card_title: Ink Saver Mode
+    thirteenth_card_text: Reduce ink consumption by up to 50%
+    fourth_section_title: Specification
+    fifth_section_left_title: Features
+    fifth_section_left_one: Prints in any orientation
+    fifth_section_left_two: 1 to 8 lines of print
+    fifth_section_left_three: 2mm- 18mm total print height
+    fifth_section_left_four: High resolution peizo print head
+    fifth_section_left_five: Prints text, graphics, logos and barcodes
+    fifth_section_left_six: Prints time and multiple date formats
+    fifth_section_left_seven: Continuous repeat print capability
+    fifth_section_left_eight: 100m/min print speed (50m/min for barcode and 2mm text)
+    fifth_section_left_nine: Single start/stop print button
+    fifth_section_left_ten: Visual alarm indicator including ink low
+    fifth_section_left_eleven: Message width, delay and print direction control
+    fifth_section_left_twelve: Product detection photocell
+    fifth_section_left_thirteen: Weight 1.7 Kg (excluding ink catridge and brackets)
+    fifth_section_left_fourteen: Size 242 x 178 x 90mm
+    fifth_section_right_title_one: Connectivity
+    fifth_section_right_one: RS232 and RS485 for Sauven Touch controller
+    fifth_section_right_two: USB-A memory stick included
+    fifth_section_right_three: USB-B for cable connection
+    fifth_section_right_four: Ethernet (optional)
+    fifth_section_right_five: Prints text, graphics, logos and barcodes
+    fifth_section_right_six: I/O port for encoder, alarm beacon and external photocells
+    fifth_section_right_title_two: Ink
+    fifth_section_right_seven: Sealed replaceable ink catridge (up to 15 million characters)
+    fifth_section_right_eight: Oil based inks for porous surfaces
+    fifth_section_right_nine: Solvent based inks for non-porous surfaces
+    fifth_section_right_ten: UV inks for instant LED curing
+    fifth_section_right_eleven: Various colours
+    fifth_section_right_title_three: Electrical
+    fifth_section_right_twelve: 90-260 VAC to 24VDC power supply included
+    sixth_section_title: Reliable, Powerful, Versatile PRODUCTION READY
+    sixth_section_left_sub_title_one: No costly maintenance contracts
+    sixth_section_left_sub_text_one: Foenix printers are manufactured with minimal components to give maximum reliability. No pumps, no valves, no compressed air, no droplet charging and no air filters means low maintenance.
+    sixth_section_left_sub_title_two: Lowest cost per print
+    sixth_section_left_sub_text_two: The piezo technology used in the Foenix printer only needs a single sealed ink cartridge and does not require additional make-up solvent. This substantially reduces operating costs.
+    sixth_section_left_sub_title_three: Consistent print performance
+    sixth_section_left_sub_text_three: Foenix printers are printing in High Resolution. You can print logo, 1D and 2D barcodes, variables...
+    sixth_section_left_sub_title_four: Operator confidence
+    sixth_section_left_sub_text_four: Easy installation, message editing and programming & easy maintenance.
+    sixth_section_right_sub_title_one: Proven technology
+    sixth_section_right_sub_text_one: Uses a Xaar high resolution print head whose technology has already been proven with many thousands of printers successfully sold worldwide. Xaar logo
+    sixth_section_right_sub_title_two: System integration
+    sixth_section_right_sub_text_two: Integrate to a factory network system or connect to industrial scanners, encoders, check weighers or other equipment as required.
+    sixth_section_right_sub_title_three: "100% uptime 0%downtime Print 24x7 – Certified to run 24x7"
+    sixth_section_right_sub_text_three: Never stop printing even when you’re changing cartridge!
+    sixth_section_right_sub_title_four: Innovation Automatic shutter
+    sixth_section_right_sub_text_four: "To protect the most critical part of your printer: the printhead engine"
+    seventh_section_title: Flawless prints, every time
+    seventh_section_text: We value simplicity and ease of use. Less is more. Simplest, most efficient way possible to code your product. Less components for maximum reliability.
+
+  fxone_standard:
+    first_section_title: BLANK STANDARD
+    first_section_text: Printer for all your case coding application
+    second_section_title: Overview
+    first_card_title: High Resolution Coding & Marking
+    first_card_text: 1 to 8 lines of print, with 2-18mm print height.
+    second_card_title: Pc Connectivity
+    second_card_text: Via USB cable or Ethernet for direct message creation or factory network system.
+    third_card_title: Graphics, Logos & Barcodes
+    third_card_text: Easily import JPEG & BMP graphics using Sauven Pro software.
+    fourth_card_title: Simple Screen & Keyboard
+    fourth_card_text: For local control of printer speed and direction, and message delay.
+    fifth_card_title: Out of the Box Installation
+    fifth_card_text: With minimal components for maximum reliability.
+    sixth_card_title: 1D & 2D Barcodes
+    sixth_card_text: High resolution printing of multiple barcode variants.
+    seventh_card_title: 2 Years Warranty
+    seventh_card_text: You already have the peace of mind of a two years warranty. Now, you can extend it for one, two or three more years
+    eigth_card_title: Touch Controller
+    eigth_card_text: Simple interactive windows programming with Foenix App
+    ninth_card_title: Stand Alone Printer
+    ninth_card_text: Use a USB stick to transfer print messages from Foenix App
+    tenth_card_title: True Type Font & Unicode
+    tenth_card_text: Enables message creation in any font and in any language
+    eleventh_card_title: Large Solvent Based Ink Catridge
+    eleventh_card_text: Low cost coding and clean inking system, ideal for printing on to porous and non-porous surfaces.
+    twelfth_card_title: Multi Port Connection
+    twelfth_card_text: For encoders, external alarms and alternative product detection devices.
+    thirteenth_card_title: Ink Saver Mode
+    thirteenth_card_text: Reduce ink consumption by up to 50%
+
+  fxone_plus:
+    first_section_title: BLANK PLUS
+    first_section_text: Printer for all your case coding application
+    coming_soon: Coming Soon...
+
+  software:
+    first_section_title_one: FX APP
+    first_section_text_one: Programming without trainir
+    first_section_title_two: FX TOUCH Controller
+    first_section_text_two: Control your printer with just a touch
+    second_section_title: FX APP
+    second_section_text: The ultimate tool to always have your production in control and reduce your costs. Foenix FX APP enables you to design messages in record time through it user friendly interface.
+    second_section_check_one: Simple interactive windows programming
+    second_section_check_two: Unlimited message storage
+    second_section_check_three: Ink saver print mode
+    second_section_check_four: Uses True Type font & Unicode
+    second_section_check_five: Imports JPEG & BMP logos
+    second_section_check_six: Multi language support
+    second_section_card_one: "Fx App: Click & Print"
+    second_section_card_two: Optimize Your Printing Processes with FX APP
+    second_section_card_three: Reliable printing in one click
+    second_section_card_four: Software integration to fit your workflow
+    third_section_left_title: FX APP
+    third_section_left_sub_title: Features
+    third_section_left_text_one: Compatible with Windows XP and above
+    third_section_left_text_two: Intuitive icon led message creation
+    third_section_left_text_three: True Type Font and Unicode supported
+    third_section_left_text_four: Graphics, logos & barcodes directly imported in JPEG and BMP format
+    third_section_left_text_five: Time and multiple date formats
+    third_section_left_text_six: Ink saver print mode
+    third_section_left_text_seven: Unlimited message storage
+    third_section_left_text_eight: Multi language support
+    third_section_left_text_nine: Sauven Marking Ltd continously Improves products and software. Specifications are subject to change.
+    third_section_right_title: FX ONE REMOTE
+    third_section_right_sub_title_one: Features
+    third_section_right_text_one: 7” Touch Screen
+    third_section_right_text_two: Simple interactive windows programming
+    third_section_right_text_three: Uses FX App
+    third_section_right_sub_title_two: Connectivity
+    third_section_right_text_four: USB-A, USB-B, RS232, RS485 Multi port, Ethernet (Optional)
+    third_section_right_text_five: 24 v DC input
+    third_section_right_text_six: Support external alarms, beacons, encoders
+    third_section_right_text_seven: Auto programming with barcode reader
+    third_section_final_text: Touchscreen interface that simplifies every action with the FX APP. Easy setup, navigation, remove the need for training and deliver a hassle-free, intuitive printing experience.
+    fourth_section_title_one: Multilanguage support
+    fourth_section_text_one: Software translated in 19 languages and you print in any languanges
+    fourth_section_title_two: Keep your costs down
+    fourth_section_text_two: Easily control your cost per print and the number of print per cartridge. It has never been easier to keep your cost down! Ink saver mode Option (Picture / live calculation)
+    fourth_section_title_three: Networking
+    fourth_section_text_three: Maximize uptime by managing all your printers from one place.
+    fourth_section_title_four: FX APP
+    fourth_section_text_four: Advanced printer management. Maximize uptime by managing production across multiple Foenix printers from one place. Monitor progress, track fault and gain insights with print analytics.
+    fourth_section_title_five: Preventing user errors in print settings
+    fourth_section_text_five: Automatic configuration of print settings just by using a handheld reader!
+    button: Live software to test
+    fourth_section_title_six: Foenix firmware
+    fourth_section_text_six: Printers that get even better over time. Make your FX ONE printer even more capable with performance enhancements and added functionality in every firmware update.
+    fifth_section_title_one: Full Integration With Our DLL
+    fifth_section_sub_title: What is a DLL?
+    fifth_section_text_one: A DLL (Dynamic Link Library) is a set of software functions that can be used by a third party developer to incorporate into their own applications. The Foenix DLL described here provides a set of functions that allows a FX ONE printer to be controlled via the FXPro application or Foenix Touch Controller. The library makes the communication process to the printer much simpler for the developer as it takes care of the actual protocol used. The developer then uses a relatively simple mechanism to montior printers, load messages and transmit data.
+    fifth_section_title_two: How Does a DLL Work?
+    fifth_section_text_two: The DLL is used by the customer’s to communicate with the printer. The diagram below gives a basic overview showing how the DLL sits between the application and printer.
 
 
 
+  components:
+    yellow_button: Learn More
 
+  contact:
+    contact_title: Contact Us
+    contact_title_description: Get in touch and let us know how we can help.
+    icon_text: Our team is happy to answer all your questions. Fill out the form and we'll be in touch as soon as possible.
+    icon_text_two: Free test print, send us a sample of your product and we'll do a test print.
+    form_name: First Name and Last Name
+    form_email: Email Address
+    form_company: Company
+    form_country: Country
+    form_message: Your Message
+    form_phone: Phone
+
+  error:
+    four_four_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula libero.
+
+  login:
+    fpassword: Forgot your password?
+    dont_have_account: Don't have an account?
+    sign_up: Sign Up
+    email: Email
+    password: Password
 

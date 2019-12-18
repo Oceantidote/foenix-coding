@@ -1,3 +1,28 @@
+.jobs-wrapper {
+  padding-top: 150px;
+  background: linear-gradient(#EBEFF6, #FFFFFF);
+  position: relative;
+  overflow: hidden;
+}
+
+.jobs-section {
+  position: relative;
+}
+
+.jobs-big-pill {
+  position: absolute;
+  width: 279px;
+  right: -110px;
+  top: -114px;
+}
+
+.jobs-little-pill {
+  position: absolute;
+  width: 239px;
+  left: -120px;
+  top: 530px;
+}
+
 .search-bar {
   display: flex;
   align-items: center;
@@ -52,6 +77,23 @@
 .temp-button {
   width: 100px;
   margin: 20px calc(50% - 50px);
+  background-color: #F3A300;
+  border-color: #F3A300;
+  color: #FFF;
+}
+
+.new-job-button {
+  width: 100px;
+  margin: 20px calc(50% - 50px);
+  font-size: 14px;
+  background-color: #FFF;
+  border-color: #F3A300;
+  color: #F3A300;
+  cursor: pointer;
+  &:hover {
+   background-color: #F3A300;
+   color: #FFF;
+  }
 }
 
 .job-card {
@@ -63,8 +105,12 @@
   padding: 0 2rem;
   border-radius: 2px;
   box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
-  p {
-    color: #676767;
+  p, span {
+    font-family: 'Roboto', sans-serif;
+    color: #717B8D;
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 30px;
   }
   :nth-child(1) {
     width: 40%;
@@ -77,23 +123,8 @@
 .job-card-flag {
   height: 30px !important;
   width: 30px !important;
+  border-radius: 50% !important;
 }
-
-.work-with-us-card {
-  width: 40%;
-  height: 130px;
-  border-radius: 8px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
-}
-
-
-
-
 
 
 

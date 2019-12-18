@@ -1,4 +1,6 @@
 class JobsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
+
   def index
     @jobs = policy_scope(Job)
     @countries = Country.all
