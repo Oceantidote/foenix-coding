@@ -1,0 +1,12 @@
+<div class="post-edit">
+  <div class="post-edit-form">
+    <h3>Edit Post</h3>
+    <%= simple_form_for @post do |f| %>
+      <%= f.input :image %>
+      <%= f.input :image_cache, as: :hidden %>
+      <%= f.input :title %>
+      <%= f.input :text, as: :text %>
+      <%= f.button :submit %>
+    <% end %>
+  </div>
+</div>

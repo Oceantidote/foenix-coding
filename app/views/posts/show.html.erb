@@ -1,2 +1,38 @@
-<p>Post show</p>
-<%= @post.title %>
+<div class="post-show">
+  <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "news-pill") %>
+  <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "news-pill-bottom") %>
+  <div class="post-show-container">
+    <h1><%= @post.title %></h1>
+    <p>Reading time 10mins</p>
+    <%= cl_image_tag @post.image %>
+    <div class="post-show-details">
+      <div class="post-show-social-media">
+        <p class="padding-15"><%= @post.created_at.strftime("%B %d, %Y") %></p>
+        <div class="post-show-social-icons">
+          <a href="/"><i class="fab fa-facebook-square"></i></a>
+          <a href="/"><i class="fab fa-twitter"></i></a>
+          <a href="/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="post-show-content">
+        <p><%= simple_format @post.text %></p>
+      </div>
+    </div>
+  </div>
+  <div class="post-show-last">
+    <h1>Latest Story</h1>
+    <div class="post-show-last-cards">
+      <% @posts.last(3).each do |post| %>
+          <div class="post-show-card">
+            <%= link_to post_path(post) do %>
+              <%= cl_image_tag post.image %>
+              <div class="post-show-card-text">
+                <h6><%= post.title %></h6>
+                <p><%= truncate(post.text, length: 90) %></p>
+              </div>
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>

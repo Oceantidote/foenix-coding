@@ -23,6 +23,15 @@
   @include for-xlarge-devices-down {
   }
 
+  @include for-large-devices-down {
+    & img {
+      width: 25%;
+      height: 100px;
+      border-radius: 12px;
+    }
+
+  }
+
   @include for-medium-devices-down {
     & img {
       width: 20%;
@@ -112,4 +121,42 @@
 
 .font-12 {
   font-size: 12px !important;
+}
+
+
+.post-show-card {
+  display: flex;
+  flex-direction: column;
+  // background-color: gray;
+  margin-right: 3%;
+
+  & a {
+    width: 100%;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+
+  & img {
+    object-fit: cover;
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  & h6 {
+    font-weight: 700;
+    color: $black-blue;
+    padding: 10px 0;
+  }
+
+  & p {
+    color: #747B89;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
 }
