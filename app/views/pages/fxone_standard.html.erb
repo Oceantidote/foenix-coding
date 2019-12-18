@@ -1,21 +1,22 @@
 <div class="fxone-wrapper fxone-standard">
   <div class="about-second-section-wrapper fxone-first-section-wrapper">
+    <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "fxone-big-pill fxone-standard-big-pill show-mobile") %>
     <div class="container">
       <div class="about-section fxone-section">
-        <div class="about-second-section-left">
-          <h1><%= t("fxone_standard.first_section_title") %></h1>
+        <div class="about-second-section-left no-padding-mobile">
+          <h1 class="responsive-header"><%= t("fxone_standard.first_section_title") %></h1>
           <p class="paragraph-text about-second-section-text inks-card-text"><%= t("fxone_standard.first_section_text") %></p>
         </div>
-        <div class="about-second-section-right">
+        <div class="about-second-section-right no-padding-mobile">
           <%= cl_image_tag("fxone-standard-graphic-1_y8kdvn.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
         </div>
       </div>
     </div>
   </div>
   <div class="ownership-second-section-wrapper fxone-second-section-wrapper">
-    <%= image_tag 'about-dots.png', class: 'fxone-dots' %>
+    <%= image_tag 'about-dots.png', class: 'fxone-dots hide-mobile' %>
     <%= image_tag 'inks-icon-3.png', class: 'about-icon' %>
-    <h3 class="about-first-section-text ownership-second-section-text text-center"><%= t("fxone_remote.second_section_title") %></h3>
+    <h3 class="text-center"><%= t("fxone_remote.second_section_title") %></h3>
   </div>
   <div class="fxone-third-section-wrapper">
     <%= cl_image_tag("fxone-standard-slant-with-pill_sxthpz.png", :quality=>"auto", class: "fxone-standard-slant") %>
@@ -133,11 +134,12 @@
     </div>
   </div>
   <div class="fxone-fifth-section-wrapper">
-    <%= cl_image_tag("fourth-section-top-half_yshdpy.png", :quality=>"auto", class: "fxone-fourth-section-background") %>
+    <%= cl_image_tag("mobile-slant_kd8uj1.png", :quality=>"auto", class: "fxone-mobile-slant show-mobile") %>
+    <%= cl_image_tag("fourth-section-top-half_yshdpy.png", :quality=>"auto", class: "fxone-fourth-section-background hide-mobile") %>
     <div class="container">
       <div class="about-section fxone-section d-flex justify-content-center">
         <div class="fxone-fifth-section-content">
-          <%= image_tag 'about-dots.png', class: 'fxone-dots-back' %>
+          <%= image_tag 'about-dots.png', class: 'fxone-dots-back hide-mobile' %>
           <div class="fxone-fifth-section-left">
             <p class="bold small-text"><%= t("fxone_remote.fifth_section_left_title") %></p>
             <ul style="padding-left: 16px;">
@@ -180,7 +182,6 @@
               <li class="paragraph-text" style="font-size: 12px !important; line-height: 25px !important"><%= t("fxone_remote.fifth_section_right_twelve") %></li>
             </ul>
           </div>
-          </div>
         </div>
       </div>
     </div>
@@ -190,7 +191,7 @@
     <div class="container">
       <div class="fxone-sixth-section-header">
         <%= image_tag 'fxone-icon-14.png', class: 'about-icon m-auto fxone-icon-sixth-section' %>
-        <h3 class="about-first-section-text text-center"><%= t("fxone_remote.sixth_section_title") %></h3>
+        <h3 class="fxone-remote-sixth-section-title text-center"><%= t("fxone_remote.sixth_section_title") %></h3>
       </div>
       <div class="about-section fxone-section fxone-sixth-section-content">
         <div class="about-first-section-left">
@@ -258,16 +259,17 @@
   </div>
   <div class="fxone-seventh-section-wrapper">
     <%= image_tag 'about-dots.png', class: 'fxone-seventh-section-dots' %>
-    <%= cl_image_tag("fourth-section-bottom-half_j9e2d7.png", :quality=>"auto", class: "fxone-fourth-section-background") %>
+    <%= cl_image_tag("fourth-section-bottom-half_j9e2d7.png", :quality=>"auto", class: "fxone-fourth-section-background hide-mobile") %>
     <div class="container">
       <div class="about-section">
-        <div class="about-fifth-section-left">
+        <div class="about-fifth-section-left mobile-center fxone-no-padding">
           <%= image_tag 'fxone-icon-15.png', class: 'about-icon' %>
           <h3 class="about-fifth-section-text" style="padding-left: 16px;"><%= t("fxone_remote.seventh_section_title") %></h3>
           <p class="paragraph-text about-fifth-section-text" style="padding-left: 16px;"><%= t("fxone_remote.seventh_section_text") %></p>
+          <%= cl_image_tag("fxone-remote-graphic-4_lo5sz0.png", :quality=>"auto", class: "about-graphic about-graphic-two show-mobile") %>
         </div>
         <div class="about-fifth-section-right">
-          <%= cl_image_tag("fxone-remote-graphic-4_lo5sz0.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
+          <%= cl_image_tag("fxone-remote-graphic-4_lo5sz0.png", :quality=>"auto", class: "about-graphic about-graphic-two hide-mobile") %>
           <%#= image_tag 'about-dots.png', class: 'about-dots-fifth' %>
         </div>
       </div>
@@ -278,4 +280,5 @@
     </div>
   </div>
 </div>
+
 <%= render 'shared/newsletter' %>
