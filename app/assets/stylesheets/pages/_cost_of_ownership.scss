@@ -23,6 +23,7 @@
   background-color: #FFFFFF;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-bottom: 50px;
   position: relative;
   .coming-soon {
@@ -62,6 +63,9 @@
   width: 120px;
   top: 430px;
   left: -50px;
+  @include for-phone-only {
+    top: 630px;
+  }
   // @include for-large-devices-down {
   //   left: -430px;
   // }
