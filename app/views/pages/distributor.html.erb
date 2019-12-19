@@ -18,7 +18,7 @@
   <div class="distributor-second-section-wrapper">
     <div class="container-countries">
       <div class="distributor-second-section">
-        <h3 class=""><%= t("distributor.second_section_title") %>:</h3>
+        <h3 class="mobile-margin-bottom"><%= t("distributor.second_section_title") %>:</h3>
         <div class="distributor-countries-container">
           <%#= render 'shared/distributor_countries' %>
           <div class="distributor-countries-web">
@@ -35,6 +35,28 @@
               </div>
             </div>
           </div>
+          <div class="distributor-countries-mobile">
+            <div class="row" style="margin: 0;">
+              <% @countries.each do |country| %>
+                <div class="country-card" style="width: 50%;">
+                  <%= image_tag url_for(country.photo) %>
+                  <p class="paragraph-text"><%= country.name %></p>
+                </div>
+              <% end %>
+              <div class="country-card" style="width: 50%;">
+                <%= image_tag 'distributor-plus-icon.png' %>
+                <p class="paragraph-text"><%= t("distributor_countries.be_the_next") %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="distributor-see-more">
+        <div id="see-more" class="see-more-button">
+          <p>See more</p>
+        </div>
+        <div id="see-less" class="see-more-button d-none">
+          <p>See less</p>
         </div>
       </div>
     </div>
@@ -94,3 +116,20 @@
 </div>
 
 <%= render 'shared/newsletter' %>
+
+<script>
+  container = document.querySelector('.distributor-countries-mobile')
+  moreButton = document.getElementById('see-more')
+  lessButton = document.getElementById('see-less')
+
+  moreButton.addEventListener('click', () => {
+    container.classList.toggle('change-height');
+    moreButton.classList.toggle('d-none')
+    lessButton.classList.toggle('d-none')
+  })
+  lessButton.addEventListener('click', () => {
+    container.classList.toggle('change-height');
+    moreButton.classList.toggle('d-none')
+    lessButton.classList.toggle('d-none')
+  })
+</script>
