@@ -1,9 +1,9 @@
 <div class="jobs-wrapper jobs-show-wrapper">
-  <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "jobs-big-pill") %>
-  <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill") %>
+  <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "jobs-big-pill hide-mobile") %>
+  <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill hide-mobile") %>
   <div class="jobs-section">
     <div class="job-content">
-      <div class="job-content-left">
+      <div class="job-content-left hide-mobile">
         <p class="s-medium-text mb-2"><%= t("jobs_show.roles_at") %></p>
         <p class="s-medium-text main-body-text mb-2"><%= @job.location %></p>
         <p class="s-medium-text main-body-text mb-2">Full time*</p>
@@ -17,6 +17,18 @@
       </div>
       <div class="job-content-right">
         <h3 style="letter-spacing: 1px;"><%= @job.title %></h3>
+        <div class="job-content-left show-mobile">
+          <p class="s-medium-text mb-2"><%= t("jobs_show.roles_at") %></p>
+          <p class="s-medium-text main-body-text mb-2"><%= @job.location %></p>
+          <p class="s-medium-text main-body-text mb-2">Full time*</p>
+          <p class="s-medium-text main-body-text mb-2">New Business*</p>
+          <div class="job-social-links">
+            <i class="fab fa-facebook-square main-body-text mb-2 mr-2"></i>
+            <i class="fab fa-twitter main-body-text mb-2 mr-2"></i>
+            <i class="fab fa-linkedin main-body-text mb-2 mr-2"></i>
+          </div>
+          <%= link_to "#{ t("jobs_show.apply_now" ) }", '#', class: 'btn apply-now-button' %>
+        </div>
         <div class="trix-text">
           <%= raw @job.text1 %>
           <%= raw @job.text2 %>
