@@ -1,8 +1,28 @@
 .jobs-wrapper {
   padding-top: 150px;
+  padding-bottom: 100px;
   background: linear-gradient(#EBEFF6, #FFFFFF);
   position: relative;
   overflow: hidden;
+  @include for-phone-only {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+.jobs-header {
+  text-align: center;
+  @include for-phone-only {
+    text-align: left;
+  }
+}
+
+.jobs-header-text {
+  width: 50%;
+  margin: 20px auto;
+  @include for-phone-only {
+    width: 100%;
+  }
 }
 
 .jobs-section {
@@ -51,12 +71,53 @@
   :nth-child(2), :nth-child(3), :nth-child(4) {
     border-left: 1px solid #8E8E8E;
   }
+  @include for-phone-only {
+    flex-direction: column;
+    background: transparent;
+    height: auto;
+    padding: 0 15px;
+    box-shadow: none;
+    :nth-child(2), :nth-child(3), :nth-child(4) {
+      border-left: none;
+    }
+    select, input {
+      background-color: transparent;
+      height: 50px !important;
+      padding-left: 30px !important;
+      &:focus {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+.jobs-search-form {
+  @include for-phone-only {
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+.jobs-filter-down {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+}
+
+.jobs-index-filter-button {
+  width: auto !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+  margin-bottom: 20px;
 }
 
 .input-holder {
   width: 25%;
   height: 100%;
   position: relative;
+  @include for-phone-only {
+    width: 100%;
+  }
 }
 
 .search-icon {
@@ -64,6 +125,10 @@
   right: 1.5rem;
   top: 30%;
   border: none !important;
+  @include for-phone-only {
+    right: auto;
+    left: 0;
+  }
 }
 
 #search_name, #search_team, #search_country, #search_job_type {
@@ -112,18 +177,54 @@
     font-weight: lighter;
     line-height: 30px;
   }
-  :nth-child(1) {
-    width: 40%;
-  }
-  :nth-child(2), :nth-child(3) {
-    width: 30%;
+  // :nth-child(1) {
+  //   width: 40%;
+  // }
+  // :nth-child(2), :nth-child(3) {
+  //   width: 30%;
+  // }
+  @include for-phone-only {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 2rem;
+    border-radius: 10px;
+    p, span {
+      font-size: 12px;
+    }
   }
 }
+
+.job-card-title {
+  width: 40%;
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
+.job-card-info {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.job-card-info-container {
+  display: flex;
+  width: 60%;
+  @include for-phone-only {
+    width: 100%;
+    margin-top:5px;
+  }
+}
+
 
 .job-card-flag {
   height: 30px !important;
   width: 30px !important;
   border-radius: 50% !important;
+}
+
+.job-form-height {
+  max-height: 550px !important;
 }
 
 
