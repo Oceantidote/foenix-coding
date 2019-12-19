@@ -113,6 +113,9 @@
 
 .about-icon {
   width: 70px;
+  @include for-phone-only {
+    width: 120px;
+  }
 }
 
 .body-text {
@@ -329,7 +332,13 @@
 
 .no-padding-mobile {
   @include for-phone-only {
-    padding: 0;
+    padding: 0 !important;
+  }
+}
+
+.no-margin-mobile {
+  @include for-phone-only {
+    margin: 0 !important;
   }
 }
 
@@ -357,6 +366,24 @@
 .show-mobile {
   @include for-small-devices-up {
     display: none;
+  }
+}
+
+.mobile-margin-bottom {
+  @include for-phone-only {
+    margin-bottom: 50px;
+  }
+}
+
+.mobile-reverse {
+  @include for-phone-only {
+    flex-direction: column-reverse !important;
+  }
+}
+
+.mobile-margin-left {
+  @include for-phone-only {
+    margin-left: 40px;
   }
 }
 

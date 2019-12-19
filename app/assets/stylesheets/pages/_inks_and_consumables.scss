@@ -6,6 +6,9 @@
   position: relative;
   padding-top: 200px;
   background: linear-gradient(#EBEFF6, #F6F7FA);
+  @include for-phone-only {
+    padding-top: 100px;
+  }
 }
 
 .inks-second-section-wrapper {
