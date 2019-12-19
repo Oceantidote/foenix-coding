@@ -36,6 +36,8 @@
   padding-top: 100px;
   position: relative;
   @include for-phone-only {
+    position: unset;
+    background: #FFF;
     // background: #FFF;
   }
 }
@@ -128,9 +130,15 @@
   height: 100%;
   width: 100%;
   @include for-phone-only {
-    height: auto;
+    // height: auto;
     top: -70px;
   }
+}
+
+.fxone-mobile-slant {
+  position: absolute;
+  width: 100%;
+  top: -100px;
 }
 
 .fxone-fifth-section-content {
@@ -196,6 +204,13 @@
   }
 }
 
+.fxone-remote-sixth-section-title {
+  position: relative;
+  @include for-phone-only {
+    margin: 25px 0;
+  }
+}
+
 .fxone-dots-back {
   width: 60px;
   position: absolute;
@@ -219,6 +234,9 @@
   display: flex;
   justify-content: center;
   padding: 100px 0;
+  @include for-phone-only {
+    padding: 30px 0;
+  }
 }
 
 .fxone-seventh-section-video {
@@ -232,6 +250,14 @@
 .responsive-header {
   @include for-small-devices-down {
     font-size: 28px;
+  }
+}
+
+.fxone-no-padding {
+  @include for-phone-only {
+    h3, p {
+      padding: 0 !important;
+    }
   }
 }
 

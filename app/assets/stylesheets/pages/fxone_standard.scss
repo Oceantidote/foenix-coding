@@ -2,6 +2,9 @@
   position: absolute;
   width: 100%;
   top: -150px;
+  @include for-phone-only {
+    top: -90px;
+  }
 }
 
 .fxone-standard-block {
@@ -29,5 +32,16 @@
   }
   .fxone-fourth-section-wrapper {
     position: relative;
+  }
+  .fxone-section {
+    @include for-phone-only {
+      flex-direction: column;
+    }
+  }
+}
+
+.fxone-standard-big-pill {
+  @include for-phone-only {
+    top: -50px;
   }
 }
