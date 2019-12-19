@@ -1,26 +1,28 @@
 <div class="software-wrapper">
   <div class="inks-first-section-wrapper">
     <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "software-big-pill") %>
-    <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "software-little-pill") %>
+    <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "software-little-pill hide-mobile") %>
     <div class="container">
       <div class="inks-section">
-        <div class="inks-first-section-left software-first-section-left">
+        <div class="inks-first-section-left software-first-section-left no-padding-mobile">
           <h3><%= t("software.first_section_title_one") %></h3>
-          <p class="paragraph-text"><%= t("software.first_section_text_one") %></p>
+          <p class="paragraph-text no-margin-mobile"><%= t("software.first_section_text_one") %></p>
+          <%= cl_image_tag("software-graphic-1_m6jjgm.png", class: "w-100 about-graphic-two show-mobile software-graphic-mobile") %>
           <h3><%= t("software.first_section_title_two") %></h3>
           <p class="paragraph-text"><%= t("software.first_section_text_two") %></p>
         </div>
         <div class="inks-first-section-right d-flex justify-content-center">
-          <%= cl_image_tag("software-graphic-1_m6jjgm.png", class: "w-100 about-graphic-two") %>
+          <%= cl_image_tag("software-graphic-1_m6jjgm.png", class: "w-100 about-graphic-two hide-mobile") %>
         </div>
       </div>
     </div>
   </div>
   <div class="software-second-section-wrapper">
+    <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "software-cards-little-pill show-mobile") %>
     <div class="container">
       <div class="inks-section software-section">
         <div class="inks-first-section-left software-first-section-left">
-          <h3 class="about-first-section-text"><%= t("software.second_section_title") %></h3>
+          <h3><%= t("software.second_section_title") %></h3>
           <p class="paragraph-text"><%= t("software.second_section_text") %></p></p>
           <div class="fxone-sixth-section-check">
             <%= image_tag 'foenix-check.png', width: 20 %>
@@ -47,30 +49,30 @@
             <p class="paragraph-text" style="font-size: 12px !important; line-height: 25px !important; margin: 0;"><%= t("software.second_section_check_six") %></p>
           </div>
         </div>
-        <div class="inks-first-section-right d-flex justify-content-center">
-          <div style="margin-bottom: 80px; margin-right: 20px;">
+        <div class="inks-first-section-right software-first-section-right">
+          <div class="software-card-left">
             <div class="software-card">
-              <%= image_tag 'software-icon-1.png', class: 'about-icon' %>
+              <%= image_tag 'software-icon-1.png', class: 'about-icon software-card-icon' %>
               <div class="software-card-text-container">
                 <p><%= t("software.second_section_card_one") %></p>
               </div>
             </div>
             <div class="software-card">
-              <%= image_tag 'software-icon-3.png', class: 'about-icon' %>
+              <%= image_tag 'software-icon-3.png', class: 'about-icon software-card-icon' %>
               <div class="software-card-text-container">
                 <p><%= t("software.second_section_card_three") %></p>
               </div>
             </div>
           </div>
-          <div style="margin-top: 80px;">
-            <div class="software-card">
-              <%= image_tag 'software-icon-2.png', class: 'about-icon' %>
+          <div class="software-card-right">
+            <div class="software-card no-margin-top-mobile">
+              <%= image_tag 'software-icon-2.png', class: 'about-icon software-card-icon' %>
               <div class="software-card-text-container">
                 <p><%= t("software.second_section_card_two") %></p>
               </div>
             </div>
             <div class="software-card">
-              <%= image_tag 'software-icon-4.png', class: 'about-icon' %>
+              <%= image_tag 'software-icon-4.png', class: 'about-icon software-card-icon' %>
               <div class="software-card-text-container">
                 <p><%= t("software.second_section_card_four") %></p>
               </div>
@@ -81,12 +83,15 @@
     </div>
   </div>
   <div class="software-section-third-wrapper">
-    <%= cl_image_tag("software-slant_p9xw4z.png", :quality=>"auto", class: "software-slant") %>
+    <%= cl_image_tag("software-slant_p9xw4z.png", :quality=>"auto", class: "software-slant hide-mobile") %>
+    <%= cl_image_tag("software-mobile-slant_giq09v.png", :quality=>"auto", class: "software-slant show-mobile") %>
     <div class="container">
-      <%= cl_image_tag("software-graphic-2_tqdjup.png", :quality=>"auto", class: "software-graphic-2") %>
+      <%= cl_image_tag("software-graphic-2_tqdjup.png", :quality=>"auto", class: "software-graphic-2 hide-mobile") %>
+      <%= cl_image_tag("software-mobile-graphic_dalrrz.png", :quality=>"auto", class: "software-graphic-2 show-mobile") %>
+      <%= cl_image_tag("software-mobile-graphic-2_wpjolo.png", :quality=>"auto", class: "software-graphic-2 show-mobile software-graphic-side") %>
       <div class="fxone-fifth-section-content software-fifth-section-content">
           <div class="fxone-fifth-section-left">
-            <h3 class="about-first-section-text"><%= t("software.third_section_left_title") %></h3>
+            <h3><%= t("software.third_section_left_title") %></h3>
             <p class="bold small-text"><%= t("software.third_section_left_sub_title") %></p>
             <ul style="padding-left: 16px;">
               <li class="paragraph-text" style="font-size: 12px !important; line-height: 25px !important"><%= t("software.third_section_left_text_one") %></li>
@@ -101,7 +106,7 @@
             <p class="paragraph-text pl-3" style="font-size: 10px !important; line-height: 18px !important;"><%= t("software.third_section_left_text_nine") %></p>
           </div>
           <div class="fxone-fifth-section-right software-fifth-section-right">
-            <h3 class="about-first-section-text"><%= t("software.third_section_right_title") %></h3>
+            <h3><%= t("software.third_section_right_title") %></h3>
             <p class="bold small-text"><%= t("software.third_section_right_sub_title") %></p>
             <ul style="padding-left: 16px;">
               <li class="paragraph-text" style="font-size: 12px !important; line-height: 25px !important"><%= t("software.third_section_right_text_one") %></li>
@@ -119,8 +124,8 @@
       </div>
       <div class="container">
         <div class="inks-section software-third-section-bottom">
-          <div class="inks-first-section-left software-first-section-left">
-            <%= cl_image_tag("software-graphic-3_l0wrfp.png", :quality=>"auto", class: "inks-graphic about-graphic-two") %>
+          <div class="inks-first-section-left software-first-section-left no-padding-mobile">
+            <%= cl_image_tag("software-graphic-3_l0wrfp.png", :quality=>"auto", class: "software-graphic about-graphic-two") %>
           </div>
           <div class="inks-first-section-right d-flex justify-content-center">
             <p class="paragraph-text"><%= t("software.third_section_final_text") %></p>
@@ -131,15 +136,14 @@
   </div>
     <!-- <div class="about-third-section-wrapper software-fourth-section-wrapper" style="background-image: url('<%= cl_image_path "software-slant-2_cay6k1.png" %>')"> -->
   <div class="about-third-section-wrapper software-fourth-section-wrapper">
-    <%= cl_image_tag("software-slant-2_vbxnyd.png", class: "software-slant-two") %>
+    <%= cl_image_tag("mobile-slant_kd8uj1.png", class: "software-slant-two show-mobile") %>
+    <%= cl_image_tag("software-slant-2_vbxnyd.png", class: "software-slant-two hide-mobile") %>
     <%= cl_image_tag("software-slant-2-big_cdry4n.png", class: "software-slant-two-big") %>
     <%= cl_image_tag("software-slant-2-loop_lzixx9.png", class: "software-slant-two-loop") %>
-    <%= image_tag 'about-dots.png', class: 'software-dots' %>
+    <%= image_tag 'about-dots.png', class: 'software-dots hide-mobile' %>
     <div class="container" style="position: relative;">
       <div class="software-fourth-section-text">
-        <div class="w-100 d-flex justify-content-center">
-          <%= image_tag 'software-icon-5.png', class: 'about-icon m-auto' %>
-        </div>
+        <%= image_tag 'software-icon-5.png', class: 'about-icon m-auto' %>
         <h3 class="text-center"><%= t("software.fourth_section_title_one") %></h3>
         <p class="paragraph-text text-center"><%= t("software.fourth_section_text_one") %></p>
       </div>
@@ -148,30 +152,26 @@
         <%= cl_image_tag("software-graphic-5_jro1yk.png", :quality=>"auto", class: "software-fourth-section-graphics") %>
       </div>
       <div class="software-fourth-section-text">
-        <div class="w-100 d-flex justify-content-center">
-          <%= image_tag 'software-icon-6.png', class: 'about-icon m-auto' %>
-        </div>
+        <%= image_tag 'software-icon-6.png', class: 'about-icon m-auto' %>
         <h3 class="text-center"><%= t("software.fourth_section_title_two") %></h3>
         <p class="paragraph-text text-center"><%= t("software.fourth_section_text_two") %></p>
       </div>
       <div class="software-fourth-section-graphics-container">
         <%= cl_image_tag("software-graphic-6_x590cd.png", :quality=>"auto", class: "software-fourth-section-graphics") %>
         <%= cl_image_tag("software-graphic-7_cbcawg.png", :quality=>"auto", class: "software-fourth-section-graphics") %>
-        <%= cl_image_tag("grey-dots_oh4kpb.png", :quality=>"auto", class: "software-grey-dots") %>
+        <%= cl_image_tag("grey-dots_oh4kpb.png", :quality=>"auto", class: "software-grey-dots hide-mobile") %>
       </div>
       <div class="software-fourth-section-text">
-        <div class="w-100 d-flex justify-content-center">
-          <%= image_tag 'software-icon-7.png', class: 'about-icon m-auto' %>
-        </div>
+        <%= image_tag 'software-icon-7.png', class: 'about-icon m-auto' %>
         <h3 class="text-center"><%= t("software.fourth_section_title_three") %></h3>
         <p class="paragraph-text text-center"><%= t("software.fourth_section_text_three") %></p>
       </div>
       <div class="container">
-        <div class="inks-section software-third-section-bottom">
-          <div class="inks-first-section-left software-first-section-left">
-            <%= cl_image_tag("software-graphic-8_rmajqc.png", :quality=>"auto", class: "w-100") %>
+        <div class="inks-section software-third-section-bottom mobile-column">
+          <div class="inks-first-section-left software-first-section-left no-padding-mobile no-margin-mobile">
+            <%= cl_image_tag("software-graphic-8_rmajqc.png", :quality=>"auto", class: "w-100 mobile-margin-bottom graphic-shadow") %>
           </div>
-          <div class="inks-first-section-right">
+          <div class="inks-first-section-right mobile-center">
             <h3><%= t("software.fourth_section_title_four") %></h3>
             <p class="paragraph-text"><%= t("software.fourth_section_text_four") %></p>
           </div>
@@ -179,8 +179,8 @@
       </div>
       <div class="container">
         <div class="inks-section">
-          <div class="about-fifth-section-left">
-            <h3 class="about-fifth-section-text" style="padding-left: 16px;"><%= t("software.fourth_section_title_five") %></h3>
+          <div class="about-fifth-section-left mobile-center">
+            <h3 style="padding-left: 16px;"><%= t("software.fourth_section_title_five") %></h3>
             <p class="paragraph-text about-fifth-section-text" style="padding-left: 16px;"><%= t("software.fourth_section_text_five") %></p>
             <%= link_to '#', class: 'btn software-button' do %>
               <div class="d-flex align-items-center">
@@ -189,17 +189,17 @@
               </div>
             <% end %>
           </div>
-          <div class="about-fifth-section-right">
-            <%= cl_image_tag("software-graphic-9_geqo96.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
+          <div class="about-fifth-section-right no-padding-mobile">
+            <%= cl_image_tag("software-graphic-9_geqo96.png", :quality=>"auto", class: "about-graphic about-graphic-two mobile-margin-left") %>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="inks-section software-third-section-bottom">
-          <div class="inks-first-section-left software-first-section-left">
-            <%= cl_image_tag("software-graphic-10_zfwsgt.png", :quality=>"auto", class: "w-100") %>
+        <div class="inks-section software-third-section-bottom mobile-reverse">
+          <div class="inks-first-section-left software-first-section-left no-padding-mobile">
+            <%= cl_image_tag("software-graphic-10_zfwsgt.png", :quality=>"auto", class: "w-100 mobile-margin-bottom graphic-shadow") %>
           </div>
-          <div class="inks-first-section-right">
+          <div class="inks-first-section-right mobile-center">
             <h3><%= t("software.fourth_section_title_six") %></h3>
             <p class="paragraph-text"><%= t("software.fourth_section_text_six") %></p>
           </div>
@@ -209,13 +209,11 @@
   </div>
   <div class="software-fifth-section-wrapper">
     <div class="container">
-      <div class="software-fourth-section-text">
-        <div class="w-100 d-flex justify-content-center">
-          <%= image_tag 'software-icon-8.png', class: 'about-icon m-auto' %>
-        </div>
+      <div class="software-fourth-section-text no-padding-mobile">
+        <%= image_tag 'software-icon-8.png', class: 'about-icon m-auto' %>
         <h3 class="text-center"><%= t("software.fifth_section_title_one") %></h3>
         <p class="paragraph-text text-center"><%= t("software.fifth_section_sub_title") %></p>
-        <p class="paragraph-text text-center"><%= t("software.fifth_section_text_one") %></p>
+        <p class="paragraph-text text-center mobile-margin-bottom"><%= t("software.fifth_section_text_one") %></p>
         <h3 class="text-center"><%= t("software.fifth_section_title_two") %></h3>
         <p class="paragraph-text text-center"><%= t("software.fifth_section_text_two") %></p>
         <%= cl_image_tag("software-graphic-11_c9knsk.png", :quality=>"auto", class: "software-middle-graphic") %>

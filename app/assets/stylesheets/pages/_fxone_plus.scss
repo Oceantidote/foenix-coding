@@ -1,3 +1,8 @@
+.fxone-plus {
+  position: relative;
+  overflow: hidden;
+}
+
 .fxone-plus-graphic {
   transition: all 0.3s ease;
   @include for-phone-only {
