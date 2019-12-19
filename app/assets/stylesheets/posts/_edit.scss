@@ -30,6 +30,7 @@
 
 .new-post {
   display: flex;
+  height: calc(100vh - 264px);
   justify-content: center;
   background-image: linear-gradient(#F0F2F6, white, white);
 }

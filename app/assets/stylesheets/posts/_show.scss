@@ -100,3 +100,9 @@
     flex-direction: column;
   }
 }
+.post-mini-text {
+  text-decoration: none !important;
+  color: gray !important;
+  max-width: 280px;
+  text-overflow: ellipsis;
+}

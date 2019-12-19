@@ -8,7 +8,6 @@ class Admin::PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    @post.text = params[:text]
     if @post.save
       redirect_to posts_path
     else
@@ -41,6 +40,6 @@ class Admin::PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:title, :photo, :time)
+    params.require(:post).permit(:title, :text, :photo, :time)
   end
 end

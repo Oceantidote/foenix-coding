@@ -31,7 +31,7 @@ module ApplicationHelper
     request["accept"] = 'application/json'
     request["content-type"] = 'application/json'
     request["api-key"] = ENV['SENDBLUE_API_KEY']
-    request.body = "{\"email\":\"#{email ? email : ""}\",\"COMPANY\":\"#{company ? company : ""}\",\"SMS\":\"#{sms ? sms : ""}\",\"MESSAGE\":\"#{message ? message : ""}\",\"COUNTRY\":\"#{country ? country : ""}\",\"FIRSTNAME\":\"#{fname ? fname : ""}\",\"LASTNAME\":\"#{lname ? lname : ""}\",\"listIds\":[13],\"updateEnabled\":false}"
+    request.body = "{\"email\":\"#{email ? email : ""}\",\"attributes\":{\"COMPANY\":\"#{company ? company.capitalize : ""}\",\"SMS\":\"#{sms ? sms : ""}\",\"FULL_NAME\":\"#{fname && lname ? fname.capitalize + " " + lname.capitalize : ""}\",\"MESSAGE\":\"#{message ? message : ""}\",\"COUNTRY\":\"#{country ? country : ""}\",\"FIRSTNAME\":\"#{fname ? fname.capitalize : ""}\",\"LASTNAME\":\"#{lname ? lname.capitalize : ""}\"},\"listIds\":[13],\"updateEnabled\":false}"
     p request.body
     response = http.request(request)
     puts response.read_body

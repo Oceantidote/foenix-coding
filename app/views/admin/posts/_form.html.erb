@@ -1,12 +1,11 @@
-<div class="container">
-  <%= simple_form_for([:admin, @post]) do |f| %>
-    <%= f.input :title %>
-    <p>Text</p>
-    <input id="x" type="hidden" name="text" value= "<%= @post.text ? @post.text : '' %>">
-    <trix-editor input="x"></trix-editor>
-    <%= f.input :photo, as: :file %>
-    <%= f.input :time %>
-    <%= f.submit %>
-  <% end %>
-</div>
+<%= simple_form_for([:admin, @post]) do |f| %>
+  <%= f.input :title %>
+  <p>Text</p>
+  <input id="x" type="hidden" name="post[text]" value= "<%= @post.text ? @post.text : '' %>">
+  <trix-editor input="x"></trix-editor>
+  <%= f.input :photo, as: :file %>
+  <%= f.input :time %>
+  <%= f.submit %>
+<% end %>
+
 
