@@ -11,6 +11,9 @@
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
+  @include for-phone-only {
+    padding: 16px;
+  }
 }
 
 .job-content-left {
@@ -20,6 +23,9 @@
   }
   @include for-large-devices-down {
     width: 150px;
+  }
+  @include for-phone-only {
+    margin: 40px 0;
   }
 }
 
@@ -50,6 +56,12 @@
   padding: 30px;
   border-radius: 10px;
   margin: 20px 0;
+  @include for-phone-only {
+    flex-direction: column;
+    .apply-now-button {
+      margin-top: 20px;
+    }
+  }
 }
 
 .trix-text {
