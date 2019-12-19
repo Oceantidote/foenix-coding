@@ -1,27 +1,39 @@
 <div class="jobs-wrapper">
-  <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "jobs-big-pill") %>
-  <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill") %>
+  <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "jobs-big-pill hide-mobile") %>
+  <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill hide-mobile") %>
   <div class="jobs-section">
     <div class="container">
-      <h1 class="text-center mt-5" style="letter-spacing: 1px;"><%= t("jobs.title") %></h1>
-      <h5 class="text-center mt-4 mb-5 grey w-50 mx-auto main-body-text"><%= t("jobs.tagline") %></h5>
-      <%= simple_form_for :search, url: jobs_path, method: "GET" do |f| %>
+      <h1 class="jobs-header mt-5" style="letter-spacing: 1px;"><%= t("jobs.title") %></h1>
+      <p class="jobs-header jobs-header-text main-body-text"><%= t("jobs.tagline") %></p>
+      <div class="jobs-index-filter-button">
+        <div id="show-filter" class="see-more-button jobs-index-filter-button">
+          <p>Show Filter</p>
+        </div>
+        <div id="hide-filter" class="see-more-button jobs-index-filter-button d-none">
+          <p>Hide Filter</p>
+        </div>
+      </div>
+      <%= simple_form_for :search, url: jobs_path, method: "GET", html: { class: "jobs-search-form" } do |f| %>
         <div class="search-bar">
           <div class="input-holder">
             <%= f.input :name, label: false %>
             <i class="fas fa-search search-icon grey"></i>
+            <!-- <i class="fas fa-angle-down jobs-filter-down"></i> -->
           </div>
           <div class="input-holder">
             <%= f.input :team, collection: ["I", "don't", "know", "what", "goes", "here", "yet"], label: false,  prompt: :translate %>
             <i class="fas fa-user-friends search-icon grey"></i>
+            <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
           </div>
           <div class="input-holder">
             <%= f.input :country, collection: @countries, label: false,  prompt: :translate %>
             <i class="fas fa-map-marker-alt search-icon grey"></i>
+            <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
           </div>
           <div class="input-holder">
             <%= f.input :job_type, collection: @types, label: false,  prompt: :translate %>
             <i class="fas fa-list-ul search-icon grey"></i>
+            <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
           </div>
         </div>
         <%= f.submit "Search", class: "btn temp-button" %>
@@ -40,10 +52,14 @@
         <% @results.each do |result| %>
           <%= link_to job_path(result), class: "text-decoration-none" do  %>
             <div class="job-card">
-              <p class="m-0"><%= result.title %></p>
-              <p class="m-0"><%= result.job_type %></p>
-              <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %>
-                <span class="m-0 ml-3 grey"><%= result.location %></span>
+              <div class="job-card-title">
+                <p class="m-0"><%= result.title %></p>
+              </div>
+              <div class="job-card-info">
+                <p class="m-0"><%= result.job_type %></p>
+                <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %>
+                  <span class="m-0 ml-3 grey"><%= result.location %></span>
+                </div>
               </div>
             </div>
           <% end %>
@@ -52,10 +68,14 @@
         <% @jobs.each do |job| %>
           <%= link_to job_path(job), class: "text-decoration-none" do  %>
             <div class="job-card">
-              <p class="m-0"><%= job.title %></p>
-              <p class="m-0"><%= job.job_type %></p>
-              <div class="m-0"><%= image_tag url_for(job.country.photo), class: "job-card-flag" %>
-                <span class="m-0 ml-3 grey"><%= job.location %></span>
+              <div class="job-card-title">
+                <p class="m-0"><%= job.title %></p>
+              </div>
+              <div class="job-card-info-container">
+                <p class="m-0 job-card-info"><%= job.job_type %></p>
+                <div class="m-0 job-card-info"><%= image_tag url_for(job.country.photo), class: "job-card-flag" %>
+                  <span class="m-0 ml-3 grey"><%= job.location %></span>
+                </div>
               </div>
             </div>
           <% end %>
@@ -69,5 +89,23 @@
   </div>
 
 </div>
+
 <%= render 'shared/newsletter' %>
+
+<script>
+  form = document.querySelector('.jobs-search-form')
+  showFilter = document.getElementById('show-filter')
+  hideFilter = document.getElementById('hide-filter')
+
+  showFilter.addEventListener('click', () => {
+    form.classList.toggle('job-form-height');
+    showFilter.classList.toggle('d-none')
+    hideFilter.classList.toggle('d-none')
+  })
+  hideFilter.addEventListener('click', () => {
+    form.classList.toggle('job-form-height');
+    showFilter.classList.toggle('d-none')
+    hideFilter.classList.toggle('d-none')
+  })
+</script>
 
