@@ -13,10 +13,12 @@
       </div>
     </div>
   </div>
-  <div class="ownership-second-section-wrapper fxone-second-section-wrapper">
+  <div class="ownership-second-section-wrapper fxone-second-section-wrapper" >
     <%= image_tag 'about-dots.png', class: 'fxone-dots hide-mobile' %>
-    <%= image_tag 'fxone-icon-1.png', class: 'about-icon' %>
-    <h3 class="text-center"><%= t("fxone_remote.second_section_title") %></h3>
+    <div data-aos="fade-up" data-aos-duration="2000">
+      <%= image_tag 'fxone-icon-1.png', class: 'about-icon' %>
+    </div>
+    <h3 class="text-center" data-aos="fade-up" data-aos-duration="2000"><%= t("fxone_remote.second_section_title") %></h3>
   </div>
   <div class="fxone-third-section-wrapper">
     <%= cl_image_tag("fxone-standard-slant-with-pill_sxthpz.png", :quality=>"auto", class: "fxone-standard-slant") %>
@@ -120,8 +122,10 @@
   <div class="fxone-fourth-section-wrapper">
     <div class="container">
       <div class="fxone-fourth-section-header">
-        <%= image_tag 'fxone-icon-2.png', class: 'about-icon' %>
-        <h3 class="about-first-section-text ownership-second-section-text text-center"><%= t("fxone_remote.fourth_section_title") %></h3>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <%= image_tag 'fxone-icon-2.png', class: 'about-icon' %>
+        </div>
+        <h3 class="about-first-section-text ownership-second-section-text text-center" data-aos="fade-up" data-aos-duration="2000"><%= t("fxone_remote.fourth_section_title") %></h3>
       </div>
       <div class="about-section fxone-section">
         <div class="about-first-section-left">
@@ -190,8 +194,10 @@
     <%#= cl_image_tag("fourth-section-middle_yezkil.png", :quality=>"auto", class: "fxone-fourth-section-background") %>
     <div class="container">
       <div class="fxone-sixth-section-header">
-        <%= image_tag 'fxone-icon-3.png', class: 'about-icon' %>
-        <h3 class="fxone-remote-sixth-section-title text-center"><%= t("fxone_remote.sixth_section_title") %></h3>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <%= image_tag 'fxone-icon-3.png', class: 'about-icon' %>
+        </div>
+        <h3 class="fxone-remote-sixth-section-title text-center" data-aos="fade-up" data-aos-duration="2000"><%= t("fxone_remote.sixth_section_title") %></h3>
       </div>
       <div class="about-section fxone-section fxone-sixth-section-content">
         <div class="about-first-section-left">
@@ -262,7 +268,7 @@
     <%= cl_image_tag("fourth-section-bottom-half_j9e2d7.png", :quality=>"auto", class: "fxone-fourth-section-background hide-mobile") %>
     <div class="container">
       <div class="about-section">
-        <div class="about-fifth-section-left mobile-center fxone-no-padding">
+        <div class="about-fifth-section-left mobile-center fxone-no-padding" data-aos="fade-up" data-aos-duration="2000">
           <%= image_tag 'fxone-icon-4.png', class: 'about-icon' %>
           <h3 class="about-fifth-section-text" style="padding-left: 16px;"><%= t("fxone_remote.seventh_section_title") %></h3>
           <p class="paragraph-text about-fifth-section-text" style="padding-left: 16px;"><%= t("fxone_remote.seventh_section_text") %></p>
@@ -275,6 +281,7 @@
       </div>
       <div class="fxone-seventh-section-video-container">
         <div class="fxone-seventh-section-video">
+          <iframe class="embed-player" src="https://www.youtube-nocookie.com/embed/oMW-QEs1zmc?controls=0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>

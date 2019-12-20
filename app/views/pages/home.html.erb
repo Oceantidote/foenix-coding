@@ -19,7 +19,7 @@
   </div>
   <div class="second-section">
     <%= cl_image_tag("Foenix-first-section-svg_ykndwi.png", :quality=>"auto", class: "first-section-svg-2") %>
-    <div class="second-section-one">
+    <div class="second-section-one" data-aos="fade-up" data-aos-duration="2000">
       <%= image_tag 'home-icon-1.png', class: 'about-icon' %>
       <h2><%= t("home.title_second") %></h2>
       <p><%= t("home.title_second_description") %></p>
@@ -80,8 +80,12 @@
   <div class="third-section">
     <%= cl_image_tag("foenix-home-background_wziieq.png", :quality=>"auto", class: "third-section_svg") %>
     <div class="third-section-features">
-      <%= image_tag 'home-icon-2.png', class: 'about-icon' %>
-      <h2><%= t("home.tabs_title") %></h2>
+      <div class="" data-aos="fade-up" data-aos-duration="2000">
+        <div class="jc">
+          <%= image_tag 'home-icon-2.png', class: 'about-icon ma-auto' %>
+        </div>
+        <h2><%= t("home.tabs_title") %></h2>
+      </div>
       <div class="tab">
        <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %></button>
        <button class="" onclick="openCity('Paris')"><%= t("home.tabs_two") %></button>
@@ -103,7 +107,7 @@
       </div>
       <div class="tabs-area">
         <%= cl_image_tag("long-pill_xrmujn.png", :quality=>"auto") %>
-        <div id="London" class="city">
+        <div id="London" class="city" data-aos="fade-up" data-aos-duration="2000">
           <div class="tab-text">
             <h4><%= t("home.tabs_one_title") %></h4>
             <p><%= t("home.tabs_one_description") %></p>
@@ -116,7 +120,7 @@
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
-        <div id="Paris" class="city" style="display:none">
+        <div id="Paris" class="city" style="display:none" data-aos="fade-up" data-aos-duration="2000">
           <div class="tab-text">
             <h4><%= t("home.tabs_two_title") %></h4>
             <p><%= t("home.tabs_two_description") %></p>
@@ -129,7 +133,7 @@
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
-        <div id="Tokyo" class="city" style="display:none">
+        <div id="Tokyo" class="city" style="display:none" data-aos="fade-up" data-aos-duration="2000">
           <div class="tab-text">
             <h4><%= t("home.tabs_three_title") %></h4>
             <p><%= t("home.tabs_three_description") %></p>
@@ -142,7 +146,7 @@
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
-        <div id="Bogota" class="city" style="display:none">
+        <div id="Bogota" class="city" style="display:none" data-aos="fade-up" data-aos-duration="2000">
           <div class="tab-text">
             <h4><%= t("home.tabs_four_title") %></h4>
             <p><%= t("home.tabs_four_description") %></p>
@@ -155,7 +159,7 @@
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
-        <div id="Lexico" class="city"style="display:none">
+        <div id="Lexico" class="city"style="display:none" data-aos="fade-up" data-aos-duration="2000">
           <div class="tab-text">
             <h4><%= t("home.tabs_five_title") %></h4>
             <p><%= t("home.tabs_five_description") %></p>
@@ -168,7 +172,7 @@
           <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
         </div>
 
-        <div id="Brussels" class="city" style="display:none">
+        <div id="Brussels" class="city" style="display:none" data-aos="fade-up" data-aos-duration="2000">
           <div class="tab-text">
             <h4><%= t("home.tabs_six_title") %></h4>
             <p><%= t("home.tabs_six_description") %></p>
@@ -185,7 +189,7 @@
         <%= cl_image_tag("blues-pill_lf4fan.png", :quality=>"auto") %>
         <%= cl_image_tag("slice-pill_bfxclr.png", :quality=>"auto") %>
         <%= cl_image_tag("dots-dots_mwj7rq.png", :quality=>"auto") %>
-        <div class="third-section-media">
+        <div class="third-section-media" data-aos="fade-right" data-aos-duration="2000">
         </div>
         <div class="third-video-text">
           <h3><span>FX ONE</span> Printer</h3>
@@ -197,13 +201,13 @@
   <div class="fourth-section">
     <%#= cl_image_tag("blue-background_d5gnu1.png", :quality=>"auto", class: "fourth-section_svg") %>
     <div class="fourth-section-features">
-      <div class="fourth-section-text">
+      <div class="fourth-section-text" data-aos="fade-up" data-aos-duration="2000">
         <%= image_tag 'home-icon-3.png', class: 'about-icon' %>
         <h2><%= t("home.fourth_title") %></h2>
         <p><%= t("home.fourth_description") %></p>
         <a href="/about" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
       </div>
-      <div class="fourth-section-grid">
+      <div class="fourth-section-grid" data-aos="fade-left" data-aos-duration="2000">
           <%= image_tag 'food-icon.png' %>
           <%= image_tag 'cosmetics-icon.png' %>
           <%= image_tag 'extrusion-icon.png' %>

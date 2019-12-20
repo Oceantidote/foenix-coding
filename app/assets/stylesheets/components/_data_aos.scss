@@ -1,0 +1,14 @@
+[data-aos] {
+  opacity: 0.2;
+  transition: opacity 0.5s;
+  transform: scale(0.9);
+}
+[data-aos].animated {
+  transform: scale(1);
+  opacity: 1;
+}
+.jc {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
