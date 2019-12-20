@@ -136,11 +136,6 @@
     font-weight: 300;
   }
 
-  & img {
-    height: 50px;
-    width: 50px;
-  }
-
   @include for-medium-devices-down {
     flex-direction: column;
     text-align: center;

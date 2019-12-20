@@ -20,7 +20,7 @@
   <div class="second-section">
     <%= cl_image_tag("Foenix-first-section-svg_ykndwi.png", :quality=>"auto", class: "first-section-svg-2") %>
     <div class="second-section-one">
-      <%= image_tag 'section-two-icon.png' %>
+      <%= image_tag 'home-icon-1.png', class: 'about-icon' %>
       <h2><%= t("home.title_second") %></h2>
       <p><%= t("home.title_second_description") %></p>
       <a href="/software" class="yellow-button"><%= t("components.yellow_button") %> <i class="fas fa-arrow-right"></i></a>
@@ -80,7 +80,7 @@
   <div class="third-section">
     <%= cl_image_tag("foenix-home-background_wziieq.png", :quality=>"auto", class: "third-section_svg") %>
     <div class="third-section-features">
-      <%= image_tag 'foenix-home-icon-math.png', class: "third-section-features_icon" %>
+      <%= image_tag 'home-icon-2.png', class: 'about-icon' %>
       <h2><%= t("home.tabs_title") %></h2>
       <div class="tab">
        <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %></button>
@@ -198,7 +198,7 @@
     <%#= cl_image_tag("blue-background_d5gnu1.png", :quality=>"auto", class: "fourth-section_svg") %>
     <div class="fourth-section-features">
       <div class="fourth-section-text">
-        <%= image_tag 'hand-icon.png' %>
+        <%= image_tag 'home-icon-3.png', class: 'about-icon' %>
         <h2><%= t("home.fourth_title") %></h2>
         <p><%= t("home.fourth_description") %></p>
         <a href="/about" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>

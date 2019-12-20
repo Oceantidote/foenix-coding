@@ -6,10 +6,25 @@
 .software-first-section-left {
   display: block;
   margin-top: 20px;
+  @include for-phone-only {
+    margin: 0;
+  }
 }
 
 .software-section {
   align-items: flex-start;
+  .fxone-sixth-section-check {
+    @include for-small-devices-down {
+      width: 100%;
+      margin-left: 20px;
+    }
+  }
+  @include for-small-devices-down {
+    flex-direction: column;
+  }
+  @include for-phone-only {
+    display: block;
+  }
 }
 
 .software-big-pill {
@@ -51,21 +66,41 @@
 .software-first-section-right {
   display: flex;
   justify-content: center;
+  @include for-small-devices-down {
+    margin: 0 auto;
+    width: 100%;
+  }
   @include for-phone-only {
     flex-direction: column;
-    margin: 0 auto;
+  }
+}
+
+.software-check-display {
+  @include for-small-devices-down {
+    display: flex;
+    width: 100%;
+    div {
+      width: 50%;
+    }
+  }
+  @include for-phone-only {
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
   }
 }
 
 .software-card {
   display: flex;
+  border: 3px solid #fafafa;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
   flex-direction: column;
   align-items: center;
-  border: 1px solid #000;
   border-radius: 10px;
   background: #FFF;
-  height: 150px;
-  width: 140px;
+  height: 200px;
+  width: 170px;
   margin: 20px 0;
   padding: 10px;
   p {
@@ -184,12 +219,10 @@
 .software-fourth-section-text {
   padding: 50px 0;
   position: relative;
-  @include for-phone-only {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .software-fourth-section-wrapper {
