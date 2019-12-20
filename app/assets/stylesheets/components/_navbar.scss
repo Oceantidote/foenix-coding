@@ -26,14 +26,14 @@
 
 .navbar-left {
   display: flex;
-  width: 40%;
+  width: 500px;
   justify-content: space-between;
   align-items: center;
 }
 
 .navbar-right {
   display: flex;
-  width: 25%;
+  width: 300px;
   justify-content: space-between;
   align-items: center;
 }
@@ -75,9 +75,8 @@
 #mobile-navbar {
   font-size: 28px;
 
-  @include for-xxlarge-devices-down {
-    display: none;
-  }
+
+  display: none;
 
   @include for-medium-devices-down {
     display: block;
