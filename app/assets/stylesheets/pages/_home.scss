@@ -667,7 +667,7 @@
   padding: 0 20px;
   height: 80px;
   width: 100%;
-  background-color: #FFB03A;
+  // background-color: #FFB03A;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -677,16 +677,17 @@
   }
 }
 
-.corner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  background: linear-gradient(to bottom right, #FFB03A 50%, #FFF 50%);
-}
+// .corner {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 15px;
+//   width: 15px;
+//   background: linear-gradient(to bottom right, #FFB03A 50%, #FFF 50%);
+// }
 
 .cookie-bar-content {
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
   position: relative;
   background-color: #FFF;
   height: 40px;

@@ -170,3 +170,24 @@
     border: 0;
   }
 }
+
+.printers-menu {
+  background: #F6F9FC;
+  flex-direction: column !important;
+}
+
+.printers-text {
+  padding-left: 30px !important;
+  font-size: 12px !important;
+  margin: 10px 0 !important;
+}
+
+.printers-text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 !important;
+  i {
+    font-size: 12px;
+  }
+}
