@@ -146,8 +146,6 @@
   background-color: white;
 
   & img {
-    width: 100px;
-    height: auto;
     position: relative;
     z-index: 1;
   }
@@ -570,11 +568,6 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 400px;
-
-  & img {
-    width: 100px;
-    height: auto;
-  }
 
   & h2 {
     color: #0E1B26;
