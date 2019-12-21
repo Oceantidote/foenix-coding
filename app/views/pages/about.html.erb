@@ -18,7 +18,7 @@
           <%= cl_image_tag("about-graphic-2_gcrekd.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
           <%= image_tag 'about-dots.png', class: 'about-dots-section-two' %>
         </div>
-        <div class="about-second-section-right mobile-center">
+        <div class="about-second-section-right mobile-center" data-aos="fade-up" data-aos-duration="2000">
           <%= image_tag 'about-icon-1.png', class: 'about-icon' %>
           <h3><%= t("about.second_section_title") %></h3>
           <p class="paragraph-text about-second-section-text"><%= t("about.second_section_text") %></p>
@@ -28,7 +28,7 @@
   </div>
   <div class="about-third-section-wrapper">
     <div class="container">
-      <div class="about-third-section-text">
+      <div class="about-third-section-text" data-aos="fade-up" data-aos-duration="2000">
         <%= image_tag 'about-icon-2.png', class: 'about-icon' %>
         <h3 class="text-center"><%= t("about.third_section_title") %></h3>
         <p class="paragraph-text text-center"><%= t("about.third_section_text") %></p>
@@ -53,11 +53,11 @@
     <div class="about-fifth-section-wrapper">
       <div class="container">
         <div class="about-section about-fifth-section no-padding-mobile">
-          <div class="about-fifth-section-left">
+          <div class="about-fifth-section-left" data-aos="fade-right" data-aos-duration="2000">
             <%= cl_image_tag("about-graphic-4-with-dots_w2k2fb.png", :quality=>"auto", class: "about-graphic about-graphic-two hide-mobile") %>
             <%#= image_tag 'about-dots.png', class: 'about-dots-fifth' %>
           </div>
-          <div class="about-fifth-section-right mobile-center">
+          <div class="about-fifth-section-right mobile-center" data-aos="fade-up" data-aos-duration="2000">
             <%= image_tag 'about-icon-3.png', class: 'about-icon' %>
             <h3 class="about-fifth-section-text"><%= t("about.fifth_section_title") %></h3>
             <%= cl_image_tag("about-graphic-4_r5ic34.png", :quality=>"auto", class: "about-graphic about-graphic-two show-mobile") %>
