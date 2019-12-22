@@ -2,15 +2,13 @@
   <div class="about-second-section-wrapper fxone-first-section-wrapper">
     <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "fxone-big-pill") %>
     <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "fxone-little-pill") %>
-    <div class="container">
-      <div class="about-section fxone-section">
-        <div class="about-second-section-left no-padding-mobile">
-          <%= cl_image_tag("fxone-remote-graphic-1_mxspzx.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
-        </div>
-        <div class="about-second-section-right no-padding-mobile">
-          <h1 class="responsive-header"><%= t("fxone_remote.first_section_title") %></h1>
-          <p class="paragraph-text about-second-section-text"><%= t("fxone_remote.first_section_text") %></p>
-        </div>
+    <div class="about-section fxone-section fxone-first-section">
+      <!-- <div class="about-second-section-left no-padding-mobile"> -->
+        <%= cl_image_tag("fxone-remote-graphic-1_mxspzx.png", :quality=>"auto", class: "fxone-first-section-image") %>
+      <!-- </div> -->
+      <div class="no-padding-mobile fxone-first-section-text">
+        <h1 class="responsive-header"><%= t("fxone_remote.first_section_title") %></h1>
+        <p class="paragraph-text about-second-section-text"><%= t("fxone_remote.first_section_text") %></p>
       </div>
     </div>
   </div>

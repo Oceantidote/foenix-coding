@@ -1,13 +1,14 @@
 // Specific CSS for your home-page
 
 .first-section {
-  height: 100vh;
+  // height: 100vh;
   background: linear-gradient(#EDEFF4, white);
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
   overflow: hidden;
+  padding: 150px 0;
 
   @include for-medium-devices-down {
     flex-direction: column-reverse;

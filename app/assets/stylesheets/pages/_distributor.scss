@@ -51,12 +51,14 @@
 
 .distributor-section {
   display: flex;
+  justify-content: center;
+  align-items: center;
   @include for-small-devices-down {
     flex-direction: column;
   }
 }
 
-.distributor-first-section-left, .distributor-first-section-right {
+.distributor-first-section-left {
   width: 50%;
   @include for-small-devices-down {
     width: 90%;
@@ -64,9 +66,25 @@
   }
 }
 
+.distributor-first-section-right {
+  width: 50%;
+  @include for-small-devices-down {
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .distributor-first-section-left {
   display: flex;
   justify-content: center;
+}
+
+.distributor-first-section-image {
+  margin-right: 20px;
+  @include for-small-devices-down {
+    width: 100% !important;
+    margin: 0;
+  }
 }
 
 .distributor-graphic {
@@ -86,25 +104,33 @@
 }
 
 .distributor-left-section-text {
-  width: 60%;
+  // width: 60%;
+  width: 400px;
+  position: relative;
   @include for-small-devices-down {
+    width: 80%;
+  }
+  @include for-phone-only {
+    padding: 0 16px;
     width: 100%;
   }
 }
 
 .distributor-dots {
   width: 50px;
-  margin-left: 400px;
-  @include for-large-devices-down {
-    margin-left: 350px;
-  }
-  @include for-medium-devices-down {
-    margin-left: 250px;
-  }
+  position: absolute;
+  right: -75px;
+  // margin-left: 330px;
+  // @include for-large-devices-down {
+  //   margin-left: 350px;
+  // }
+  // @include for-medium-devices-down {
+  //   margin-left: 250px;
+  // }
+  // @include for-small-devices-down {
+  //   margin-left: 160px;
+  // }
   @include for-small-devices-down {
-    margin-left: 160px;
-  }
-  @include for-phone-only {
     display: none;
   }
 }

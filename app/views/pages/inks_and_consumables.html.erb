@@ -38,15 +38,11 @@
   <div class="inks-third-section-wrapper">
     <%= cl_image_tag("slant-background_xuvpqk.png", :quality=>"auto", class: "inks-slant hide-mobile") %>
     <%= cl_image_tag("mobile-slant_kd8uj1.png", :quality=>"auto", class: "inks-slant show-mobile") %>
-    <div class="container">
-      <div class="inks-section mobile-reverse">
-        <div class="inks-first-section-left">
-          <%= cl_image_tag("inks_pipe_mmpdgo.png", :quality=>"auto", class: "about-graphic about-graphic-two inks-pipes") %>
-        </div>
-        <div class="inks-first-section-right mobile-center">
-          <%= image_tag 'inks-icon-1.png', class: 'about-icon' %>
-          <h3 class="inks-fifth-section-text mobile-margin-bottom"><%= t("inks_and_consumables.third_section_text") %></h3>
-        </div>
+    <div class="inks-section mobile-reverse">
+      <%= cl_image_tag("inks-pipes_vcplke.png", class: "fxone-first-section-image position-relative inks-third-section-image") %>
+      <div class="inks-third-section-right mobile-center">
+        <%= image_tag 'inks-icon-1.png', class: 'about-icon' %>
+        <h3 class="inks-fifth-section-text mobile-margin-bottom"><%= t("inks_and_consumables.third_section_text") %></h3>
       </div>
     </div>
   </div>

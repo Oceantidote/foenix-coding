@@ -57,11 +57,37 @@
   z-index: 2;
 }
 
+.inks-third-section-image {
+  @include for-phone-only {
+    padding: 0 10px;
+  }
+}
+
 .inks-first-section-left, .inks-first-section-right {
   width: 50%;
   padding: 16px;
   @include for-phone-only {
     width: 90%;
+  }
+}
+
+.inks-third-section-left {
+  width: 60%;
+  padding: 16px;
+  @include for-phone-only {
+    width: 90%;
+  }
+}
+
+.inks-third-section-right {
+  position: relative;
+  width: 400px;
+  padding: 16px;
+  @include for-phone-only {
+    width: 90%;
+  }
+  @include  for-xlarge-devices-up {
+    left: -80px;
   }
 }
 

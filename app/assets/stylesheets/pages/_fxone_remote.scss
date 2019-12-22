@@ -267,3 +267,79 @@
   }
 }
 
+.fxone-first-section-text {
+  position: relative;
+  h1, p {
+    position: relative;
+    left: -200px;
+    @include for-xlarge-devices-down {
+      left: -150px;
+    }
+    @include for-large-devices-down {
+      left: -100px;
+    }
+    @include for-large-devices-down {
+      left: -50px;
+    }
+    @include for-small-devices-down {
+      left: 0;
+    }
+  }
+  @include for-small-devices-down {
+    padding-left: 30px;
+  }
+  @include for-phone-only {
+    width: 90%;
+  }
+}
+
+.fxone-first-section-text-left {
+  position: relative;
+  h1, p {
+    position: relative;
+    right: -180px;
+    @include for-xlarge-devices-down {
+      right: -130px;
+    }
+    @include for-large-devices-down {
+      right: -100px;
+    }
+    @include for-large-devices-down {
+      right: -50px;
+    }
+    @include for-small-devices-down {
+      right: 0;
+    }
+  }
+  @include for-small-devices-down {
+    padding-left: 30px;
+  }
+  @include for-phone-only {
+    width: 90%;
+  }
+}
+
+.fxone-first-section {
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+
+.fxone-first-section-image {
+  width: 1000px;
+    @include for-xlarge-devices-down {
+      width: 700px;
+    }
+
+    @include for-large-devices-down {
+      width: 500px;
+    }
+
+    @include for-small-devices-down {
+      width: 60vw;
+    }
+
+    @include for-phone-only {
+      width: 100%;
+    }
+}
+
