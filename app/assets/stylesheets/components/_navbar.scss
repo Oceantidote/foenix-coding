@@ -20,22 +20,45 @@
   }
 }
 
+.navbar-title {
+  color: #051B28;
+  font-size: 14px;
+}
+
+.navbar-lang-link {
+  display: inline-block;
+  color: #051B28;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px 15px;
+  border-radius: 5px;
+  @include for-small-devices-down {
+    left: 0;
+  }
+}
+
 .nav-spacer {
   height: 80px;
 }
 
 .navbar-left {
   display: flex;
-  width: 500px;
   justify-content: space-between;
   align-items: center;
 }
 
+.nav-left {
+  margin-right: 40px;
+}
+
 .navbar-right {
   display: flex;
-  width: 300px;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-right {
+  margin-left: 40px;
 }
 
 .navbar-logo {
@@ -43,17 +66,10 @@
 }
 
 .small-chevron {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .navbar-item {
-
-  a {
-    color: #676767;
-  }
-  i {
-    color: #676767;
-  }
   &:hover {
     a {
       text-decoration: none;
@@ -89,7 +105,7 @@
   height: 100vh;
   width: 100%;
   background-color: rgba(0,0,0,0.0);
-  z-index: 1000;
+  z-index: 100000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,17 +113,17 @@
 }
 
 #mobile-links {
-  border-radius: 5px;
-  height: 65vh;
+  border-radius: 10px;
   width: 400px;
   background-color: white;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   position: absolute;
-    top: -150px;
+  z-index: 100000;
+  top: -150px;
   transition: top 0.5s;
   display: flex;
   align-items: center;
-  padding: 30px 40px 10px 30px;
+  padding: 30px 60px 10px 30px;
 
 
   & ul {
@@ -127,7 +143,6 @@
   }
 
   & li {
-    padding-bottom: 20px;
 
     & a {
       color: #7F8488;
@@ -144,11 +159,9 @@
   }
 
   @include for-small-devices-down {
-    height: 80vh;
   }
 
   @include for-xsmall-phone-only {
-    height: 80vh;
     top: -200px;
   }
 }
@@ -171,9 +184,28 @@
   }
 }
 
+.each-mobile-link {
+  padding-bottom: 20px;
+  a {
+    font-size: 14px;
+  }
+}
+
 .printers-menu {
   background: #F6F9FC;
   flex-direction: column !important;
+  @include for-medium-devices-down {
+    width: 100%;
+    margin: 0 0 20px 35px;
+    padding: 0;
+    border-radius: 10px;
+    .printers-text-container {
+      padding: 0 16px !important;
+    }
+    .printers-text {
+      padding-left: 0px !important;
+    }
+  }
 }
 
 .printers-text {
@@ -190,4 +222,20 @@
   i {
     font-size: 12px;
   }
+}
+
+.first-web-link {
+  padding-left: 10px;
+  font-size: 14px;
+  color: #7F8488;
+  cursor: default;
+  &:hover {
+    color: #474747;
+  }
+}
+
+.first-mobile-link {
+  color: #7F8488;
+  font-size: 14px;
+  padding-bottom: 5px;
 }

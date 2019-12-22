@@ -1,16 +1,16 @@
 <div class="navbar-foenix">
   <div class="navbar-left">
     <%= link_to root_path do %>
-      <%= image_tag "logo.png", alt: "Foenix Coding", class: "navbar-logo" %>
+      <%= image_tag "logo.png", alt: "Foenix Coding", class: "navbar-logo nav-left" %>
     <% end %>
     <div class="navbar-item hidden">
-      <a href="#" role="button" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a href="#" role="button" id="productsDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= t("navbar.products") %> <i class="fas fa-chevron-down small-chevron"></i>
       </a>
       <div class="dropdown-menu" aria-labelledby="productsDropdown">
         <ul class="dropdown-menu-ul">
           <li class="printers-menu">
-            <span><%= image_tag 'icon-1.png' %><%= link_to t("navbar.printers"), root_path %></span>
+            <span><%= image_tag 'icon-1.png' %><span class="first-web-link"><%= t("navbar.printers") %></span></%></span>
             <%= link_to fxone_standard_path, class: 'printers-text-container mt-1' do %>
               <span class="printers-text"><%= t("navbar.printer_one") %></span><i class="fas fa-angle-right"></i>
             <% end %>
@@ -27,7 +27,7 @@
       </div>
     </div>
     <div class="navbar-item hidden">
-      <a href="#" role="button" id="serviceDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a href="#" role="button" id="serviceDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= t("navbar.services") %> <i class="fas fa-chevron-down small-chevron"></i>
       </a>
       <div class="dropdown-menu" aria-labelledby="serviceDropdown">
@@ -39,7 +39,7 @@
       </div>
     </div>
     <div class="navbar-item hidden">
-      <a href="#" role="button" id="companyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a href="#" role="button" id="companyDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= t("navbar.company") %> <i class="fas fa-chevron-down small-chevron"></i>
       </a>
       <div class="dropdown-menu" aria-labelledby="companyDropdown">
@@ -54,16 +54,16 @@
   <div class="navbar-right hidden">
     <div class="navbar-item">
       <% if user_signed_in? %>
-        <%= link_to( t('navbar.logout'), destroy_user_session_path, method: :delete) %>
+        <%= link_to( t('navbar.logout'), destroy_user_session_path, method: :delete, class: "navbar-title nav-right" ) %>
       <% else %>
-        <%= link_to t('navbar.login'), new_user_session_path %>
+        <%= link_to t('navbar.login'), new_user_session_path, class: "navbar-title nav-right"  %>
       <% end %>
     </div>
     <div class="navbar-item">
-      <%= link_to t("navbar.contact"), contact_path %>
+      <%= link_to t("navbar.contact"), contact_path, class: "navbar-title nav-right"  %>
     </div>
     <div class="navbar-item">
-      <a href="#" role="button" id="productsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <a href="#" role="button" id="productsDropdown" class="navbar-lang-link nav-right"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <%= locale.capitalize %> <i class="fas fa-chevron-down small-chevron"></i>
       </a>
       <div class="dropdown-menu" aria-labelledby="productsDropdown">
@@ -81,22 +81,33 @@
 <div id="mobile-menu" onclick="closeNav()">
   <div id="mobile-links">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <ul>
-      <li><%= image_tag 'icon-1.png' %><a href="/">Printers</a></li>
-      <li><%= image_tag 'icon-2.png' %><a href="/software">Software</a></li>
-      <li><%= image_tag 'icon-3.png' %><a href="/inks_and_consumables">Inks & Consumables</a></li>
-      <li><%= image_tag 'icon-4.png' %><a href="/distributor">Worldwide Distributors</a></li>
-      <li><%= image_tag 'icon-5.png' %><a href="/cost_of_ownership">Cost of ownership?</a></li>
-      <li><%= image_tag 'icon-6.png' %><a href="/faq">FAQ</a></li>
-      <li><%= image_tag 'icon-7.png' %><a href="/about">About</a></li>
-      <li><%= image_tag 'icon-8.png' %><a href="/jobs">Career</a></li>
-      <li><%= image_tag 'icon-9.png' %><a href="/posts">News/Event</a></li>
+    <ul style="width: 92%;">
+      <li class="first-mobile-link"><span><%= image_tag 'icon-1.png' %><%= t("navbar.printers") %></span></li>
+      <li class="printers-menu mobile-printers-menu">
+        <%= link_to fxone_standard_path, class: 'printers-text-container mt-1' do %>
+          <span class="printers-text"><%= t("navbar.printer_one") %></span><i class="fas fa-angle-right"></i>
+        <% end %>
+        <%= link_to fxone_remote_path, class: 'printers-text-container' do %>
+          <span class="printers-text"><%= t("navbar.printer_two") %></span><i class="fas fa-angle-right"></i>
+        <% end %>
+        <%= link_to fxone_plus_path, class: 'printers-text-container' do %>
+          <span class="printers-text"><%= t("navbar.printer_three") %></span><i class="fas fa-angle-right"></i>
+        <% end %>
+      </li>
+      <li class="each-mobile-link"><%= image_tag 'icon-2.png' %><a href="/software">Software</a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-3.png' %><a href="/inks_and_consumables">Inks & Consumables</a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-4.png' %><a href="/distributor">Worldwide Distributors</a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-5.png' %><a href="/cost_of_ownership">Cost of ownership?</a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-6.png' %><a href="/faq">FAQ</a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-7.png' %><a href="/about">About</a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-8.png' %><a href="/jobs">Career</a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-9.png' %><a href="/posts">News/Event</a></li>
     </ul>
   </div>
 </div>
 <script>
   function openNav() {
-    document.getElementById("mobile-links").style.top = "100px"
+    document.getElementById("mobile-links").style.top = "calc(50% - 312px)"
     document.getElementById("mobile-menu").style.visibility = "visible";
     document.getElementById("mobile-menu").style.backgroundColor = "rgba(0,0,0,0.4)";
   }
