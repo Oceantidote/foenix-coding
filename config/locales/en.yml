@@ -201,13 +201,13 @@ en:
     be_the_next: Be the next one
 
   cost_of_ownership:
-    first_section_title: Save big with the BLANK
+    first_section_title: Save big with the
     first_section_text: "Helping businesses improve efficiency: Avoid getting locked into an expensive inkjet printer that will drain your budget over time. Learn warranty details, service terms, maintenance/repairs costs, ink & consumables costs. Gain the confidence to choose the most cost-effective solution for your business. Calculate the total cost of ownership of your printer before taking a decision"
     second_section_title: Savings/ROI Calculator
     second_section_text: Easily control your cost per print and the number of print per cartridge. It has never been easier to keep your cost down! Save up to 75% of ink  with our Ink saver mode
 
   fxone_remote:
-    first_section_title: BLANK REMOTE
+    first_section_title: REMOTE
     first_section_text: Printer for all your product coding application
     second_section_title: Overview
     first_card_title: High Resolution Coding & Marking
@@ -288,7 +288,7 @@ en:
     seventh_section_text: We value simplicity and ease of use. Less is more. Simplest, most efficient way possible to code your product. Less components for maximum reliability.
 
   fxone_standard:
-    first_section_title: BLANK STANDARD
+    first_section_title: STANDARD
     first_section_text: Printer for all your case coding application
     second_section_title: Overview
     first_card_title: High Resolution Coding & Marking
@@ -319,7 +319,7 @@ en:
     thirteenth_card_text: Reduce ink consumption by up to 50%
 
   fxone_plus:
-    first_section_title: BLANK PLUS
+    first_section_title: PLUS
     first_section_text: Printer for all your case coding application
     coming_soon: Coming Soon...
 
