@@ -4,6 +4,10 @@ en:
     products: Products
     services: Service & Support
     company: Company
+    admin: Admin
+    countries: Countries
+    jobs: Jobs
+    posts: Posts
     login: Login
     logout: Logout
     contact: Contact Us
