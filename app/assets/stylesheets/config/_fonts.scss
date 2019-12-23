@@ -2,9 +2,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
 
 // Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Raleway", "Helvetica", "sans-serif";
+$body-font: "Manrope", "Helvetica", "sans-serif";
+$headers-font: "Manrope", "Helvetica", "sans-serif";
 
+@font-face {
+  font-family: "Manrope";
+  src: asset-url('manrope.woff'), format('truetype');
+}
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
@@ -15,12 +19,10 @@ $headers-font: "Raleway", "Helvetica", "sans-serif";
 // }
 // $my-font: "Font Name";
 
-
 h1,h2,h3,p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Manrope', 'Helvetica', sans-serif;
 }
 
 body {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
-
