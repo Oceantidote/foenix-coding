@@ -1027,10 +1027,10 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-aos@2.2:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/aos/-/aos-2.2.0.tgz#e388a873324c99e5dae0c5169226d1163dee5135"
-  integrity sha512-nxVfCOSQ5yboyy99KCIe6CM+68hNwggBROgdn/P+x0p3dAgtX3JVONZ27XKm93Ol9hvTtgoCjCffZU4HEr0nZQ==
+aos@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/aos/-/aos-2.3.4.tgz#eb1c29f5c1806a197cf6323080747547edd3db8e"
+  integrity sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==
   dependencies:
     classlist-polyfill "^1.0.3"
     lodash.debounce "^4.0.6"
