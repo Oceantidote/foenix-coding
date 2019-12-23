@@ -1,12 +1,14 @@
-<div class="new-post">
-  <div class="post-edit-form">
+<div class="admin-wrapper">
+  <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "jobs-big-pill hide-mobile") %>
+  <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill hide-mobile") %>
+  <div class="container position-relative">
     <h3>New Post</h3>
     <%= simple_form_for @post do |f| %>
-      <%= f.input :image %>
-      <%= f.input :image_cache, as: :hidden %>
       <%= f.input :title %>
       <%= f.input :text, as: :text %>
-      <%= f.button :submit %>
+      <%= f.input :image %>
+      <%= f.input :image_cache, as: :hidden %>
+      <%= f.button :submit, class: 'crud-button' %>
     <% end %>
   </div>
 </div>

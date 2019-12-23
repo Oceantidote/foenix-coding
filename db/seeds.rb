@@ -7,11 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
 
-User.destroy_all
-Job.destroy_all
-Country.destroy_all
+# User.destroy_all
+# Job.destroy_all
+# Country.destroy_all
 
-User.create(email: "test@test.com", password: "password")
+# User.create(email: "test@test.com", password: "password")
+User.create(email: "admin@test.com", password: "password", admin: true)
 
 # country1 = Country.new(name: "UK")
 # country1.photo.attach(io: File.open('/Users/gonzalodiaz/code/godiaz/foenix-coding/app/assets/images/uk.png'), filename: 'uk.png')
@@ -175,14 +176,14 @@ User.create(email: "test@test.com", password: "password")
 #             )
 # end
 
-20.times do
-  Post.create(
-    title: Faker::Book.title,
-    text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
-    # image: Faker::LoremPixel.image,
-    time: Faker::Date.between(from: 2000.days.ago, to: Date.today)
-    )
-end
+# 20.times do
+#   Post.create(
+#     title: Faker::Book.title,
+#     text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.",
+#     # image: Faker::LoremPixel.image,
+#     time: Faker::Date.between(from: 2000.days.ago, to: Date.today)
+#     )
+# end
 
 
 

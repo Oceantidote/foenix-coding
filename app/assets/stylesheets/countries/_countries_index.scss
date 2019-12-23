@@ -1,0 +1,32 @@
+.crud-links {
+  font-size: 12px;
+  padding: 0 3px;
+  height: auto !important;
+}
+
+.admin-country-card {
+  @include for-phone-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.admin-wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh - 264px);
+  display: flex;
+  align-items: center;
+  padding: 150px 0;
+  background: linear-gradient(#EBEFF6, #F6F7FA);
+}
+
+.crud-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #F3A300;
+  border-color: #F3A300;
+  color: #FFF;
+  // font-size: 14px;
+}

@@ -31,6 +31,12 @@
             </div>
               <%= cl_image_tag post.image %>
             <% end %>
+            <div class="d-flex">
+              <% if policy(Post).create? %>
+                <%= link_to "Edit", edit_admin_post_path(post), class: 'crud-links' %>
+                <%= link_to "Delete", admin_post_path(post), method: :delete, data: { confirm: "Are you sure you want to delete the post '#{ post.title }'" }, class: 'crud-links' %>
+              <% end %>
+            </div>
           </div>
       <% end %>
     </div>
