@@ -1,16 +1,30 @@
-<div class="container">
-  <h1>Admin Portal - Countries</h1>
-
-  <% @countries.each do |country| %>
-    <p>
-      <%= country.name %>
-      <% if country.photo.attachment %>
-        <%= image_tag url_for(country.photo) %>
+<div class="admin-wrapper">
+  <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "jobs-big-pill hide-mobile") %>
+  <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill hide-mobile") %>
+  <div class="container position-relative">
+    <h3>Admin Portal - Countries</h3>
+    <% if policy(Country).create? %>
+      <%= link_to 'Add new country', new_admin_country_path, class: 'crud-links' %>
+    <% end %>
+    <div class="row" style="margin: 0;">
+      <% @countries.each do |country| %>
+      <div class="admin-country-card" style="width: 20%;">
+        <div class="country-card">
+          <% if country.photo.attachment %>
+            <%= image_tag url_for(country.photo) %>
+          <% end %>
+          <p class="paragraph-text"><%= country.name %></p>
+        </div>
+        <% if policy(Country).create? %>
+          <%= link_to "Edit", edit_admin_country_path(country), class: 'crud-links' %>
+          <%= link_to "Delete", admin_country_path(country), method: :delete, data: { confirm: "Are you sure you want to delete the country '#{ country.name }'" }, class: 'crud-links' %>
+        <% end %>
+      </div>
       <% end %>
-      <%= link_to "Edit", edit_admin_country_path(country) %>
-      <%= link_to "Delete", admin_country_path(country), method: :delete %>
-    </p>
-  <% end %>
-
-  <%= link_to "Add a new country", new_admin_country_path %>
+      <div class="country-card">
+        <%= image_tag 'distributor-plus-icon.png' %>
+        <p class="paragraph-text"><%= t("distributor_countries.be_the_next") %></p>
+      </div>
+    </div>
+  </div>
 </div>

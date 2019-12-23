@@ -51,6 +51,10 @@
       <% if @results %>
         <% @results.each do |result| %>
           <%= link_to job_path(result), class: "text-decoration-none" do  %>
+            <% if policy(Job).create? %>
+              <%= link_to 'Edit', edit_admin_job_path(job), class: 'crud-links' %>
+              <%= link_to 'Delete', admin_job_path(job), method: :delete, data: { confirm: "Are you sure you want to delete the job '#{ job.title }'" }, class: 'crud-links' %>
+            <% end %>
             <div class="job-card">
               <div class="job-card-title">
                 <p class="m-0"><%= result.title %></p>
@@ -67,6 +71,10 @@
       <% else %>
         <% @jobs.each do |job| %>
           <%= link_to job_path(job), class: "text-decoration-none" do  %>
+            <% if policy(Job).create? %>
+              <%= link_to 'Edit', edit_admin_job_path(job), class: 'crud-links' %>
+              <%= link_to 'Delete', admin_job_path(job), method: :delete, data: { confirm: "Are you sure you want to delete the job '#{ job.title }'" }, class: 'crud-links' %>
+            <% end %>
             <div class="job-card">
               <div class="job-card-title">
                 <p class="m-0"><%= job.title %></p>
