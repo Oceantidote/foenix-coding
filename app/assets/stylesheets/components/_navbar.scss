@@ -81,6 +81,11 @@
   }
 }
 
+.hidden-desktop {
+  @include for-large-devices-up {
+    display: none;
+  }
+}
 
 .hidden {
   @include for-medium-devices-down {
