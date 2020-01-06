@@ -81,6 +81,8 @@
 
 .distributor-first-section-image {
   margin-right: 20px;
+  width: 100%;
+  max-width: 800px;
   @include for-small-devices-down {
     width: 100% !important;
     margin: 0;

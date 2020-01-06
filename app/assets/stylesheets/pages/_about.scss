@@ -363,6 +363,12 @@
   }
 }
 
+.no-padding-mobile {
+  @include for-phone-only {
+    padding: 0 !important;
+  }
+}
+
 .no-margin-mobile {
   @include for-phone-only {
     margin: 0 !important;
@@ -371,6 +377,12 @@
 
 .mobile-column {
   @include for-phone-only {
+    flex-direction: column;
+  }
+}
+
+.small-column {
+  @include for-small-devices-down {
     flex-direction: column;
   }
 }
@@ -412,6 +424,10 @@
   @include for-phone-only {
     margin-left: 40px;
   }
+}
+
+.position-relative {
+  position: relative;
 }
 
 

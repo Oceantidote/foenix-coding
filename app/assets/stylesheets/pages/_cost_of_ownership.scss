@@ -31,6 +31,20 @@
   }
 }
 
+.ownership-first-section {
+  @include for-small-devices-down {
+    padding-top: 60px;
+  }
+}
+
+.ownership-first-section-left, .ownership-first-section-right {
+  width: 50%;
+  padding: 16px;
+  @include for-small-devices-down {
+    width: 90%;
+  }
+}
+
 .ownership-slider {
   width: 60%;
   transition: all 0.3s ease;
@@ -53,6 +67,9 @@
   width: 300px;
   top: 290px;
   right: -20px;
+  @include for-small-devices-down {
+    display: none;
+  }
   // @include for-large-devices-down {
   //   right: -395px;
   // }
@@ -63,7 +80,7 @@
   width: 120px;
   top: 430px;
   left: -50px;
-  @include for-phone-only {
+  @include for-small-devices-down {
     top: 630px;
   }
   // @include for-large-devices-down {
