@@ -10,7 +10,7 @@
   <div class="first-section">
     <%= cl_image_tag("Foenix-first-section-svg_ykndwi.png", :quality=>"auto", class: "first-section-svg") %>
     <div class="first-section-text">
-      <h1><%= t("home.title") %>  <span><%= t("home.title_span") %></span></h1>
+      <h1><%= t("home.title") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span1"), t("home.title_span2"), t("home.title_span3")].to_json %>"><span class="animated-span"><%= t("home.title_span3") %></span></span></h1>
       <p><%= t("home.title_description") %></p>
     </div>
     <div class="first-section-image">
@@ -261,4 +261,25 @@
     }
     document.getElementById(cityName).style.display = "flex";
   }
+  var words = JSON.parse(document.getElementById('span_scroll').dataset.array)
+  var i = 0;
+  function insert_span(a){
+    document.querySelector(".animated-span").classList.add("up");
+    setTimeout(function(){
+      document.getElementById('span_scroll').innerHTML = `<span class="animated-span down">${words[a]}</span>`
+      document.querySelector(".animated-span").classList.remove("down");
+    }, 300);
+  }
+
+  function loopForever(){
+      setTimeout(function(){
+          insert_span(i);
+          i++;
+          if(i == 3){
+              i = 0;
+          }
+          loopForever();
+      }, 5000  * (i + 1));
+  }
+  loopForever();
 </script>

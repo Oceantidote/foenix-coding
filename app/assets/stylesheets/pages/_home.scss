@@ -72,6 +72,33 @@
   }
 }
 
+.animated {
+  position: relative;
+  height: 20px;
+}
+
+.animated-span {
+  position: absolute;
+  color: #DFA740;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #EECDB5;
+  transition: filter(2s);
+  margin: 0px;
+  top: 3px;
+  transition: top 0.3s linear;
+  left: 5px;
+}
+
+.up {
+  filter: blur(4px);
+  top: -30px;
+}
+
+.down {
+  top: 30px;
+  filter: blur(4px);
+}
+
 .first-section-text {
   width: 500px;
   position: relative;
@@ -83,11 +110,7 @@
     color: #0D1B26;
   }
 
-  & span {
-    color: #DFA740;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #EECDB5;
-  }
+
 
   & p {
     padding-top: 20px;

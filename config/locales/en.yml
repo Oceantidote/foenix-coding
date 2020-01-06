@@ -110,7 +110,9 @@ en:
   home:
     # FIRST SECTION
     title: Coding and Marking Made
-    title_span: Easy
+    title_span1: Easy
+    title_span2: hard
+    title_span3: medium
     title_description: Plug-and-play Industrial inkjet Printer for all types of production lines.
     #SECOND SECTION
     title_second: Stress-free product traceability
