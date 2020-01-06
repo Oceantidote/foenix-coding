@@ -89,12 +89,12 @@
         <h2><%= t("home.tabs_title") %></h2>
       </div>
       <div class="tab">
-       <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %></button>
-       <button class="" onclick="openCity('Paris')"><%= t("home.tabs_two") %></button>
-       <button class="" onclick="openCity('Tokyo')"><%= t("home.tabs_three") %></button>
-       <button class="" onclick="openCity('Bogota')"><%= t("home.tabs_four") %></button>
-       <button class="" onclick="openCity('Lexico')"><%= t("home.tabs_five") %></button>
-       <button class="" onclick="openCity('Brussels')"><%= t("home.tabs_six") %></button>
+       <button class="cityTab" data-city="London" onclick="openCity('London')"><%= t("home.tabs_one") %></button>
+       <button class="cityTab" data-city="Paris" onclick="openCity('Paris')"><%= t("home.tabs_two") %></button>
+       <button class="cityTab" data-city="Tokyo" onclick="openCity('Tokyo')"><%= t("home.tabs_three") %></button>
+       <button class="cityTab" data-city="Bogota" onclick="openCity('Bogota')"><%= t("home.tabs_four") %></button>
+       <button class="cityTab" data-city="Lexico" onclick="openCity('Lexico')"><%= t("home.tabs_five") %></button>
+       <button class="cityTab" data-city="Brussels" onclick="openCity('Brussels')"><%= t("home.tabs_six") %></button>
       </div>
       <div class="features-dropdown" >
         <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %>></button><i class="fas fa-chevron-down"></i>
@@ -287,11 +287,11 @@
         const progress = progressHolder.firstElementChild
         progress.style.width = '1%'
         var width = 1;
-        var id = setInterval(frame, 10);
+        var id = setInterval(frame, 50);
         function frame() {
           if (width >= 100) {
             clearInterval(id);
-            tabSwitcher();
+            tabSwitcher(area);
           } else {
             width += 1;
             progress.style.width = width + "%";
@@ -305,8 +305,18 @@
   // =======================
   // TabSwitcher
   // =======================
-  const tabSwitcher = () => {
-    console.log('not done yet')
+  const tabSwitcher = (area) => {
+    console.log(area)
+    const tabs = document.querySelectorAll('.cityTab')
+    const tabCities = []
+    tabs.forEach((tab) => {
+      tabCities.push(tab.dataset.city)
+    })
+    const nextCity = tabCities[tabCities.indexOf(area.id) + 1]
+    if(tabCities.indexOf(area.id) == 5) {
+      openCity("London")
+    } else {
+      openCity(nextCity)
+    }
   }
-
 </script>
