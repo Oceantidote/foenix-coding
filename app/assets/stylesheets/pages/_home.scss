@@ -840,3 +840,18 @@
     width: 20px;
   }
 }
+
+// =======================
+// JS Tab Styling
+// =======================
+.progressHolder {
+  width: 50%;
+  height: 2px;
+  background-color: grey;
+}
+
+.progress {
+  width: 1%;
+  height: 2px;
+  background-color: orange;
+}

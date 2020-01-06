@@ -89,12 +89,12 @@
         <h2><%= t("home.tabs_title") %></h2>
       </div>
       <div class="tab">
-       <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %></button>
-       <button class="" onclick="openCity('Paris')"><%= t("home.tabs_two") %></button>
-       <button class="" onclick="openCity('Tokyo')"><%= t("home.tabs_three") %></button>
-       <button class="" onclick="openCity('Bogota')"><%= t("home.tabs_four") %></button>
-       <button class="" onclick="openCity('Lexico')"><%= t("home.tabs_five") %></button>
-       <button class="" onclick="openCity('Brussels')"><%= t("home.tabs_six") %></button>
+       <button class="cityTab" data-city="London" onclick="openCity('London')"><%= t("home.tabs_one") %></button>
+       <button class="cityTab" data-city="Paris" onclick="openCity('Paris')"><%= t("home.tabs_two") %></button>
+       <button class="cityTab" data-city="Tokyo" onclick="openCity('Tokyo')"><%= t("home.tabs_three") %></button>
+       <button class="cityTab" data-city="Bogota" onclick="openCity('Bogota')"><%= t("home.tabs_four") %></button>
+       <button class="cityTab" data-city="Lexico" onclick="openCity('Lexico')"><%= t("home.tabs_five") %></button>
+       <button class="cityTab" data-city="Brussels" onclick="openCity('Brussels')"><%= t("home.tabs_six") %></button>
       </div>
       <div class="features-dropdown" >
         <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %>></button><i class="fas fa-chevron-down"></i>
@@ -109,11 +109,13 @@
       </div>
       <div class="tabs-area">
         <%= cl_image_tag("long-pill_xrmujn.png", :quality=>"auto") %>
-        <div id="London" class="city" >
+        <div id="London" class="city" style="display: flex;">
           <div class="tab-text" >
             <h4><%= t("home.tabs_one_title") %></h4>
             <p><%= t("home.tabs_one_description") %></p>
-            <span></span>
+            <span class="progressHolder">
+              <span class="progress"></span>
+            </span>
             <p class="orange"><%= t("home.tabs_one_bottom") %></p>
             <br>
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
@@ -128,7 +130,9 @@
           <div class="tab-text"  >
             <h4><%= t("home.tabs_two_title") %></h4>
             <p><%= t("home.tabs_two_description") %></p>
-            <span></span>
+            <span class="progressHolder">
+              <span class="progress"></span>
+            </span>
             <p class="orange"><%= t("home.tabs_two_bottom") %></p>
             <br>
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
@@ -143,7 +147,9 @@
           <div class="tab-text">
             <h4><%= t("home.tabs_three_title") %></h4>
             <p><%= t("home.tabs_three_description") %></p>
-            <span></span>
+            <span class="progressHolder">
+              <span class="progress"></span>
+            </span>
             <p class="orange"><%= t("home.tabs_three_bottom") %></p>
             <br>
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
@@ -158,7 +164,9 @@
           <div class="tab-text">
             <h4><%= t("home.tabs_four_title") %></h4>
             <p><%= t("home.tabs_four_description") %></p>
-            <span></span>
+            <span class="progressHolder">
+              <span class="progress"></span>
+            </span>
             <p class="orange"><%= t("home.tabs_four_bottom") %></p>
             <br>
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
@@ -173,7 +181,9 @@
           <div class="tab-text">
             <h4><%= t("home.tabs_five_title") %></h4>
             <p><%= t("home.tabs_five_description") %></p>
-            <span></span>
+            <span class="progressHolder">
+              <span class="progress"></span>
+            </span>
             <p class="orange"><%= t("home.tabs_five_bottom") %></p>
             <br>
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
@@ -188,7 +198,9 @@
           <div class="tab-text">
             <h4><%= t("home.tabs_six_title") %></h4>
             <p><%= t("home.tabs_six_description") %></p>
-            <span></span>
+            <span class="progressHolder">
+              <span class="progress"></span>
+            </span>
             <p class="orange"><%= t("home.tabs_six_bottom") %></p>
             <br>
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
@@ -259,7 +271,53 @@
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
-    document.getElementById(cityName).style.display = "flex";
+    const city = document.getElementById(cityName)
+    city.style.display = "flex";
+    tabTimer();
+  }
+
+  // =======================
+  // TabTimer
+  // =======================
+  const tabTimer = () => {
+    const tabAreas = document.querySelectorAll('.city')
+    tabAreas.forEach((area) => {
+      if(area.getAttribute('style') == "display: flex;") {
+        const progressHolder = area.firstElementChild.getElementsByTagName('span')[0]
+        const progress = progressHolder.firstElementChild
+        progress.style.width = '1%'
+        var width = 1;
+        var id = setInterval(frame, 50);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            tabSwitcher(area);
+          } else {
+            width += 1;
+            progress.style.width = width + "%";
+          }
+        }
+      }
+    })
+  }
+  tabTimer()
+
+  // =======================
+  // TabSwitcher
+  // =======================
+  const tabSwitcher = (area) => {
+    console.log(area)
+    const tabs = document.querySelectorAll('.cityTab')
+    const tabCities = []
+    tabs.forEach((tab) => {
+      tabCities.push(tab.dataset.city)
+    })
+    const nextCity = tabCities[tabCities.indexOf(area.id) + 1]
+    if(tabCities.indexOf(area.id) == 5) {
+      openCity("London")
+    } else {
+      openCity(nextCity)
+    }
   }
   var words = JSON.parse(document.getElementById('span_scroll').dataset.array)
   var i = 0;
