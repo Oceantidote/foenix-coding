@@ -24,12 +24,13 @@
               <h6><%= post.title %></h6>
               <p><%= truncate(post.text, length: 120) %></p>
               <div class="post-card-text-details">
-                <p class="font-12">Reading Time: <%= post.time %> mins</p>
+                <p class="font-12">Reading Time: <%= post.reading_time %> mins</p>
                 <pre> • </pre>
                 <p class="font-12"><%= post.created_at.strftime("%B %d, %Y") %></p>
               </div>
             </div>
-              <%= cl_image_tag post.image %>
+              <%#= cl_image_tag post.image %>
+              <%= image_tag "https://images.unsplash.com/photo-1503694978374-8a2fa686963a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" %>
             <% end %>
             <div class="d-flex">
               <% if policy(Post).create? %>

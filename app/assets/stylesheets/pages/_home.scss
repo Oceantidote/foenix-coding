@@ -312,6 +312,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 50px;
   position: relative;
+  z-index: 10;
   // background: linear-gradient(#FAFBFC, white);
   // background-color: white;
   height: 100%;
@@ -321,9 +322,9 @@
     height: 400px;
     object-fit: cover;
     position: absolute !important;
-      left: -200px;
-      bottom: -200px;
-    z-index: 1;
+    left: -200px;
+    bottom: -200px;
+    z-index: -1;
   }
 
   &_image {
