@@ -7,17 +7,19 @@ $headers-font: "Manrope", "Helvetica", "sans-serif";
 
 @font-face {
   font-family: "Manrope";
-  src: asset-url('manrope.woff'), format('truetype');
+  src: asset-url('manrope-regular.woff') format('woff');
+  font-weight: normal;
 }
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+@font-face {
+  font-family: "Manrope";
+  src: asset-url('manrope-semibold.woff') format('woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Manrope";
+  src: asset-url('manrope-bold.woff') format('woff');
+  font-weight: bold;
+}
 
 h1,h2,h3,p {
   font-family: 'Manrope', 'Helvetica', sans-serif;
