@@ -430,8 +430,8 @@
 
   & img:nth-child(1) {
     position: absolute;
-      top: -550px;
-      left: -250px;
+    top: -550px;
+    left: -250px;
     z-index: 1;
     opacity: 0.8;
   }
@@ -493,7 +493,7 @@
   justify-content: center;
   align-items: center;
   &:hover {
-    .third-section-play-button {
+    .ripple {
       opacity: 1;
       transition: opacity 0.5s;
     }
@@ -504,30 +504,94 @@
   }
 }
 
-.third-section-play-button {
-  opacity: 0;
-  width: 160px;
-  height: 160px;
-  background-position: center;
-  transition: background 0.8s;
-  border: none;
-  border-radius: 50%;
-  padding: 12px 18px;
-  font-size: 16px;
-  text-transform: uppercase;
+.third-section-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin rings($duration, $delay) {
+    display: none;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 8px solid rgba(0,0,0,0.2);
+    border-radius: 100%;
+    animation-name: ripple;
+    animation-duration: $duration;
+    animation-delay: $delay;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.65,0,.34,1);
+    z-index: -1;
+}
+
+.modal-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 10vw;
+  height: 100vh;
+}
+
+.modal-dialog {
+  max-width: unset;
+  margin: 0;
+}
+
+.request-loader {
+  display: none;
+  position: relative;
+  display: flex;
   cursor: pointer;
-  color: white;
-  background-color: #F0CB6F;
-  box-shadow: 0 0 4px #999;
-  outline: none;
-  &:hover {
-    background: #E1975A radial-gradient(circle, transparent 1%, #E1975A 1%) center/15000%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  background: #FFFFFF;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+
+  span {
+    position: relative;
+    font-size: 72px;
+    top: 5px;
+    left: -5px;
   }
-  &:active {
-    background-color: #B96042;
-    background-size: 100%;
-    transition: background 0s;
+
+  &::after {
+    @include rings(3s, 0s);
   }
+
+  &::before {
+    @include rings(3s, 0.5s);
+  }
+}
+
+
+@keyframes ripple {
+  from {
+    opacity: 1;
+    transform: scale3d(0.75,0.75,1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(1.5,1.5,1);
+  }
+}
+
+#rel {
+  top: -38px;
+  left: -20px;
 }
 
 .third-video-text {
