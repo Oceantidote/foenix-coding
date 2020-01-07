@@ -13,7 +13,7 @@
           <i class="fab fa-twitter main-body-text mb-2 mr-2"></i>
           <i class="fab fa-linkedin main-body-text mb-2 mr-2"></i>
         </div>
-        <%= link_to "#{ t("jobs_show.apply_now" ) }", '#', class: 'btn apply-now-button' %>
+        <a href="mailto:jobs@foenixcoding.com" class="btn apply-now-button"><%= t("jobs_show.apply_now") %></a>
       </div>
       <div class="job-content-right">
         <h3 style="letter-spacing: 1px;"><%= @job.title %></h3>
@@ -61,7 +61,7 @@
         </ul>
         <div class="apply-now-section">
           <p class="main-body-text m-0"><%= t("jobs_show.we_look_forward") %></p>
-          <%= link_to "#{ t("jobs_show.apply_now" ) }", '#', class: 'btn apply-now-button' %>
+          <a href="mailto:jobs@foenixcoding.com" class="btn apply-now-button"><%= t("jobs_show.apply_now") %></a>
         </div>
         <p class="main-body-text" style="font-style: italic;">Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut m</p>
       </div>

@@ -122,10 +122,7 @@
 .featured-post-image {
   width: 50%;
   height: 100%;
-
-  & img {
-    object-fit: cover;
-  }
+  object-fit: cover;
 
   @include for-medium-devices-down {
     width: 100%;

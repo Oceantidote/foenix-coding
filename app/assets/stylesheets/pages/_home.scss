@@ -199,9 +199,9 @@
 .first-section-svg-2 {
   position: absolute;
   opacity: 0.3;
-    bottom: -750px;
-    left: -700px;
-  z-index: 0;
+  bottom: -750px;
+  left: -700px;
+  z-index: 1;
   width: 1000px;
   height: auto;
 
@@ -233,7 +233,6 @@
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 200px;
   margin-top: 100px;
-  background-color: white;
   position: relative;
     z-index: 10;
 

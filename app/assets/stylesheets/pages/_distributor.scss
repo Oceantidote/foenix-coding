@@ -154,6 +154,7 @@
   img {
     width: 30px;
     border-radius: 50%;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
     @include for-small-devices-down {
       width: 25px;
     }
@@ -176,7 +177,7 @@
 }
 
 .distributor-second-section {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -199,6 +200,9 @@
   }
   @include for-xxxlarge-devices-up {
     top: -700px;
+  }
+  @include for-large-devices-down {
+    top: -260px;
   }
   @include for-medium-devices-down {
     top: -200px;
