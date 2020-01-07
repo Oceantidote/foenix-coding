@@ -1,20 +1,18 @@
 <div class="fxone-wrapper fxone-plus">
   <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "fxone-big-pill fxone-standard-big-pill show-mobile") %>
-  <div class="about-second-section-wrapper fxone-first-section-wrapper fxone-plus-wrapper">
+  <div class="first-section fxone-first-section-background">
     <%= image_tag 'about-dots.png', class: 'fxone-plus-dots hide-mobile' %>
     <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "fxone-plus-little-pill hide-mobile") %>
-    <div class="about-section fxone-section fxone-first-section mobile-column">
-      <div class="no-padding-mobile fxone-first-section-text-left">
+      <div class="first-section-text">
         <h1 class="responsive-header"><span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo") %></span> <%= t("fxone_plus.first_section_title") %></h1>
-        <p class="paragraph-text about-second-section-text inks-card-text"><%= t("fxone_plus.first_section_text") %></p>
+        <p class="paragraph-text inks-card-text"><%= t("fxone_plus.first_section_text") %></p>
       </div>
-      <div class="no-padding-mobile" style="position: relative;">
-        <%= cl_image_tag("fxone-plus_n6k9lj.png", :quality=>"auto", class: "fxone-first-section-image fxone-plus-graphic", style: 'width: 100%') %>
+      <div class="no-padding-mobile first-section-image" style="position: relative;">
+        <%= cl_image_tag("fxone-plus_vaz7d1.png", :quality=>"auto", class: "fxone-plus-graphic", style: "width: 100%") %>
         <div class="coming-soon" style="background-image: url('<%= cl_image_path "coming-soon-background_wjcoct.png" %>')">
           <p class="coming-soon-text"><%= t("fxone_plus.coming_soon") %></p>
         </div>
       </div>
-    </div>
   </div>
 </div>
 <%= render 'shared/newsletter' %>

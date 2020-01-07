@@ -1,13 +1,9 @@
 <div class="about-wrapper">
-  <div class="about-first-section-wrapper">
-    <div class="about-section about-first-section about-first-section-container">
-      <div class="about-first-section-left ">
-        <h1 class="about-first-section-text about-first-section-text-container"><%= t("about.first_section_text") %></h1>
-      </div>
-      <div class="about-first-section-right no-padding-mobile">
-        <%= cl_image_tag("about-graphic_avvw6d.png", :quality=>"auto", class: "about-graphic") %>
-      </div>
+  <div class="first-section fxone-first-section-background">
+    <div class="first-section-text">
+      <h1 class="w-100"><%= t("about.first_section_text") %></h1>
     </div>
+    <%= cl_image_tag("about-graphic_avvw6d.png", :quality=>"auto", class: "first-section-image") %>
   </div>
   <div class="about-second-section-wrapper">
     <%= cl_image_tag("about-big-pill-sliced_mpxusz.png", :quality=>"auto", class: "about-big-pill") %>

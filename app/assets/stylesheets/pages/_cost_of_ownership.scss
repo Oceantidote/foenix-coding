@@ -64,6 +64,7 @@
 
 .ownership-big-pill {
   position: absolute;
+  z-index: 1;
   width: 300px;
   top: 290px;
   right: -20px;
@@ -77,6 +78,7 @@
 
 .ownership-little-pill {
   position: absolute;
+  z-index: 1;
   width: 120px;
   top: 430px;
   left: -50px;
