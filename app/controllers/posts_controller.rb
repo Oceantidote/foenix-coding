@@ -3,6 +3,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = policy_scope(Post)
+    @featured = Post.where(featured: true).first
     authorize @posts
   end
 
@@ -46,6 +47,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :text, :time, :image)
+    params.require(:post).permit(:title, :text, :time, :image, :featured)
   end
 end

@@ -57,7 +57,7 @@
   position: relative;
   z-index: 3;
   background-color: #F4F9FC;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   @include for-small-devices-down {
     padding: 50px 0 0 0;
   }
@@ -398,7 +398,7 @@
 
 .hide-mobile {
   @include for-phone-only {
-    display: none;
+    display: none !important;
   }
 }
 

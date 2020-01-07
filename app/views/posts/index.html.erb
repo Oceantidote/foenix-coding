@@ -5,13 +5,16 @@
   <div class="featured-post">
     <a href="/">
       <h1>Featured</h1>
-      <div class="featured-post-div">
-        <div class="featured-post-div-text">
-          <h2>Title Here</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel ligula libero. Nulla et eros commodo, ultrices libero at, ullamcorper dui.</p>
+      <%= link_to post_path(@featured) do %>
+        <div class="featured-post-div">
+          <div class="featured-post-div-text">
+            <h2><%= @featured.title %></h2>
+            <p><%= @featured.text.truncate(120) %></p>
+          </div>
+          <%= cl_image_tag @featured.image, class: "featured-post-image" %>
         </div>
-        <%= image_tag 'https://images.pexels.com/photos/417023/pexels-photo-417023.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: "featured-post-image" %>
-      </div>
+      <% end %>
+
     </a>
   </div>
   <div class="all-news">

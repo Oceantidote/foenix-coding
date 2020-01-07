@@ -59,8 +59,8 @@
               <div class="job-card-title">
                 <p class="m-0"><%= result.title %></p>
               </div>
-              <div class="job-card-info">
-                <p class="m-0"><%= result.job_type %></p>
+              <div class="job-card-info-container">
+                <p class="m-0 job-card-info"><%= result.job_type %></p>
                 <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %>
                   <span class="m-0 ml-3 grey"><%= result.location %></span>
                 </div>
