@@ -1,20 +1,19 @@
+<%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "software-big-pill") %>
+<%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "software-little-pill hide-mobile") %>
 <div class="software-wrapper">
-  <div class="inks-first-section-wrapper">
-    <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "software-big-pill") %>
-    <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "software-little-pill hide-mobile") %>
-    <div class="container">
-      <div class="inks-section">
-        <div class="inks-first-section-left software-first-section-left no-padding-mobile">
+  <div class="first-section fxone-first-section-background">
+      <div class="first-section-text software-first-section-text">
+        <div class="software-first-title">
           <h3><%= t("software.first_section_title_one") %></h3>
-          <p class="paragraph-text no-margin-mobile"><%= t("software.first_section_text_one") %></p>
-          <%= cl_image_tag("software-graphic-1_m6jjgm.png", class: "w-100 about-graphic-two show-mobile software-graphic-mobile") %>
-          <h3><%= t("software.first_section_title_two") %></h3>
-          <p class="paragraph-text"><%= t("software.first_section_text_two") %></p>
+          <p class="paragraph-text no-margin-mobile p-0"><%= t("software.first_section_text_one") %></p>
         </div>
-        <div class="inks-first-section-right d-flex justify-content-center">
-          <%= cl_image_tag("software-graphic-1_m6jjgm.png", class: "w-100 about-graphic-two hide-mobile") %>
+        <%= cl_image_tag("software-graphic-1_ayt9zv.png", class: "first-section-image show-mobile software-graphic-mobile") %>
+        <div>
+          <h3><%= t("software.first_section_title_two") %></h3>
+          <p class="paragraph-text p-0"><%= t("software.first_section_text_two") %></p>
         </div>
       </div>
+      <%= cl_image_tag("software-graphic-1_ayt9zv.png", class: "first-section-image hide-mobile") %>
     </div>
   </div>
   <div class="software-second-section-wrapper">

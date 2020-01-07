@@ -1,19 +1,12 @@
+<%= cl_image_tag("about-big-pill-sliced_mpxusz.png", :quality=>"auto", class: "ownership-big-pill hide-mobile") %>
+<%= cl_image_tag("about-little-pill-sliced_z6varw.png", :quality=>"auto", class: "ownership-little-pill") %>
 <div class="ownership-wrapper">
-  <div class="about-first-section-wrapper ownership-first-section-wrapper">
-    <%= cl_image_tag("about-big-pill-sliced_mpxusz.png", :quality=>"auto", class: "ownership-big-pill hide-mobile") %>
-    <%= cl_image_tag("about-little-pill-sliced_z6varw.png", :quality=>"auto", class: "ownership-little-pill") %>
-    <div class="container">
-      <div class="nav-spacer"></div>
-      <div class="about-section about-first-section ownership-first-section small-column">
-        <div class="ownership-first-section-left no-padding-mobile">
-          <h1 class="responsive-header"><%= t("cost_of_ownership.first_section_title") %> <span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo-right") %></span></h1>
-          <p class="paragraph-text"><%= t("cost_of_ownership.first_section_text") %></p>
-        </div>
-        <div class="ownership-first-section-right no-padding-mobile">
-          <%= cl_image_tag("Piggy_1_yrunnn.png", :quality=>"auto", class: "about-graphic position-relative") %>
-        </div>
+  <div class="first-section fxone-first-section-background mobile-column">
+      <div class="first-section-text">
+        <h1 class="responsive-header w-100"><%= t("cost_of_ownership.first_section_title") %> <span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo-right") %></span></h1>
+        <p class="paragraph-text"><%= t("cost_of_ownership.first_section_text") %></p>
       </div>
-    </div>
+      <%= cl_image_tag("Piggy_1_al3kec.png", :quality=>"auto", class: "first-section-image") %>
   </div>
   <div class="ownership-second-section-wrapper">
     <%= image_tag 'ownership-icon-1.png', class: 'about-icon' %>

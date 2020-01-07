@@ -5,17 +5,18 @@
 
 .first-section {
   // height: 100vh;
-  background: linear-gradient(#EDEFF4, white);
+  background: linear-gradient(#EDEFF4, #FFF);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
   overflow: hidden;
-  padding: 150px 0;
+  padding: 150px 50px;
 
   @include for-medium-devices-down {
     flex-direction: column-reverse;
     justify-content: center;
+    padding: 150px 0px;
   }
 
   @include for-small-devices-down {
@@ -26,6 +27,19 @@
     justify-content: flex-start;
   }
 }
+
+.first-section-image {
+  position: relative;
+  z-index: 5;
+  width: 50%;
+  @include for-medium-devices-down {
+    width: 70%;
+  }
+  @include for-phone-only {
+    width: 90%;
+  }
+}
+
 .ul {
   margin-bottom: 0px !important;
 }
@@ -37,14 +51,15 @@
 
 .first-section-svg {
   position: absolute;
-    right: -250px;
-    top: -300px;
+  right: -250px;
+  top: -300px;
   z-index: 0;
-  width: 1000px;
+  width: 900px;
   height: auto;
 
   @include for-large-devices-down {
-    right: -400px;
+    right: -250px;
+    width: 800px;
   }
 
   @include for-medium-devices-down {
@@ -84,9 +99,9 @@
   border-bottom: 1px solid #EECDB5;
   transition: filter(2s);
   margin: 0px;
-  top: 3px;
+  top: 4px;
   transition: top 0.3s linear;
-  left: 5px;
+  left: 10px;
 }
 
 .up {
@@ -102,9 +117,8 @@
 .first-section-text {
   width: 500px;
   position: relative;
-  z-index:1;
+  z-index: 10;
   padding: 20px;
-  padding-left: 50px;
 
   & h1 {
     color: #0D1B26;
@@ -135,20 +149,6 @@
     }
   }
 }
-
-.first-section-image {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  z-index:1;
-
-  & img {
-    height: auto;
-    max-width: 1000px;
-    width: 90%;
-  }
-}
-
 
 // END OF FIRST SECTION
 
