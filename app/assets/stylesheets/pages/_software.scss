@@ -112,7 +112,7 @@
   padding: 10px;
   p {
     color: #717B8D;
-    font-size: 12px;
+    font-size: 14px;
     margin: 0;
     text-align: center;
   }
@@ -290,7 +290,7 @@
 
 .software-middle-graphic {
   width: 60%;
-  margin: 0 calc(50% - 25%);
+  margin-left: calc(50% - 35%);
   padding-top: 50px;
   @include for-phone-only {
     width: 100%;

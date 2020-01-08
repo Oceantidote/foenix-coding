@@ -10,7 +10,13 @@
   <div class="first-section">
     <%= cl_image_tag("Foenix-first-section-svg_ykndwi.png", :quality=>"auto", class: "first-section-svg") %>
     <div class="first-section-text">
-      <h1><%= t("home.title") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span1") %></span></span></h1>
+      <!-- WEB TITLE -->
+      <h1 class="hide-mobile m-0"><%= t("home.title") %></h1>
+      <h1 class="hide-mobile"><%= t("home.title_bottom") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span1") %></span></span></h1>
+      <!-- WEB TITLE -->
+      <!-- MOBILE TITLE -->
+      <h1 class="show-mobile"><%= t("home.mobile_title") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span1") %></span></span></h1>
+      <!-- MOBILE TITLE -->
       <p><%= t("home.title_description") %></p>
     </div>
     <%= cl_image_tag("Foenix-machine_iqmh2t.png", class: "first-section-image") %>
@@ -20,52 +26,52 @@
     <div class="second-section-one" data-aos="fade-up" data-aos-duration="2000">
       <%= image_tag 'home-icon-1.png', class: 'about-icon' %>
       <h2><%= t("home.title_second") %></h2>
-      <p><%= t("home.title_second_description") %></p>
+      <p class="responsive-text"><%= t("home.title_second_description") %></p>
       <a href="/software" class="yellow-button"><%= t("components.yellow_button") %> <i class="fas fa-arrow-right"></i></a>
     </div>
     <div class="second-section-two">
       <div class="code-everything">
         <h3><%= t("home.second_column_title") %></h3>
-        <p><%= t("home.second_column_title_description") %></p>
+        <p class="responsive-text"><%= t("home.second_column_title_description") %></p>
         <div class="second-section-two-columns">
           <ul class="second-section-two-columns-one ul">
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_one") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_three") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_four") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_five") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_six") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_one") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_three") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_four") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_five") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_six") %></li>
           </ul>
           <ul class="second-section-two-columns-two ul">
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_one_one") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_three_three") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_four_four") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_five_five") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_one_one") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_three_three") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_four_four") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_five_five") %></li>
           </ul>
         </div>
       </div>
       <div class="print-on-everything">
         <h3><%= t("home.second_column_title_two") %></h3>
-        <p><%= t("home.second_column_title_description") %></p>
+        <p class="responsive-text"><%= t("home.second_column_title_description") %></p>
         <div class="second-section-two-columns">
           <ul class="second-section-two-columns-one ul">
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_one") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_three") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_four") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_five") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_six") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_seven") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_one") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_three") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_four") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_five") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_six") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_seven") %></li>
           </ul>
           <ul class="second-section-two-columns-two ul">
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_one_one") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two_two") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_three_three") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_four_four") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_five_five") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_six_six") %></li>
-            <li><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_seven_seven") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_one_one") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two_two") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_three_three") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_four_four") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_five_five") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_six_six") %></li>
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_seven_seven") %></li>
           </ul>
         </div>
       </div>
