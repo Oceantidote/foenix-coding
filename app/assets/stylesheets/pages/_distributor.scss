@@ -168,9 +168,9 @@
   }
   @include for-small-devices-down {
     margin: 5px 0;
+    flex-direction: column;
   }
   @include for-phone-only {
-    flex-direction: column;
     margin: 10px 0;
 
   }
@@ -279,7 +279,7 @@
   width: 50%;
   position: relative;
   z-index: 3;
-  h3 {
+  h2 {
     color: #FFF;
     @include for-phone-only {
       text-align: center;
