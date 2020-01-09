@@ -9,9 +9,15 @@
       <div class="post-show-social-media">
         <p class="padding-15"><%= @post.created_at.strftime("%B %d, %Y") %></p>
         <div class="post-show-social-icons">
-          <a href="/"><i class="fab fa-facebook-square"></i></a>
-          <a href="/"><i class="fab fa-twitter"></i></a>
-          <a href="/"><i class="fab fa-linkedin"></i></a>
+          <%= link_to "http://www.facebook.com/sharer/sharer.php?u=#{post_url(@post)}&t=#{@post.title}", target: '_blank' do %>
+            <i class="fab fa-facebook-square"></i>
+          <% end %>
+          <%= link_to "https://twitter.com/intent/tweet?text=#{@post.title}&url=#{post_url(@post)}", target: "_blank" do %>
+            <i class="fab fa-twitter"></i>
+          <% end %>
+          <%= link_to "http://www.linkedin.com/shareArticle?mini=true&url=#{post_url(@post)}&summary=#{@post.text}=#{root_url}", target: "_blank" do %>
+            <i class="fab fa-linkedin"></i>
+          <% end %>
         </div>
         <% if policy(Post).edit? %>
           <%= link_to edit_admin_post_path(@post) do %>
