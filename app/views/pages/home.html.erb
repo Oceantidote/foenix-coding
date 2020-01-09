@@ -210,12 +210,24 @@
         </div>
       </div>
       <div class="third-section-video">
-        <%= cl_image_tag("blues-pill_lf4fan.png", :quality=>"auto") %>
-        <%= cl_image_tag("slice-pill_bfxclr.png", :quality=>"auto") %>
-        <%= cl_image_tag("dots-dots_mwj7rq.png", :quality=>"auto") %>
+        <%= cl_image_tag("blues-pill_lf4fan.png", :quality=>"auto", class: "tvid_img_1") %>
+        <%= cl_image_tag("slice-pill_bfxclr.png", :quality=>"auto", class: "tvid_img_2") %>
+        <%= cl_image_tag("dots-dots_mwj7rq.png", :quality=>"auto", class: "tvid_img_3") %>
         <div class="third-section-media" data-aos="fade-right" data-aos-duration="2000">
-          <div class="request-loader" data-toggle="modal" data-target=".bd-example-modal-lg">
-            <span><%= image_tag "Play.png", alt: "alttext", width: 70, height: 70, id: "rel" %></span>
+          <div class="third-section-media-lhs">
+            <%= image_tag "fxone_home.png", alt: "alttext", class: "fxone_orange_image" %>
+            <div class="request-loader" data-toggle="modal" data-target=".bd-example-modal-lg">
+              <%= image_tag "Play.png", alt: "alttext", width: 30, height: 30, id: "rel" %>
+            </div>
+          </div>
+          <div class="third-section-media-rhs">
+            <div class="rhs-holder">
+              <div class="third-section-media-rhs-title">
+                <%= image_tag "fxone_orange.png", alt: "Fxone Printer", class: "fxon_orange" %>
+                <h2><%= t('home.printer') %></h2>
+              </div>
+              <p><%= t('home.fxone_subtext') %></p>
+            </div>
           </div>
         </div>
         <div class="third-video-text">
