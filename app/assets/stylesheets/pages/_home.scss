@@ -726,67 +726,81 @@
 
 .fourth-section-grid {
   // background-color: blue;
-  width: 500px;
+  // width: 500px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   overflow: visible;
 
-  & img {
-    width: 150px;
-    height: 200px;
-    box-shadow: 0px 8px 10px rgba(149, 156, 169, 0.20), -1px -1px 10px rgba(156, 173, 198, 0.20);
-    object-fit: cover;
-    border-radius: 8px;
-    transition: 0.3s;
-
-    &:hover {
-      box-shadow: 0px 8px 5px rgba(149, 156, 169, 0.25), -1px -1px 10px rgba(156, 173, 198, 0.30);
-    }
-  }
-
   @include for-large-devices-down {
-    width: 480px;
-    grid-column-gap: 0px;
-    grid-row-gap: 30px;
-
-    & img {
-      width: 120px;
-      height: 150px;
-    }
+    // width: 480px;
+    grid-gap: 25px;
   }
 
   @include for-medium-devices-down {
-    width: 50vw;
+    // width: 50vw;
     // height: 100%;
-    grid-column-gap: 60px;
-    grid-row-gap: 40px;
-
-    & img {
-      width: 100%;
-      height: 150px;
-    }
+    grid-gap: 30px;
   }
 
   @include for-small-devices-down {
-    width: 50vw;
+    // width: 50vw;
     // height: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 40px;
+    grid-gap: 20px;
     padding-bottom: 50px;
-
-    & img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
   }
 
   @include for-phone-only {
-    width: 90vw;
-    grid-row-gap: 40px;
+    // width: 90vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
   }
+}
+
+.industries-card {
+  box-shadow: 0px 8px 10px rgba(149, 156, 169, 0.20), -1px -1px 10px rgba(156, 173, 198, 0.20);
+  height: 200px;
+  width: 160px;
+  background: #FFF;
+  border-radius: 8px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  &:hover {
+    box-shadow: 0px 8px 5px rgba(149, 156, 169, 0.25), -1px -1px 10px rgba(156, 173, 198, 0.30);
+  }
+  p {
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+  }
+  img {
+    width: 80%;
+  }
+  @include for-large-devices-down {
+    width: 143px;
+    height: 190px;
+  }
+  @include for-medium-devices-down {
+    width: 160px;
+    height: 200px;
+  }
+  @include for-medium-devices-down {
+    width: 143px;
+    height: 190px;
+  }
+}
+
+.industries-card-image-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cookie-bar {

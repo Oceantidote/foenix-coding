@@ -176,8 +176,20 @@ en:
     tabs_six_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
     tabs_six_bottom: From emerging businesses with 1 small production line to
     #FOURTH SECTION
-    fourth_title: Trusted by businesses from every industies
+    fourth_title: Trusted by businesses from all industries
     fourth_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime, automate manual processes and improve product quality with high resolution coding.
+    food: Food
+    cosmetics: Cosmetics
+    extrusion: Extrusion
+    automotive: Automotive
+    beverage: Beverage
+    pharmaceutical: Pharmaceutical
+    electronics: Electronics
+    construction: Construction
+    packaging: Packaging
+    industrial_parts: Industrial parts
+    chemicals: Chemicals
+    and_many_more: And many more
 
   newsletter:
     card_title: Come work with us
