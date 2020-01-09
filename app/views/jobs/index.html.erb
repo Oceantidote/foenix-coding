@@ -36,7 +36,10 @@
             <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
           </div>
         </div>
-        <%= f.submit "Search", class: "btn temp-button" %>
+        <div class="d-flex justify-content-center">
+          <%= f.submit "Search", class: "btn temp-button" %>
+          <%= link_to 'Clear', jobs_path, class: 'btn temp-button' %>
+        </div>
       <% end %>
       <p class="text-center grey main-body-text s-medium-text">
         <% if params[:search] %>
@@ -47,7 +50,6 @@
         <%= @jobs.length %> roles across <span style="font-weight: bold !important;">all locations</span> and <span style="font-weight: bold !important;">all teams</span>
         <% end %>
       </p>
-
       <% if @results %>
         <% @results.each do |result| %>
           <%= link_to job_path(result), class: "text-decoration-none" do  %>
