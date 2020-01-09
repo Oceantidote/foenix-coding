@@ -42,6 +42,7 @@
 
 .featured-post {
   width: 80%;
+  margin: 0 auto;
 
   & a {
     display: flex;
@@ -131,6 +132,7 @@
 
 .all-news {
   width: 80%;
+  margin: 0 auto;
   border-top: 1px solid #D2D2D2;
   padding-top: 80px;
 
@@ -146,7 +148,7 @@
 .news-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 100px;
+  grid-column-gap: 40px;
   grid-row-gap: 40px;
 
   @include for-xlarge-devices-down {

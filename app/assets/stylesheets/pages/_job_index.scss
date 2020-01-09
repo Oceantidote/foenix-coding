@@ -1,7 +1,7 @@
 .jobs-wrapper {
   padding-top: 150px;
   padding-bottom: 100px;
-  background: linear-gradient(#EBEFF6, #FFFFFF);
+  background: linear-gradient(#ebeff6, #ffffff);
   position: relative;
   overflow: hidden;
   @include for-phone-only {
@@ -48,7 +48,7 @@
   align-items: center;
   width: 100%;
   height: 50px;
-  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
   background-color: #fff;
   .form-group {
@@ -68,8 +68,10 @@
       box-shadow: none;
     }
   }
-  :nth-child(2), :nth-child(3), :nth-child(4) {
-    border-left: 1px solid #8E8E8E;
+  :nth-child(2),
+  :nth-child(3),
+  :nth-child(4) {
+    border-left: 1px solid #8e8e8e;
   }
   @include for-phone-only {
     flex-direction: column;
@@ -77,10 +79,13 @@
     height: auto;
     padding: 0 15px;
     box-shadow: none;
-    :nth-child(2), :nth-child(3), :nth-child(4) {
+    :nth-child(2),
+    :nth-child(3),
+    :nth-child(4) {
       border-left: none;
     }
-    select, input {
+    select,
+    input {
       background-color: transparent;
       height: 50px !important;
       padding-left: 30px !important;
@@ -107,7 +112,7 @@
 
 .jobs-index-filter-button {
   width: auto !important;
-  box-shadow: 0 0 10px rgba(0,0,0,0.03);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
   margin-bottom: 20px;
 }
 
@@ -131,7 +136,10 @@
   }
 }
 
-#search_name, #search_team, #search_country, #search_job_type {
+#search_name,
+#search_team,
+#search_country,
+#search_job_type {
   // Required to remove border radius from select tag
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -141,23 +149,31 @@
 
 .temp-button {
   width: 100px;
-  margin: 20px calc(50% - 50px);
-  background-color: #F3A300;
-  border-color: #F3A300;
-  color: #FFF;
+  background-color: #f3a300;
+  border-color: #f3a300;
+  color: #fff;
+  margin: 10px 5px;
+}
+
+.reverse-temp-button {
+  width: 100px;
+  background-color: #FFF;
+  border-color: #f3a300;
+  color: #f3a300;
+  margin: 10px 5px;
 }
 
 .new-job-button {
   width: 100px;
   margin: 20px calc(50% - 50px);
   font-size: 14px;
-  background-color: #FFF;
-  border-color: #F3A300;
-  color: #F3A300;
+  background-color: #fff;
+  border-color: #f3a300;
+  color: #f3a300;
   cursor: pointer;
   &:hover {
-   background-color: #F3A300;
-   color: #FFF;
+    background-color: #f3a300;
+    color: #fff;
   }
 }
 
@@ -169,10 +185,11 @@
   margin-bottom: 0.75rem;
   padding: 0 2rem;
   border-radius: 2px;
-  box-shadow: 2px 2px 20px rgba(0,0,0,0.1);
-  p, span {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  p,
+  span {
     font-family: 'Roboto', sans-serif;
-    color: #717B8D;
+    color: #717b8d;
     font-size: 14px;
     font-weight: lighter;
     line-height: 30px;
@@ -183,12 +200,14 @@
   // :nth-child(2), :nth-child(3) {
   //   width: 30%;
   // }
-  @include for-phone-only {
+  @include for-small-devices-down {
     flex-direction: column;
     height: auto;
+    align-items: flex-start;
     padding: 10px 2rem;
     border-radius: 10px;
-    p, span {
+    p,
+    span {
       font-size: 12px;
     }
   }
@@ -196,7 +215,7 @@
 
 .job-card-title {
   width: 40%;
-  @include for-phone-only {
+  @include for-small-devices-down {
     width: 100%;
   }
 }
@@ -210,12 +229,11 @@
 .job-card-info-container {
   display: flex;
   width: 60%;
-  @include for-phone-only {
+  @include for-small-devices-down {
     width: 100%;
-    margin-top:5px;
+    margin-top: 5px;
   }
 }
-
 
 .job-card-flag {
   height: 30px !important;
@@ -226,14 +244,3 @@
 .job-form-height {
   max-height: 550px !important;
 }
-
-
-
-
-
-
-
-
-
-
-

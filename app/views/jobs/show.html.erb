@@ -9,14 +9,20 @@
         <p class="s-medium-text main-body-text mb-2">Full time*</p>
         <p class="s-medium-text main-body-text mb-2">New Business*</p>
         <div class="job-social-links">
-          <i class="fab fa-facebook-square main-body-text mb-2 mr-2"></i>
-          <i class="fab fa-twitter main-body-text mb-2 mr-2"></i>
-          <i class="fab fa-linkedin main-body-text mb-2 mr-2"></i>
+          <%= link_to "http://www.facebook.com/sharer/sharer.php?u=#{job_url(@job)}&t=#{@job.title}", target: "_blank" do %>
+            <i class="fab fa-facebook-square main-body-text mb-2 mr-2"></i>
+          <% end %>
+          <%= link_to "https://twitter.com/intent/tweet?text=#{@job.title}&url=#{job_url(@job)}", target: "_blank" do %>
+            <i class="fab fa-twitter main-body-text mb-2 mr-2"></i>
+          <% end %>
+          <%= link_to "http://www.linkedin.com/shareArticle?mini=true&url=#{job_url(@job)}&summary=#{@job.text1}=#{root_url}", target: "_blank" do %>
+            <i class="fab fa-linkedin main-body-text mb-2 mr-2"></i>
+          <% end %>
         </div>
         <a href="mailto:jobs@foenixcoding.com" class="btn apply-now-button"><%= t("jobs_show.apply_now") %></a>
       </div>
       <div class="job-content-right">
-        <h3 style="letter-spacing: 1px;"><%= @job.title %></h3>
+        <h2 style="letter-spacing: 1px;"><%= @job.title %></h2>
         <div class="job-content-left show-mobile">
           <p class="s-medium-text mb-2"><%= t("jobs_show.roles_at") %></p>
           <p class="s-medium-text main-body-text mb-2"><%= @job.location %></p>

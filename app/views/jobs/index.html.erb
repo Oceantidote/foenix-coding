@@ -3,7 +3,7 @@
   <%= cl_image_tag("inks_little_pill_pahv4x.png", class: "jobs-little-pill hide-mobile") %>
   <div class="jobs-section">
     <div class="container">
-      <h1 class="jobs-header mt-5" style="letter-spacing: 1px;"><%= t("jobs.title") %></h1>
+    <h1 class="jobs-header mt-5 responsive-header" style="letter-spacing: 1px;"><%= t("jobs.title") %></h1>
       <p class="jobs-header jobs-header-text main-body-text"><%= t("jobs.tagline") %></p>
       <div class="jobs-index-filter-button">
         <div id="show-filter" class="see-more-button jobs-index-filter-button">
@@ -36,7 +36,10 @@
             <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
           </div>
         </div>
-        <%= f.submit "Search", class: "btn temp-button" %>
+        <div class="d-flex justify-content-center">
+          <%= f.submit "Search", class: "btn temp-button" %>
+          <%= link_to 'Clear', jobs_path, class: 'btn reverse-temp-button' %>
+        </div>
       <% end %>
       <p class="text-center grey main-body-text s-medium-text">
         <% if params[:search] %>
@@ -47,7 +50,6 @@
         <%= @jobs.length %> roles across <span style="font-weight: bold !important;">all locations</span> and <span style="font-weight: bold !important;">all teams</span>
         <% end %>
       </p>
-
       <% if @results %>
         <% @results.each do |result| %>
           <%= link_to job_path(result), class: "text-decoration-none" do  %>
@@ -95,7 +97,6 @@
       <% end %>
     </div>
   </div>
-
 </div>
 
 <%= render 'shared/newsletter' %>

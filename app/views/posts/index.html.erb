@@ -1,50 +1,49 @@
 <div class="posts">
   <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "news-pill") %>
   <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "news-pill-bottom") %>
-
-  <div class="featured-post">
-    <a href="/">
-      <h1>Featured</h1>
-      <%= link_to post_path(@featured) do %>
-        <div class="featured-post-div">
-          <div class="featured-post-div-text">
-            <h2><%= @featured.title %></h2>
-            <p><%= @featured.text.truncate(120) %></p>
+  <div class="container">
+    <div class="featured-post">
+      <a href="/">
+        <h1>Featured</h1>
+        <%= link_to post_path(@featured) do %>
+          <div class="featured-post-div">
+            <div class="featured-post-div-text">
+              <h2><%= @featured.title %></h2>
+              <p><%= @featured.text.truncate(120) %></p>
+            </div>
+            <%= cl_image_tag @featured.image, class: "featured-post-image" %>
           </div>
-          <%= cl_image_tag @featured.image, class: "featured-post-image" %>
-        </div>
-      <% end %>
-
-    </a>
-  </div>
-  <div class="all-news">
-    <h1>News/Events</h1>
-    <div class="news-grid">
-      <% @posts.last(6).each do |post| %>
-          <div class="post-card">
-            <%= link_to post_path(post) do %>
-            <div class="post-card-text">
-              <h6><%= post.title %></h6>
-              <p><%= truncate(post.text, length: 120) %></p>
-              <div class="post-card-text-details">
-                <p class="font-12">Reading Time: <%= post.reading_time %> mins</p>
-                <pre> • </pre>
-                <p class="font-12"><%= post.created_at.strftime("%B %d, %Y") %></p>
+        <% end %>
+      </a>
+    </div>
+    <div class="all-news">
+      <h1>News/Events</h1>
+      <div class="news-grid">
+        <% @posts.last(6).each do |post| %>
+            <div class="post-card">
+              <%= link_to post_path(post) do %>
+              <div class="post-card-text">
+                <h6><%= post.title %></h6>
+                <p><%= truncate(post.text, length: 100) %></p>
+                <div class="post-card-text-details">
+                  <p class="font-12"><%= post.created_at.strftime("%b %y") %></p>
+                  <pre class="m-0" style="padding-top: 2px;"> • </pre>
+                  <p class="font-12"><%= post.reading_time %> min read</p>
+                </div>
+              </div>
+                <%= cl_image_tag post.image %>
+              <% end %>
+              <div class="d-flex">
+                <% if policy(Post).create? %>
+                  <%= link_to "Edit", edit_admin_post_path(post), class: 'crud-links' %>
+                  <%= link_to "Delete", admin_post_path(post), method: :delete, data: { confirm: "Are you sure you want to delete the post '#{ post.title }'" }, class: 'crud-links' %>
+                <% end %>
               </div>
             </div>
-              <%= cl_image_tag post.image %>
-            <% end %>
-            <div class="d-flex">
-              <% if policy(Post).create? %>
-                <%= link_to "Edit", edit_admin_post_path(post), class: 'crud-links' %>
-                <%= link_to "Delete", admin_post_path(post), method: :delete, data: { confirm: "Are you sure you want to delete the post '#{ post.title }'" }, class: 'crud-links' %>
-              <% end %>
-            </div>
-          </div>
-      <% end %>
-    </div>
-    <div class="news-grid-button">
-     <!--  <span class="yellow-button">More News</span> -->
-    </div>
+        <% end %>
+      </div>
+      <div class="news-grid-button">
+       <!--  <span class="yellow-button">More News</span> -->
+      </div>
   </div>
 </div>
