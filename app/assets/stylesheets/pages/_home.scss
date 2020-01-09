@@ -555,13 +555,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10vh 10vw;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .modal-dialog {
-  max-width: unset;
+  height: 70vh;
+  width: 70vw;
+  max-width: 1300px;
   margin: 0;
+  pointer-events: initial !important;
+  margin: 100px auto 0 auto;
+  @include for-large-devices-down {
+    height: 50vh;
+  }
+  @include for-medium-devices-down {
+    height: 40vh;
+    width: 80vw;
+  }
+  @include for-small-devices-down {
+    height: 40vh;
+    width: 90vw;
+  }
+  @include for-small-devices-down {
+    height: 30vh;
+    width: 90vw;
+  }
 }
 
 .request-loader {
