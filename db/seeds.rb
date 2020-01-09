@@ -11,7 +11,6 @@ puts ""
 puts "---------- Deleting Data 🗑 ----------"
 puts ""
 
-
 User.destroy_all
 Job.destroy_all
 Country.destroy_all
@@ -204,7 +203,4 @@ end
 
 puts "---------- Finished seeding brah 😎 ----------"
 puts ""
-
-
-
 

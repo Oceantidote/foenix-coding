@@ -192,9 +192,10 @@
   // :nth-child(2), :nth-child(3) {
   //   width: 30%;
   // }
-  @include for-phone-only {
+  @include for-small-devices-down {
     flex-direction: column;
     height: auto;
+    align-items: flex-start;
     padding: 10px 2rem;
     border-radius: 10px;
     p,
@@ -206,7 +207,7 @@
 
 .job-card-title {
   width: 40%;
-  @include for-phone-only {
+  @include for-small-devices-down {
     width: 100%;
   }
 }
@@ -220,7 +221,7 @@
 .job-card-info-container {
   display: flex;
   width: 60%;
-  @include for-phone-only {
+  @include for-small-devices-down {
     width: 100%;
     margin-top: 5px;
   }
