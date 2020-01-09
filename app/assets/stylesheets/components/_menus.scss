@@ -32,13 +32,13 @@
   }
 
   & li {
-    padding: 10px 20px;
     display: flex;
     border-radius: 5px;
 
     & img {
       width: 20px !important;
       height: 20px !important;
+      margin-right: 10px;
       border-radius: 3px;
 
       @include for-xsmall-phone-only {
@@ -47,7 +47,8 @@
     }
 
     & a {
-      padding-left: 10px;
+      padding: 10px;
+      width: 100%;
       font-size: 14px;
       color: #7F8488;
 
