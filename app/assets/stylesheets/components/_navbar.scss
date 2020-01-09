@@ -197,7 +197,7 @@
 }
 
 .printers-menu {
-  background: #F6F9FC;
+  background: #FFF;
   flex-direction: column !important;
   @include for-medium-devices-down {
     width: 100%;
@@ -210,6 +210,9 @@
     .printers-text {
       padding-left: 0px !important;
     }
+  }
+  &:hover {
+    background: #F6F9FC;
   }
 }
 
