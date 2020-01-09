@@ -153,15 +153,26 @@
   position: absolute;
   top: 0;
   right: 50px;
-  width: 60px;
+  width: 160px;
   z-index: 1;
 }
 
 .about-dots-section-three {
   position: absolute;
   top: 0;
-  left: 50px;
-  width: 60px;
+  left: -50px;
+  width: 200px;
+  z-index: 1;
+  @include for-phone-only {
+    display: none;
+  }
+}
+
+.about-dots-section-four {
+  position: absolute;
+  bottom: 130px;
+  left: 30px;
+  width: 200px;
   z-index: 1;
   @include for-phone-only {
     display: none;

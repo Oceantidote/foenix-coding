@@ -2,6 +2,12 @@
   overflow: hidden;
 }
 
+.map-gif {
+  @include for-medium-devices-down {
+    width: 100%;
+  }
+}
+
 .distributor-first-section-wrapper {
   position: relative;
   padding-top: 200px;
@@ -119,9 +125,10 @@
 }
 
 .distributor-dots {
-  width: 50px;
+  width: 200px;
   position: absolute;
   right: -75px;
+  bottom: -200px;
   // margin-left: 330px;
   // @include for-large-devices-down {
   //   margin-left: 350px;
@@ -138,10 +145,13 @@
 }
 
 .distributor-dots-two {
-  width: 50px;
+  width: 200px;
   position: absolute;
-  top: 80px;
-  left: 40%;
+  top: 65px;
+  left: 25%;
+  @include for-medium-devices-down {
+    top: -20px;
+  }
   @include for-phone-only {
     display: none;
   }
