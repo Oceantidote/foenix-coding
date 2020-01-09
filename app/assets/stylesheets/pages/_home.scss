@@ -316,12 +316,11 @@
   height: 100%;
 
   &_svg {
-    width: 400px;
-    height: 400px;
+    width: 300px;
     object-fit: cover;
     position: absolute !important;
-    left: -200px;
-    bottom: -200px;
+    left: -120px;
+    bottom: -95px;
     z-index: -1;
   }
 
@@ -487,10 +486,10 @@
 
 .tvid_img_3 {
   height: auto;
-  width: 200px;
+  width: 100px;
   position: absolute;
   bottom: -250px;
-  left: 0;
+  left: 20px;
   z-index: 1;
   @include for-medium-devices-down {
     display: none;
@@ -697,6 +696,8 @@
 #rel {
   top: -20px;
   left: -10px;
+  height: 20px;
+  width: 20px;
 }
 
 .third-video-text {

@@ -3,10 +3,10 @@
       <div class="first-section-text">
         <h1 class="w-100"><%= t("distributor.first_section_title") %></h1>
         <p class="paragraph-text"><%= t("distributor.first_section_text") %></p>
-        <%= image_tag 'about-dots.png', class: 'distributor-dots' %>
+        <%= image_tag 'square-dots.png', class: 'distributor-dots' %>
       </div>
         <%#= cl_image_tag("distributor-continents_l9lnki.png", :quality=>"auto", class: "distributor-graphic") %>
-        <%= image_tag 'map-animation.gif', class: 'first-section-image' %>
+        <%= image_tag 'map-animation.gif', class: 'first-section-image map-gif' %>
   </div>
   <div class="distributor-second-section-wrapper">
     <div class="container-countries">
@@ -58,7 +58,7 @@
     <%#= cl_image_tag("about-little-pill-sliced_z6varw.png", :quality=>"auto", class: "distributor-pill") %>
     <%= cl_image_tag("distributor-slant_hgpm00.png", :quality=>"auto", class: "distributor-slant") %>
     <div class="container">
-      <%= image_tag 'about-dots.png', class: 'distributor-dots-two' %>
+      <%= image_tag 'square-dots.png', class: 'distributor-dots-two' %>
       <div class="distributor-section distributor-contact">
         <div class="distributor-contact-us-form">
           <%= simple_form_for :send_email, url: send_email_path, method: :post do |f| %>

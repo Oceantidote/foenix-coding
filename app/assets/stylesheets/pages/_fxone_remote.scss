@@ -60,9 +60,12 @@
 
 .fxone-dots {
   position: absolute;
-  width: 60px;
+  width: 160px;
   top: 0;
   left: 20%;
+  @include for-medium-devices-down {
+    left: 10%;
+  }
 }
 
 .fxone-big-pill {
@@ -227,7 +230,7 @@
 .fxone-seventh-section-dots {
   position: absolute;
   right: 30px;
-  width: 60px;
+  width: 160px;
   top: 240px;
   @include for-phone-only {
     display: none;
