@@ -64,6 +64,17 @@
   }
 }
 
+.job-social-links {
+  a {
+    text-decoration: none;
+    &:hover {
+      i {
+        color: #253446;
+      }
+    }
+  }
+}
+
 .trix-text {
   margin: 10px 0;
   div {
