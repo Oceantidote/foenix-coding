@@ -408,6 +408,12 @@
   }
 }
 
+.hide-small {
+  @include for-small-devices-down {
+    display: none !important;
+  }
+}
+
 .hide-mobile {
   @include for-phone-only {
     display: none !important;

@@ -32,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  @include for-phone-only {
+  @include for-small-devices-down {
     flex-direction: column;
   }
 }
@@ -41,20 +41,26 @@
   position: absolute;
   right: 0;
   top: 0;
-  width: 250px;
+  width: 23vw;
   z-index: 2;
-  @include for-phone-only {
-    right: -30px;
-    top: 60px;
-    width: 160px;
+  @include for-small-devices-down {
+    // right: -30px;
+    // top: 60px;
+    width: 40vw;
   }
 }
 
 .inks-little-pill {
   position: absolute;
   left: 0;
-  width: 200px;
+  top: - 12vw;
+  width: 23vw;
   z-index: 2;
+  @include for-small-devices-down {
+    // right: -30px;
+    // top: 60px;
+    width: 40vw;
+  }
 }
 
 .inks-third-section-image {
@@ -66,14 +72,15 @@
 .inks-first-section-left, .inks-first-section-right {
   width: 50%;
   padding: 16px;
-  @include for-phone-only {
-    width: 90%;
+  @include for-small-devices-down {
+    width: 100%;
   }
 }
 
 .inks-third-section-left {
   width: 60%;
   padding: 16px;
+
   @include for-phone-only {
     width: 90%;
   }
@@ -101,7 +108,7 @@
 .inks-card {
   background: #FFF;
   // height: 300px;
-  max-width: 400px;
+  // max-width: 400px;
   border: 3px solid #fafafa;
   box-shadow: 0px 15px 40px rgba(0,0,0,0.1);
   border-radius: 10px;
@@ -112,15 +119,22 @@
 .inks-card-text {
   margin: 0;
   color: #717B8D;
-  font-size: 14px;
+  font-size: 2vmin;
   font-weight: lighter;
-  line-height: 20px;
+  line-height: 3vmin;
+  // @include for-large-devices-up {
+  //   font-size: 18px;
+  // }
 }
 
 .inks-card-header {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 2vmin;
   font-weight: bold;
+  line-height: 3vmin;
+  // @include for-large-devices-up {
+  //   font-size: 18px;
+  // }
 }
 
 .inks-first-section-right {
