@@ -58,6 +58,9 @@
   overflow: hidden;
   padding: 60px 10vw 160px 10vw;
   z-index: 3;
+  // Code for timed fading
+  // opacity: 1;
+  // transition: opacity 0.5s linear;
 
   & h4 {
     color: #0E1B26;
@@ -216,6 +219,12 @@
     height: auto;
     transform: rotate(0deg);
     // transform: rotate(-1deg);
+    @media (max-width: 1100px) and (min-width: 1000px) {
+      width: 450px;
+    }
+    @media (max-width: 1200px) and (min-width: 1100px) {
+      width: 550px;
+    }
   }
 
   @include for-medium-devices-down {
@@ -225,3 +234,31 @@
   }
 }
 
+// =======================
+// JS Tab Styling
+// =======================
+.progressHolder {
+  width: 50%;
+  height: 2px;
+  background-color: grey;
+}
+
+.progress {
+  width: 1%;
+  height: 2px;
+  background-color: orange;
+}
+
+// .fadeOut {
+//   opacity: 0;
+//   transition: opacity 0.5s linear;
+// }
+
+// .fadeIn {
+//   opacity: 1;
+// }
+
+.activeTab {
+  border-bottom: 2px solid #F4B253 !important;
+  color: #0E1B26 !important;
+}
