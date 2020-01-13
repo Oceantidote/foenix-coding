@@ -93,7 +93,7 @@
         <h2><%= t("home.tabs_title") %></h2>
       </div>
       <div class="tab">
-       <button class="cityTab" data-city="London" onclick="openCity('London', true)"><%= t("home.tabs_one") %></button>
+       <button class="cityTab activeTab" data-city="London" onclick="openCity('London', true)"><%= t("home.tabs_one") %></button>
        <button class="cityTab" data-city="Paris" onclick="openCity('Paris', true)"><%= t("home.tabs_two") %></button>
        <button class="cityTab" data-city="Tokyo" onclick="openCity('Tokyo', true)"><%= t("home.tabs_three") %></button>
        <button class="cityTab" data-city="Bogota" onclick="openCity('Bogota', true)"><%= t("home.tabs_four") %></button>
@@ -368,16 +368,31 @@
   // Tab Display Switcher
   // =======================
 
+  // const fadeTimeOut = (x, i) => {
+  //   setTimeout(function() { x[i].style.display = "none" }, 500);
+  // }
+
+  // const fadeTimeIn = (city) => {
+  //   setTimeout(function() { city.style.display = "flex" }, 500);
+  // }
+
   let cancelAnimation = false;
 
   function openCity(cityName, humanInteraction) {
     var i;
     var x = document.getElementsByClassName("city");
+
     for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
+      // x[i].classList.add('fadeOut')
+      x[i].style.display = "none"
+      // fadeTimeOut(x, i);
     }
     const city = document.getElementById(cityName)
-    city.style.display = "flex";
+    // city.classList.remove('fadeOut')
+    // city.classList.add('fadeIn')
+    // fadeTimeIn(city)
+    city.style.display = "flex"
+    tabHighlighter(cityName)
     if(humanInteraction == true) {
       cancelAnimation = true
       tabTimer(humanInteraction);
@@ -394,19 +409,17 @@
     const tabAreas = document.querySelectorAll('.city')
     tabAreas.forEach((area) => {
       if(area.getAttribute('style') == "display: flex;") {
-        console.log(area.id)
         const progressHolder = area.firstElementChild.getElementsByTagName('span')[0]
         const progress = progressHolder.firstElementChild
         progress.style.width = '1%'
         var width = 1;
-        console.log(cancelAnimation)
         if(cancelAnimation == false) {
-          var id = setInterval(frame, 20);
+          var id = setInterval(frame, 50);
         } else {
           clearInterval(id);
         }
         if(humanInteraction == true) {
-          var id = setInterval(frame, 20);
+          var id = setInterval(frame, 50);
         }
         function frame() {
           if (width >= 100) {
@@ -442,4 +455,17 @@
       openCity(nextCity, false)
     }
   }
+
+  // =======================
+  // Tab Highlighter
+  // =======================
+  const tabHighlighter = (cityName) => {
+    const tabs = document.querySelectorAll('.cityTab')
+    const activeTab = document.querySelector(`.cityTab[data-city=${cityName}]`)
+    tabs.forEach((tab) => {
+      tab.classList.remove('activeTab')
+    })
+    activeTab.classList.add('activeTab')
+  }
+
 </script>
