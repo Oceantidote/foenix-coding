@@ -12,6 +12,8 @@
   display: flex;
   justify-content: space-between;
   padding: 0 10vw;
+  position: relative;
+  z-index: 5;
 
   @include for-medium-devices-down {
     display: none;
