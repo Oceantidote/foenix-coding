@@ -119,22 +119,32 @@
 .inks-card-text {
   margin: 0;
   color: #717B8D;
-  font-size: 2vmin;
+  // font-size: 2vmin;
+  font-size: 16px;
   font-weight: lighter;
-  line-height: 3vmin;
+  // line-height: 3vmin;
+  line-height: 25px;
   // @include for-large-devices-up {
   //   font-size: 18px;
   // }
+  @include for-large-devices-down {
+    font-size: 15px;
+  }
 }
 
 .inks-card-header {
   margin: 10px 0;
   font-size: 2vmin;
+  font-size: 18px;
   font-weight: bold;
-  line-height: 3vmin;
+  line-height: 25px;
+  // line-height: 3vmin;
   // @include for-large-devices-up {
   //   font-size: 18px;
   // }
+  @include for-large-devices-down {
+    font-size: 15px;
+  }
 }
 
 .inks-first-section-right {
