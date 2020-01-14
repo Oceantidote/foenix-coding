@@ -2,9 +2,11 @@
   <div class="container">
     <div class="about-sixth-section">
       <div class="about-sixth-section-left">
-        <div class="about-button-card" style="background-image: url('<%= cl_image_path("Button_nqsfuo.png") %>')">
+        <div class="about-button-card" style="background-image: url('<%= cl_image_path("Button_nqsfuo.png") %>'); position: relative;">
           <p class="m-0"><%= t("newsletter.card_title") %></p>
           <p class="m-0 paragraph-text"><%= t("newsletter.card_text") %></p>
+          <%= link_to jobs_path, class: "rel-link" do  %>
+          <% end %>
         </div>
       </div>
       <div class="about-sixth-section-right">
