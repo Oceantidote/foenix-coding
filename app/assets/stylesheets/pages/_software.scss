@@ -21,9 +21,11 @@
 .software-section {
   align-items: flex-start;
   .fxone-sixth-section-check {
+    margin-bottom: 8px;
     @include for-small-devices-down {
       width: 100%;
       margin-left: 20px;
+
     }
   }
   @include for-small-devices-down {
@@ -36,27 +38,18 @@
 
 .software-big-pill {
   position: absolute;
-  right: -80px;
-  top: 0;
-  width: 250px;
+  right: 0px;
+  top: 15vh;
+  width: 20vw;
   z-index: 1;
-  @include for-phone-only {
-    right: -110px;
-    top: 60px;
-    width: 210px;
-  }
 }
 
 .software-little-pill {
   position: absolute;
-  left: -120px;
-  top: 310px;
-  width: 250px;
+  left: 0px;
+  top: 70vh;
+  width: 15vw;
   z-index: 2;
-}
-
-.software-graphic-mobile {
-  margin: 0 calc(50% - 45%);
 }
 
 .software-second-section-wrapper {
@@ -125,9 +118,9 @@
 
 .software-cards-little-pill {
   position: absolute;
-  left: 0px;
-  top: 560px;
-  width: 170px;
+  top: 4vw;
+  left: -8vw;
+  width: 8vw;
   z-index: 2;
 }
 
@@ -170,14 +163,13 @@
 }
 
 .software-graphic-2 {
-  width: 80%;
+  width: 100%;
   // margin: 0 auto;
-  margin: 0 calc(50% - 40%);
   position: relative;
-  @include for-medium-devices-down {
-    width: 100%;
-    margin: 0;
-  }
+}
+
+.one-rem-text {
+  font-size: 1.1rem;
 }
 
 .software-graphic {

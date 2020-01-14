@@ -404,11 +404,12 @@ en:
 
   software:
     first_section_title_one: FX APP
-    first_section_text_one: Programming without trainir
+    first_section_text_one: Programming without training
     first_section_title_two: FX TOUCH Controller
     first_section_text_two: Control your printer with just a touch
     second_section_title: FX APP
-    second_section_text: The ultimate tool to always have your production in control and reduce your costs. Foenix FX APP enables you to design messages in record time through it user friendly interface.
+    second_section_text: The ultimate tool to always have your production in control and reduce your costs.
+    second_section_text2: Foenix FX APP enables you to design messages in record time through it user friendly interface.
     second_section_check_one: Simple interactive windows programming
     second_section_check_two: Unlimited message storage
     second_section_check_three: Ink saver print mode
@@ -430,8 +431,9 @@ en:
     third_section_left_text_seven: Unlimited message storage
     third_section_left_text_eight: Multi language support
     third_section_left_text_nine: Sauven Marking Ltd continously Improves products and software. Specifications are subject to change.
-    third_section_right_title: FX ONE REMOTE
-    third_section_right_sub_title_one: Features
+    third_section_right_title: FX ONE TOUCH
+    third_section_right_sub_title: Features
+    third_section_right_title_two: Connectivity
     third_section_right_text_one: 7” Touch Screen
     third_section_right_text_two: Simple interactive windows programming
     third_section_right_text_three: Uses FX App
@@ -524,7 +526,7 @@ en:
     posts:
       title: News & Events
       description: Get the lastet News & Events
-      
+
   news:
     latest: Latest Story
     news: News/Events
