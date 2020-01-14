@@ -13,15 +13,14 @@
               <div class="featured-post-div-text">
                 <h2><%= @featured.title %></h2>
                 <div class="responsive-text">
-                  <%= raw @featured.text.truncate(120) %>
-                </div>
+                  <%= simple_format(@featured.text.truncate(120)) %>
                 </div>
               </div>
               <% if @featured.image.present? %>
                   <%= cl_image_tag @featured.image, class: 'featured-post-image' %>
-                <% else %>
-                  <%= image_tag 'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: 'featured-post-image' %>
-                <% end %>
+              <% else %>
+                <%= image_tag 'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: 'featured-post-image' %>
+              <% end %>
               <%# link_to post_path(@featured), class: "rel-link" %>
             </div>
           <% end %>
@@ -36,7 +35,7 @@
               <div class="new-post-card">
                 <div class="new-post-card-content">
                   <h6><%= post.title.truncate(65) %></h6>
-                  <div class="new-post-card-text"><%= raw post.text.truncate(100) %></p></div></div>
+                  <div class="new-post-card-text"><%= simple_format(post.text.truncate(100)) %></div>
                   <div class="post-card-text-details">
                     <p class="font-12 grey-text lighter"><%= post.created_at.strftime("%b %y") %></p>
                     <pre class="m-0 grey-text lighter" style="padding-top: 2px;"> • </pre>
@@ -59,7 +58,7 @@
                 <%#= link_to post_path(post) do %>
                     <div class="post-card-text">
                         <h6><%#= post.title %></h6>
-                        <p><%#= raw post.text.truncate(100) %></p>
+                        <p><%#= simple_format(post.text.truncate(100) %></p>
                         <div class="post-card-text-details">
                           <p class="font-12"><%#= post.created_at.strftime("%b %y") %></p>
                           <pre class="m-0" style="padding-top: 2px;"> • </pre>
