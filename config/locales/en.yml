@@ -463,7 +463,7 @@ en:
     fifth_section_sub_title: What is a DLL?
     fifth_section_text_one: A DLL (Dynamic Link Library) is a set of software functions that can be used by a third party developer to incorporate into their own applications. The Foenix DLL described here provides a set of functions that allows a FX ONE printer to be controlled via the FXPro application or Foenix Touch Controller. The library makes the communication process to the printer much simpler for the developer as it takes care of the actual protocol used. The developer then uses a relatively simple mechanism to montior printers, load messages and transmit data.
     fifth_section_title_two: How Does a DLL Work?
-    fifth_section_text_two: The DLL is used by the customer’s to communicate with the printer. The diagram below gives a basic overview showing how the DLL sits between the application and printer.
+    fifth_section_text_two: The DLL is used by the customers to communicate with the printer. The diagram below gives a basic overview showing how the DLL sits between the application and printer.
 
 
 

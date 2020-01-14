@@ -122,9 +122,7 @@
 
 .fxone-cards {
   margin: 0 auto;
-  @include for-large-devices-up {
-    width: 85%;
-  }
+  width: 100%;
   // @include for-xlarge-devices-up {
   //   width: 75%;
   // }
