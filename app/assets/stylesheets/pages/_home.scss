@@ -14,7 +14,7 @@
   padding: 150px 50px;
 
   @include for-medium-devices-down {
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: center;
     padding: 150px 0px;
   }
@@ -51,40 +51,47 @@
 
 .first-section-svg {
   position: absolute;
-  right: -250px;
-  top: -300px;
+  // right: -250px;
+  // top: -300px;
   z-index: 0;
-  width: 900px;
-  height: auto;
-
-  @include for-large-devices-down {
-    right: -250px;
-    width: 800px;
-  }
-
+  width: 80vw;
+  right: -50vw;
+  top: -17vw;
+  // width: 900px;
+  // height: auto;
   @include for-medium-devices-down {
-    width: 650px;
-    right: -100px;
-    top: -200px;
+    opacity: 0.5;
+  }
+  @include for-medium-devices-up {
+    width: 60vw;
+    right: -13vw;
+    top: -18vw;
   }
 
-  @include for-small-devices-down {
-    width: 450px;
-    top: -50px;
-    right: -50px;
+  @include for-large-devices-up {
+    width: 60vw;
+    right: -13vw;
+    top: -18vw;
   }
 
-  @include for-phone-only {
-    width: 400px;
-    top: -60px;
-    right: -50px;
-  }
 
-  @include for-xsmall-phone-only {
-    width: 350px;
-    right: -70px;
-    top: -40px;
-  }
+  // @include for-small-devices-down {
+  //   width: 450px;
+  //   top: -50px;
+  //   right: -50px;
+  // }
+
+  // @include for-phone-only {
+  //   width: 400px;
+  //   top: -60px;
+  //   right: -50px;
+  // }
+
+  // @include for-xsmall-phone-only {
+  //   width: 350px;
+  //   right: -70px;
+  //   top: -40px;
+  // }
 }
 
 .animated {
@@ -119,6 +126,11 @@
   position: relative;
   z-index: 10;
   padding: 20px;
+  margin-bottom: 10vh;
+
+  @include for-medium-devices-down {
+    margin-bottom: 0px;
+  }
 
   & h1 {
     color: #0D1B26;
@@ -609,7 +621,7 @@
     content: '';
     height: 100%;
     width: 100%;
-    border: 8px solid rgba(0,0,0,0.2);
+    border: 8px solid #FFB03A;
     border-radius: 100%;
     animation-name: ripple;
     animation-duration: $duration;

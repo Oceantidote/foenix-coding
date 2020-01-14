@@ -212,7 +212,7 @@
     }
   }
   &:hover {
-    background: #F6F9FC;
+    background: #FFF !important;
   }
 }
 
@@ -223,11 +223,14 @@
 }
 
 .printers-text-container {
+  border-radius: 4px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px 0 0 !important;
-
+  &:hover {
+    background: #F6F9FC;
+  }
   i {
     font-size: 12px;
   }

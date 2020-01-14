@@ -1,7 +1,7 @@
 .fxone-standard-slant {
   position: absolute;
   width: 100%;
-  top: -150px;
+  top: -30vh;
   @include for-phone-only {
     top: -90px;
   }
@@ -26,6 +26,11 @@
   }
 }
 
+.fxone-stand-dots {
+  top: -10vh;
+  width: 15vw;
+}
+
 .fxone-standard {
   .fxone-third-section-wrapper {
     padding-bottom: 50px;
@@ -44,4 +49,8 @@
   @include for-phone-only {
     top: -50px;
   }
+}
+
+.fxone-standard-back {
+  padding-bottom: 0px;
 }
