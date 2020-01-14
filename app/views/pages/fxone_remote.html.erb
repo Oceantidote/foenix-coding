@@ -12,10 +12,12 @@
       <p class="paragraph-text"><%= t("fxone_remote.first_section_text") %></p>
     </div>
   </div>
-  <div class="ownership-second-section-wrapper fxone-second-section-wrapper">
+  <div class="ownership-second-section-wrapper fxone-second-section-wrapper whitebg" >
     <%= image_tag 'square-dots.png', class: 'fxone-dots hide-mobile' %>
-    <%= image_tag 'fxone-icon-1.png', class: 'about-icon' %>
-    <h2 class="text-center"><%= t("fxone_remote.second_section_title") %></h2>
+    <div data-aos="fade-up" data-aos-duration="2000">
+      <%= image_tag 'fxone-icon-1.png', class: 'about-icon' %>
+    </div>
+    <h2 class="text-center" data-aos="fade-up" data-aos-duration="2000"><%= t("fxone_remote.second_section_title") %></h2>
   </div>
   <div class="fxone-third-section-wrapper">
     <div class="container">
