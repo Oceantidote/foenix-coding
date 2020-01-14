@@ -4,7 +4,11 @@
   <div class="post-show-container">
     <h1 class="responsive-header"><%= @post.title %></h1>
     <p>Reading time: <%= @post.reading_time %> mins</p>
-    <%= cl_image_tag @post.image %>
+    <% if @post.image.present? %>
+      <%= cl_image_tag @post.image, class: '' %>
+    <% else %>
+      <%= image_tag 'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: '' %>
+    <% end %>
     <div class="post-show-details">
       <div class="post-show-social-media">
         <p class="padding-15"><%= @post.created_at.strftime("%B %d, %Y") %></p>
@@ -28,7 +32,7 @@
           <% end %>
         <% end %>
       </div>
-      <div class="post-show-content">
+      <div class="post-show-content responsive-text-small">
         <p><%= raw @post.text %></p>
       </div>
     </div>
@@ -40,11 +44,15 @@
           <div class="col-12 col-sm-6 col-md-4">
             <div class="post-show-card">
               <%= link_to post_path(post) do %>
-                <%= cl_image_tag post.image %>
+                <% if post.image.present? %>
+                  <%= cl_image_tag post.image, class: '' %>
+                <% else %>
+                  <%= image_tag 'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: '' %>
+                <% end %>
               <% end %>
               <div class="post-show-card-text">
-                <h6 class="m-0"><%= post.title %></h6>
-                <p class="post-mini-text"><%= raw post.text.truncate(100) %></p>
+                <h6 class="m-0"><%= post.title.truncate(65) %></h6>
+                <div class="responsive-text-small"><%= raw post.text.truncate(100) %></div></div>
               </div>
             </div>
           </div>
