@@ -102,11 +102,11 @@
 .fxone-cards {
   margin: 0 auto;
   @include for-large-devices-up {
-    width: 80%;
+    width: 85%;
   }
-  @include for-xlarge-devices-up {
-    width: 75%;
-  }
+  // @include for-xlarge-devices-up {
+  //   width: 75%;
+  // }
 }
 
 .fxone-card {
@@ -117,10 +117,20 @@
   position: relative;
   z-index: 4;
   margin: 15px 0;
-  height: 250px;
+  height: 300px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  padding-bottom: 16px;
   p {
     padding: 0 16px;
+  }
+  @include for-medium-devices-down {
+    margin: 10px 0;
+  }
+}
+
+.fxone-card-container {
+  @include for-medium-devices-down {
+    padding: 0 10px;
   }
 }
 
