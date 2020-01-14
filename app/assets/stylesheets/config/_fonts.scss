@@ -21,6 +21,12 @@ $headers-font: "Manrope", "Helvetica", "sans-serif";
   font-weight: bold;
 }
 
+// @font-face {
+//   font-family: "Manrope";
+//   src: asset-url('manrope-extrabold.woff') format('woff');
+//   font-weight: 600;
+// }
+
 h1,h2,h3,p {
   font-family: 'Manrope', 'Helvetica', sans-serif;
 }
