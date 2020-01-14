@@ -25,7 +25,9 @@
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%= favicon_link_tag 'favicon.ico' %>
-    <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <%= stylesheet_pack_tag 'application', media: 'all' %>
+    <link rel="stylesheet" type="text/css" href="trix.css">
+    <script type="text/javascript" src="trix.js"></script> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
     <%= render 'shared/navbar' %>

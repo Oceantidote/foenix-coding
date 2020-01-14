@@ -60,6 +60,9 @@
     }
   }
 }
+.black {
+  color: black !important;
+}
 
 .featured-post h1 {
   width: 100%;
@@ -85,7 +88,15 @@
     height: 500px;
   }
 }
-
+.rel-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
 
 .featured-post-div-text {
   width: 100%;

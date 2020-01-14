@@ -9,27 +9,26 @@
       <div class="featured-post">
         <a href="/">
           <h1>Featured</h1>
-          <%= link_to post_path(@featured) do %>
-            <div class="featured-post-div">
-              <div class="featured-post-div-text">
-                <h2><%= @featured.title %></h2>
-                <p><%= @featured.text.truncate(120) %></p>
-              </div>
-              <%= cl_image_tag @featured.image, class: "featured-post-image" %>
+          <div class="featured-post-div">
+            <div class="featured-post-div-text">
+              <h2><%= @featured.title %></h2>
+              <p class="black"><%= @featured.text.truncate(120) %></p>
             </div>
-          <% end %>
+            <%= cl_image_tag @featured.image, class: "featured-post-image" %>
+            <% link_to post_path(@featured), class: "rel-link" %>
+          </div>
         </a>
       </div>
     <% end %>
     <div class="all-news">
-      <h1>News/Events</h1>
+      <h1><%= t("news.news") %></h1>
       <div class="news-grid">
         <% @posts.last(6).each do |post| %>
             <div class="post-card">
               <%= link_to post_path(post) do %>
               <div class="post-card-text">
                 <h6><%= post.title %></h6>
-                <p><%= truncate(post.text, length: 100) %></p>
+                <p><%= raw post.text.truncate(100) %></p>
                 <div class="post-card-text-details">
                   <p class="font-12"><%= post.created_at.strftime("%b %y") %></p>
                   <pre class="m-0" style="padding-top: 2px;"> • </pre>
