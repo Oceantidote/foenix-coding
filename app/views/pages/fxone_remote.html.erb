@@ -5,8 +5,8 @@
 <div class="fxone-wrapper">
   <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "fxone-big-pill") %>
   <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "fxone-little-pill") %>
-  <div class="first-section fxone-first-section-background">
-    <%= cl_image_tag("fxone-remote-graphic-1_rq5ho4.png", class: "first-section-image") %>
+  <div class="first-section fxone-first-section-background first-section-remote">
+    <%= cl_image_tag("fxone-remote-graphic-1_rq5ho4.png", class: "first-section-image remote-image") %>
     <div class="first-section-text">
       <h1 class="w-100"><span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo") %></span> <%= t("fxone_remote.first_section_title") %></h1>
       <p class="paragraph-text"><%= t("fxone_remote.first_section_text") %></p>
@@ -118,7 +118,7 @@
   </div>
   <div class="fxone-fourth-section-wrapper">
     <div class="container">
-      <div class="fxone-fourth-section-header">
+      <div class="fxone-fourth-section-header" data-aos="fade-up" data-aos-duration="2000">
         <%= image_tag 'fxone-icon-2.png', class: 'about-icon' %>
         <h2 class="text-center"><%= t("fxone_remote.fourth_section_title") %></h2>
       </div>
@@ -188,7 +188,7 @@
   <div class="fxone-sixth-section-wrapper">
     <%#= cl_image_tag("fourth-section-middle_yezkil.png", :quality=>"auto", class: "fxone-fourth-section-background") %>
     <div class="container">
-      <div class="fxone-sixth-section-header">
+      <div class="fxone-sixth-section-header" data-aos="fade-up" data-aos-duration="2000">
         <%= image_tag 'fxone-icon-3.png', class: 'about-icon' %>
         <h2 class="fxone-remote-sixth-section-title text-center"><%= t("fxone_remote.sixth_section_title") %></h2>
       </div>
@@ -261,13 +261,13 @@
     <%= cl_image_tag("fourth-section-bottom-half_j9e2d7.png", :quality=>"auto", class: "fxone-fourth-section-background hide-mobile") %>
     <div class="container">
       <div class="about-section">
-        <div class="about-fifth-section-left mobile-center fxone-no-padding">
+        <div class="about-fifth-section-left mobile-center fxone-no-padding" data-aos="fade-up" data-aos-duration="2000">
           <%= image_tag 'fxone-icon-4.png', class: 'about-icon' %>
           <h2 class="about-fifth-section-text"><%= t("fxone_remote.seventh_section_title") %></h2>
           <p class="responsive-text-small about-fifth-section-text"><%= t("fxone_remote.seventh_section_text") %></p>
           <%= cl_image_tag("fxone-remote-graphic-4_lo5sz0.png", :quality=>"auto", class: "about-graphic about-graphic-two show-mobile") %>
         </div>
-        <div class="about-fifth-section-right">
+        <div class="about-fifth-section-right" data-aos="fade-left" data-aos-duration="2000">
           <%= cl_image_tag("fxone-remote-graphic-4_lo5sz0.png", :quality=>"auto", class: "about-graphic about-graphic-two hide-mobile") %>
           <%#= image_tag 'about-dots.png', class: 'about-dots-fifth' %>
         </div>

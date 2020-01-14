@@ -6,12 +6,31 @@
   background: linear-gradient(#EBEFF6, #F6F7FA);
 }
 
+.remote-image {
+  position: relative;
+  z-index: 5;
+  width: 40%;
+  margin: 5%;
+  @include for-medium-devices-down {
+    width: 70%;
+    margin: 0px;
+  }
+  @include for-phone-only {
+    width: 90%;
+  }
+}
+
 .fxone-first-section-wrapper {
   padding-top: 100px;
   padding-bottom: 0;
   background: linear-gradient(#EBEFF6, #F6F7FA);
   @include for-phone-only {
     padding-top: 140px;
+  }
+}
+.first-section-remote {
+  @include for-medium-devices-down {
+    flex-direction: column-reverse !important;
   }
 }
 .whitebg {
