@@ -542,10 +542,11 @@
 
 .fxone_orange_image {
   position: absolute;
-  top: 0px;
+  top: auto;
+  bottom: auto;
   left: 0px;
   z-index: -1;
-  height: 100%;
+  width: 100%;
   @media (max-width: 1415px) {
     left: auto;
     right: auto;
@@ -858,17 +859,17 @@
 }
 
 .industries-card {
-  box-shadow: 0px 8px 30px rgba(149, 156, 169, 0.30), -1px -1px 30px rgba(156, 173, 198, 0.30);
   height: 200px;
   width: 160px;
   background: #FFF;
   border-radius: 8px;
-  transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   padding: 20px;
+  transition: 0.3s;
+  box-shadow: 0px 8px 30px rgba(149, 156, 169, 0.30), -1px -1px 30px rgba(156, 173, 198, 0.30);
   &:hover {
     box-shadow: 0px 8px 5px rgba(149, 156, 169, 0.25), -1px -1px 10px rgba(156, 173, 198, 0.30);
   }
