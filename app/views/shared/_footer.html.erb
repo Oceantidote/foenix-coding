@@ -4,11 +4,13 @@
       <div class="footer-left">
         <div class="footer-top">
           <div class="footer-section home-section">
-            <%= link_to t('navbar.home'), root_path, class: "footer-title footer-link" %>
+            <%= link_to t('navbar.home'), root_path, class: "footer-title footer-link oneremmb" %>
+            <%= link_to t('navbar.printer_one'), fxone_standard_path, class: "light-grey footer-link s-medium-text mb-2" %>
+            <%= link_to t('navbar.printer_two'), fxone_remote_path, class: "light-grey footer-link s-medium-text mb-2" %>
+            <%= link_to t('navbar.printer_three'), fxone_plus_path, class: "light-grey footer-link s-medium-text mb-2" %>
           </div>
           <div class="footer-section">
             <p class="footer-title"><%= t('navbar.products') %></p>
-            <%= link_to t('navbar.printers'), root_path, class: "light-grey footer-link s-medium-text mb-2" %>
             <%= link_to t('navbar.software'), software_path, class: "light-grey footer-link s-medium-text mb-2" %>
             <%= link_to t('navbar.inks'), inks_and_consumables_path, class: "light-grey footer-link s-medium-text mb-2" %>
           </div>
