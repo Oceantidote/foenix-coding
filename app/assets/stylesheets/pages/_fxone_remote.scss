@@ -138,7 +138,7 @@
   position: relative;
   z-index: 4;
   margin: 15px 0;
-  height: 300px;
+  height: 250px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
   padding-bottom: 16px;
   p {
@@ -146,6 +146,7 @@
   }
   @include for-medium-devices-down {
     margin: 10px 0;
+    height: 300px;
   }
 }
 
