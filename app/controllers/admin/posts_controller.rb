@@ -28,7 +28,12 @@ class Admin::PostsController < ApplicationController
   end
 
   def destroy
-    @post.destroy
+    if @post.featured
+      @post.destroy
+      Post.first.update(featured: true)
+    else
+      @post.destroy
+    end
     redirect_to posts_path
   end
 
