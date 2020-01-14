@@ -4,20 +4,22 @@
   <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "news-pill") %>
   <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "news-pill-bottom") %>
   <div class="container">
-    <div class="featured-post">
-      <a href="/">
-        <h1>Featured</h1>
-        <%= link_to post_path(@featured) do %>
-          <div class="featured-post-div">
-            <div class="featured-post-div-text">
-              <h2><%= @featured.title %></h2>
-              <p><%= @featured.text.truncate(120) %></p>
+    <% if @featured %>
+      <div class="featured-post">
+        <a href="/">
+          <h1>Featured</h1>
+          <%= link_to post_path(@featured) do %>
+            <div class="featured-post-div">
+              <div class="featured-post-div-text">
+                <h2><%= @featured.title %></h2>
+                <p><%= @featured.text.truncate(120) %></p>
+              </div>
+              <%= cl_image_tag @featured.image, class: "featured-post-image" %>
             </div>
-            <%= cl_image_tag @featured.image, class: "featured-post-image" %>
-          </div>
-        <% end %>
-      </a>
-    </div>
+          <% end %>
+        </a>
+      </div>
+    <% end %>
     <div class="all-news">
       <h1>News/Events</h1>
       <div class="news-grid">

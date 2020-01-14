@@ -8,9 +8,7 @@
       <%= f.input :text, as: :text %>
       <%= f.input :image %>
       <%= f.input :image_cache, as: :hidden %>
-      <% unless @post.featured %>
-        <%= f.input :featured %>
-      <% end %>
+      <%= f.input :featured, as: :boolean %>
       <%= f.button :submit, class: 'crud-button' %>
     <% end %>
   </div>
