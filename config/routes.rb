@@ -12,7 +12,7 @@ Rails.application.routes.draw do
       resources :posts, only: [:new, :create, :edit, :update, :destroy]
       resources :jobs, only: [:new, :create, :edit, :update, :destroy]
     end
-    resources :posts
+    resources :posts, only: [:index, :show]
     resources :jobs, only: [:index, :show]
     post '/send_email', to: 'pages#send_email'
     post '/subscribe', to: 'pages#subscribe'
