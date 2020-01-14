@@ -93,8 +93,30 @@
   @include for-phone-only {
     width: 90%;
   }
-  @include  for-xlarge-devices-up {
-    left: -80px;
+}
+
+.inks-gif {
+  z-index: 5;
+  @include for-small-devices-down {
+    margin-bottom: 40px;
+  }
+}
+
+.inks-btm {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  z-index: 5;
+  @include for-small-devices-down {
+    width: 90%;
+  }
+}
+.jc {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0 10%;
+  @include for-small-devices-down {
+    padding: 50px 0 0 5%;
   }
 }
 
@@ -168,6 +190,7 @@
   position: absolute;
   top: -450px;
   // left: 0;
+  width: 100%;
   right: 0;
   // z-index: -1;
 }

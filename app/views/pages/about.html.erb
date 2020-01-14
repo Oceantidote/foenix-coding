@@ -1,25 +1,26 @@
 <% content_for :meta_title, "#{t('seo.about.title')}" %>
 <% content_for :meta_description, "#{t('seo.about.description')}" %>
 
+<%= cl_image_tag("about-big-pill-sliced_mpxusz.png", :quality=>"auto", class: "about-big-pill") %>
 <div class="about-wrapper">
   <div class="first-section fxone-first-section-background">
     <div class="first-section-text">
-      <h1 class="w-100"><%= t("about.first_section_text") %></h1>
+      <h1 class="w-100"><%= t("about.second_section_title") %></h1>
+      <p class="responsive-text about-second-section-text"><%= t("about.second_section_text") %></p>
     </div>
     <%= cl_image_tag("about-graphic_avvw6d.png", :quality=>"auto", class: "first-section-image") %>
   </div>
   <div class="about-second-section-wrapper">
-    <%= cl_image_tag("about-big-pill-sliced_mpxusz.png", :quality=>"auto", class: "about-big-pill") %>
     <%= cl_image_tag("about-little-pill-sliced_z6varw.png", :quality=>"auto", class: "about-little-pill") %>
     <div class="container">
       <div class="about-section mobile-column" style="padding-top: 0px;">
         <div class="about-second-section-left no-padding-mobile">
-          <%= cl_image_tag("about-graphic-2_gcrekd.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
+          <%= cl_image_tag("about-img_gs2pe4.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
         </div>
         <div class="about-second-section-right mobile-center" data-aos="fade-up" data-aos-duration="2000">
           <%= image_tag 'about-icon-1.png', class: 'about-icon' %>
-          <h2><%= t("about.second_section_title") %></h2>
-          <p class="responsive-text about-second-section-text"><%= t("about.second_section_text") %></p>
+          <h2><%= t("about.first_section_text") %></h2>
+          <p class="responsive-text about-second-section-text"><%= t("about.first_section_text_two") %></p>
         </div>
       </div>
     </div>

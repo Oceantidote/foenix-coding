@@ -207,7 +207,8 @@ en:
     privacy: Privacy Policy
 
   about:
-    first_section_text: Your Complex coding and marking challenges don't require complex and expensive solution
+    first_section_text: Clear Returns
+    first_section_text_two: Your complex coding and marking challenges don't require complex and expensive solutions
     second_section_title: Our Mission
     second_section_text: To increase the efficiency of your production line and help you with you product traceability challenges
     third_section_title: We focus on the importance of cost of ownership in industrial printing.
@@ -219,7 +220,8 @@ en:
     fifth_section_text_two: Our range of industrial Xaar based inkjet printers are maintenance free. These are specifically designed for industrial use in sectors such as food, beverage, automotive, construction, converting, medical devices, pharmaceutical, electronics and chemical...
 
   inks_and_consumables:
-    first_section_text: Large Ink Cartridge Up to 15 million characters
+    first_section_text: Large Ink Cartridges
+    first_section_text_two: Up to 15 million characters
     first_card_title: Production friendly inks
     first_card_text: For applications in the food, beverage, cosmetics, household goods, industrial and extrusion markets, we have high quality controlled inks that are virtually odourless and are not M.E.K based. We also offer coloured inks.
     second_card_title: Sealed ink cartridge

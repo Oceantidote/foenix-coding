@@ -212,14 +212,10 @@
 
 .about-big-pill {
   position: absolute;
-  width: 300px;
-  top: 0;
+  width: 30vw;
+  top: 40vh;
   right: 0;
-  @include for-phone-only {
-    width: 210px;
-    top: 240px;
-    right: -130px;
-  }
+  z-index: 1;
   // @include for-large-devices-down {
   //   right: -395px;
   // }
