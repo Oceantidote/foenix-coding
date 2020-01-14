@@ -484,3 +484,42 @@ en:
     email: Email
     password: Password
 
+  seo:
+    home_page:
+      title: "Foenix Coding: Coding and Marking made easy"
+      description: Industrial Marking and Coding printers to print in high resolutions on every material. Foenix Coding Coding and Marking, industrial inkjet, FX One remote printer, FX One standard printer
+    fxone_standard:
+      title: "FX ONE Standard: High Resolution printer for all your case coding application"
+      description: Print in high resolution with our inkjet printers on cardboard boxes. No costly maintenance contracts and one of the lowest costs per print in the market. Xaar printer, piezo inkjet, Large Character Printers, non-contact printing, case coding, product coding, industrial printers, print use by date, print best before date, print barcode
+    fxone_remote:
+      title: "FX ONE Remote: High Resolution printer for all your product coding application"
+      description: Print in high resolution with our inkjet printers any substrates. No costly maintenance contracts and one of the lowest costs per print in the market. Xaar printer, piezo inkjet, Large Character Printers, non-contact printing, case coding, product coding, industrial printers, print use by date, print best before date, print barcode
+    fxone_plus:
+      title: "FX ONE Plus: High Resolution printer for all your large characters printing"
+      description: Print in high resolution up to 72mm with our inkjet printers. No costly maintenance contracts and one of the lowest costs per print in the market. Xaar printer, piezo inkjet, Large Character Printers, non-contact printing, case coding, product coding, industrial printers, print use by date, print best before date, print barcode
+    inks_and_consumables:
+      title: Inks and Consumables for Foenix Coding printers
+      description: "Large Ink Cartridge: print up to 15 million characters with one of the lowest cost per print ever.  Foenix Coding ink, Foenix Coding cartridges, Foenix Coding make-up, Foenix Coding cleaner"
+    distributors:
+      title: Foenix Coding distributors
+      description: Foenix Coding has a growing network of distributors all over the world that focus on simplicity, customer care and guarantee of premium services. Join us now! Foenix coding distributors, Foenix Coding reseller, Foenix coding agents, Foenix coding sales network
+    cost_of_ownership:
+      title: Save big with the FX One inkjet printer
+      description: Gain the confidence to choose the most cost-effective solution for your business. Calculate the total cost of ownership of your printer before taking a decision. CIJ alternative, TIJ alternative, HP printer, CIJ printer, TIJ Printer, labelling machines, low cost coding, low cost marking
+    about:
+      title: About the coding, marking and traceability experts
+      description: Offer a high-quality, well-designed, low cost & maintenance free industrial printer to print on every surface. Industrial printing, case coding, product marking, label printer, piezo printer, small character printing, large character printing
+    contact:
+      title: Get in touch with the Foenix Coding team
+      description: Contact us to get more information about our industrial inkjet printers, our inks and consumables. Contact Foenix Coding, Foenix Coding email, Foenix Coding phone
+    faq:
+      title: FAQ - Foenix Coding
+      description: More information about the Foenix Coding range of printers and inks. Sauven ink cartridges, Sauven solvent ink, Sauven oil ink, print database, print codes, TIJ alternative, CIJ alternative
+    jobs:
+      title: FOENIX CODING is growing
+      description: We are always looking for talented new friends that share our vision to push industry forward
+    posts:
+      title: News & Events
+      description: Get the lastet News & Events
+
+
