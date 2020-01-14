@@ -3,7 +3,7 @@
   <p>Text</p>
   <input id="x" type="hidden" name="post[text]" value= "<%= @post.text ? @post.text : '' %>">
   <trix-editor class="trix-content" input="x"></trix-editor>
-  <%= f.input :photo, as: :file %>
+  <%= f.input :image, as: :file %>
   <%= f.input :featured, as: :boolean %>
   <%= f.input :time %>
   <%= f.submit %>
