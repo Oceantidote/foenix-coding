@@ -29,12 +29,12 @@
         <% end %>
       </div>
       <div class="post-show-content">
-        <p><%= simple_format @post.text %></p>
+        <p><%= raw @post.text %></p>
       </div>
     </div>
   </div>
   <div class="post-show-last">
-    <h1 class="mb-4">Latest Story</h1>
+    <h1 class="mb-4"><%= t("news.latest") %></h1>
       <div class="row">
         <% @posts.last(3).each do |post| %>
           <div class="col-12 col-sm-6 col-md-4">
@@ -44,7 +44,7 @@
               <% end %>
               <div class="post-show-card-text">
                 <h6 class="m-0"><%= post.title %></h6>
-                <p class="post-mini-text"><%= post.text.truncate(100) %></p>
+                <p class="post-mini-text"><%= raw post.text.truncate(100) %></p>
               </div>
             </div>
           </div>

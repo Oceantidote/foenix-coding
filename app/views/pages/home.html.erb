@@ -12,10 +12,10 @@
     <div class="first-section-text">
       <!-- WEB TITLE -->
       <h1 class="hide-mobile m-0"><%= t("home.title") %></h1>
-      <h1 class="hide-mobile"><%= t("home.title_bottom") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span1") %></span></span></h1>
+      <h1 class="hide-mobile"><%= t("home.title_bottom") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span4"), t("home.title_span5"), t("home.title_span6"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span1") %></span></span></h1>
       <!-- WEB TITLE -->
       <!-- MOBILE TITLE -->
-      <h1 class="show-mobile"><%= t("home.mobile_title") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span1") %></span></span></h1>
+      <h1 class="show-mobile"><%= t("home.mobile_title") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span2") %></span></span></h1>
       <!-- MOBILE TITLE -->
       <p><%= t("home.title_description") %></p>
     </div>
@@ -356,11 +356,11 @@
       setTimeout(function(){
           insert_span(i);
           i++;
-          if(i == 3){
+          if(i == 6){
               i = 0;
           }
           loopForever();
-      }, 5000  * (i + 1));
+      }, 800  * (i + 1));
   }
   loopForever();
 

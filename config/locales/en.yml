@@ -113,8 +113,11 @@ en:
     title_bottom: Made
     mobile_title: Coding and Marking Made
     title_span1: Easy
-    title_span2: Medium
-    title_span3: Hard
+    title_span2: Powerful
+    title_span3: Fast
+    title_span4: Consistent
+    title_span5: Reliable
+    title_span6: Versatile
     title_description: Plug-and-play Industrial inkjet Printer for all types of production lines.
     #SECOND SECTION
     title_second: Stress-free product traceability
@@ -483,4 +486,8 @@ en:
     sign_up: Sign Up
     email: Email
     password: Password
+
+  news:
+    latest: Latest Story
+    news: News/Events
 
