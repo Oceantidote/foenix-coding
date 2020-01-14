@@ -444,18 +444,21 @@ en:
     third_section_right_text_seven: Auto programming with barcode reader
     third_section_final_text: Touchscreen interface that simplifies every action with the FX APP. Easy setup, navigation, remove the need for training and deliver a hassle-free, intuitive printing experience.
     fourth_section_title_one: Multilanguage support
-    fourth_section_text_one: Software translated in 19 languages and you print in any languanges
+    fourth_section_text_one: Software translated in 19 languages and you can print in any languange
     fourth_section_title_two: Keep your costs down
-    fourth_section_text_two: Easily control your cost per print and the number of print per cartridge. It has never been easier to keep your cost down! Ink saver mode Option (Picture / live calculation)
+    fourth_section_text_two: Easily control your cost per print and the numbers of print per cartridge.
+    fourth_section_text_two_two: It has never been easier to keep your costs down!
     fourth_section_title_three: Networking
     fourth_section_text_three: Maximize uptime by managing all your printers from one place.
     fourth_section_title_four: FX APP
-    fourth_section_text_four: Advanced printer management. Maximize uptime by managing production across multiple Foenix printers from one place. Monitor progress, track fault and gain insights with print analytics.
+    fourth_section_text_four: Advanced printer management.
+    fourth_section_text_four_two: Maximize uptime by managing production across multiple Foenix printers from one place. Monitor progress, track fault and gain insights with print analytics.
     fourth_section_title_five: Preventing user errors in print settings
-    fourth_section_text_five: Automatic configuration of print settings just by using a handheld reader!
+    fourth_section_text_five: No more errors, thanks to the automatic configuration of print settings through the handheld reader. Barcode scanner can be used to select a message to print, or to populate fields in a message by scanning corresponding barcodes. Less manual intervention means fewer coding mistakes.
     button: Live software to test
     fourth_section_title_six: Foenix firmware
-    fourth_section_text_six: Printers that get even better over time. Make your FX ONE printer even more capable with performance enhancements and added functionality in every firmware update.
+    fourth_section_text_six: Printers that get even better over time.
+    fourth_section_text_six_two: Make your FX ONE printer even more capable with performance enhancements and added functionality in every firmware update.
     fifth_section_title_one: Full Integration With Our DLL
     fifth_section_sub_title: What is a DLL?
     fifth_section_text_one: A DLL (Dynamic Link Library) is a set of software functions that can be used by a third party developer to incorporate into their own applications. The Foenix DLL described here provides a set of functions that allows a FX ONE printer to be controlled via the FXPro application or Foenix Touch Controller. The library makes the communication process to the printer much simpler for the developer as it takes care of the actual protocol used. The developer then uses a relatively simple mechanism to montior printers, load messages and transmit data.

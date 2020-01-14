@@ -5,7 +5,7 @@
 <div class="software-wrapper">
   <%= cl_image_tag("bigpill_dhcpkm.png", :quality=>"auto", class: "software-big-pill") %>
   <%= cl_image_tag("littlepill_nmf0vp.png", :quality=>"auto", class: "software-little-pill") %>
-  <div class="first-section fxone-first-section-background">
+  <div class="first-section fxone-first-section-background" style="padding-bottom: 0px;">
     <div class="first-section-text software-first-section-text">
       <div class="software-first-title">
         <h1><%= t("software.first_section_title_one") %></h1>
@@ -160,7 +160,7 @@
       <div class="software-fourth-section-text">
         <%= image_tag 'software-icon-2.png', class: 'about-icon' %>
         <h2 class="text-center"><%= t("software.fourth_section_title_two") %></h2>
-        <p class="responsive-text-small text-center"><%= t("software.fourth_section_text_two") %></p>
+        <p class="responsive-text-small text-center"><%= t("software.fourth_section_text_two") %><br><%= t("software.fourth_section_text_two_two") %></p>
       </div>
       <div class="software-fourth-section-graphics-container">
         <%= cl_image_tag("software-graphic-6_x590cd.png", :quality=>"auto", class: "software-fourth-section-graphics") %>
@@ -179,7 +179,7 @@
           </div>
           <div class="inks-first-section-right mobile-center">
             <h2><%= t("software.fourth_section_title_four") %></h2>
-            <p class="responsive-text-small"><%= t("software.fourth_section_text_four") %></p>
+            <p class="responsive-text-small"><%= t("software.fourth_section_text_four") %><br><%= t("software.fourth_section_text_four_two") %></p>
           </div>
         </div>
       </div>
@@ -207,7 +207,7 @@
           </div>
           <div class="inks-first-section-right mobile-center">
             <h2><%= t("software.fourth_section_title_six") %></h2>
-            <p class="responsive-text-small"><%= t("software.fourth_section_text_six") %></p>
+            <p class="responsive-text-small"><%= t("software.fourth_section_text_six") %><br><%= t("software.fourth_section_text_six_two") %></p>
           </div>
         </div>
       </div>
