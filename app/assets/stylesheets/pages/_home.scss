@@ -380,7 +380,7 @@
 .third-section {
   overflow: visible;
   width: 100vw;
-  background: linear-gradient(#FAFBFC, white);
+  // background: linear-gradient(#FAFBFC, white);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -927,6 +927,82 @@
 //   width: 15px;
 //   background: linear-gradient(to bottom right, #FFB03A 50%, #FFF 50%);
 // }
+
+.home-slant-1 {
+  position: absolute;
+  top: -1130px;
+  height: 3660px;
+  width: 100%;
+}
+
+.home-slant-2 {
+  position: absolute;
+  top: 1280px;
+  height: 3660px;
+  width: 100%;
+}
+
+.home-outline-pill-2 {
+  position: absolute;
+  width: 1010px;
+  top: -80px;
+  right: -560px;
+  transform: rotate(-12deg);
+  @media only screen and (min-width: 992px) {
+    transform: rotate(-12deg);
+  }
+  @media only screen and (min-width: 1042px) {
+    transform: rotate(-11deg);
+  }
+  @media only screen and (min-width: 1092px) {
+    transform: rotate(-10deg);
+  }
+  @media only screen and (min-width: 1142px) {
+    transform: rotate(-9deg);
+  }
+  @media only screen and (min-width: 1192px) {
+    transform: rotate(-8deg);
+  }
+  @media only screen and (min-width: 1242px) {
+    transform: rotate(-7deg);
+  }
+  @media only screen and (min-width: 1292px) {
+    transform: rotate(-6deg);
+  }
+  @media only screen and (min-width: 1342px) {
+    transform: rotate(-5deg);
+  }
+  @media only screen and (min-width: 1392px) {
+    transform: rotate(-4deg);
+  }
+  @media only screen and (min-width: 1442px) {
+    transform: rotate(-3deg);
+  }
+  @media only screen and (min-width: 1492px) {
+    transform: rotate(-2deg);
+  }
+  @media only screen and (min-width: 1542px) {
+    transform: rotate(-1deg);
+  }
+  @media only screen and (min-width: 1592px) {
+    transform: rotate(0deg);
+  }
+  @media only screen and (min-width: 1642px) {
+    transform: rotate(1deg);
+  }
+  @media only screen and (min-width: 1692px) {
+    transform: rotate(2deg);
+  }
+  @media only screen and (min-width: 1742px) {
+    transform: rotate(3deg);
+  }
+  @media only screen and (min-width: 1792px) {
+    transform: rotate(4deg);
+  }
+  @include for-medium-devices-down {
+    display: none;
+  }
+}
 
 .cookie-bar-content {
   box-shadow: 0 0 30px rgba(0,0,0,0.3);
