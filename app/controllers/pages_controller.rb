@@ -3,7 +3,9 @@ class PagesController < ApplicationController
   include ApplicationHelper
 
   def landing
+  end
 
+  def sauven_marking
   end
 
   def home
