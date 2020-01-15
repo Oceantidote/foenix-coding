@@ -32,7 +32,7 @@
       <%= render 'shared/navbar' %>
       <%= render 'shared/flashes' %>
     <% end %>
-    <div class="min-height">
+    <div class="<%= params[:action] == 'landing' ? '' : 'min-height' %>">
       <%= yield %>
     </div>
     <% unless params[:action] == 'landing' %>
