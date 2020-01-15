@@ -2,6 +2,10 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!
   include ApplicationHelper
 
+  def landing
+
+  end
+
   def home
   end
 
