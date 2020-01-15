@@ -28,14 +28,14 @@
     <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <% unless params[:action] == 'landing' %>
+    <% unless params[:action] == 'landing' || params[:action] == 'sauven_marking' %>
       <%= render 'shared/navbar' %>
       <%= render 'shared/flashes' %>
     <% end %>
-    <div class="<%= params[:action] == 'landing' ? '' : 'min-height' %>">
+    <div class="<%= (params[:action] == 'landing' || params[:action] == 'sauven_marking') ? '' : 'min-height' %>">
       <%= yield %>
     </div>
-    <% unless params[:action] == 'landing' %>
+    <% unless params[:action] == 'landing' || params[:action] == 'sauven_marking' %>
       <% if @not_seen_cookie %>
         <div class="cookie-bar">
           <div class="cookie-bar-content d-flex justify-content-center align-items-center">
@@ -48,7 +48,7 @@
         </div>
       <% end %>
     <% end %>
-    <% unless params[:action] == 'landing' %>
+    <% unless params[:action] == 'landing' || params[:action] == 'sauven_marking' %>
       <%= render 'shared/footer' %>
     <% end %>
     <%= javascript_include_tag 'application' %>
