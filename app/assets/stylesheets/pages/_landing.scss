@@ -1,7 +1,8 @@
 .maintenance-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  background: #EEF2F8;
 }
 
 .maintenance-container {
@@ -22,6 +23,8 @@
     flex-direction: column-reverse;
     padding-top: 50px;
     align-items: center;
+    justify-content: flex-end;
+
   }
 }
 
@@ -30,14 +33,17 @@
   height: 100%;
   @include for-small-devices-down {
     width: 60%;
+    height: auto;
   }
 }
 
 .maintenance-text {
   width: 60%;
+  @include for-small-devices-down {
+    text-align: center;
+  }
   @include for-phone-only {
     width: 90%;
-    text-align: center;
   }
 }
 
@@ -69,22 +75,16 @@
   }
 }
 
-.landing-text {
-  font-size: 20px;
-  font-weight: lighter;
-  line-height: 30px;
-  color: #717B8D;
+.landing-big-text {
+  font-size: 24px;
   @include for-small-devices-down {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
-.landing-text-small {
-  font-size: 16px;
-  font-weight: lighter;
-  line-height: 30px;
-  color: #717B8D;
+.landing-text {
+  font-size: 18px;
   @include for-small-devices-down {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
