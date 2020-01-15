@@ -75,22 +75,16 @@
   }
 }
 
-.landing-text {
-  font-size: 20px;
-  font-weight: lighter;
-  line-height: 30px;
-  color: #717B8D;
+.landing-big-text {
+  font-size: 24px;
   @include for-small-devices-down {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
-.landing-text-small {
-  font-size: 16px;
-  font-weight: lighter;
-  line-height: 30px;
-  color: #717B8D;
+.landing-text {
+  font-size: 18px;
   @include for-small-devices-down {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
