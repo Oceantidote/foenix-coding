@@ -52,7 +52,7 @@
               <% end %>
               <div class="post-show-card-text">
                 <h6 class="m-0"><%= post.title.truncate(65) %></h6>
-                <div class="responsive-text-small"><%= raw post.text.truncate(100) %></div></div>
+                <div class="responsive-text-small"><%= simple_format post.text.truncate(100) %></div>
               </div>
             </div>
           </div>
