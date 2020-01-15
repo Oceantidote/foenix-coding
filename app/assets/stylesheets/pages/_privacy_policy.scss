@@ -1,0 +1,11 @@
+.privacy-policy-wrapper {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background: linear-gradient(#ebeff6, #ffffff);
+  position: relative;
+  overflow: hidden;
+  @include for-phone-only {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
