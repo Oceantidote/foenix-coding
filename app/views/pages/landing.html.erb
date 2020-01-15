@@ -1,7 +1,7 @@
-<% if request.url == "http://sauven-marking.com/" %>
-  <%= render "shared/sauven" %>
-<% else %>
+<% if request.referrer == "http://foenixcoding.com/" %>
   <%= render "shared/landing" %>
+<% else %>
+  <%= render "shared/sauven" %>
 <% end %>
 
 
