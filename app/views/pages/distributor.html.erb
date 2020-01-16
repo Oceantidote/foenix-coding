@@ -18,7 +18,7 @@
         <div class="distributor-countries-container">
           <%#= render 'shared/distributor_countries' %>
           <div class="distributor-countries-web">
-            <div class="row" style="margin: 0;">
+            <div class="row" style="margin: 0; position: relative; z-index: 1">
               <% @countries.each do |country| %>
                 <div class="country-card" style="width: 20%;">
                   <%= image_tag url_for(country.photo) %>
