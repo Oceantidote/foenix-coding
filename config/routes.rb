@@ -30,7 +30,6 @@ Rails.application.routes.draw do
     get '/privacy_policy', to: 'pages#privacy_policy'
     get '/seen_cookie', to: 'pages#seen_cookie_message'
   end
-  # root to: 'pages#landing'
   get 'landing', to: 'pages#landing'
   get 'sauven_marking', to: 'pages#sauven_marking'
 end
