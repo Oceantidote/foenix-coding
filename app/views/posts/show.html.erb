@@ -7,7 +7,7 @@
     <% if @post.image.present? %>
       <%= cl_image_tag @post.image, class: '' %>
     <% else %>
-      <%= image_tag 'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: '' %>
+      <%= image_tag 'https://source.unsplash.com/random', class: '' %>
     <% end %>
     <div class="post-show-details">
       <div class="post-show-social-media">
@@ -47,7 +47,7 @@
                 <% if post.image.present? %>
                   <%= cl_image_tag post.image, class: '' %>
                 <% else %>
-                  <%= image_tag 'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: '' %>
+                  <%= image_tag 'https://source.unsplash.com/random', class: '' %>
                 <% end %>
               <% end %>
               <div class="post-show-card-text">
