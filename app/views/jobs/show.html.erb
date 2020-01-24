@@ -74,7 +74,7 @@
             <li class="main-body-text small-text"><%= @job.expectation10 %></li>
           <% end %>
         </ul>
-        <% if @job.responsibility1 || @job.responsibility2 || @job.responsibility3 || @job.responsibility4 || @job.responsibility5 || @job.responsibility6 || @job.responsibility7 || @job.responsibility8 || @job.responsibility9 || @job.responsibility10 %>
+        <% if @job.responsibility1 != "" || @job.responsibility2 != "" || @job.responsibility3 != "" || @job.responsibility4 != "" || @job.responsibility5 != "" || @job.responsibility6 != "" || @job.responsibility7 != "" || @job.responsibility8 != "" || @job.responsibility9 != "" || @job.responsibility10 != "" %>
           <p class="s-medium-text"><%= t("jobs_show.we_are_looking") %>:</p>
         <% end %>
         <ul style="padding-left: 16px;">
