@@ -39,38 +39,38 @@
           <%= raw @job.text1 %>
           <%= raw @job.text2 %>
         </div>
-        <% if @job.expectation1 || @job.expectation2 || @job.expectation3 || @job.expectation4 || @job.expectation5 || @job.expectation6 || @job.expectation7 || @job.expectation8 || @job.expectation9 || @job.expectation10 %>
+        <% if @job.expectation1 != "" || @job.expectation2 != "" || @job.expectation3 != "" || @job.expectation4 != "" || @job.expectation5 != "" || @job.expectation6 != "" || @job.expectation7 != "" || @job.expectation8 != "" || @job.expectation9 != "" || @job.expectation10 != "" %>
           <p class="s-medium-text"><%= t("jobs_show.you_will") %>:</p>
         <% end %>
         <ul style="padding-left: 16px;">
-          <% if @job.expectation1 %>
+          <% unless @job.expectation1.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation1 %></li>
           <% end %>
-          <% if @job.expectation2 %>
+          <% unless @job.expectation2.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation2 %></li>
           <% end %>
-          <% if @job.expectation3 %>
+          <% unless @job.expectation3.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation3 %></li>
           <% end %>
-          <% if @job.expectation4 %>
+          <% unless @job.expectation4.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation4 %></li>
           <% end %>
-          <% if @job.expectation5 %>
+          <% unless @job.expectation5.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation5 %></li>
           <% end %>
-          <% if @job.expectation6 %>
+          <% unless @job.expectation6.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation6 %></li>
           <% end %>
-          <% if @job.expectation7 %>
+          <% unless @job.expectation7.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation7 %></li>
           <% end %>
-          <% if @job.expectation8 %>
+          <% unless @job.expectation8.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation8 %></li>
           <% end %>
-          <% if @job.expectation9 %>
+          <% unless @job.expectation9.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation9 %></li>
           <% end %>
-          <% if @job.expectation10 %>
+          <% unless @job.expectation10.blank? %>
             <li class="main-body-text small-text"><%= @job.expectation10 %></li>
           <% end %>
         </ul>
@@ -78,34 +78,34 @@
           <p class="s-medium-text"><%= t("jobs_show.we_are_looking") %>:</p>
         <% end %>
         <ul style="padding-left: 16px;">
-          <% if @job.responsibility1 %>
+          <% unless @job.responsibility1.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility1 %></li>
           <% end %>
-          <% if @job.responsibility2 %>
+          <% unless @job.responsibility2.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility2 %></li>
           <% end %>
-          <% if @job.responsibility3 %>
+          <% unless @job.responsibility3.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility3 %></li>
           <% end %>
-          <% if @job.responsibility4 %>
+          <% unless @job.responsibility4.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility4 %></li>
           <% end %>
-          <% if @job.responsibility5 %>
+          <% unless @job.responsibility5.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility5 %></li>
           <% end %>
-          <% if @job.responsibility6 %>
+          <% unless @job.responsibility6.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility6 %></li>
           <% end %>
-          <% if @job.responsibility7 %>
+          <% unless @job.responsibility7.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility7 %></li>
           <% end %>
-          <% if @job.responsibility8 %>
+          <% unless @job.responsibility8.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility8 %></li>
           <% end %>
-          <% if @job.responsibility9 %>
+          <% unless @job.responsibility9.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility9 %></li>
           <% end %>
-          <% if @job.responsibility10 %>
+          <% unless @job.responsibility10.blank? %>
             <li class="main-body-text small-text"><%= @job.responsibility10 %></li>
           <% end %>
         </ul>
