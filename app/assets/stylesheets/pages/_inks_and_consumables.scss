@@ -37,6 +37,7 @@
   justify-content: space-around;
   @include for-small-devices-down {
     flex-direction: column;
+    width: 100vw;
   }
 }
 
@@ -101,6 +102,7 @@
 .inks-gif {
   z-index: 5;
   @include for-small-devices-down {
+    width: 90%;
     margin-bottom: 40px;
   }
 }

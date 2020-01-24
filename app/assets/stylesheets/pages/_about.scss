@@ -7,6 +7,12 @@
   margin: 0 auto;
 }
 
+.about-top {
+  @include for-medium-devices-down {
+    flex-direction: column-reverse;
+  }
+}
+
 .about-first-section-text-container {
   margin: 0 auto;
   font-size: 50px;
