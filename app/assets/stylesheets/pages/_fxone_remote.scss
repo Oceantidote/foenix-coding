@@ -138,7 +138,7 @@
   position: relative;
   z-index: 4;
   margin: 15px 0;
-  height: 250px;
+  height: 210px;
   transition: 0.3s;
   box-shadow: 0px 8px 30px rgba(149, 156, 169, 0.30), -1px -1px 30px rgba(156, 173, 198, 0.30);
   &:hover {
@@ -310,7 +310,7 @@
   line-height: 30px;
   color: #717B8D;
   @include for-small-devices-down {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
