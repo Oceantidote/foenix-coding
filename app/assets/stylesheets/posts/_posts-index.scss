@@ -188,6 +188,7 @@
 
 .new-post-card-image {
   width: 150px !important;
+  object-fit: contain;
   border-radius: 10px;
   margin-left: 20px;
 }
