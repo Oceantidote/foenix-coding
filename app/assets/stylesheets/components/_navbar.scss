@@ -57,6 +57,12 @@
   align-items: center;
 }
 
+.mid-screen-min {
+  @include for-small-devices-up {
+    width: 450px;
+  }
+}
+
 .navbar-right {
   display: flex;
   justify-content: space-between;

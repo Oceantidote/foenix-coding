@@ -3,7 +3,7 @@
     <%= link_to root_path do %>
       <%= image_tag "logo.png", alt: "Foenix Coding", class: "navbar-logo nav-left" %>
     <% end %>
-    <div class="d-flex p-3 justify-content-between" style="width: 450px;">
+    <div class="d-flex p-3 justify-content-between mid-screen-min" >
       <div class="navbar-item hidden">
         <a href="#" role="button" id="productsDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <%= t("navbar.products") %> <i class="fas fa-chevron-down small-chevron"></i>
@@ -98,17 +98,6 @@
     <div class="navbar-item">
       <%= link_to t("navbar.contact"), contact_path, class: "navbar-title nav-right"  %>
     </div>
-<!--     <div class="navbar-item">
-      <a href="#" role="button" id="productsDropdown" class="navbar-lang-link nav-right"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <%= locale.capitalize %> <i class="fas fa-chevron-down small-chevron"></i>
-      </a>
-      <div class="dropdown-menu" aria-labelledby="productsDropdown">
-        <ul class="dropdown-menu-ul">
-          <li><%#= image_tag 'uk.png' %><%#= link_to "English", { :locale=>'en' } %></li>
-          <li><%#= image_tag 'france.png' %> <%#= link_to "Français", { :locale=>'fr' } %></li>
-        </ul>
-      </div>
-    </div> -->
   </div>
   <div id="mobile-navbar">
     <i class="fas fa-bars" onclick="openNav()"></i>
