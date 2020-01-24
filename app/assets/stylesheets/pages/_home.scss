@@ -502,7 +502,7 @@
 
   @include for-small-devices-down {
     justify-content: center;
-
+    height: 60vh;
     & img:nth-child(3) {
       width: 100px;
     }
