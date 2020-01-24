@@ -91,8 +91,7 @@
          <button class="cityTab" data-city="Paris" onclick="openCity('Paris', true)"><%= t("home.tabs_two") %></button>
          <button class="cityTab" data-city="Tokyo" onclick="openCity('Tokyo', true)"><%= t("home.tabs_three") %></button>
          <button class="cityTab" data-city="Bogota" onclick="openCity('Bogota', true)"><%= t("home.tabs_four") %></button>
-         <button class="cityTab" data-city="Lexico" onclick="openCity('Lexico', true)"><%= t("home.tabs_five") %></button>
-         <button class="cityTab" data-city="Brussels" onclick="openCity('Brussels', true)"><%= t("home.tabs_six") %></button>
+
       </div>
       <div class="features-dropdown" >
         <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %>></button><i class="fas fa-chevron-down"></i>
@@ -101,8 +100,7 @@
           <button class="" onclick="openCity('Paris', true)"><%= t("home.tabs_two") %></button>
           <button class="" onclick="openCity('Tokyo', true)"><%= t("home.tabs_three") %></button>
           <button class="" onclick="openCity('Bogota', true)"><%= t("home.tabs_four") %></button>
-          <button class="" onclick="openCity('Lexico', true)"><%= t("home.tabs_five") %>o</button>
-          <button class="" onclick="openCity('Brussels', true)"><%= t("home.tabs_six") %>s</button>
+
         </div>
       </div>
       <div class="tabs-area">
@@ -111,6 +109,7 @@
           <div class="tab-text" >
             <h4><%= t("home.tabs_one_title") %></h4>
             <p><%= t("home.tabs_one_description") %></p>
+            <p><%= t("home.tabs_one_desc_two") %></p>
             <span class="progressHolder">
               <span class="progress"></span>
             </span>
@@ -120,7 +119,7 @@
             <br><br><br><br><br><br><br><br><br>
           </div>
           <div class="tab-image-container">
-            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
+            <%= cl_image_tag("https://res.cloudinary.com/foenix-coding/image/upload/v1579895115/tabone_ltvrjb.png", class: "tab-image shadowed") %>
           </div>
         </div>
 
@@ -128,6 +127,7 @@
           <div class="tab-text">
             <h4><%= t("home.tabs_two_title") %></h4>
             <p><%= t("home.tabs_two_description") %></p>
+            <p><%= t("home.tabs_two_desc_two") %></p>
             <span class="progressHolder">
               <span class="progress"></span>
             </span>
@@ -137,14 +137,14 @@
             <br><br><br><br><br><br><br><br><br>
           </div>
           <div class="tab-image-container">
-            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
+            <%= cl_image_tag("https://res.cloudinary.com/foenix-coding/image/upload/v1579895476/image58_cc0ttj.png", class: "tab-image") %>
           </div>
         </div>
 
         <div id="Tokyo" class="city" style="display:none">
           <div class="tab-text">
             <h4><%= t("home.tabs_three_title") %></h4>
-            <p><%= t("home.tabs_three_description") %></p>
+            <p><%= t("home.tabs_three_description") %><br><%= t("home.tttwo") %><br><%= t("home.ttthree") %><br><%= t("home.ttfour") %><br><%= t("home.ttfive") %><br><%= t("home.ttsix") %><br><%= t("home.ttseven") %></p>
             <span class="progressHolder">
               <span class="progress"></span>
             </span>
@@ -154,14 +154,14 @@
             <br><br><br><br><br><br><br><br><br>
           </div>
           <div class="tab-image-container">
-            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
+            <%= cl_image_tag("inks-and-cons_wzglxn.png", class: "tab-image") %>
           </div>
         </div>
 
         <div id="Bogota" class="city" style="display:none">
           <div class="tab-text">
             <h4><%= t("home.tabs_four_title") %></h4>
-            <p><%= t("home.tabs_four_description") %></p>
+            <p><%= t("home.tabs_four_description") %><br><%= t("home.tabs_four_two") %><br><%= t("home.tabs_four_three") %><br><%= t("home.tabs_four_four") %></p>
             <span class="progressHolder">
               <span class="progress"></span>
             </span>
@@ -171,43 +171,10 @@
             <br><br><br><br><br><br><br><br><br>
           </div>
           <div class="tab-image-container">
-            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
+            <%= cl_image_tag("https://res.cloudinary.com/foenix-coding/image/upload/v1579896321/lasttab_sngc3o.png", class: "tab-image") %>
           </div>
         </div>
 
-        <div id="Lexico" class="city"style="display:none">
-          <div class="tab-text">
-            <h4><%= t("home.tabs_five_title") %></h4>
-            <p><%= t("home.tabs_five_description") %></p>
-            <span class="progressHolder">
-              <span class="progress"></span>
-            </span>
-            <p class="orange"><%= t("home.tabs_five_bottom") %></p>
-            <br>
-            <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
-            <br><br><br><br><br><br><br><br><br>
-          </div>
-          <div class="tab-image-container">
-            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
-          </div>
-        </div>
-
-        <div id="Brussels" class="city" style="display:none">
-          <div class="tab-text">
-            <h4><%= t("home.tabs_six_title") %></h4>
-            <p><%= t("home.tabs_six_description") %></p>
-            <span class="progressHolder">
-              <span class="progress"></span>
-            </span>
-            <p class="orange"><%= t("home.tabs_six_bottom") %></p>
-            <br>
-            <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
-            <br><br><br><br><br><br><br><br><br>
-          </div>
-          <div class="tab-image-container">
-            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
-          </div>
-        </div>
       </div>
       <div class="third-video-text">
         <h3><span><%= image_tag "fxone_orange.png", alt: "Fxone Printer", class: "fxone_orange_small" %></span> Printer</h3>
@@ -444,7 +411,7 @@
     })
     const nextCity = tabCities[tabCities.indexOf(area.id) + 1]
     // cancelAnimation = false
-    if(tabCities.indexOf(area.id) == 5) {
+    if(tabCities.indexOf(area.id) == 3) {
       openCity("London")
     } else {
       openCity(nextCity, false)

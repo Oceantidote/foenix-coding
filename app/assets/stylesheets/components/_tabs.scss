@@ -148,6 +148,7 @@
 .tab-image {
   position: absolute;
   left: 5vw;
+  border-radius: 8px;
   width: 60vw;
   min-width: 750px;
   max-width: 900px;
@@ -225,6 +226,9 @@
 
 .tabs-area {
   position: relative;
+  @include for-medium-devices-up {
+    min-height: 845px;
+  }
 }
 
 // =======================

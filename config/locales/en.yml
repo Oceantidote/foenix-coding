@@ -153,30 +153,33 @@ en:
     home_video_title: Printer
     home_video_text: Helping businesses improve efficiency and lower production costs
     tabs_title: One software with tons of features
-    tabs_one: Lorem ipsum
-    tabs_one_title: Zero Downtime, No Maintenance
+    tabs_one: Savings
+    tabs_one_title: Reduced print costs - typically from 50% to 80%
     tabs_one_description: From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
-    tabs_one_bottom: From emerging businesses with 1 small production line to
-    tabs_two: Dolor sit
+    tabs_one_desc_two: "Printing with micro ink droplets and a sealed ink cartridge gives low cost per print with no ink wastage. Additional cost savings can be obtained using the ink saver mode. In addition to low cost per print our technology substantially reduces operating costs."
+    tabs_one_bottom: Clear and transparent returns on investment
+    tabs_two: Simplicity
     tabs_two_title: Two Zero Downtime, No Maintenance
-    tabs_two_description: Number two. From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
-    tabs_two_bottom: From emerging businesses with 1 small production line to
-    tabs_three: Amet bolor
-    tabs_three_title: Three Zero Downtime, No Maintenance
-    tabs_three_description: Test three. From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_two_description: "Foenix printers are manufactured with minimal components to give maximum reliability. No pumps, no valves, no compressed air, no droplet charging and no air filters means low maintenance and fewer problems. "
+    tabs_two_desc_two: "The Piezo technology used in the Foenix printer only needs a single sealed ink cartridge and does not require additional make-up solvent. This substantially reduces operating costs. Easily create messages with just a few clicks with no expertise required through our intuitive Interface that anyone can use."
+    tabs_two_bottom: Robust and reliable design
+    tabs_three: Flexibility
+    tabs_three_title: To suit all production types
+    tabs_three_description: "Effortless installation : mount your printer in minutes on your production line."
+    tttwo: Never stop printing even when changing the cartridge.
+    ttthree: Printer can be swapped between production lines in less than 5 min.
+    ttfour: "Print small & large text with the same printer: 2mm up to 18mm"
+    ttfive: From 1 to 8 lines of text.
+    ttsix: "High Resolution print: 180 dpi."
+    ttseven: Message creation in any font and in any language.
     tabs_three_bottom: From emerging businesses with 1 small production line to
-    tabs_four: Sianisi
-    tabs_four_title: Four Zero Downtime, No Maintenance
-    tabs_four_description: Four to the floor. From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
+    tabs_four: Connectivity
+    tabs_four_title: One software to manage all your printers.
+    tabs_four_description: "Ethernet, USB and RS232 connectivity are available for networking so multiple Foenix printers can be managed from one place:"
+    tabs_four_two: monitor progress, track fault, change settings and more.
+    tabs_four_three: "Full integration with our DLL (Dynamic Link Library) can be used by a third party developer to incorporate into their own applications."
+    tabs_four_four: "Integrate to a factory network system or connect to industrial scanners, encoders, check weighers or other equipment as required."
     tabs_four_bottom: From emerging businesses with 1 small production line to
-    tabs_five: Lorempsi
-    tabs_five_title: Five Zero Downtime, No Maintenance
-    tabs_five_description: Five alive. From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
-    tabs_five_bottom: From emerging businesses with 1 small production line to
-    tabs_six: Superfot
-    tabs_six_title: Six Zero Downtime, No Maintenance
-    tabs_six_description: Six pick up sticks. From emerging businesses with 1 small production line to multinational corporations with the most demanding applications, use the FX ONE printer to lower your coding and marking costs, prevent downtime,
-    tabs_six_bottom: From emerging businesses with 1 small production line to
     printer: Printer
     fxone_subtext: Helping businesses improve efficiency and lower production costs
     #FOURTH SECTION
@@ -207,16 +210,19 @@ en:
 
   about:
     first_section_text: Clear Returns
-    first_section_text_two: Your complex coding and marking challenges don't require complex and expensive solutions
+    first_section_text_two: "Whether you are looking for an inkjet printer for case coding or product marking, the investment in printing is no longer just about the printer price. Consumables and maintenance have become the main factors to determine your cost of ownership."
+    first_section_text_three: " Thanks to the clever design, the Xaar piezo inkjet printers have a remarkably low ink usage and therefore offer a very low cost per print. These printers also allow you to code directly onto your carton or product eliminating the need for expensive label printers, labellers and labels."
+    first_section_text_four: "Foenix Coding offers a range of printers which are keeping down cost of ownership. We are driven by a zero maintenance philosophy for small character printing. We are also working hard to offer the most user friendly industrial printer. Foenix printers work with a simple Windows PC software with pictorial keys and/or a very evolved and intuitive Touch controller. "
     second_section_title: Our Mission
-    second_section_text: To increase the efficiency of your production line and help you with you product traceability challenges
+    second_section_text: "Foenix Coding is a UK based company and all our products are made in the UK. We are passionate about new technology and innovative printing solutions and the team is made up  exclusively of experts from the field of inkjet printing technology. We are all ex Sauven Marking employees and we have brought with us all our skills, experience, knowledge, expertise and more importantly our enthusiasm into this new adventure."
+    second_section_text_two: "Our mission is to make our high-quality and simple printers accessible for everyone in the world. We are here to help you increase the efficiency of your production line and help you with you product traceability challenges. Your complex coding and marking challenges don't require complex and expensive solutions."
     third_section_title: We focus on the importance of cost of ownership in industrial printing.
     third_section_text: Whether you are looking for an inkjet printer for case coding or product marking, the investment in printing is no longer just about the printer price. Consumables and maintenance have become the main factors to determine your cost of ownership.
     fourth_section_text_left: Thanks to the clever design, the Xaar piezo inkjet printers have a remarkably low ink usage and therefore offer a very low cost per print. These printers also allow you to code directly onto your carton or product eliminating the need for expensive label printers, labellers and labels.
     fourth_section_text_right: Foenix Coding offers a range of printers which are keeping down cost of ownership. We are driven by a zero maintenance philosophy for small character printing. We are also working hard to offer the most user friendly industrial printer. Foenix printers work with a simple Windows PC software with pictorial keys and/or a very evolved and intuitive Touch controller.
-    fifth_section_title: All our products, printers, inks, consumables are MADE IN UK.
-    fifth_section_text_one: The software and hardware systems have been developed in collaboration with manufacturing and packaging professionals to help them with their daily challenges to print best before dates, batch codes, 2D barcodes, graphic logos and other requirements.
-    fifth_section_text_two: Our range of industrial Xaar based inkjet printers are maintenance free. These are specifically designed for industrial use in sectors such as food, beverage, automotive, construction, converting, medical devices, pharmaceutical, electronics and chemical...
+    fifth_section_title: Made in UK and built to last
+    fifth_section_text_one: "All our products - printers, inks, consumables - are made in UK. The software and hardware systems have been developed in collaboration with manufacturing and packaging professionals to help them with their daily challenges to print best before dates, batch codes, 2D barcodes, graphic logos and other requirements."
+    fifth_section_text_two: "Our range of industrial Xaar based inkjet printers are maintenance free. These are specifically designed for industrial use in sectors such as food, beverage, automotive, construction, converting, medical devices, pharmaceutical, electronics and chemical..."
 
   inks_and_consumables:
     first_section_text: Large Ink Cartridges
