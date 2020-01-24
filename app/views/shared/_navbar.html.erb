@@ -3,85 +3,87 @@
     <%= link_to root_path do %>
       <%= image_tag "logo.png", alt: "Foenix Coding", class: "navbar-logo nav-left" %>
     <% end %>
-    <div class="navbar-item hidden">
-      <a href="#" role="button" id="productsDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <%= t("navbar.products") %> <i class="fas fa-chevron-down small-chevron"></i>
-      </a>
-      <div class="dropdown-menu" aria-labelledby="productsDropdown">
-        <ul class="dropdown-menu-ul">
-          <li class="printers-menu">
-            <a href="#" style="pointer-events: none;">
-              <%= image_tag 'icon-1.png' %><%= t("navbar.printers") %>
-            </a>
-            <%= link_to fxone_standard_path, class: 'printers-text-container mt-1' do %>
-              <span class="printers-text"><%= t("navbar.printer_one") %></span><i class="fas fa-angle-right"></i>
-            <% end %>
-            <%= link_to fxone_remote_path, class: 'printers-text-container' do %>
-              <span class="printers-text"><%= t("navbar.printer_two") %></span><i class="fas fa-angle-right"></i>
-            <% end %>
-            <%= link_to fxone_plus_path, class: 'printers-text-container' do %>
-              <span class="printers-text"><%= t("navbar.printer_three") %></span><i class="fas fa-angle-right"></i>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to software_path do %>
-              <%= image_tag 'icon-2.png' %><%= t("navbar.software") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to inks_and_consumables_path do %>
-              <%= image_tag 'icon-3.png' %><%= t("navbar.inks") %>
-            <% end %>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="navbar-item hidden">
-      <a href="#" role="button" id="serviceDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <%= t("navbar.services") %> <i class="fas fa-chevron-down small-chevron"></i>
-      </a>
-      <div class="dropdown-menu" aria-labelledby="serviceDropdown">
-        <ul class="dropdown-menu-ul">
-          <li>
-            <%= link_to distributor_path do %>
-              <%= image_tag 'icon-4.png' %><%= t("navbar.distributors") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to cost_of_ownership_path do %>
-              <%= image_tag 'icon-5.png' %><%= t("navbar.cost") %>
-            <% end %>
+    <div class="d-flex p-3 justify-content-between" style="margin-top: 25px; width: 450px">
+      <div class="navbar-item hidden">
+        <a href="#" role="button" id="productsDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= t("navbar.products") %> <i class="fas fa-chevron-down small-chevron"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="productsDropdown">
+          <ul class="dropdown-menu-ul">
+            <li class="printers-menu">
+              <a href="#" style="pointer-events: none;">
+                <%= image_tag 'icon-1.png' %><%= t("navbar.printers") %>
+              </a>
+              <%= link_to fxone_standard_path, class: 'printers-text-container mt-1' do %>
+                <span class="printers-text"><%= t("navbar.printer_one") %></span><i class="fas fa-angle-right"></i>
+              <% end %>
+              <%= link_to fxone_remote_path, class: 'printers-text-container' do %>
+                <span class="printers-text"><%= t("navbar.printer_two") %></span><i class="fas fa-angle-right"></i>
+              <% end %>
+              <%= link_to fxone_plus_path, class: 'printers-text-container' do %>
+                <span class="printers-text"><%= t("navbar.printer_three") %></span><i class="fas fa-angle-right"></i>
+              <% end %>
             </li>
-          <li>
-            <%= link_to faq_path do %>
-              <%= image_tag 'icon-6.png' %><%= t("navbar.FAQ") %>
-            <% end %>
-          </li>
-        </ul>
+            <li>
+              <%= link_to software_path do %>
+                <%= image_tag 'icon-2.png' %><%= t("navbar.software") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to inks_and_consumables_path do %>
+                <%= image_tag 'icon-3.png' %><%= t("navbar.inks") %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="navbar-item hidden">
-      <a href="#" role="button" id="companyDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <%= t("navbar.company") %> <i class="fas fa-chevron-down small-chevron"></i>
-      </a>
-      <div class="dropdown-menu" aria-labelledby="companyDropdown">
-        <ul class="dropdown-menu-ul">
-          <li>
-            <%= link_to about_path do %>
-              <%= image_tag 'icon-7.png' %><%= t("navbar.about") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to jobs_path do %>
-              <%= image_tag 'icon-8.png' %><%= t("navbar.careers") %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to posts_path do %>
-              <%= image_tag 'icon-9.png' %><%= t("navbar.news") %>
-            <% end %>
-          </li>
-        </ul>
+      <div class="navbar-item hidden">
+        <a href="#" role="button" id="serviceDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= t("navbar.services") %> <i class="fas fa-chevron-down small-chevron"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="serviceDropdown">
+          <ul class="dropdown-menu-ul">
+            <li>
+              <%= link_to distributor_path do %>
+                <%= image_tag 'icon-4.png' %><%= t("navbar.distributors") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to cost_of_ownership_path do %>
+                <%= image_tag 'icon-5.png' %><%= t("navbar.cost") %>
+              <% end %>
+              </li>
+            <li>
+              <%= link_to faq_path do %>
+                <%= image_tag 'icon-6.png' %><%= t("navbar.FAQ") %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-item hidden">
+        <a href="#" role="button" id="companyDropdown" class="navbar-title nav-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <%= t("navbar.company") %> <i class="fas fa-chevron-down small-chevron"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="companyDropdown">
+          <ul class="dropdown-menu-ul">
+            <li>
+              <%= link_to about_path do %>
+                <%= image_tag 'icon-7.png' %><%= t("navbar.about") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to jobs_path do %>
+                <%= image_tag 'icon-8.png' %><%= t("navbar.careers") %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to posts_path do %>
+                <%= image_tag 'icon-9.png' %><%= t("navbar.news") %>
+              <% end %>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
