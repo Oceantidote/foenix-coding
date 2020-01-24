@@ -121,6 +121,31 @@
   filter: blur(4px);
 }
 
+#cost-text {
+  min-width: 641px;
+  @include for-large-devices-down {
+    min-width: unset;
+    & h1 {
+      color: #0D1B26;
+      font-size: 30px;
+    }
+    & img {
+      height: 25px;
+      padding-bottom: 3px;
+    }
+
+    & p {
+      padding-top: 20px;
+      color: #747B8A;
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
 .first-section-text {
   width: 600px;
   position: relative;
@@ -186,7 +211,7 @@
   & h2 {
     color: #0D1B26;
     padding-top: 20px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     position: relative;
     z-index: 100;
@@ -252,7 +277,7 @@
       padding-bottom: 10px;
       width: 100%;
       text-align: left;
-      font-weight: 300;
+      font-weight: 500;
       padding-left: 20px;
     }
 
@@ -441,7 +466,7 @@
   & h2 {
     color: #0D1B26;
     padding-top: 20px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     position: relative;
     z-index: 100;
@@ -517,6 +542,10 @@
   @include for-small-devices-down {
     width: 100px;
   }
+}
+
+.shadowed {
+  box-shadow: 0 45px 63px rgba(0,0,0,0.1);
 }
 
 .third-section-media {

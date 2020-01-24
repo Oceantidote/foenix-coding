@@ -6,7 +6,7 @@
     <div class="first-section-text">
       <!-- WEB TITLE -->
       <h1 class="hide-mobile m-0"><%= t("home.title") %></h1>
-      <h1 class="hide-mobile"><%= t("home.title_bottom") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span4"), t("home.title_span5"), t("home.title_span6"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span1") %></span></span></h1>
+      <h1 class="hide-mobile"><%= t("home.title_bottom") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span4"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span1") %></span></span></h1>
       <!-- WEB TITLE -->
       <!-- MOBILE TITLE -->
       <h1 class="show-mobile"><%= t("home.mobile_title") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span2") %></span></span></h1>
@@ -34,11 +34,10 @@
             <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_three") %></li>
             <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_four") %></li>
             <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_five") %></li>
-            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_six") %></li>
           </ul>
           <ul class="second-section-two-columns-two ul">
+            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_six") %></li>
             <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_one_one") %></li>
-            <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_two_two") %></li>
             <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_three_three") %></li>
             <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_four_four") %></li>
             <li class="responsive-text"><%= image_tag 'foenix-check.png' %><%= t("home.second_column_five_five") %></li>
@@ -73,7 +72,7 @@
     <div class="second-section-three">
       <%= image_tag("square-dots.png", class: "second-section-three_svg") %>
       <div>
-        <%= cl_image_tag("foenix-milk_zg6rhu.png", :quality=>"auto", class: "second-section-three_image") %>
+        <%= cl_image_tag("https://res.cloudinary.com/foenix-coding/image/upload/v1579860872/blnk_products_viwmhc.png", :quality=>"auto", class: "second-section-three_image") %>
       </div>
       <div>
         <%= cl_image_tag("foenix-tube_zlcerz.png", :quality=>"auto", class: "second-section-three_image") %>
@@ -352,7 +351,7 @@
       setTimeout(function(){
           insert_span(i);
           i++;
-          if(i == 6){
+          if(i == 4){
               i = 0;
           }
           loopForever();

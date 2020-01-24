@@ -53,7 +53,8 @@ en:
 
   faq:
     title: Frequently Asked Questions
-    tagline: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio commodi quod laudantium asperiores a consectetur, repudiandae at, debitis dicta, exercitationem reprehenderit aliquam quis iusto laborum nostrum libero suscipit magni! Vero.
+    tagline: Just click on one of the sections below to find the answer. We are here to help. If you can't find the answer to your question, feel free to
+    contact: contact us
     title1: What is the FX ONE Printer?
     desc1: The FX One is the all-in-one printer device that is made for use by everyone. No expertise required. Setup in minutes, and can run on the vast majority of production lines. What does it do? It can print virtually on any product anything from a simple use by date, to a complex lot number, a live counter, date and time or a shift code, a barcodes and much more.  In addition to those features, the FX One will come with upgrades  in order to bring you the most cutting edge developments and applications in the coding and marking ecosystem. Check out this 
     desc1vid: video
@@ -92,9 +93,9 @@ en:
     desc8_6: The Remote printer comes in 2 models, either manual shutter or motorized shutter.
     desc8_7: This printer works either with oil based ink for porous surfaces (like carton, paper, wood…) or solvent based ink for non-porous surfaces (like plastic, metal, glass…).
     desc8_8: You can virtually print on any products with that printer.
-    title9_1: FX One Remote
+    title9_1: FX ONE Remote
     title9_2: Motorized or Manual shutter, what is the difference?
-    desc9: The FX ONE remote printer has a shutter to protect the printhead. With the motorized version the shutter will closed automatically after printing. With the manual version you will have to open the shutter manually at the beginning of the day and close it manually at the end of the day when the production stops.
+    desc9: The FX ONE remote printer has a shutter to protect the printhead. With the motorized version the shutter will close automatically after printing. With the manual version you will have to open the shutter manually at the beginning of the day and close it manually at the end of the day when the production stops.
     title10: Can I print on the top of a product?
     desc10: Yes, With the remote printhead and you can technically print to any angle
     title11: What type of ink do you offer? 
@@ -105,7 +106,7 @@ en:
     desc12_2: Foenix printers are manufactured with minimal components to give maximum reliability. No pumps, no valves, no compressed air, no droplet charging and no air filters mean very low maintenance.
     title13: How can I be sure I’ll be saving money with FX ONE printer?
     desc13_1: Our software has the feature to calculate the number of print per cartridges and the cost per print for every message you will create on the FX APP.
-    desc13_2: It is a very powerful tool because you can see how much money you will be saving using our printer. You are in control of the costs
+    desc13_2: It is a very powerful tool because you can see how much money you will be saving using our printer. You are always in control of the costs
 
   home:
     # FIRST SECTION
@@ -113,16 +114,14 @@ en:
     title_bottom: Made
     mobile_title: Coding and Marking Made
     title_span1: Easy
-    title_span2: Powerful
-    title_span3: Fast
+    title_span2: Reliable
+    title_span3: Versatile
     title_span4: Consistent
-    title_span5: Reliable
-    title_span6: Versatile
-    title_description: Plug-and-play Industrial inkjet Printer for all types of production lines.
+    title_description: Plug-and-play industrial inkjet Printer for all types of production lines.
     #SECOND SECTION
-    title_second: Stress-free product traceability
-    title_second_description: Take your product traceability to all new level by printing in any languages, any fonts and in high resolution on any product
-    second_column_title: Code Everything
+    title_second: High quality product traceability
+    title_second_description: Take your product traceability to a new level by printing in any language, any font and in high resolution on any product
+    second_column_title: Code Anything
     second_column_title_description: Lorem ipsum dolor sit amet, consectetur.
     second_column_one: Text
     second_column_two: Use by date
@@ -135,7 +134,7 @@ en:
     second_column_three_three: Shift
     second_column_four_four: Variable Data
     second_column_five_five: External Data
-    second_column_title_two: Print on Anything
+    second_column_title_two: On Any Substrates
     second_column_two_one: Glass
     second_column_two_two: Plastic
     second_column_two_three: Metal
@@ -145,7 +144,7 @@ en:
     second_column_two_seven: Egg
     second_column_two_one_one: Wood
     second_column_two_two_two: Timber
-    second_column_two_three_three: Plastiboard
+    second_column_two_three_three: Plasterboard
     second_column_two_four_four: Carpet
     second_column_two_five_five: Films/foils
     second_column_two_six_six: Paper
@@ -198,9 +197,9 @@ en:
 
   newsletter:
     card_title: Come work with us
-    card_text: Lorem ipsum dolor sit amet, consectetur adipiscing.
+    card_text: We are always looking for talented new friends that share our vision to push industry forward
     title: Get the latest newsletter
-    text: Curabitur lobortis id lorem id bibendum. Ut id consectetur magna.
+    text: Sign up to receive email updates on new product announcements, technical updates, show we will attend and more.
     button: Subscribe
     placeholder: laurenmayberry@example.com
     unsubscribe: You can unsubscribe at any time.
@@ -225,15 +224,16 @@ en:
     first_card_title: Production friendly inks
     first_card_text: For applications in the food, beverage, cosmetics, household goods, industrial and extrusion markets, we have high quality controlled inks that are virtually odourless and are not M.E.K based. We also offer coloured inks.
     second_card_title: Sealed ink cartridge
-    second_card_text: An integral and replaceable ink cartridge maintains a clean ink system free of contamination. Our inks have a excellent adhesion and contrast on a wide range of porous and non-porous materials such as carton, metal, glass, paper, wood, and many plastics. Our inks offers outstanding performance under most common application conditions.
-    third_section_text: We now offer a High Adhesion Ink specially designed for PVC extrusion application. Get unprecedented print quality on PVC pipes
+    second_card_text: An integral and replaceable ink cartridge maintains a clean ink system free of contamination. Our inks have an excellent adhesion and contrast on a wide range of porous and non-porous materials such as carton, metal, glass, paper, wood, and many plastics. Our inks offers outstanding performance under most common application conditions.
+    third_section_title: HDPVC Inks
+    third_section_text: We now offer a High Adhesion Ink Specifically designed for PVC extrusion application. Get unprecedented print quality on PVC pipes.
 
   distributor:
     first_section_title: Global Reach
     first_section_text: Wherever you are in the world, one of our distributors are close by. We are present on every continent and offer support in your language and time zone.
     second_section_title: Foenix has distributors in
     third_section_title: Interested in joining the Foenix Coding Family?
-    third_section_text:  We are excited to have a growing network of distribution partners marketing Foenix products around the world. We are currently inviting companies to join our international distributor network to promote our new range of printers to new markets.  Fill up this form and we’ll be in touch shortly to discuss this opportunity
+    third_section_text:  We are excited to have a growing network of distribution partners marketing Foenix products around the world. We are currently inviting companies to join our international distributor network to promote our new range of printers to new markets.  Fill in this form and we will be in touch shortly to discuss this opportunity
 
   distributor_countries:
     uk: UK
@@ -282,14 +282,15 @@ en:
     be_the_next: Be the next one
 
   cost_of_ownership:
-    first_section_title: Save big with the
-    first_section_text: "Helping businesses improve efficiency: Avoid getting locked into an expensive inkjet printer that will drain your budget over time. Learn warranty details, service terms, maintenance/repairs costs, ink & consumables costs. Gain the confidence to choose the most cost-effective solution for your business. Calculate the total cost of ownership of your printer before taking a decision"
+    first_section_title: Save time & Save money
+    first_section_sub_title: With the
+    first_section_text: "Helping businesses improve efficiency: Avoid getting locked into expensive inkjet printers that will drain your budget over time by checking warranty details, service terms, maintenance/repairs costs, ink & consumables costs. Gain the confidence to choose the most cost-effective solution for your business. Calculate the total cost of ownership of your printer before making a decision"
     second_section_title: Savings/ROI Calculator
     second_section_text: Easily control your cost per print and the number of print per cartridge. It has never been easier to keep your cost down! Save up to 75% of ink  with our Ink saver mode
 
   fxone_remote:
     first_section_title: REMOTE
-    first_section_text: Printer for all your product coding application
+    first_section_text: The new FX ONE inkjet printer is one of the lowest cost per code and lowest maintenance small character printers. It offers a real alternative to code your products.
     second_section_title: Overview
     first_card_title: High Resolution Coding & Marking
     first_card_text: 1 to 8 lines of print, with 2-18mm print height.
@@ -342,7 +343,7 @@ en:
     fifth_section_right_six: I/O port for encoder, alarm beacon and external photocells
     fifth_section_right_title_two: Ink
     fifth_section_right_seven: Sealed replaceable ink catridge (up to 15 million characters)
-    fifth_section_right_eight: Oil based inks for porous surfaces
+    fifth_section_right_eight: oil based inks for porous surfaces
     fifth_section_right_nine: Solvent based inks for non-porous surfaces
     fifth_section_right_ten: UV inks for instant LED curing
     fifth_section_right_eleven: Various colours
@@ -366,11 +367,11 @@ en:
     sixth_section_right_sub_title_four: Innovation Automatic shutter
     sixth_section_right_sub_text_four: "To protect the most critical part of your printer: the printhead engine"
     seventh_section_title: Flawless prints, every time
-    seventh_section_text: We value simplicity and ease of use. Less is more. Simplest, most efficient way possible to code your product. Less components for maximum reliability.
+    seventh_section_text: High quality, well-made, high precision is what defines our printers. We offer the simplest, most efficient way possible to code your product in High Resolution.
 
   fxone_standard:
     first_section_title: STANDARD
-    first_section_text: Printer for all your case coding application
+    first_section_text: Print in High resolution directly onto cartons, trays and sacks on a production line to eliminate the need for costly pre-printed packaging or expensive labels.
     second_section_title: Overview
     first_card_title: High Resolution Coding & Marking
     first_card_text: 1 to 8 lines of print, with 2-18mm print height.
@@ -398,20 +399,26 @@ en:
     twelfth_card_text: For encoders, external alarms and alternative product detection devices.
     thirteenth_card_title: Ink Saver Mode
     thirteenth_card_text: Reduce ink consumption by up to 50%
+    seventh_section_title: Production Versatility
+    seventh_section_text: The compact and innovative industrial design of the FX ONE facilitates moving the printer to different locations in minutes. Just unplug it and move it. It works seamlessly with its large touchscreen, and all the printing operations can be controlled easily. Just hit the print button and start printing on anything.
+
 
   fxone_plus:
     first_section_title: PLUS
-    first_section_text: Printer for all your case coding application
+    first_section_text: "Coming Soon: Large character printer up to 72mm print height."
+    first_section_text_two: "The perfect alternative to expensive, complex and limited labelling systems."
     coming_soon: Coming Soon...
 
   software:
-    first_section_title_one: FX APP
+    first_section_title_one: FX TOUCH CONTROLLER
     first_section_text_one: Programming without training
-    first_section_title_two: FX TOUCH Controller
-    first_section_text_two: Control your printer with just a touch
+    first_section_text_two: control your printer with just a touch through our smart FX Touch Controller.
+    first_section_text_three: We paid a lot of attention to the user interface design of the FX APP to simplify the workflow of your daily projects.
+    first_section_text_four: The FX APP running on the FX Touch Controller is also available as a PC software so you can control your printer from any computer.
+
     second_section_title: FX APP
     second_section_text: The ultimate tool to always have your production in control and reduce your costs.
-    second_section_text2: Foenix FX APP enables you to design messages in record time through it user friendly interface.
+    second_section_text2: Foenix FX APP enables you to design messages in record time through its user friendly interface.
     second_section_check_one: Simple interactive windows programming
     second_section_check_two: Unlimited message storage
     second_section_check_three: Ink saver print mode
@@ -432,7 +439,7 @@ en:
     third_section_left_text_six: Ink saver print mode
     third_section_left_text_seven: Unlimited message storage
     third_section_left_text_eight: Multi language support
-    third_section_left_text_nine: Sauven Marking Ltd continously Improves products and software. Specifications are subject to change.
+    third_section_left_text_nine: Foenix Coding Ltd continously Improves products and software. Specifications are subject to change.
     third_section_right_title: FX ONE TOUCH
     third_section_right_sub_title: Features
     third_section_right_title_two: Connectivity
@@ -444,14 +451,14 @@ en:
     third_section_right_text_five: 24 v DC input
     third_section_right_text_six: Support external alarms, beacons, encoders
     third_section_right_text_seven: Auto programming with barcode reader
-    third_section_final_text: Touchscreen interface that simplifies every action with the FX APP. Easy setup, navigation, remove the need for training and deliver a hassle-free, intuitive printing experience.
-    fourth_section_title_one: Multilanguage support
+    third_section_final_text: Touchscreen interface that simplifies every action with the FX APP. Easy setup and navigation remove the need for training and delivers a hassle-free, intuitive printing experience.
+    fourth_section_title_one: Multi-language support
     fourth_section_text_one: Software translated in 19 languages and you can print in any languange
     fourth_section_title_two: Keep your costs down
     fourth_section_text_two: Easily control your cost per print and the numbers of print per cartridge.
     fourth_section_text_two_two: It has never been easier to keep your costs down!
-    fourth_section_title_three: Networking
-    fourth_section_text_three: Maximize uptime by managing all your printers from one place.
+    fourth_section_title_three: Networking & Integration
+    fourth_section_text_three: The FX APP gives  full integration capability for networking printers, accessing  databases, creating messages off line, connecting to industrial scanners, bar code readers, verifiers and other production equipment.
     fourth_section_title_four: FX APP
     fourth_section_text_four: Advanced printer management.
     fourth_section_text_four_two: Maximize uptime by managing production across multiple Foenix printers from one place. Monitor progress, track fault and gain insights with print analytics.
@@ -475,8 +482,8 @@ en:
   contact:
     contact_title: Contact Us
     contact_title_description: Get in touch and let us know how we can help.
-    icon_text: Our team is happy to answer all your questions. Fill out the form and we'll be in touch as soon as possible.
-    icon_text_two: Free test print, send us a sample of your product and we'll do a test print.
+    icon_text: Our team is happy to answer all your questions. Fill out the form and we will be in touch as soon as possible.
+    icon_text_two: Free test print, send us a sample of your product and we will do a test print.
     form_name: First Name and Last Name
     form_email: Email Address
     form_company: Company

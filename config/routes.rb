@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
   scope "(:locale)", locale: /en|fr/ do
-    root to: 'pages#landing'
+    root to: 'pages#home'
     get '/faq', to: 'pages#faq'
     devise_for :users
     namespace :admin do

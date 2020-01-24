@@ -6,8 +6,8 @@
 <%= cl_image_tag("about-little-pill-sliced_z6varw.png", :quality=>"auto", class: "ownership-little-pill") %>
 <div class="ownership-wrapper">
   <div class="first-section fxone-first-section-background mobile-column">
-      <div class="first-section-text">
-        <h1 class="responsive-header w-100"><%= t("cost_of_ownership.first_section_title") %> <span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo-right") %></span></h1>
+      <div class="first-section-text" id="cost-text">
+        <h1 class="responsive-header w-100"><%= t("cost_of_ownership.first_section_title") %> <br> <%= t("cost_of_ownership.first_section_sub_title") %> <span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo-right") %></span></h1>
         <p class="paragraph-text"><%= t("cost_of_ownership.first_section_text") %></p>
       </div>
       <%= cl_image_tag("Piggy_1_al3kec.png", :quality=>"auto", class: "first-section-image", style: "max-width: 800px;") %>
@@ -20,8 +20,8 @@
     <p class="responsive-text-small ownership-second-section-text text-center" data-aos="fade-up" data-aos-duration="2000"><%= t("cost_of_ownership.second_section_text") %></p>
   </div>
   <div class="ownership-third-section-wrapper">
-    <%= cl_image_tag("ownership-slider_vuhnwc.png", :quality=>"auto", id: "ownership-slider", class: "ownership-slider hide-mobile") %>
-    <%= cl_image_tag("ownership-slider-mobile_h8vl9t.png", :quality=>"auto", id: "ownership-slider-mobile", class: "ownership-slider show-mobile") %>
+    <%= cl_image_tag("https://res.cloudinary.com/foenix-coding/image/upload/v1579863319/cost_cqw53z.png", :quality=>"auto", id: "ownership-slider", class: "ownership-slider hide-mobile shadowed") %>
+    <%= cl_image_tag("https://res.cloudinary.com/foenix-coding/image/upload/v1579864520/ownership-slider-mobile_bqwnnj.png", :quality=>"auto", id: "ownership-slider-mobile", class: "ownership-slider show-mobile shadowed") %>
     <div class="coming-soon" style="background-image: url('<%= cl_image_path "coming-soon-background_wjcoct.png" %>')">
       <p class="coming-soon-text"><%= t("fxone_plus.coming_soon") %></p>
     </div>

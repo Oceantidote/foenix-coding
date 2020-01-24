@@ -7,7 +7,7 @@
     <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "inks-big-pill") %>
     <div class="first-section-text">
       <h1 class="w-100"><%= t("inks_and_consumables.first_section_text") %></h1>
-      <h3 class="w-100" style="color: #0D1B26"><%= t("inks_and_consumables.first_section_text_two") %></h3>
+      <h3 class="w-100 inks-fifth-section-subtext"><%= t("inks_and_consumables.first_section_text_two") %></h3>
     </div>
     <%= cl_image_tag("inks-and-cons_wzglxn.png", class: "first-section-image", style: "max-width: 700px;") %>
   </div>
@@ -41,7 +41,8 @@
       <%= cl_image_tag("gif_r2eybt.gif", class: "inks-gif") %>
       <div class="inks-third-section-right mobile-center" data-aos="fade-up" data-aos-duration="2000">
         <%= image_tag 'inks-icon-1.png', class: 'about-icon' %>
-        <h3 class="inks-fifth-section-text mobile-margin-bottom"><%= t("inks_and_consumables.third_section_text") %></h3>
+        <h2 class="inks-fifth-section-text"><%= t("inks_and_consumables.third_section_title") %></h2>
+        <p class="inks-fifth-section-text inks-fifth-section-subtext"><%= t("inks_and_consumables.third_section_text") %></p>
       </div>
     </div>
     <div class="jc">

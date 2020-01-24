@@ -128,14 +128,20 @@
           <span class="printers-text"><%= t("navbar.printer_three") %></span><i class="fas fa-angle-right"></i>
         <% end %>
       </li>
-      <li class="each-mobile-link"><%= image_tag 'icon-2.png' %><a href="/software">Software</a></li>
-      <li class="each-mobile-link"><%= image_tag 'icon-3.png' %><a href="/inks_and_consumables">Inks & Consumables</a></li>
-      <li class="each-mobile-link"><%= image_tag 'icon-4.png' %><a href="/distributor">Worldwide Distributors</a></li>
-      <li class="each-mobile-link"><%= image_tag 'icon-5.png' %><a href="/cost_of_ownership">Cost of ownership?</a></li>
-      <li class="each-mobile-link"><%= image_tag 'icon-6.png' %><a href="/faq">FAQ</a></li>
-      <li class="each-mobile-link"><%= image_tag 'icon-7.png' %><a href="/about">About</a></li>
-      <li class="each-mobile-link"><%= image_tag 'icon-8.png' %><a href="/jobs">Career</a></li>
-      <li class="each-mobile-link"><%= image_tag 'icon-9.png' %><a href="/posts">News/Event</a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-2.png' %><a href="/software"><%= t('navbar.software') %></a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-3.png' %><a href="/inks_and_consumables"><%= t('navbar.inks') %></a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-4.png' %><a href="/distributor"><%= t('navbar.distributors') %></a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-5.png' %><a href="/cost_of_ownership"><%= t('navbar.cost') %></a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-6.png' %><a href="/faq"><%= t('navbar.faq') %></a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-7.png' %><a href="/about"><%= t('navbar.about') %></a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-8.png' %><a href="/jobs"><%= t('navbar.careers') %></a></li>
+      <li class="each-mobile-link"><%= image_tag 'icon-9.png' %><a href="/posts"><%= t('navbar.news') %></a></li>
+      <li class="each-mobile-link"><%= image_tag 'contact.png' %><a href="/contact"><%= t('navbar.contact') %></a></li>
+      <% if user_signed_in? %>
+        <li class="each-mobile-link"><%= image_tag 'login.png' %><a href="/users/sign_out" data-method="delete"><%= t('navbar.logout') %></a></li>
+      <% else %>
+        <li class="each-mobile-link"><%= image_tag 'login.png' %><a href="/users/sign_in"><%= t('navbar.login') %></a></li>
+      <% end %>
     </ul>
   </div>
 </div>

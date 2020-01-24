@@ -32,6 +32,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: space-around;
   @include for-small-devices-down {
     flex-direction: column;
   }
@@ -204,6 +207,13 @@
 .inks-fifth-section-text {
   // width: 70%;
   line-height: 40px;
+}
+
+.inks-fifth-section-subtext {
+  padding-top: 20px;
+  color: #747B8A;
+  font-weight: 300;
+  font-size: 20px;
 }
 
 .inks-graphic {

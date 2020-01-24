@@ -68,12 +68,12 @@
             <div class="contact-form-name">
               <div class="row">
                 <div class="col-12">
-                  <%= f.input :first_name, label: false, placeholder:'first name', input_html: { class: "contact-first-name" } %>
+                  <%= f.input :first_name, label: false, placeholder:'First Name and Last Name', input_html: { class: "contact-first-name" } %>
                 </div>
               </div>
             </div>
-              <%= f.input :email, label: false, placeholder:'email' %>
-            <%= f.input :message, as: :text, label: false, placeholder:'type your message here', input_html: { class: "contact-message" } %>
+              <%= f.input :email, label: false, placeholder:'Email' %>
+            <%= f.input :message, as: :text, label: false, placeholder:'Type your message here', input_html: { class: "contact-message" } %>
             <%= f.button :button, 'Submit', type: :submit,  class: "contact-form-button" %>
           <% end %>
         </div>
