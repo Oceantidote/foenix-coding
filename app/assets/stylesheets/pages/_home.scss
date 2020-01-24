@@ -311,6 +311,7 @@
   @include for-small-devices-down {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 0px;
+    margin: 0 10px;
   }
 }
 
@@ -417,6 +418,7 @@
   flex-direction: column;
   // justify-content: center;
   align-items: center;
+  background-color: #fff;
 
   &_svg {
     background: linear-gradient(#FAFBFC, white);
@@ -486,6 +488,7 @@
   justify-content: flex-start;
   position: relative;
   margin-top: 100px;
+  margin-bottom: 250px;
   // overflow: hidden;
 
 

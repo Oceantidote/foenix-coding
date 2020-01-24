@@ -78,6 +78,92 @@
         <%= cl_image_tag("foenix-tube_zlcerz.png", :quality=>"auto", class: "second-section-three_image") %>
       </div>
     </div>
+  <div class="fourth-section">
+    <%#= cl_image_tag("blue-background_d5gnu1.png", :quality=>"auto", class: "fourth-section_svg") %>
+    <div class="fourth-section-features">
+      <div class="fourth-section-text" data-aos="fade-up" data-aos-duration="2000">
+        <%= image_tag 'home-icon-3.png', class: 'about-icon' %>
+        <h2><%= t("home.fourth_title") %></h2>
+        <p><%= t("home.fourth_description") %></p>
+        <a href="/about" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="fourth-section-grid" data-aos="fade-left" data-aos-duration="2000">
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'food.png' %>
+            </div>
+            <p><%= t('home.food') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'cosmetics.png' %>
+            </div>
+            <p><%= t('home.cosmetics') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'extrusion.png' %>
+            </div>
+            <p><%= t('home.extrusion') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'automotive.png' %>
+            </div>
+            <p><%= t('home.automotive') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'beverage.png' %>
+            </div>
+            <p><%= t('home.beverage') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'pharmaceutical.png' %>
+            </div>
+            <p><%= t('home.pharmaceutical') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'electronics.png' %>
+            </div>
+            <p><%= t('home.electronics') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'construction.png' %>
+            </div>
+            <p><%= t('home.construction') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'packaging.png' %>
+            </div>
+            <p><%= t('home.packaging') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'industrial.png' %>
+            </div>
+            <p><%= t('home.industrial_parts') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'chemicals.png' %>
+            </div>
+            <p><%= t('home.chemicals') %></p>
+          </div>
+          <div class="industries-card">
+            <div class="industries-card-image-container">
+              <%= image_tag 'more.png' %>
+            </div>
+            <p><%= t('home.and_many_more') %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="third-section">
     <div class="third-section-features">
       <%= cl_image_tag("home-slant-1_mc6ddl.png", class: "home-slant-1") %>
@@ -212,92 +298,7 @@
       </div>
     </div>
   </div>
-  <div class="fourth-section">
-    <%#= cl_image_tag("blue-background_d5gnu1.png", :quality=>"auto", class: "fourth-section_svg") %>
-    <div class="fourth-section-features">
-      <div class="fourth-section-text" data-aos="fade-up" data-aos-duration="2000">
-        <%= image_tag 'home-icon-3.png', class: 'about-icon' %>
-        <h2><%= t("home.fourth_title") %></h2>
-        <p><%= t("home.fourth_description") %></p>
-        <a href="/about" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
-      </div>
-      <div class="fourth-section-grid" data-aos="fade-left" data-aos-duration="2000">
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'food.png' %>
-            </div>
-            <p><%= t('home.food') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'cosmetics.png' %>
-            </div>
-            <p><%= t('home.cosmetics') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'extrusion.png' %>
-            </div>
-            <p><%= t('home.extrusion') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'automotive.png' %>
-            </div>
-            <p><%= t('home.automotive') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'beverage.png' %>
-            </div>
-            <p><%= t('home.beverage') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'pharmaceutical.png' %>
-            </div>
-            <p><%= t('home.pharmaceutical') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'electronics.png' %>
-            </div>
-            <p><%= t('home.electronics') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'construction.png' %>
-            </div>
-            <p><%= t('home.construction') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'packaging.png' %>
-            </div>
-            <p><%= t('home.packaging') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'industrial.png' %>
-            </div>
-            <p><%= t('home.industrial_parts') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'chemicals.png' %>
-            </div>
-            <p><%= t('home.chemicals') %></p>
-          </div>
-          <div class="industries-card">
-            <div class="industries-card-image-container">
-              <%= image_tag 'more.png' %>
-            </div>
-            <p><%= t('home.and_many_more') %></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
 </div>
 <%= render 'shared/newsletter' %>
