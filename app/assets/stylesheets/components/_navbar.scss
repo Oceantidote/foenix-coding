@@ -23,6 +23,16 @@
 .navbar-title {
   color: #051B28;
   font-size: 1rem;
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #DFA740;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+  }
+  &:hover:after {
+    transform: scaleX(1);
+  }
 }
 
 .navbar-lang-link {
@@ -55,11 +65,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 200px;
 }
 
-.nav-right {
-  margin-left: 40px;
-}
+// .nav-right {
+//   margin-left: 40px;
+// }
 
 .navbar-logo {
   width: 50px;
