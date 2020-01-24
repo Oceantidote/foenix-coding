@@ -19,7 +19,7 @@
               <% if @featured.image.present? %>
                   <%= cl_image_tag @featured.image, class: 'featured-post-image' %>
               <% else %>
-                <%= image_tag 'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: 'featured-post-image' %>
+                <%= image_tag 'https://source.unsplash.com/random', class: 'featured-post-image' %>
               <% end %>
               <%# link_to post_path(@featured), class: "rel-link" %>
             </div>
@@ -45,7 +45,7 @@
                 <% if post.image.present? %>
                   <%= cl_image_tag post.image, class: 'new-post-card-image' %>
                 <% else %>
-                  <%= image_tag 'https://images.pexels.com/photos/6335/man-coffee-cup-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260', class: 'new-post-card-image' %>
+                  <%= image_tag 'https://source.unsplash.com/random', class: 'new-post-card-image' %>
                 <% end %>
               </div>
             <% end %>

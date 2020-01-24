@@ -71,7 +71,7 @@
       </div>
     </div>
     <div class="second-section-three">
-      <%= cl_image_tag("foenix-dots_alc8g7.png", :quality=>"auto", class: "second-section-three_svg") %>
+      <%= image_tag("square-dots.png", class: "second-section-three_svg") %>
       <div>
         <%= cl_image_tag("foenix-milk_zg6rhu.png", :quality=>"auto", class: "second-section-three_image") %>
       </div>
@@ -88,12 +88,12 @@
         <h2><%= t("home.tabs_title") %></h2>
       </div>
       <div class="tab">
-       <button class="cityTab activeTab" data-city="London" onclick="openCity('London', true)"><%= t("home.tabs_one") %></button>
-       <button class="cityTab" data-city="Paris" onclick="openCity('Paris', true)"><%= t("home.tabs_two") %></button>
-       <button class="cityTab" data-city="Tokyo" onclick="openCity('Tokyo', true)"><%= t("home.tabs_three") %></button>
-       <button class="cityTab" data-city="Bogota" onclick="openCity('Bogota', true)"><%= t("home.tabs_four") %></button>
-       <button class="cityTab" data-city="Lexico" onclick="openCity('Lexico', true)"><%= t("home.tabs_five") %></button>
-       <button class="cityTab" data-city="Brussels" onclick="openCity('Brussels', true)"><%= t("home.tabs_six") %></button>
+         <button class="cityTab activeTab" data-city="London" onclick="openCity('London', true)"><%= t("home.tabs_one") %></button>
+         <button class="cityTab" data-city="Paris" onclick="openCity('Paris', true)"><%= t("home.tabs_two") %></button>
+         <button class="cityTab" data-city="Tokyo" onclick="openCity('Tokyo', true)"><%= t("home.tabs_three") %></button>
+         <button class="cityTab" data-city="Bogota" onclick="openCity('Bogota', true)"><%= t("home.tabs_four") %></button>
+         <button class="cityTab" data-city="Lexico" onclick="openCity('Lexico', true)"><%= t("home.tabs_five") %></button>
+         <button class="cityTab" data-city="Brussels" onclick="openCity('Brussels', true)"><%= t("home.tabs_six") %></button>
       </div>
       <div class="features-dropdown" >
         <button class="" onclick="openCity('London')"><%= t("home.tabs_one") %>></button><i class="fas fa-chevron-down"></i>
@@ -120,13 +120,13 @@
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
-          <div>
-            <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
+          <div class="tab-image-container">
+            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
           </div>
         </div>
 
         <div id="Paris" class="city" style="display:none">
-          <div class="tab-text"  >
+          <div class="tab-text">
             <h4><%= t("home.tabs_two_title") %></h4>
             <p><%= t("home.tabs_two_description") %></p>
             <span class="progressHolder">
@@ -137,8 +137,8 @@
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
-          <div >
-            <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
+          <div class="tab-image-container">
+            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
           </div>
         </div>
 
@@ -154,8 +154,8 @@
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
-          <div >
-            <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
+          <div class="tab-image-container">
+            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
           </div>
         </div>
 
@@ -171,8 +171,8 @@
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
-          <div >
-            <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
+          <div class="tab-image-container">
+            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
           </div>
         </div>
 
@@ -188,8 +188,8 @@
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
-          <div >
-            <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
+          <div class="tab-image-container">
+            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
           </div>
         </div>
 
@@ -205,17 +205,23 @@
             <a href="/" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
             <br><br><br><br><br><br><br><br><br>
           </div>
-          <div >
-            <%= cl_image_tag("foenix-home-tab-1_mo3nfg.png", :quality=>"auto") %>
+          <div class="tab-image-container">
+            <%= cl_image_tag("home-tab_ua2tb7.png", class: "tab-image") %>
           </div>
         </div>
       </div>
+      <div class="third-video-text">
+        <h3><span><%= image_tag "fxone_orange.png", alt: "Fxone Printer", class: "fxone_orange_small" %></span> Printer</h3>
+        <p>Helping businesses improve efficiency and lower production costs</p>
+      </div>
       <div class="third-section-video">
-        <%= cl_image_tag("home-outline-pill-2_yk18fu.png", :quality=>"auto", class: "home-outline-pill-2") %>
+        <%= cl_image_tag("home-outline-pill-1_o8d5ve.png", class: "home-outline-pill-1") %>
+        <%= cl_image_tag("home-outline-pill-2_yk18fu.png", class: "home-outline-pill-2") %>
         <%= cl_image_tag("dots-dots_mwj7rq.png", :quality=>"auto", class: "tvid_img_3") %>
         <div class="third-section-media" data-aos="fade-right" data-aos-duration="2000">
           <div class="third-section-media-lhs">
-            <%= image_tag "fxone_home.png", alt: "alttext", class: "fxone_orange_image" %>
+            <%= cl_image_tag("fxone_home-vid_knormg.png",  alt: "alttext", class: "fxone_orange_image") %>
+            <%#= image_tag "fxone_home.png", alt: "alttext", class: "fxone_orange_image" %>
             <div class="request-loader" data-toggle="modal" data-target=".bd-example-modal-lg">
               <%= image_tag "Play.png", alt: "alttext", width: 30, height: 30, id: "rel" %>
             </div>
@@ -223,16 +229,12 @@
           <div class="third-section-media-rhs">
             <div class="rhs-holder">
               <div class="third-section-media-rhs-title">
-                <%= image_tag "fxone_orange.png", alt: "Fxone Printer", class: "fxon_orange" %>
+                <%= image_tag "fxone_orange.png", alt: "Fxone Printer", class: "fxone_orange" %>
                 <h2><%= t('home.printer') %></h2>
               </div>
               <p><%= t('home.fxone_subtext') %></p>
             </div>
           </div>
-        </div>
-        <div class="third-video-text">
-          <h3><span>FX ONE</span> Printer</h3>
-          <p>Helping businesses improve efficiency and lower production costs</p>
         </div>
       </div>
     </div>
