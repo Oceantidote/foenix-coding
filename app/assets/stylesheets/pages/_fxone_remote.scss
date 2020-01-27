@@ -152,6 +152,10 @@
     margin: 10px 0;
     height: 300px;
   }
+  @include for-phone-only {
+    margin: 10px 0;
+    height: 170px;
+  }
 }
 
 .fxone-card-container {
