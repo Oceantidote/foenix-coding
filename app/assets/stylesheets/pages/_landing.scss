@@ -16,9 +16,6 @@
     width: 70%;
   }
   @include for-medium-devices-down {
-    width: 80%;
-  }
-  @include for-small-devices-down {
     width: 100%;
     flex-direction: column-reverse;
     padding-top: 50px;
