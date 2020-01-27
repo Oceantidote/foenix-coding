@@ -72,7 +72,8 @@
                 </div>
               </div>
             </div>
-              <%= f.input :email, label: false, placeholder:'Email' %>
+            <%= f.input :email, label: false, placeholder:'Email' %>
+            <%= f.input :country, as: :string, label: false, placeholder:'Country' %>
             <%= f.input :message, as: :text, label: false, placeholder:'Type your message here', input_html: { class: "contact-message" } %>
             <%= f.button :button, 'Submit', type: :submit,  class: "contact-form-button" %>
           <% end %>
@@ -103,7 +104,8 @@
             </div>
           </div>
         </div>
-          <%= f.input :email, label: false, placeholder:'email' %>
+        <%= f.input :email, label: false, placeholder:'email' %>
+        <%= f.input :country, as: :string, label: false, placeholder:'country' %>
         <%= f.input :message, as: :text, label: false, placeholder:'type your message here', input_html: { class: "contact-message" } %>
         <%= f.button :button, 'Submit', type: :submit,  class: "contact-form-button" %>
       <% end %>

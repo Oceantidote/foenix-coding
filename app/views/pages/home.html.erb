@@ -214,6 +214,7 @@
             <h4><%= t("home.tabs_two_title") %></h4>
             <p><%= t("home.tabs_two_description") %></p>
             <p><%= t("home.tabs_two_desc_two") %></p>
+            <p><%= t("home.tabs_two_desc_three") %></p>
             <span class="progressHolder">
               <span class="progress"></span>
             </span>
@@ -298,9 +299,8 @@
       </div>
     </div>
   </div>
-
-
 </div>
+
 <%= render 'shared/newsletter' %>
 
 <script>
@@ -377,12 +377,12 @@
         progress.style.width = '1%'
         var width = 1;
         if(cancelAnimation == false) {
-          var id = setInterval(frame, 50);
+          var id = setInterval(frame, 100);
         } else {
           clearInterval(id);
         }
         if(humanInteraction == true) {
-          var id = setInterval(frame, 50);
+          var id = setInterval(frame, 100);
         }
         function frame() {
           if (width >= 100) {
