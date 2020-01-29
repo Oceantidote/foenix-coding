@@ -13,6 +13,9 @@
 .software-first-section-left {
   display: block;
   margin-top: 20px;
+  @include for-small-devices-down {
+    flex-direction: column;
+  }
   @include for-phone-only {
     margin: 0;
   }
@@ -30,6 +33,7 @@
   }
   @include for-small-devices-down {
     flex-direction: column;
+    width: 100%;
   }
   @include for-phone-only {
     display: block;
@@ -80,7 +84,7 @@
     display: flex;
     width: 100%;
     div {
-      width: 50%;
+      width: 100%;
     }
   }
   @include for-phone-only {
@@ -206,6 +210,9 @@
 .software-third-section-bottom {
   padding: 40px 0;
   position: relative;
+  @include for-small-devices-down {
+    width: 100%;
+  }
   @include for-phone-only {
     padding-top: 0;
   }
@@ -285,6 +292,12 @@
 
 .software-fifth-section-wrapper {
   background: #FFF;
+}
+
+.software-fifth-section {
+  @include for-small-devices-down {
+    width: 100%;
+  }
 }
 
 .software-middle-graphic {

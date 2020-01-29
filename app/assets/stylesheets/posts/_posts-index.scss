@@ -57,6 +57,10 @@
 
     @include for-medium-devices-down {
       width: 90%;
+      margin: 0 auto;
+    }
+    @include for-phone-only {
+      width: 100%;
     }
   }
 }
@@ -121,7 +125,7 @@
 
   @include for-medium-devices-down {
     padding: 40px 20px;
-
+    height: 60%;
     & h2 {
       font-size: 22px;
     }
@@ -133,9 +137,12 @@
 }
 
 .featured-post-image {
-  width: 100%;
+  width: 60%;
+  height: 100%;
+  object-fit: cover;
   @include for-medium-devices-down {
     width: 100%;
+    max-height: 40%;
   }
 }
 
@@ -183,7 +190,10 @@
 
 .new-post-card {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0;
+  width: 100%;
 }
 
 .new-post-card-image {
@@ -202,5 +212,9 @@
   font-weight: lighter;
   // line-height: 25px;
   color: #717B8D;
+}
+
+.new-post-card-content {
+  flex: 1;
 }
 
