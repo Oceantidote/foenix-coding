@@ -150,6 +150,10 @@
   }
   @include for-medium-devices-down {
     margin: 10px 0;
+    height: 260px;
+  }
+  @include for-small-devices-down {
+    height: 240px;
   }
   @include for-phone-only {
     margin: 10px 0;
