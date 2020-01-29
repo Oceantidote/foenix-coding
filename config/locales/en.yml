@@ -205,7 +205,7 @@ en:
     title: Get the latest newsletter
     text: Sign up to receive email updates on new product announcements, technical updates, show we will attend and more.
     button: Subscribe
-    placeholder: laurenmayberry@example.com
+    placeholder: laurenberry@example.com
     unsubscribe: You can unsubscribe at any time.
     privacy: Privacy Policy
 

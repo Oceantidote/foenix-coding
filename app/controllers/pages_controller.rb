@@ -57,6 +57,9 @@ class PagesController < ApplicationController
   def privacy_policy
   end
 
+  def cookie_policy
+  end
+
   def send_email
     session[:return_to] ||= request.referer
     if params[:send_email][:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)

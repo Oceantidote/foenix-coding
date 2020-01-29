@@ -29,5 +29,6 @@ Rails.application.routes.draw do
     get '/software', to: 'pages#software'
     get '/privacy_policy', to: 'pages#privacy_policy'
     get '/seen_cookie', to: 'pages#seen_cookie_message'
+    get '/cookie_policy', to: 'pages#cookie_policy'
   end
 end
