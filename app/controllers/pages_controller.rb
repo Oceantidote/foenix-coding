@@ -42,7 +42,7 @@ class PagesController < ApplicationController
   def subscribe
     session[:return_to] ||= request.referer
     if params[:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
-      NewsletterJob.perform_later(params[:email])
+      NewsletterJob.perform_now(params[:email])
       flash[:notice] = "Thanks for signing up to our emailing list."
       redirect_to session.delete(:return_to)
     else
@@ -63,7 +63,7 @@ class PagesController < ApplicationController
   def send_email
     session[:return_to] ||= request.referer
     if params[:send_email][:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
-      ContactJob.perform_later(params[:send_email][:email], params[:send_email][:first_name], params[:send_email][:last_name], params[:send_email][:company], params[:send_email][:message], params[:send_email][:country], "")
+      ContactJob.perform_now(params[:send_email][:email], params[:send_email][:first_name], params[:send_email][:last_name], params[:send_email][:company], params[:send_email][:message], params[:send_email][:country], "")
       flash[:notice] = "Thanks for getting in touch, we will try to get back to you as soon as possible."
       redirect_to session.delete(:return_to)
     else
@@ -76,7 +76,7 @@ class PagesController < ApplicationController
   def create_contact
     session[:return_to] ||= request.referer
     if params[:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
-      ContactJob.perform_later(params[:email], params[:name].split(" ").first, params[:name].split(" ").last, params[:company], params[:message], params[:country], params[:phone])
+      ContactJob.perform_now(params[:email], params[:name].split(" ").first, params[:name].split(" ").last, params[:company], params[:message], params[:country], params[:phone])
       flash[:notice] = "Thanks for getting in touch, we will try to get back to you as soon as possible."
       redirect_to session.delete(:return_to)
     else
