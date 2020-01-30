@@ -136,6 +136,7 @@ en:
     second_column_four_four: Variable Data
     second_column_five_five: External Data
     second_column_title_two: On Any Substrates
+    second_column_title_two_description: ddd
     second_column_two_one: Glass
     second_column_two_two: Plastic
     second_column_two_three: Metal
@@ -156,7 +157,7 @@ en:
     tabs_title: One software with tons of features
     tabs_one: Savings
     tabs_one_title: Reduced print costs - typically from 50% to 80%
-    tabs_one_description: You are in control of your cost per print. Easily calculate your printing costs with our intuitive software and see how much you could be saving. Printing with micro ink droplets and a sealed ink cartridge gives low cost per print with no ink wastage. Additional cost savings can be obtained using the ink saver mode. In addition to low cost per print our technology substantially reduces operating costs.
+    tabs_one_description: You are in control of your cost per print. Easily calculate your printing costs with our intuitive software and see how much you could be saving.
     tabs_one_desc_two: "Printing with micro ink droplets and a sealed ink cartridge gives low cost per print with no ink wastage. Additional cost savings can be obtained using the ink saver mode. In addition to low cost per print our technology substantially reduces operating costs."
     tabs_one_bottom: Clear and transparent returns on investment
     tabs_two: Simplicity
