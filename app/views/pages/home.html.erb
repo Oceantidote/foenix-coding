@@ -82,7 +82,7 @@
       <div class="fourth-section-text" data-aos="fade-up" data-aos-duration="2000">
         <%= image_tag 'home-icon-3.png', class: 'about-icon' %>
         <h2><%= t("home.fourth_title") %></h2>
-        <p><%= t("home.fourth_description") %></p>
+        <p class="responsive-text-small"><%= t("home.fourth_description") %></p>
         <a href="/about" class="yellow-button"><%= t("components.yellow_button") %><i class="fas fa-arrow-right"></i></a>
       </div>
       <div class="fourth-section-grid" data-aos="fade-left" data-aos-duration="2000">
@@ -191,7 +191,7 @@
         <%= cl_image_tag("long-pill_xrmujn.png", class: 'tabs-pill') %>
         <div id="London" class="city" style="display: flex;">
           <div class="tab-text" >
-            <h4><%= t("home.tabs_one_title") %></h4>
+            <h4 style="width: 80%"><%= t("home.tabs_one_title") %></h4>
             <p><%= t("home.tabs_one_description") %></p>
             <p><%= t("home.tabs_one_desc_two") %></p>
             <span class="progressHolder">
@@ -209,7 +209,7 @@
 
         <div id="Paris" class="city" style="display:none">
           <div class="tab-text">
-            <h4><%= t("home.tabs_two_title") %></h4>
+            <h4 style="width: 80%"><%= t("home.tabs_two_title") %></h4>
             <p><%= t("home.tabs_two_description") %></p>
             <p><%= t("home.tabs_two_desc_two") %></p>
             <p><%= t("home.tabs_two_desc_three") %></p>
@@ -228,8 +228,9 @@
 
         <div id="Tokyo" class="city" style="display:none">
           <div class="tab-text">
-            <h4><%= t("home.tabs_three_title") %></h4>
-            <p><%= t("home.tabs_three_description") %><br><%= t("home.tttwo") %><br><%= t("home.ttthree") %><br><%= t("home.ttfour") %><br><%= t("home.ttfive") %><br><%= t("home.ttsix") %><br><%= t("home.ttseven") %></p>
+            <h4 style="width: 80%"><%= t("home.tabs_three_title") %></h4>
+            <p><%= t("home.tabs_three_description") %><%= t("home.tttwo") %><%= t("home.ttthree") %></p>
+            <p><%= t("home.ttfour") %> - <%= t("home.ttfive") %><br><%= t("home.ttsix") %><br><%= t("home.ttseven") %></p>
             <span class="progressHolder">
               <span class="progress"></span>
             </span>
@@ -245,7 +246,7 @@
 
         <div id="Bogota" class="city" style="display:none">
           <div class="tab-text">
-            <h4><%= t("home.tabs_four_title") %></h4>
+            <h4 style="width: 80%"><%= t("home.tabs_four_title") %></h4>
             <p><%= t("home.tabs_four_description") %><br><%= t("home.tabs_four_two") %><br><%= t("home.tabs_four_three") %><br><%= t("home.tabs_four_four") %></p>
             <span class="progressHolder">
               <span class="progress"></span>
