@@ -154,7 +154,7 @@ en:
     #THIRD SECTION
     home_video_title: Printer
     home_video_text: Helping businesses improve efficiency and lower production costs
-    tabs_title: One software with tons of features
+    tabs_title: One printer with tons of features
     tabs_one: Savings
     tabs_one_title: Reduced print costs - typically from 50% to 80%
     tabs_one_description: You are in control of your cost per print. Easily calculate your printing costs with our intuitive software and see how much you could be saving.
@@ -168,7 +168,7 @@ en:
     tabs_two_bottom: Robust and reliable design
     tabs_three: Flexibility
     tabs_three_title: To suit all production types
-    tabs_three_description: "Effortless installation : mount your printer in minutes on your production line."
+    tabs_three_description: "Effortless installation: mount your printer in minutes on your production line."
     tttwo: Never stop printing even when changing the cartridge.
     ttthree: Printer can be swapped between production lines in less than 5 min.
     ttfour: "Print small & large text with the same printer: 2mm up to 18mm"
@@ -306,19 +306,19 @@ en:
     second_card_title: Pc Connectivity
     second_card_text: Via USB cable or Ethernet for direct message creation or factory network system.
     third_card_title: Graphics, Logos & Barcodes
-    third_card_text: Easily import JPEG & BMP graphics using Sauven Pro software.
+    third_card_text: Easily import JPEG & BMP graphics using FX App.
     fourth_card_title: Simple Screen & Keyboard
     fourth_card_text: For local control of printer speed and direction, and message delay.
     fifth_card_title: Out of the Box Installation
     fifth_card_text: With minimal components for maximum reliability.
     sixth_card_title: 1D & 2D Barcodes
-    sixth_card_text: High resolution printing of multiple barcode variants.
+    sixth_card_text: High resolution printing of 1D and 2D barcodes (QR Codes – data matrix) to include variable data.
     seventh_card_title: 2 Years Warranty
-    seventh_card_text: You already have the peace of mind of a two years warranty. Now, you can extend it for one, two or three more years
+    seventh_card_text: Extend it for one, two or three more years
     eigth_card_title: Touch Controller
-    eigth_card_text: Simple interactive windows programming with Foenix App
-    ninth_card_title: Stand Alone Printer
-    ninth_card_text: Use a USB stick to transfer print messages from Foenix App
+    eigth_card_text: Simple interactive windows programming with FX App. Reliable printing in one click.
+    ninth_card_title: Networking
+    ninth_card_text: Manage multiple printers from one place. Monitor progress, track faults and gain insights with print analytics.
     tenth_card_title: True Type Font & Unicode
     tenth_card_text: Enables message creation in any font and in any language
     eleventh_card_title: Large Solvent Based Ink Catridge
@@ -326,7 +326,7 @@ en:
     twelfth_card_title: Multi Port Connection
     twelfth_card_text: For encoders, external alarms and alternative product detection devices.
     thirteenth_card_title: Ink Saver Mode
-    thirteenth_card_text: Reduce ink consumption by up to 50%
+    thirteenth_card_text: Reduce ink consumption by up to 75%
     fourth_section_title: Specification
     fifth_section_left_title: Features
     fifth_section_left_one: Prints in any orientation
@@ -358,7 +358,7 @@ en:
     fifth_section_right_eleven: Various colours
     fifth_section_right_title_three: Electrical
     fifth_section_right_twelve: 90-260 VAC to 24VDC power supply included
-    sixth_section_title: Reliable, Powerful, Versatile PRODUCTION READY
+    sixth_section_title: Reliable, Powerful, Versatile
     sixth_section_left_sub_title_one: No costly maintenance contracts
     sixth_section_left_sub_text_one: Foenix printers are manufactured with minimal components to give maximum reliability. No pumps, no valves, no compressed air, no droplet charging and no air filters means low maintenance.
     sixth_section_left_sub_title_two: Lowest cost per print
@@ -368,11 +368,11 @@ en:
     sixth_section_left_sub_title_four: Operator confidence
     sixth_section_left_sub_text_four: Easy installation, message editing and programming & easy maintenance.
     sixth_section_right_sub_title_one: Proven technology
-    sixth_section_right_sub_text_one: Uses a Xaar high resolution print head whose technology has already been proven with many thousands of printers successfully sold worldwide. Xaar logo
+    sixth_section_right_sub_text_one: Uses a Xaar high resolution print head whose technology has already been proven with many thousands of printers successfully sold worldwide.
     sixth_section_right_sub_title_two: System integration
     sixth_section_right_sub_text_two: Integrate to a factory network system or connect to industrial scanners, encoders, check weighers or other equipment as required.
-    sixth_section_right_sub_title_three: "100% uptime 0%downtime Print 24x7 – Certified to run 24x7"
-    sixth_section_right_sub_text_three: Never stop printing even when you’re changing cartridge!
+    sixth_section_right_sub_title_three: 100% uptime 0% downtime
+    sixth_section_right_sub_text_three: "Print 24x7: Never stop printing even when you’re changing cartridge!"
     sixth_section_right_sub_title_four: Innovation Automatic shutter
     sixth_section_right_sub_text_four: "To protect the most critical part of your printer: the printhead engine"
     seventh_section_title: Flawless prints, every time
@@ -387,27 +387,27 @@ en:
     second_card_title: Pc Connectivity
     second_card_text: Via USB cable or Ethernet for direct message creation or factory network system.
     third_card_title: Graphics, Logos & Barcodes
-    third_card_text: Easily import JPEG & BMP graphics using Sauven Pro software.
+    third_card_text: Easily import JPEG & BMP graphics using FX App.
     fourth_card_title: Simple Screen & Keyboard
     fourth_card_text: For local control of printer speed and direction, and message delay.
     fifth_card_title: Out of the Box Installation
     fifth_card_text: With minimal components for maximum reliability.
     sixth_card_title: 1D & 2D Barcodes
-    sixth_card_text: High resolution printing of multiple barcode variants.
+    sixth_card_text: High resolution printing of 1D and 2D barcodes (QR Codes – data matrix) to include variable data.
     seventh_card_title: 2 Years Warranty
-    seventh_card_text: You already have the peace of mind of a two years warranty. Now, you can extend it for one, two or three more years
+    seventh_card_text: Extend it for one, two or three more years
     eigth_card_title: Touch Controller
-    eigth_card_text: Simple interactive windows programming with Foenix App
-    ninth_card_title: Stand Alone Printer
-    ninth_card_text: Use a USB stick to transfer print messages from Foenix App
+    eigth_card_text: Simple interactive windows programming with FX App. Reliable printing in one click.
+    ninth_card_title: Networking
+    ninth_card_text: Manage multiple printers from one place. Monitor progress, track faults and gain insights with print analytics.
     tenth_card_title: True Type Font & Unicode
     tenth_card_text: Enables message creation in any font and in any language
-    eleventh_card_title: Large Solvent Based Ink Catridge
-    eleventh_card_text: Low cost coding and clean inking system, ideal for printing on to porous and non-porous surfaces.
+    eleventh_card_title: Large Oil Based Ink Catridge
+    eleventh_card_text: Low cost coding and clean inking system, ideal for printing on to porous surfaces.
     twelfth_card_title: Multi Port Connection
     twelfth_card_text: For encoders, external alarms and alternative product detection devices.
     thirteenth_card_title: Ink Saver Mode
-    thirteenth_card_text: Reduce ink consumption by up to 50%
+    thirteenth_card_text: Reduce ink consumption by up to 75%
     seventh_section_title: Production Versatility
     seventh_section_text: The compact and innovative industrial design of the FX ONE facilitates moving the printer to different locations in minutes. Just unplug it and move it. It works seamlessly with its large touchscreen, and all the printing operations can be controlled easily. Just hit the print button and start printing on anything.
 

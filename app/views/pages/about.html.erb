@@ -6,28 +6,31 @@
   <div class="first-section fxone-first-section-background about-top">
     <div class="first-section-text">
       <h1 class="w-100"><%= t("about.second_section_title") %></h1>
-      <p class="responsive-text"><%= t("about.second_section_text") %><br><br><%= t("about.second_section_text_two") %></p>
+      <p class="responsive-text-small grey w-100"><%= t("about.second_section_text") %><br><br><%= t("about.second_section_text_two") %></p>
     </div>
     <%= cl_image_tag("about-graphic_avvw6d.png", :quality=>"auto", class: "first-section-image", style: "max-width: 800px;") %>
   </div>
   <div class="about-second-section-wrapper">
     <%= cl_image_tag("about-little-pill-sliced_z6varw.png", :quality=>"auto", class: "about-little-pill") %>
-    <div class="container">
+    <div class="" style="padding: 0 50px">
       <div class="about-section mobile-column" style="padding-top: 0px;">
         <div class="about-second-section-left no-padding-mobile">
           <%#= cl_image_tag("about-img_gs2pe4.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
           <%= cl_image_tag("about-graphic-3_y4zb6l.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
         </div>
-        <div class="about-second-section-right mobile-center" data-aos="fade-up" data-aos-duration="2000">
+        <div class="first-section-text mobile-center" data-aos="fade-up" data-aos-duration="2000">
           <%= image_tag 'about-icon-1.png', class: 'about-icon' %>
           <h2><%= t("about.first_section_text") %></h2>
-          <p class="responsive-text"><%= t("about.first_section_text_two") %><br><br><%= t("about.first_section_text_three") %><br><br><%= t("about.first_section_text_four") %></p>
+          <p class="responsive-text-small grey w-100"><%= t("about.first_section_text_two") %><br><br><%= t("about.first_section_text_three") %><br><br><%= t("about.first_section_text_four") %></p>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Martin asked for this to be removed, I've added d-none for now in case he wants any of this content back -->
+  <!-- ************************************************************************ -->
+  <!-- Martin asked for this to be removed, I've added d-none for now in case he wants it back -->
+  <!-- ************************************************************************ -->
+
   <div class="about-third-section-wrapper d-none">
     <div class="container">
       <div class="about-third-section-text" data-aos="fade-up" data-aos-duration="2000">
@@ -62,10 +65,10 @@
           </div>
           <div class="about-fifth-section-right mobile-center" data-aos="fade-up" data-aos-duration="2000">
             <%= image_tag 'about-icon-3.png', class: 'about-icon' %>
-            <h2 class="about-fifth-section-text"><%= t("about.fifth_section_title") %></h2>
+            <h2 class="about-fifth-section-text my-4"><%= t("about.fifth_section_title") %></h2>
             <%= cl_image_tag("about-graphic-4_r5ic34.png", :quality=>"auto", class: "about-graphic about-graphic-two show-mobile") %>
-            <p class="responsive-text about-fifth-section-text"><%= t("about.fifth_section_text_one") %></p>
-            <p class="responsive-text about-fifth-section-text"><%= t("about.fifth_section_text_two") %></p>
+            <p class="responsive-text-small about-fifth-section-text"><%= t("about.fifth_section_text_one") %></p>
+            <p class="responsive-text-small about-fifth-section-text"><%= t("about.fifth_section_text_two") %></p>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@
             <!-- <i class="fas fa-angle-down jobs-filter-down"></i> -->
           </div>
           <div class="input-holder">
-            <%= f.input :team, collection: ["I", "don't", "know", "what", "goes", "here", "yet"], label: false,  prompt: :translate %>
+            <%= f.input :team, collection: @types, label: false,  prompt: :translate %>
             <i class="fas fa-user-friends search-icon grey"></i>
             <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
           </div>
@@ -34,7 +34,7 @@
             <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
           </div>
           <div class="input-holder">
-            <%= f.input :job_type, collection: @types, label: false,  prompt: :translate %>
+            <%= f.input :job_type, collection: ["Full Time", "Internship", "Fixed Term"], label: false,  prompt: :translate %>
             <i class="fas fa-list-ul search-icon grey"></i>
             <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
           </div>
