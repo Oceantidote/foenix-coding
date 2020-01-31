@@ -13,6 +13,13 @@
   }
 }
 
+.second-about {
+  background: unset;
+  padding: 0px 50px;
+  @media (max-width: 991.98px) {
+    padding: 0px;
+  }
+}
 .about-first-section-text-container {
   margin: 0 auto;
   font-size: 50px;
@@ -28,11 +35,8 @@
 
 .about-second-section-wrapper {
   background: linear-gradient(#F6F7FA, #FFFFFF);
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   position: relative;
-  @include for-phone-only {
-    padding-bottom: 100px;
-  }
 }
 
 .about-third-section-wrapper {
