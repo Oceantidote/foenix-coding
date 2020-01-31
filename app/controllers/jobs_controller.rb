@@ -4,6 +4,7 @@ class JobsController < ApplicationController
   def index
     @jobs = policy_scope(Job)
     @countries = Country.all
+    @teams = Job.all.map { |j| j.team }.uniq
     @types = Job.all.map { |j| j.job_type }.uniq
     authorize @jobs
     pg_search
@@ -28,6 +29,11 @@ class JobsController < ApplicationController
       # Job Type Filter
       if params[:search][:job_type] != ''
         @set = @set.where(job_type: params[:search][:job_type])
+      end
+
+      #Team filter
+      if params[:search][:team] != ''
+        @set = @set.where(team: params[:search][:team])
       end
 
       # Search

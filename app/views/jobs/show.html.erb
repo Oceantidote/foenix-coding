@@ -6,8 +6,8 @@
       <div class="job-content-left hide-mobile">
         <p class="s-medium-text mb-2"><%= t("jobs_show.roles_at") %></p>
         <p class="s-medium-text main-body-text mb-2"><%= @job.location %></p>
-        <p class="s-medium-text main-body-text mb-2">Full time*</p>
-        <p class="s-medium-text main-body-text mb-2">New Business*</p>
+        <p class="s-medium-text main-body-text mb-2"><%= @job.job_type %></p>
+        <p class="s-medium-text main-body-text mb-2"><%= @job.team %></p>
         <div class="job-social-links">
           <%= link_to "http://www.facebook.com/sharer/sharer.php?u=#{job_url(@job)}&t=#{@job.title}", target: "_blank" do %>
             <i class="fab fa-facebook-square main-body-text mb-2 mr-2"></i>

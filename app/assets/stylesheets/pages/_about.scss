@@ -431,6 +431,12 @@
   }
 }
 
+.show-mobile-imp {
+  @include for-small-devices-up {
+    display: none !important;
+  }
+}
+
 .mobile-margin-bottom {
   @include for-phone-only {
     margin-bottom: 50px;

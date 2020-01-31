@@ -24,19 +24,19 @@
             <!-- <i class="fas fa-angle-down jobs-filter-down"></i> -->
           </div>
           <div class="input-holder">
-            <%= f.input :team, collection: @types, label: false,  prompt: :translate %>
+            <%= f.input :team, collection: @teams, label: false,  prompt: :translate %>
             <i class="fas fa-user-friends search-icon grey"></i>
-            <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
+            <i class="fas fa-angle-down jobs-filter-down show-mobile-imp"></i>
           </div>
           <div class="input-holder">
             <%= f.input :country, collection: @countries, label: false,  prompt: :translate %>
             <i class="fas fa-map-marker-alt search-icon grey"></i>
-            <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
+            <i class="fas fa-angle-down jobs-filter-down show-mobile-imp"></i>
           </div>
           <div class="input-holder">
-            <%= f.input :job_type, collection: ["Full Time", "Internship", "Fixed Term"], label: false,  prompt: :translate %>
+            <%= f.input :job_type, collection: @types, label: false,  prompt: :translate %>
             <i class="fas fa-list-ul search-icon grey"></i>
-            <i class="fas fa-angle-down jobs-filter-down show-mobile"></i>
+            <i class="fas fa-angle-down jobs-filter-down show-mobile-imp"></i>
           </div>
         </div>
         <div class="d-flex justify-content-center">
@@ -54,21 +54,22 @@
         <% end %>
       </p>
       <% if @results %>
-        <% @results.each do |result| %>
-          <%= link_to job_path(result), class: "text-decoration-none" do  %>
+        <% @results.each do |job| %>
+          <%= link_to job_path(job), class: "text-decoration-none" do  %>
             <% if policy(Job).create? %>
               <%= link_to 'Edit', edit_admin_job_path(job), class: 'crud-links' %>
               <%= link_to 'Delete', admin_job_path(job), method: :delete, data: { confirm: "Are you sure you want to delete the job '#{ job.title }'" }, class: 'crud-links' %>
             <% end %>
             <div class="job-card">
               <div class="job-card-title">
-                <p class="m-0"><%= result.title %></p>
+                <p class="m-0"><%= job.title %></p>
               </div>
               <div class="job-card-info-container">
-                <p class="m-0 job-card-info"><%= result.job_type %></p>
-                <div class="m-0"><%= image_tag url_for(result.country.photo), class: "job-card-flag" %>
-                  <span class="m-0 ml-3 grey"><%= result.location %></span>
+                <p class="m-0 job-card-info"><%= job.team %></p>
+                <div class="m-0 job-card-info"><%= image_tag url_for(job.country.photo), class: "job-card-flag" %>
+                  <span class="m-0 ml-3 grey"><%= job.location %></span>
                 </div>
+                <p class="m-0 job-card-info"><%= job.job_type %></p>
               </div>
             </div>
           <% end %>
@@ -85,10 +86,11 @@
                 <p class="m-0"><%= job.title %></p>
               </div>
               <div class="job-card-info-container">
-                <p class="m-0 job-card-info"><%= job.job_type %></p>
+                <p class="m-0 job-card-info"><%= job.team %></p>
                 <div class="m-0 job-card-info"><%= image_tag url_for(job.country.photo), class: "job-card-flag" %>
                   <span class="m-0 ml-3 grey"><%= job.location %></span>
                 </div>
+                <p class="m-0 job-card-info"><%= job.job_type %></p>
               </div>
             </div>
           <% end %>

@@ -45,6 +45,7 @@ class Admin::JobsController < ApplicationController
 
   def job_params
     params.require(:job).permit(:title,
+                                :team,
                                 :location,
                                 :job_type,
                                 :text1,

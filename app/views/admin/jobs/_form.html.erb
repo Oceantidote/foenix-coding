@@ -3,6 +3,7 @@
   <%= f.association :country %>
   <%= f.input :location %>
   <%= f.input :job_type %>
+  <%= f.input :team %>
   <p>Text Field One</p>
   <input id="x" type="hidden" name="text1" value= "<%= @job.text1 ? @job.text1 : '' %>">
   <trix-editor input="x"></trix-editor>

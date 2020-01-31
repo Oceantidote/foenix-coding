@@ -3,7 +3,7 @@ class Job < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :search_jobs,
-    against: [ :title, :job_type, :location ],
+    against: [ :title, :job_type, :location, :team ],
     using: {
       tsearch: { prefix: true }
     }

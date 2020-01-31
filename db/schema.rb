@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_07_140508) do
+ActiveRecord::Schema.define(version: 2020_01_31_140327) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,6 @@ ActiveRecord::Schema.define(version: 2020_01_07_140508) do
     t.bigint "country_id"
     t.string "location"
     t.string "title"
-    t.string "job_type"
     t.string "text1"
     t.string "text2"
     t.string "expectation1"
@@ -72,6 +71,8 @@ ActiveRecord::Schema.define(version: 2020_01_07_140508) do
     t.string "responsibility10"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "team", default: "Sales"
+    t.string "job_type", default: "Full Time"
     t.index ["country_id"], name: "index_jobs_on_country_id"
   end
 
