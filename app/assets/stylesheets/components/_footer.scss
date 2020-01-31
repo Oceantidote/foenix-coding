@@ -1,7 +1,6 @@
 .footer-foenix {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0;
   flex-wrap: wrap;
   flex-direction: row;
   @include for-small-devices-down {
@@ -97,5 +96,26 @@
   left: 15px;
   @include for-small-devices-down {
     left: 0;
+  }
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px 50px 0px;
+  width: 300px;
+  margin: 0 auto;
+  @include for-small-devices-down {
+    width: 200px;
+  }
+  a {
+    transition: color 0.5s;
+    color: #676767;
+    &:hover {
+      color: #F3A300;
+    }
+    i {
+      font-size: 28px;
+    }
   }
 }
