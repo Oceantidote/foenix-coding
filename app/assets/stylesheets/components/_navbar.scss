@@ -35,6 +35,25 @@
   }
 }
 
+.navbar-title-underline {
+  &:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #DFA740;
+    transform: scaleX(1);
+  }
+}
+
+.navbar-dropdown-item-active {
+  background-color: #F6F9FC;
+  a {
+    color: #474747 !important;
+  }
+  span {
+    color: #474747 !important;
+  }
+}
+
 .navbar-lang-link {
   display: inline-block;
   color: #051B28;
