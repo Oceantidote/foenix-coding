@@ -7,6 +7,6 @@ class ContactMailer < ApplicationMailer
     @message = params[:message]
     @country = params[:country]
     @sms = params[:sms]
-    mail(to: 'sales@foenixcoding.com', subject: 'New contact')
+    mail(to: 'sales@foenixcoding.com', subject: 'New contact via website')
   end
 end
