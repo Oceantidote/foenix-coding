@@ -74,10 +74,14 @@ class PagesController < ApplicationController
 
 
   def create_contact
+    a = api_post(params['g-recaptcha-response'])
     session[:return_to] ||= request.referer
-    if params[:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
+    if params[:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i) && a
       ContactJob.perform_now(params[:email], params[:name].split(" ").first, params[:name].split(" ").last, params[:company], params[:message], params[:country], params[:phone])
       flash[:notice] = "Thanks for getting in touch, we will try to get back to you as soon as possible."
+      redirect_to session.delete(:return_to)
+    elsif !a
+      flash[:alert] = "Please verify you are a human"
       redirect_to session.delete(:return_to)
     else
       flash[:alert] = "Please enter a valid email address"
@@ -88,6 +92,20 @@ class PagesController < ApplicationController
 
   def seen_cookie_message
     cookies.permanent[:seen_cookie_message] = true
+  end
+
+  private
+
+  def api_post(recaptcha_token)
+    begin
+      body = { secret: ENV['SECRET_RECAPTCHA_KEY']}
+      body[:response] = recaptcha_token
+      response = RestClient.post "https://www.google.com/recaptcha/api/siteverify", body
+      res = JSON.parse(response.body)
+      res['success']
+    rescue RestClient::ExceptionWithResponse => err
+      err.response
+    end
   end
 
 end

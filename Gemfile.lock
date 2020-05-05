@@ -287,6 +287,7 @@ DEPENDENCIES
   pundit
   rails (= 5.2.3)
   redis
+  rest-client
   sassc-rails
   sib-api-v3-sdk
   sidekiq
