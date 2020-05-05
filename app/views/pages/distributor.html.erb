@@ -75,6 +75,8 @@
             <%= f.input :email, label: false, placeholder:'Email' %>
             <%= f.input :country, as: :string, label: false, placeholder:'Country' %>
             <%= f.input :message, as: :text, label: false, placeholder:'Type your message here', input_html: { class: "contact-message" } %>
+            <div class="g-recaptcha" style="margin-top: 20px;" data-sitekey="6Leq5_IUAAAAABljypFOmp3MNhP-UOUDLzmEkGy3
+" data-callback="enableBtn"></div>
             <%= f.button :button, 'Submit', type: :submit,  class: "contact-form-button" %>
           <% end %>
         </div>
@@ -130,4 +132,8 @@
     moreButton.classList.toggle('d-none')
     lessButton.classList.toggle('d-none')
   })
+  function enableBtn(){
+     document.getElementById("button1").disabled = false;
+     document.getElementById("button1").style.opacity = 1
+   }
 </script>

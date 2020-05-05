@@ -61,10 +61,14 @@ class PagesController < ApplicationController
   end
 
   def send_email
+    a = api_post(params['g-recaptcha-response'])
     session[:return_to] ||= request.referer
-    if params[:send_email][:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i)
+    if params[:send_email][:email].match(/\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i) && a
       ContactJob.perform_now(params[:send_email][:email], params[:send_email][:first_name], params[:send_email][:last_name], params[:send_email][:company], params[:send_email][:message], params[:send_email][:country], "")
       flash[:notice] = "Thanks for getting in touch, we will try to get back to you as soon as possible."
+      redirect_to session.delete(:return_to)
+    elsif !a
+      flash[:alert] = "Please verify you are a human"
       redirect_to session.delete(:return_to)
     else
       flash[:alert] = "Please enter a valid email address"
