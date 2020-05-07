@@ -492,6 +492,7 @@ en:
   contact:
     contact_title: Contact Us
     contact_title_description: Get in touch and let us know how we can help.
+    contact_happy: Our team is happy to answer all your questions.
     icon_text: Our team is happy to answer all your questions. Fill out the form and we will be in touch as soon as possible.
     icon_text_two: Free test print, send us a sample of your product and we will do a test print.
     form_name: First Name and Last Name

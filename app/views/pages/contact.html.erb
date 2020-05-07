@@ -5,7 +5,7 @@
   <%= cl_image_tag("inks_big_pill_dqob2a.png", class: "contact-pill") %>
   <div class="container">
     <h1 class="text-center"><%= t('contact.contact_title') %></h1>
-    <p class="text-center"><%= t("contact.contact_title_description")%></p>
+    <p class="text-center"><%= t("contact.contact_title_description")%> <br><%= t("contact.contact_happy") %></p>
     <div class="contact_details">
       <div class="contact-form">
         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="/create_contact" method="post">
@@ -25,7 +25,7 @@
       <div class="contact-text">
         <div class="contact-text-one">
           <%= image_tag 'contact-icon-1.png', class: 'about-icon square-icon' %>
-          <p><%= t("contact.icon_text") %></p>
+          <p>Tel: 0044 1932 701 449 <br> Email: sales@foenixcoding.com</p>
         </div>
         <div class="contact-text-one">
           <%= image_tag 'contact-icon-2.png', class: 'about-icon square-icon' %>
@@ -35,4 +35,9 @@
     </div>
   </div>
 </div>
-
+<script>
+  function enableBtn(){
+     document.getElementById("button1").disabled = false;
+     document.getElementById("button1").style.opacity = 1
+   }
+</script>
