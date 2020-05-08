@@ -13,9 +13,11 @@
           <i class="fas fa-play orange"></i>
           <p><%= t("home.play") %></p>
         </div>
-        <div class="download-btn">
-          <p><%= t("home.download") %></p>
-        </div>
+        <%= link_to "/fxone_standard_brochure.pdf", target: "_blank", class: "nodec" do %>
+          <div class="download-btn">
+            <p><%= t("home.download") %></p>
+          </div>
+        <% end %>
       </div>
     </div>
     <%= cl_image_tag("fxone-standard-graphic-1_wieclv.png", :quality=>"auto", class: "first-section-image", style: "max-width: 800px;") %>

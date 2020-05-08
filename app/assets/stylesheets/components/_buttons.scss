@@ -29,6 +29,7 @@
 }
 
 .play-btn {
+  cursor: pointer;
   color: white;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -51,7 +52,15 @@
   }
 }
 
+.nodec {
+  &:hover {
+    text-decoration: none !important;
+  }
+  text-decoration: none !important;
+}
+
 .download-btn {
+
   margin-left: 30px;
   background-color: #F4B253;
   border-radius: 4px;
