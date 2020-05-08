@@ -10,6 +10,15 @@
     <div class="first-section-text">
       <h1 class="w-100"><span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo") %></span> <%= t("fxone_remote.first_section_title") %></h1>
       <p class="responsive-text-small grey"><%= t("fxone_remote.first_section_text") %></p>
+      <div class="btn-holder">
+        <div class="play-btn" data-toggle="modal" data-target=".bd-example-modal-lg">
+          <i class="fas fa-play orange"></i>
+          <p><%= t("home.play") %></p>
+        </div>
+        <div class="download-btn">
+          <p><%= t("home.download") %></p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="ownership-second-section-wrapper fxone-second-section-wrapper whitebg" >
@@ -303,10 +312,17 @@
       <!-- At Martin's request this ⬇️ has been given d-none. Remove at his request -->
       <!-- ************************************************************************ -->
 
-      <div class="fxone-seventh-section-video-container d-none">
+      <!-- <div class="fxone-seventh-section-video-container d-none">
         <div class="fxone-seventh-section-video">
           <iframe class="embed-player" src="https://www.youtube-nocookie.com/embed/oMW-QEs1zmc?controls=0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+      </div> -->
+    </div>
+  </div>
+  <div id="modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-cont" id="modal-cont">
+        <iframe class="embed-player" src="https://www.youtube-nocookie.com/embed/oMW-QEs1zmc?controls=0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>

@@ -12,6 +12,10 @@
       <h1 class="show-mobile"><%= t("home.mobile_title") %>  <span id="span_scroll" class="animated" data-array="<%= [t("home.title_span2"), t("home.title_span3"), t("home.title_span1")].to_json %>"><span class="animated-span"><%= t("home.title_span2") %></span></span></h1>
       <!-- MOBILE TITLE -->
       <p><%= t("home.title_description") %></p>
+      <div class="play-btn" data-toggle="modal" data-target=".bd-example-modal-lg">
+        <i class="fas fa-play orange"></i>
+        <p><%= t("home.play") %></p>
+      </div>
     </div>
     <%= cl_image_tag("Foenix-machine_iqmh2t.png", class: "first-section-image", style: "max-width: 800px;") %>
   </div>
@@ -266,29 +270,29 @@
         <h3><span><%= image_tag "fxone_orange.png", alt: "Fxone Printer", class: "fxone_orange_small" %></span> Printer</h3>
         <p style="padding: 0 10px;">Helping businesses improve efficiency and lower production costs</p>
       </div>
-      <div class="third-section-video">
-        <%= cl_image_tag("home-outline-pill-1_o8d5ve.png", class: "home-outline-pill-1") %>
-        <%= cl_image_tag("home-outline-pill-2_yk18fu.png", class: "home-outline-pill-2") %>
-        <%= cl_image_tag("dots-dots_mwj7rq.png", :quality=>"auto", class: "tvid_img_3") %>
+      <!-- <div class="third-section-video">
+        <%#= cl_image_tag("home-outline-pill-1_o8d5ve.png", class: "home-outline-pill-1") %>
+        <%#= cl_image_tag("home-outline-pill-2_yk18fu.png", class: "home-outline-pill-2") %>
+        <%#= cl_image_tag("dots-dots_mwj7rq.png", :quality=>"auto", class: "tvid_img_3") %>
         <div class="third-section-media" data-aos="fade-right" data-aos-duration="2000">
           <div class="third-section-media-lhs">
-            <%= cl_image_tag("fxone_home-vid_knormg.png",  alt: "alttext", class: "fxone_orange_image") %>
+            <%#= cl_image_tag("fxone_home-vid_knormg.png",  alt: "alttext", class: "fxone_orange_image") %>
             <%#= image_tag "fxone_home.png", alt: "alttext", class: "fxone_orange_image" %>
             <div class="request-loader" data-toggle="modal" data-target=".bd-example-modal-lg">
-              <%= image_tag "Play.png", alt: "alttext", width: 30, height: 30, id: "rel" %>
+              <%#= image_tag "Play.png", alt: "alttext", width: 30, height: 30, id: "rel" %>
             </div>
           </div>
           <div class="third-section-media-rhs">
             <div class="rhs-holder">
               <div class="third-section-media-rhs-title">
-                <%= image_tag "fxone_orange.png", alt: "Fxone Printer", class: "fxone_orange" %>
-                <h2><%= t('home.printer') %></h2>
+                <%#= image_tag "fxone_orange.png", alt: "Fxone Printer", class: "fxone_orange" %>
+                <h2><%#= t('home.printer') %></h2>
               </div>
-              <p><%= t('home.fxone_subtext') %></p>
+              <p><%#= t('home.fxone_subtext') %></p>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
   <div id="modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">

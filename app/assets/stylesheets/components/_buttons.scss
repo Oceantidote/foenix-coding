@@ -28,6 +28,52 @@
   }
 }
 
+.play-btn {
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .orange {
+    color: #F4B253 !important;
+    margin-right: 15px;
+    font-size: 12px !important;
+  }
+  p {
+    color: #F4B253 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding: 0px !important;
+    margin: 0px;
+  }
+}
+
+.download-btn {
+  margin-left: 30px;
+  background-color: #F4B253;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  height: 40px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: white !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    padding: 0px !important;
+    margin: 0px;
+  }
+}
+.btn-holder {
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
 #button1 {
   opacity: 0.5;
 }

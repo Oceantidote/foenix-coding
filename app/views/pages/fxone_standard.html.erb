@@ -8,6 +8,15 @@
     <div class="first-section-text">
       <h1 class="w-100"><span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo") %></span> <%= t("fxone_standard.first_section_title") %></h1>
       <p class="responsive-text-small grey inks-card-text"><%= t("fxone_standard.first_section_text") %></p>
+      <div class="btn-holder">
+        <div class="play-btn" data-toggle="modal" data-target=".bd-example-modal-lg">
+          <i class="fas fa-play orange"></i>
+          <p><%= t("home.play") %></p>
+        </div>
+        <div class="download-btn">
+          <p><%= t("home.download") %></p>
+        </div>
+      </div>
     </div>
     <%= cl_image_tag("fxone-standard-graphic-1_wieclv.png", :quality=>"auto", class: "first-section-image", style: "max-width: 800px;") %>
   </div>
@@ -299,10 +308,18 @@
           <%= cl_image_tag("fxone-remote-graphic-4_lo5sz0.png", :quality=>"auto", class: "about-graphic about-graphic-two show-mobile") %>
         </div>
       </div>
-      <div class="fxone-seventh-section-video-container">
+      <div style="height: 80px;"></div>
+      <!-- <div class="fxone-seventh-section-video-container">
         <div class="fxone-seventh-section-video">
           <iframe class="embed-player" src="https://www.youtube-nocookie.com/embed/oMW-QEs1zmc?controls=0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+      </div> -->
+    </div>
+  </div>
+  <div id="modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-cont" id="modal-cont">
+        <iframe class="embed-player" src="https://www.youtube-nocookie.com/embed/oMW-QEs1zmc?controls=0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </div>
