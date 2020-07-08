@@ -8,6 +8,9 @@ class Admin::PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    if post_params[:featured]
+      Post.update_all(featured: false)
+    end
     if @post.save
       redirect_to posts_path
     else
@@ -20,6 +23,9 @@ class Admin::PostsController < ApplicationController
   end
 
   def update
+    if post_params[:featured]
+      Post.update_all(featured: false)
+    end
     if @post.update(post_params)
       redirect_to posts_path
     else
