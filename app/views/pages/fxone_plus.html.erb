@@ -1,12 +1,12 @@
 <% content_for :meta_title, "#{t('seo.fxone_plus.title')}" %>
 <% content_for :meta_description, "#{t('seo.fxone_plus.description')}" %>
-<% content_for :meta_image, cl_image_path("fxone-plus_fvkcao.png.png", width: 400) %>
+<% content_for :meta_image, cl_image_path("fxone-plus_fvkcao.png.png", width: 400, alt: "FX ONE Plus printer") %>
 
 <div class="fxone-wrapper fxone-plus">
   <%= cl_image_tag("inks_big_pill_dqob2a.png", :quality=>"auto", class: "fxone-big-pill fxone-standard-big-pill show-mobile") %>
   <div class="first-section fxone-first-section-background fxone-plus-sect">
     <%= image_tag 'square-dots.png', class: 'fxone-plus-dots hide-mobile' %>
-    <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "fxone-plus-little-pill hide-mobile") %>
+    <%= cl_image_tag("inks_little_pill_pahv4x.png", :quality=>"auto", class: "fxone-plus-little-pill hide-mobile", alt: "FX ONE Plus printer") %>
       <div class="first-section-text">
         <h1 class="w-100"><span><%= cl_image_tag("fxone-logo_zjjdvc.png", class: "fxone-logo") %></span> <%= t("fxone_plus.first_section_title") %></h1>
         <p class="paragraph-text"><%= t("fxone_plus.first_section_text") %><br><%= t("fxone_plus.first_section_text_two") %></p>

@@ -1,6 +1,6 @@
 <% content_for :meta_title, "#{t('seo.fxone_standard.title')}" %>
 <% content_for :meta_description, "#{t('seo.fxone_standard.description')}" %>
-<% content_for :meta_image, cl_image_path("fxone-standard-graphic-1_wieclv.png", width: 400) %>
+<% content_for :meta_image, cl_image_path("fxone-standard-graphic-1_wieclv.png", width: 400, alt: "FX ONE STANDARD printer") %>
 
 <div class="fxone-wrapper fxone-standard">
   <div class="first-section fxone-first-section-background fxone-standard-back">
@@ -20,7 +20,7 @@
         <% end %>
       </div>
     </div>
-    <%= cl_image_tag("fxone-standard-graphic-1_wieclv.png", :quality=>"auto", class: "first-section-image", style: "max-width: 800px;") %>
+    <%= cl_image_tag("fxone-standard-graphic-1_wieclv.png", :quality=>"auto", class: "first-section-image", style: "max-width: 800px;", alt: "FX ONE printer and TOUCH controller") %>
   </div>
   <div class="ownership-second-section-wrapper fxone-second-section-wrapper" style="padding-top: 15vh;">
     <%= image_tag 'square-dots.png', class: 'fxone-dots fxone-stand-dots hide-mobile' %>
@@ -164,10 +164,10 @@
       </div>
       <div class="about-section fxone-section">
         <div class="about-first-section-left">
-          <%= cl_image_tag("stan-lhs_o7wbl4.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
+          <%= cl_image_tag("stan-lhs_o7wbl4.png", :quality=>"auto", class: "about-graphic about-graphic-two", alt: "FX ONE standard printer side view") %>
         </div>
         <div class="about-first-section-right">
-          <%= cl_image_tag("stand-rhs_eesu1p.png", :quality=>"auto", class: "about-graphic about-graphic-two") %>
+          <%= cl_image_tag("stand-rhs_eesu1p.png", :quality=>"auto", class: "about-graphic about-graphic-two", alt: "FX ONE standard printer front view") %>
         </div>
       </div>
     </div>

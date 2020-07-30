@@ -1,6 +1,6 @@
 <% content_for :meta_title, "#{t('seo.inks_and_consumables.title')}" %>
 <% content_for :meta_description, "#{t('seo.inks_and_consumables.description')}" %>
-<% content_for :meta_image, cl_image_path("inks-and-cons_wzglxn", width: 400) %>
+<% content_for :meta_image, cl_image_path("inks-and-cons_wzglxn", width: 400, alt: "FX ONE INKS AND CONSUMABLES") %>
 
 <div class="inks-wrapper">
   <div class="first-section fxone-first-section-background" style="overflow-x: unset;">
@@ -9,7 +9,7 @@
       <h1 class="w-100"><%= t("inks_and_consumables.first_section_text") %></h1>
       <h3 class="w-100 inks-fifth-section-subtext"><%= t("inks_and_consumables.first_section_text_two") %></h3>
     </div>
-    <%= cl_image_tag("inks-and-cons_wzglxn.png", class: "first-section-image", style: "max-width: 700px;") %>
+    <%= cl_image_tag("inks-and-cons_wzglxn.png", class: "first-section-image", style: "max-width: 700px;", alt: "FXONE ONE ink cartridges") %>
   </div>
   <div class="inks-second-section-wrapper">
     <%= image_tag 'about-dots.png', class: 'inks-dots-mobile show-mobile' %>

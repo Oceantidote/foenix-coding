@@ -100,7 +100,7 @@ en:
     title10: Can I print on the top of a product?
     desc10: Yes, With the remote printhead and you can technically print to any angle
     title11: What type of ink do you offer? 
-    desc11_1: We have high quality controlled inks that are odourless and are not M.E.K based. The piezo technology used in the Foenix printers only needs a single sealed ink cartridge and does not require additional make-up solvent. This substantially reduces operating costs. 
+    desc11_1: We have high quality controlled inks that are odourless and are not M.E.K based. The piezo technology used in the FX ONE printers only needs a single sealed ink cartridge and does not require additional make-up solvent. This substantially reduces operating costs. 
     desc11_2: We offer Oil based ink to print on porous materials (trays, carton, wood...) and solvent based ink to print on non-porous materials (metal, plastic, glass...)
     title12: Are there maintenance contracts?
     desc12_1: No costly maintenance contracts.
@@ -120,10 +120,10 @@ en:
     title_span2: Reliable
     title_span3: Versatile
     title_span4: Consistent
-    title_description: Plug-and-play industrial inkjet Printer for all types of production lines.
+    title_description: FX ONE is a plug-and-play industrial inkjet Printer for all types of production lines.
     #SECOND SECTION
     title_second: High quality product traceability
-    title_second_description: Take your product traceability to a new level by printing in any language, any font and in high resolution on any product
+    title_second_description: FX ONE takes your product traceability to a new level by printing in any language, any font and in high resolution on any product
     second_column_title: Code Anything
     second_column_title_description: Lorem ipsum dolor sit amet, consectetur.
     second_column_one: Text
@@ -164,13 +164,13 @@ en:
     tabs_one_bottom: Clear and transparent returns on investment
     tabs_two: Simplicity
     tabs_two_title: Zero Downtime, No Maintenance
-    tabs_two_description: Foenix printers are manufactured with minimal components to give maximum reliability. No pumps, no valves, no compressed air, no droplet charging and no air filters means low maintenance and fewer problems.
+    tabs_two_description: FX ONE printers are manufactured with minimal components to give maximum reliability. No pumps, no valves, no compressed air, no droplet charging and no air filters means low maintenance and fewer problems.
     tabs_two_desc_two: The Piezo technology used in the Foenix printer only needs a single sealed ink cartridge and does not require additional make-up solvent. This substantially reduces operating costs.
     tabs_two_desc_three: Easily create messages with just a few clicks with no expertise required through our intuitive Interface that anyone can use.
     tabs_two_bottom: Robust and reliable design
     tabs_three: Flexibility
     tabs_three_title: To suit all production types
-    tabs_three_description: "Effortless installation: mount your printer in minutes on your production line."
+    tabs_three_description: "Effortless installation: mount your FX ONE printer in minutes on your production line. "
     tttwo: Never stop printing even when changing the cartridge.
     ttthree: Printer can be swapped between production lines in less than 5 min.
     ttfour: "Print small & large text with the same printer: 2mm up to 18mm"
@@ -364,9 +364,9 @@ en:
     sixth_section_left_sub_title_one: No costly maintenance contracts
     sixth_section_left_sub_text_one: Foenix printers are manufactured with minimal components to give maximum reliability. No pumps, no valves, no compressed air, no droplet charging and no air filters means low maintenance.
     sixth_section_left_sub_title_two: Lowest cost per print
-    sixth_section_left_sub_text_two: The piezo technology used in the Foenix printer only needs a single sealed ink cartridge and does not require additional make-up solvent. This substantially reduces operating costs.
+    sixth_section_left_sub_text_two: The piezo technology used in the FX ONE printer only needs a single sealed ink cartridge and does not require additional make-up solvent. This substantially reduces operating costs.
     sixth_section_left_sub_title_three: Consistent print performance
-    sixth_section_left_sub_text_three: Foenix printers are printing in High Resolution. You can print logo, 1D and 2D barcodes, variables...
+    sixth_section_left_sub_text_three: FX ONE printers are printing in High Resolution. You can print logo, 1D and 2D barcodes, variables...
     sixth_section_left_sub_title_four: Operator confidence
     sixth_section_left_sub_text_four: Easy installation, message editing and programming & easy maintenance.
     sixth_section_right_sub_title_one: Proven technology
@@ -378,7 +378,7 @@ en:
     sixth_section_right_sub_title_four: Innovation Automatic shutter
     sixth_section_right_sub_text_four: "To protect the most critical part of your printer: the printhead engine"
     seventh_section_title: Flawless prints, every time
-    seventh_section_text: High quality, well-made, high precision is what defines our printers. We offer the simplest, most efficient way possible to code your product in High Resolution.
+    seventh_section_text: High quality, well-made, high precision is what FX ONE printers. We offer the simplest, most efficient way possible to code your product in High Resolution.
 
   fxone_standard:
     first_section_title: STANDARD
